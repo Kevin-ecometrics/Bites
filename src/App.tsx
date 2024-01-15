@@ -1,8 +1,9 @@
-import React from 'react'
-
+import Hero from '../src/pages/Hero'
 function Bites() {
   return (
-    <div className='w-screen mx-auto'>Bites</div>
+    <div className='bg-[#E72381] h-screen'>
+      <Hero />
+    </div>
   )
 }
 
