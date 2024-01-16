@@ -1,8 +1,10 @@
-import Hero from '../src/pages/Hero'
+import { Hero } from '../src/pages/Hero'
+import { Information } from '../src/pages/Information'
 function Bites() {
   return (
-    <div className='bg-[#E72381] h-screen'>
+    <div>
       <Hero />
+      <Information />
     </div>
   )
 }
