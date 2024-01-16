@@ -17,12 +17,11 @@ export const Hero = (): JSX.Element => {
   };
   return (
     <main
-      className="h-screen relative w-screen bg-cover bg-center bg-no-repeat"
+      className="h-screen relative bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${Background})` }}
     >
-      <div className="absolute inset-0 bg-pink-500 opacity-85">
-        <Navbar />
-      </div>
+      <div className="absolute inset-0 bg-pink-500 opacity-70" />
+      <Navbar />
       <div className="hidden sm:hidden md:hidden lg:hidden xl:block w-[500px] animate-fade-left animate-delay-300 h-screen overflow-hidden absolute right-0">
         <div className="border bg-blue-500 w-screen h-screen absolute bottom-0 left-0 rounded-full" />
       </div>
