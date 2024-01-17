@@ -3,7 +3,7 @@ import phone from "../assets/icons/phone.svg";
 
 function Navbar() {
   return (
-    <nav className="absolute top-0 left-0 z-50 w-full">
+    <nav className="absolute top-0 left-0 z-50 w-full bg-transparent">
       <div className="max-w-screen-xl flex items-center justify-center mx-auto p-4 gap-24">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={logo} className="w-[169px] h-[130px]" alt="logo bites" />
