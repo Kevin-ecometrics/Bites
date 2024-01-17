@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
         'poorstory': ['Poor Story', 'serif'],
+        'roboto': ['Roboto', 'sans-serif'],
       },
     },
   },

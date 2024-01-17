@@ -1,5 +1,7 @@
 import Card from "../components/Card";
 import dataCard from "../datas/CardInformation";
+import poligono from "../assets/poligon.svg";
+import poligono2 from "../assets/Polygon 2.svg";
 function Mision() {
   return (
     <main className="bg-pink-600 bg-opacity-5">
@@ -26,11 +28,21 @@ function Mision() {
         </div>
       </section>
       <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-        <div className="bg-blue-400 h-12 w-80 text-white items-center flex justify-center">
-          Lorem ipsum dolor sit amet
+        <div className="bg-blue-400 h-32 w-[500px] text-white items-center flex justify-center relative">
+          <h1 className="w-96 text-center font-poorstory text-4xl">Lorem ipsum dolor sit amet</h1>
+          <img
+            src={poligono}
+            className="transform translate-y-[85px] absolute"
+            alt={`Poligon from CardView element: ${poligono}`}
+          />
         </div>
-        <div className="bg-pink-600 h-12 w-80 text-white items-center flex justify-center">
-          Lorem ipsum dolor sit amet
+        <div className="bg-pink-600 h-32 w-[500px] text-white items-center flex justify-center relative">
+        <h1 className="w-96 text-center font-poorstory text-4xl">Lorem ipsum dolor sit amet</h1>
+        <img
+            src={poligono2}
+            className="transform translate-y-[85px] absolute"
+            alt={`Poligon from CardView element: ${poligono2}`}
+          />
         </div>
       </div>
     </main>
