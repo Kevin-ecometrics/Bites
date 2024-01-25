@@ -1,5 +1,5 @@
 import React from "react";
-import BookingImage from "../assets/booking.png";
+import BookingImage from "../assets/Info1.png";
 import Map from "../assets/icons/map.svg";
 import Calendar from "../assets/icons/calendar.svg";
 import Input from "../components/Input";
