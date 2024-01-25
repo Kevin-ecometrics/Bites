@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
     <main>
       <footer className="bg-pink-600 rounded-lg shadow dark:bg-pink-600">
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-          <div className="sm:flex sm:items-center sm:justify-between">
+          <div className="flex flex-col justify-center items-center md:flex-row md:justify-between">
             <a
               href="/"
               className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
           <hr className="my-6 border-white sm:mx-auto dark:border-white lg:my-8" />
-          <span className="block font-normal font-poppins text-2xl text-white sm:text-center dark:text-white">
+          <span className="block font-normal font-poppins text-2xl text-white text-center dark:text-white">
             © 2024{" "}
             <a
               href="https://e-commetrics.com/"

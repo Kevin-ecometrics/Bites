@@ -18,7 +18,7 @@ const Card: React.FC<CardProps> = ({ image, title, paragraph }) => {
       <p className="mt-3 text-neutral-400 my-4 text-center text-xl font-normal font-poppins">
         {paragraph}
       </p>
-      <div className="size-28 bg-[#E72381] to-transparent rounded-full transform translate-y-[72px]" style={{ clipPath: 'polygon(0 50%, 100% 50%, 100% 100%, 0 100%)' }} />
+      <div className="hidden xl:block size-28 bg-[#E72381] to-transparent rounded-full transform translate-y-[72px]" style={{ clipPath: 'polygon(0 50%, 100% 50%, 100% 100%, 0 100%)' }} />
     </div>
   );
 };

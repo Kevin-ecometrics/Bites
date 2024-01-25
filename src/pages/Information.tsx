@@ -90,11 +90,10 @@ export const Information = (): JSX.Element => {
             <span>Lorem ipsum dolor sit amet consectetur</span>
           </div>
           <div className="flex justify-center items-center md:justify-start">
-                      <button className="text-white text-lg py-4 px-12 hover:bg-pink-500 my-8 rounded-xl font-bold font-poppins bg-pink-600">
-            MORE
-          </button>
+            <button className="text-white text-lg py-4 px-12 hover:bg-pink-500 my-8 rounded-xl font-bold font-poppins bg-pink-600">
+              MORE
+            </button>
           </div>
-
         </div>
       </div>
       <div className="px-4 mx-auto text-5xl font-bold font-poppins flex-col flex justify-center items-center">
@@ -111,7 +110,6 @@ export const Information = (): JSX.Element => {
             src="https://player.vimeo.com/video/903365181?h=009fe878dc"
             width="640"
             height="360"
-
           ></iframe>
         </div>
       )}

@@ -1,28 +1,17 @@
-import { Hero } from '../src/pages/Hero'
-import { Information } from '../src/pages/Information'
-import  Navbar  from '../src/components/Navbar'
-import Mision from './pages/Mision'
-import Task from './pages/Task'
-import Contact from './pages/Contact'
-import Booking from './pages/Booking'
-import Map from './pages/Map'
-import Service from './pages/Service'
-import Footer from './pages/Footer'
-function Bites() {
-  return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Information />
-      <Mision />
-      <Task />
-      <Contact />
-      <Booking />
-      <Map />
-      <Service />
-      <Footer />
-    </div>
-  )
-}
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './Index';
+import GalleryPage from './Gallery';
 
-export default Bites
+const App: React.FC = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
+      </Routes>
+    </Router>
+  );
+};
+
+export default App;

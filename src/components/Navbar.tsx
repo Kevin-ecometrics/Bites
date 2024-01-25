@@ -10,7 +10,7 @@ function Navbar() {
         </a>
         <div className="hidden w-full md:block md:w-auto text-2xl font-poppins font-medium">
           <ul className="flex flex-col p-4 md:p-0 items-center border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-            <li>
+            {/* <li>
               <a
                 href="#"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
@@ -28,7 +28,7 @@ function Navbar() {
             </li>
             <li>
               <a
-                href="#"
+                href="/gallery"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Gallery
@@ -41,11 +41,12 @@ function Navbar() {
               >
                 Contact
               </a>
-            </li>
+            </li> */}
             <li className="flex gap-4">
               <img src={phone} className="" alt="phone icon" />
               <a
-                href="#"
+              target="_blank"
+                href="https://wa.me/+526633249611/?text="
                 className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 663 324 9611
