@@ -21,7 +21,7 @@ export const Hero = (): JSX.Element => {
     >
       <div className="absolute inset-0 bg-pink-500 opacity-70" />
       <div className="hidden sm:hidden md:hidden lg:hidden xl:block w-screen md:w-[500px] animate-fade-left animate-delay-300 h-screen overflow-hidden absolute right-0">
-        <div className="border bg-blue-500 w-screen h-screen absolute bottom-0 left-0 rounded-full" />
+        <div className="border opacity-50 bg-blue-500 w-screen h-screen absolute bottom-0 left-0 rounded-full" />
       </div>
       <img
         className="rounded-full md:animate-fade-left animate-delay-700 bottom-48 md:bottom-28 sm:right-40 absolute"

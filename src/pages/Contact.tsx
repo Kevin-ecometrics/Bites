@@ -7,9 +7,9 @@ const Contact: React.FC = () => {
     <main>
       <Parallax
         bgImage={Parralax}
-        className="h-[600px] w-screen"
+        className="h-[550px]"
         bgImageAlt=""
-        strength={-200}
+        strength={-380}
 
       />
     </main>

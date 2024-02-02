@@ -17,29 +17,48 @@ const Footer: React.FC = () => {
             </a>
             <ul className="flex flex-wrap gap-4 items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
               <li>
-                <a href="#" className="hover:underline me-4 md:me-6">
-                  <img src={Instagram} alt="Instagram Logo" />
+                <a href="https://www.instagram.com/bitescreadoresdesonrisas/?hl=es"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline me-4 md:me-6">
+                  <img
+                    className="size-7"
+                    src={Instagram}
+                    alt="Instagram Logo"
+                  />
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline me-4 md:me-6">
-                  <img src={Facebook} alt="Facebook Logo" />{" "}
+                <a href="https://www.facebook.com/BITES.ESTETICADENTAL/?locale=es_LA"
+                                target="_blank"
+                                rel="noopener noreferrer" className="hover:underline me-4 md:me-6">
+                  <img className="size-7" src={Facebook} alt="Facebook Logo" />{" "}
                 </a>
               </li>
             </ul>
           </div>
           <hr className="my-6 border-white sm:mx-auto dark:border-white lg:my-8" />
-          <span className="block font-normal font-poppins text-2xl text-white text-center dark:text-white">
-            © 2024{" "}
+          <span className="block font-normal font-poppins text-md text-white text-center dark:text-white">
+            All rights reserved by Bites Creadores de Sonrisas 2024 ©.
             <a
-              href="https://e-commetrics.com/"
+              href="https://bitescreadoresdesonrisas.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:underline text-2xl font-normal font-poppins hover:text-blue-500"
+              className="hover:underline"
             >
-              Ecommetrics
+              {" "}
+              Bitescreadoresdesonrisas.com
+            </a>{" "}
+            is powered by
+            <a
+              href="https://ecommetrica.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              {" "}
+              ecommetrica.com
             </a>
-            . All Rights Reserved.
           </span>
         </div>
       </footer>

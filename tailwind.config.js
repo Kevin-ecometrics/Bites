@@ -10,6 +10,7 @@ export default {
         'poppins': ['Poppins', 'sans-serif'],
         'poorstory': ['Poor Story', 'serif'],
         'roboto': ['Roboto', 'sans-serif'],
+        'pompiere': ['Pompiere', 'cursive'],
       },
     },
   },
