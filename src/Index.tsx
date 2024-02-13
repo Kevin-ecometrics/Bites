@@ -8,6 +8,7 @@ import Booking from './pages/Booking'
 import Map from './pages/Map'
 // import Service from './pages/Service'
 import Footer from './pages/Footer'
+import FooterText from './pages/FooterText'
 function Bites() {
   return (
     <div>
@@ -21,6 +22,7 @@ function Bites() {
       <Map />
       {/* <Service /> */}
       <Footer />
+      <FooterText />
     </div>
   )
 }
