@@ -15,7 +15,6 @@ const Booking: React.FC = () => {
   const [phone, setPhone] = useState<string>("");
   const [bookedHours, setBookedHours] = useState([]);
 
-
   initialDate.setMinutes(0);
 
   const minTime = new Date();
@@ -30,9 +29,9 @@ const Booking: React.FC = () => {
   };
 
   useEffect(() => {
-    fetch('https://bitescreadoresdesonrisas.com/bookedHours')
-      .then(response => response.json())
-      .then(data => setBookedHours(data));
+    fetch("https://bitescreadoresdesonrisas.com/bookedHours")
+      .then((response) => response.json())
+      .then((data) => setBookedHours(data));
   }, []);
 
   const handleSubmit = async (event: FormEvent) => {
@@ -49,8 +48,8 @@ const Booking: React.FC = () => {
       return;
     }
 
-    const dateInTijuana = moment(startDate).tz('America/Tijuana').format();
-    
+    const dateInTijuana = moment(startDate).tz("America/Tijuana").format();
+
     const bookingData = {
       date: dateInTijuana,
       name: name,
@@ -58,13 +57,16 @@ const Booking: React.FC = () => {
       phone: phone,
     };
 
-    const response = await fetch("https://bitescreadoresdesonrisas.com/booking", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(bookingData),
-    });
+    const response = await fetch(
+      "https://bitescreadoresdesonrisas.com/booking",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(bookingData),
+      }
+    );
 
     if (response.ok) {
       const responseData = await response.json();
@@ -77,17 +79,16 @@ const Booking: React.FC = () => {
     } else {
       console.error("Error:", response.status);
     }
-
   };
 
   return (
-    <main>
+    <main id="Booking">
       <div className="flex justify-center flex-col items-center mt-8 px-8 pb-16">
-        <h1 className="text-black text-4xl font-bold font-poppins">
-          BOOK US NOW
+        <h1 className="text-black text-4xl font-bold font-poppins mb-4">
+          ¡Agenda con nosotros!{" "}
         </h1>
         <h3 className="text-pink-600 font-pompiere text-4xl font-normal">
-          Select a date and time to save your dental care day
+          Selecciona el día y hora para empezar tu transformación dental{" "}
         </h3>
         <form onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 md:grid-cols-2 mt-16 gap-16">
@@ -96,12 +97,12 @@ const Booking: React.FC = () => {
             </div>
             <div className="w-[320px]">
               <h1 className="text-black text-xl font-medium font-poppins">
-                CREATE DENTAL APPOINTMENT
+                CREAR CITA DENTAL{" "}
               </h1>
               <div className="flex gap-4 mt-2">
                 <img src={Map} className="w-9 h-9 relative" alt="map-icon" />
                 <h1 className="text-black text-xl font-light font-poppins">
-                  Calle frida kahlo 10410, Tijuana, Mexico
+                  Calle frida kahlo 10410, Tijuana, Mexico{" "}
                 </h1>
               </div>
               <div className="flex gap-4 mt-2">
@@ -119,7 +120,9 @@ const Booking: React.FC = () => {
                   timeCaption="time"
                   minTime={minTime}
                   maxTime={maxTime}
-                  excludeTimes={bookedHours.map(time => moment(time, 'HH:mm').toDate())}
+                  excludeTimes={bookedHours.map((time) =>
+                    moment(time, "HH:mm").toDate()
+                  )}
                   dateFormat="MMMM d, yyyy h:mm aa"
                   onChange={(date) => setStartDate(date || new Date())}
                   icon={
@@ -166,7 +169,7 @@ const Booking: React.FC = () => {
                   setName(e.target.value)
                 }
                 id="name"
-                placeholder="Your Name"
+                placeholder="Tu nombre"
               />
               <Input
                 type="email"
@@ -175,21 +178,21 @@ const Booking: React.FC = () => {
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                   setEmail(e.target.value)
                 }
-                placeholder="Email"
+                placeholder="Tu correo electrónico"
               />
               <Input
                 type="phone"
                 id="phone"
                 value={phone}
                 onChange={handleChange}
-                placeholder="Phone"
+                placeholder="Tu número de teléfono"
                 maxLength={10}
               />
               <button
                 type="submit"
                 className="bg-pink-600 text-white mt-8 rounded-3xl py-2 px-8 text-lg font-normal font-poppins hover:bg-pink-800"
               >
-                BOOK US NOW
+                AGENDA AHORA{" "}
               </button>
             </div>
           </div>

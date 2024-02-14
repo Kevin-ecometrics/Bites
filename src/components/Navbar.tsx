@@ -1,6 +1,7 @@
 import logo from "../assets/bites_logo.png";
 import phone from "../assets/icons/phone.svg";
-
+import facebook from "../assets/icons/fb.svg";
+import instagram from "../assets/icons/ig.svg";
 function Navbar() {
   return (
     <nav className="absolute top-0 left-0 z-50 w-full bg-transparent">
@@ -42,6 +43,16 @@ function Navbar() {
                 Contact
               </a>
             </li> */}
+            <li>
+            <a href="https://www.facebook.com/BITES.ESTETICADENTAL/?locale=es_LA" target="_blank">
+              <img src={facebook} alt="" />
+              </a>
+            </li>
+            <li>
+            <a href="https://www.instagram.com/bitescreadoresdesonrisas/" target="_blank">
+              <img src={instagram} alt="" />
+              </a>
+            </li>
             <li className="flex gap-4">
               <img src={phone} className="" alt="phone icon" />
               <a

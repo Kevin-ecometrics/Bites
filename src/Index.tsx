@@ -22,7 +22,7 @@ function Bites() {
       <Map />
       {/* <Service /> */}
       <Footer />
-      <FooterText />
+      <FooterText className='bg-[#FE81BD]' hoverColor='hover:text-blue-400' />
     </div>
   )
 }

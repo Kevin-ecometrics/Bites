@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
       <footer
         style={{
           background:
-            "linear-gradient(to top, #FE81BD 0%, #FE81BD 75%, white 75%, white 100%)",
+            "linear-gradient(to top, #6BBAE9 0%, #6BBAE9 75%, white 75%, white 100%)",
         }}
         className="shadow  w-screen flex justify-center items-end"
       >
@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
                 }}
                 transition={{ duration: 0.7 }}
                 style={{ borderRadius: "1.5rem"}}
-                className=" bg-[#5C9BC0] px-8 py-4  text-white font-poppins font-normal hover:bg-[#588faf]"
+                className=" bg-[#FE81BD] px-8 py-4  text-white font-poppins font-normal hover:bg-[#f869ae]"
               >
                 Agenda una cita ahora!
               </motion.button>
@@ -98,7 +98,7 @@ const Footer: React.FC = () => {
                 {footerLinks.map((link, index) => (
                   <a
                   href={link === 'Home' ? '/' : `/${link.toLowerCase()}`}                    key={index}
-                    className="text-lg font-medium hover:text-blue-400 flex justify-start items-start flex-col text-white dark:text-white"
+                    className="text-lg font-medium hover:text-pink-400 flex justify-start items-start flex-col text-white dark:text-white"
                   >
                     {link}
                   </a>
@@ -124,7 +124,7 @@ const Footer: React.FC = () => {
                   <a
                     href={`/${service.toLowerCase()}`}
                     key={index}
-                    className="text-lg font-medium hover:text-blue-400 flex justify-start items-start flex-col text-white dark:text-white"
+                    className="text-lg font-medium hover:text-pink-400 flex justify-start items-start flex-col text-white dark:text-white"
                   >
                     {service}
                   </a>
