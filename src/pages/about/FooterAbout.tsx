@@ -1,10 +1,10 @@
 import React from "react";
-import Logo from "../assets/logo_footer.png";
-import Instagram from "../assets/icons/ig.svg";
-import Facebook from "../assets/icons/fb.svg";
-import MapMarker from "../assets/icons/map.svg";
-import Phone from "../assets/icons/phone.png";
-import Clock from "../assets/icons/clock.png";
+import Logo from "../../assets/logo_footer.png";
+import Instagram from "../../assets/icons/ig.svg";
+import Facebook from "../../assets/icons/fb.svg";
+import MapMarker from "../../assets/icons/map.svg";
+import Phone from "../../assets/icons/phone.png";
+import Clock from "../../assets/icons/clock.png";
 import { motion } from "framer-motion";
 
 
@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
     // Puedes agregar más objetos aquí si tienes más ubicaciones
   ];
 
-  const footerLinks = ["Home", "About", "Gallery", "Contact", "Servicios"];
+  const footerLinks = ["Home", "About", "Gallery", "Contact", "Services"];
   const services = [
     "Limpieza Dental",
     "Resinas",

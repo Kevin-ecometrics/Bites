@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from "react";
-import FacebookWhite from "../assets/icons/facebook_white.svg";
-import InstagramWhite from "../assets/icons/instagram_white.svg";
-import Facebook from "../assets/icons/facebook.svg";
-import Instagram from "../assets/icons/instagram.svg";
+import FacebookWhite from "../../assets/icons/facebook_white.svg";
+import InstagramWhite from "../../assets/icons/instagram_white.svg";
+import Facebook from "../../assets/icons/facebook.svg";
+import Instagram from "../../assets/icons/instagram.svg";
 const About: React.FC = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Mask from "../assets/hero_image_rounded.png";
-import Background from "../assets/hero_background.png";
-import Play from "../assets/icons/Play.svg";
+import Mask from "../../assets/hero_image_rounded.png";
+import Background from "../../assets/hero_background.png";
+import Play from "../../assets/icons/Play.svg";
 // import video from "../assets/video/video_hero.mp4";
 
 export const Hero = (): JSX.Element => {

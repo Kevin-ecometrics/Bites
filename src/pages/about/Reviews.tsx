@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight, FaStar } from "react-icons/fa";
 import { motion } from "framer-motion";
-import Avatar from "../assets/icons/avatar.png"
+import Avatar from "../../assets/icons/avatar.png"
 const Reviews: React.FC = () => {
     const reviews = [
         { text: "Review 1: This is a longer review text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.", rating: 5, name: "John Doe", avatar: Avatar },

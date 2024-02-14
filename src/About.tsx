@@ -1,10 +1,10 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import HeroAbout from './pages/HeroAbout';
-import AboutSection from './pages/About';
-import Reviews from './pages/Reviews';
-import FooterAbout from './pages/FooterAbout';
-import FooterText from './pages/FooterText';
+import HeroAbout from './pages/about/HeroAbout';
+import AboutSection from './pages/about/About';
+import Reviews from './pages/about/Reviews';
+import FooterAbout from './pages/about/FooterAbout';
+import FooterText from './components/FooterText';
 
 const About: React.FC = () => {
     return (

@@ -1,5 +1,5 @@
 import React from "react";
-import Parralax from "../assets/parallax.webp";
+import Parralax from "../../assets/parallax.webp";
 import { Parallax } from "react-parallax";
 
 const Contact: React.FC = () => {

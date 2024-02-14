@@ -1,6 +1,6 @@
 import React from 'react';
-import Gallery from './pages/Gallery';
-import Footer from './pages/Footer';
+import Gallery from './pages/gallery/Gallery';
+// import Footer from './pages/index/Footer';
 import Navbar from './components/Navbar';
 
 const Galery: React.FC = () => {
@@ -8,7 +8,7 @@ const Galery: React.FC = () => {
         <div>
             <Navbar />
             <Gallery />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };
