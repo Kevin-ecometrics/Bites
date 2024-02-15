@@ -1,5 +1,5 @@
-import Card from "../components/Card";
-import dataCard from "../datas/CardInformation";
+import Card from "../../components/Card";
+import dataCard from "../../datas/CardInformation";
 import poligono from "../assets/poligon.svg";
 import poligono2 from "../assets/Polygon 2.svg";
 function Mision() {

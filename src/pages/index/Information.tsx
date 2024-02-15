@@ -1,10 +1,10 @@
 import { useState } from "react";
-import info1 from "../assets/Info1.png";
-import info2 from "../assets/Info2.png";
-import Play from "../assets/icons/Play.svg";
-import diente from "../assets/icons/diente.svg";
-import diente2 from "../assets/icons/diente2.svg";
-import check from "../assets/icons/check.svg";
+import info1 from "../../assets/Info1.png";
+import info2 from "../../assets/Info2.png";
+import Play from "../../assets/icons/Play.svg";
+import diente from "../../assets/icons/diente.svg";
+import diente2 from "../../assets/icons/diente2.svg";
+import check from "../../assets/icons/check.svg";
 export const Information = (): JSX.Element => {
   const [playing, setPlaying] = useState(false);
 

@@ -1,5 +1,5 @@
 import React from "react";
-import task from "../datas/TaskInformation";
+import task from "../../datas/TaskInformation";
 import poligono from "../assets/poligon.svg";
 import poligono2 from "../assets/Polygon 2.svg";
 const Task: React.FC = () => {

@@ -5,9 +5,9 @@ import  Navbar  from '../src/components/Navbar'
 // import Task from './pages/Task'
 import Contact from './pages/index/Contact'
 import Booking from './pages/index/Booking'
-import Map from './pages/index/Map'
+import Map from './components/Map'
 // import Service from './pages/Service'
-import Footer from './pages/index/Footer'
+import Footer from './components/Footer'
 import FooterText from './components/FooterText'
 function Bites() {
   return (

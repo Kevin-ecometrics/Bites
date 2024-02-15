@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
             ))}
           </div>
           <div className="flex justify-center items-center md:pt-40 flex-col">
-            <a href="#Booking">
+            <a href="/#Booking">
               <motion.button
                 whileHover={{
                   borderTopRightRadius: "2.5rem",
@@ -122,7 +122,7 @@ const Footer: React.FC = () => {
                 <h1 className="text-white text-2xl md:py-8">Servicios</h1>
                 {services.map((service, index) => (
                   <a
-                    href={`/${service.toLowerCase()}`}
+                    href={`/services/${service.toLowerCase()}`}
                     key={index}
                     className="text-lg font-medium hover:text-pink-400 flex justify-start items-start flex-col text-white dark:text-white"
                   >

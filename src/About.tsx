@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import HeroAbout from './pages/about/HeroAbout';
+import HeroAbout from './components/Hero';
 import AboutSection from './pages/about/About';
 import Reviews from './pages/about/Reviews';
 import FooterAbout from './pages/about/FooterAbout';
