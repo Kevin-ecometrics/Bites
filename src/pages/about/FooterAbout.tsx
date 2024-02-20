@@ -51,12 +51,12 @@ const Footer: React.FC = () => {
         className="shadow  w-screen flex justify-center items-end"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 mx-auto my-12 gap-12">
-          <div className="rounded-tr-[100px] rounded-bl-[100px]  shadow-xl shadow-black bg-white w-80 h-[550px]">
+        <div className="rounded-tr-[100px] rounded-bl-[100px]  shadow-xl shadow-black bg-white w-80 h-[480px]">
             <div className="flex justify-center items-center">
               <img src={Logo} alt="Bites Logo" />
             </div>
             {locations.map((location, index) => (
-              <div key={index} className="flex gap-8 py-8 px-12">
+              <div key={index} className="flex gap-4 py-4 px-12">
                 <img
                   src={location.src}
                   className="size-8 flex justify-center items-center"

@@ -7,7 +7,6 @@ import Phone from "../assets/icons/phone.png";
 import Clock from "../assets/icons/clock.png";
 import { motion } from "framer-motion";
 
-
 const Footer: React.FC = () => {
   const locations = [
     {
@@ -51,12 +50,12 @@ const Footer: React.FC = () => {
         className="shadow  w-screen flex justify-center items-end"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 mx-auto my-12 gap-12">
-          <div className="rounded-tr-[100px] rounded-bl-[100px]  shadow-xl shadow-black bg-white w-80 h-[550px]">
+          <div className="rounded-tr-[100px] rounded-bl-[100px]  shadow-xl shadow-black bg-white w-80 h-[480px]">
             <div className="flex justify-center items-center">
               <img src={Logo} alt="Bites Logo" />
             </div>
             {locations.map((location, index) => (
-              <div key={index} className="flex gap-8 py-8 px-12">
+              <div key={index} className="flex gap-4 py-4 px-12">
                 <img
                   src={location.src}
                   className="size-8 flex justify-center items-center"
@@ -85,7 +84,7 @@ const Footer: React.FC = () => {
                   borderTopLeftRadius: "0rem",
                 }}
                 transition={{ duration: 0.7 }}
-                style={{ borderRadius: "1.5rem"}}
+                style={{ borderRadius: "1.5rem" }}
                 className=" bg-[#5C9BC0] px-8 py-4  text-white font-poppins font-normal hover:bg-[#588faf]"
               >
                 Agenda una cita ahora!
@@ -97,7 +96,8 @@ const Footer: React.FC = () => {
                 <h1 className="text-white text-2xl py-8">Links Rapidos</h1>
                 {footerLinks.map((link, index) => (
                   <a
-                  href={link === 'Home' ? '/' : `/${link.toLowerCase()}`}                    key={index}
+                    href={link === "Home" ? "/" : `/${link.toLowerCase()}`}
+                    key={index}
                     className="text-lg font-medium hover:text-blue-400 flex justify-start items-start flex-col text-white dark:text-white"
                   >
                     {link}
