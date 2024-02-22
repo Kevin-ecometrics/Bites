@@ -24,7 +24,7 @@ export const Hero = (): JSX.Element => {
         <div className="border opacity-50 bg-blue-500 w-screen h-screen absolute bottom-0 left-0 rounded-full" />
       </div>
       <img
-        className="rounded-full md:animate-fade-left animate-delay-700 bottom-48 md:bottom-28 sm:right-40 absolute"
+        className="rounded-full md:animate-fade-left animate-delay-700 bottom-48 lg:-top-5 md:bottom-10 sm:right-40 absolute"
         alt="Mask group"
         src={Mask}
       />
