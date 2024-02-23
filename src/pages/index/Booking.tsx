@@ -1,7 +1,7 @@
 import React, { useState, FormEvent, useEffect } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import BookingImage from "../../assets/Info1.png";
+import BookingImage from "../../assets/booking_image.png";
 import Map from "../../assets/icons/map.svg";
 import Calendar from "../../assets/icons/calendar.svg";
 import Input from "../../components/Input";

@@ -23,12 +23,14 @@ export const Hero = (): JSX.Element => {
       <div className="hidden sm:hidden md:hidden lg:hidden xl:block w-screen md:w-[500px] animate-fade-left animate-delay-300 h-screen overflow-hidden absolute right-0">
         <div className="border opacity-50 bg-blue-500 w-screen h-screen absolute bottom-0 left-0 rounded-full" />
       </div>
-      <img
-        className="rounded-full md:animate-fade-left animate-delay-700 bottom-48 lg:-top-5 md:bottom-10 sm:right-40 absolute"
-        alt="Mask group"
-        src={Mask}
-      />
-      <div className="absolute animate-fade-left animate-delay-1000 size-52 bottom-28 right-36 md:bottom-36 md:right-[700px] bg-pink-600 rounded-full flex items-center justify-center">
+      <div className="flex justify-center items-center h-screen">
+        <img
+          className="rounded-full md:animate-fade-left animate-delay-700 sm:right-56 absolute px-2 md:h-[700px]"
+          alt="Mask group"
+          src={Mask}
+        />
+      </div>
+      <div className="absolute animate-fade-left animate-delay-1000 size-52 bottom-28 right-36 md:bottom-36 md:right-[750px] bg-pink-600 rounded-full flex items-center justify-center">
         <div className="size-36 bg-gradient-to-l from-pink-600 via-pink-400 to-blue-400  rounded-full flex items-center justify-center">
           <img
             onClick={playVideo}
@@ -54,5 +56,3 @@ export const Hero = (): JSX.Element => {
     </main>
   );
 };
-
-
