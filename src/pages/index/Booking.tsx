@@ -1,19 +1,22 @@
 import React, { useState, FormEvent, useEffect } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import BookingImage from "../../assets/booking_image.png";
+import BookingImage from "../../assets/booking_dental.webp";
 import Map from "../../assets/icons/map.svg";
 import Calendar from "../../assets/icons/calendar.svg";
 import Input from "../../components/Input";
 import { Toaster, toast } from "react-hot-toast";
 import moment from "moment-timezone";
 const Booking: React.FC = () => {
+  type BookedHoursType = {
+    [date: string]: string[];
+  };
   const [startDate, setStartDate] = useState(new Date());
   const initialDate = new Date();
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [phone, setPhone] = useState<string>("");
-  const [bookedHours, setBookedHours] = useState([]);
+  const [bookedHours, setBookedHours] = useState<BookedHoursType>({});
 
   initialDate.setMinutes(0);
 
@@ -31,7 +34,16 @@ const Booking: React.FC = () => {
   useEffect(() => {
     fetch("https://bitescreadoresdesonrisas.com/bookedHours")
       .then((response) => response.json())
-      .then((data) => setBookedHours(data));
+      .then((data: { date: string, hour: string }[]) => {
+        const formattedData = data.reduce((acc: { [key: string]: string[] }, curr) => {
+          if (!acc[curr.date]) {
+            acc[curr.date] = [];
+          }
+          acc[curr.date].push(curr.hour);
+          return acc;
+        }, {});
+        setBookedHours(formattedData);
+      });
   }, []);
 
   const handleSubmit = async (event: FormEvent) => {
@@ -93,7 +105,7 @@ const Booking: React.FC = () => {
         <form onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 md:grid-cols-2 mt-16 gap-16">
             <div>
-              <img src={BookingImage} alt={`Booking ${BookingImage}`} />
+              <img src={BookingImage} alt={`Booking ${BookingImage}`} className="w-auto h-[550px] rounded-xl" />
             </div>
             <div className="w-[320px]">
               <h1 className="text-black text-xl font-medium font-poppins">
@@ -120,9 +132,12 @@ const Booking: React.FC = () => {
                   timeCaption="time"
                   minTime={minTime}
                   maxTime={maxTime}
-                  excludeTimes={bookedHours.map((time) =>
-                    moment(time, "HH:mm").toDate()
-                  )}
+                  excludeTimes={bookedHours[moment(startDate).format('YYYY-MM-DD')]?.map((hour: string) => {
+                    const date = new Date(startDate);
+                    date.setHours(parseInt(hour.split(':')[0]));
+                    date.setMinutes(parseInt(hour.split(':')[1]));
+                    return date;
+                  })}
                   dateFormat="MMMM d, yyyy h:mm aa"
                   onChange={(date) => setStartDate(date || new Date())}
                   icon={

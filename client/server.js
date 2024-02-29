@@ -76,8 +76,10 @@ app.get("/bookedHours", async (req, res) => {
   let query = "SELECT date FROM information";
   db.query(query, async (error, results) => {
     if (error) throw error;
-    // Convertir los resultados a un formato que react-datepicker pueda utilizar
-    const bookedHours = results.map(result => moment(result.date).format('HH:mm:ss'));
+    const bookedHours = results.map(result => ({
+      date: moment(result.date).format('YYYY-MM-DD'),
+      hour: moment(result.date).format('HH:mm:ss')
+    }));
     res.json(bookedHours);
   });
 });
