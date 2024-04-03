@@ -7,7 +7,6 @@ import Phone from "../../assets/icons/phone.png";
 import Clock from "../../assets/icons/clock.png";
 import { motion } from "framer-motion";
 
-
 const Footer: React.FC = () => {
   const locations = [
     {
@@ -30,7 +29,13 @@ const Footer: React.FC = () => {
     // Puedes agregar más objetos aquí si tienes más ubicaciones
   ];
 
-  const footerLinks = ["Home", "About", "Gallery", "Contact", "Services"];
+  const footerLinks = [
+    "inicio",
+    "nosotros",
+    "galeria",
+    "contacto",
+    "servicios",
+  ];
   const services = [
     "Limpieza Dental",
     "Resinas",
@@ -51,7 +56,7 @@ const Footer: React.FC = () => {
         className="shadow  w-screen flex justify-center items-end"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 mx-auto my-12 gap-12">
-        <div className="rounded-tr-[100px] rounded-bl-[100px]  shadow-xl shadow-black bg-white w-80 h-[480px]">
+          <div className="rounded-tr-[100px] rounded-bl-[100px]  shadow-xl shadow-black bg-white w-80 h-[480px]">
             <div className="flex justify-center items-center">
               <img src={Logo} alt="Bites Logo" />
             </div>
@@ -85,7 +90,7 @@ const Footer: React.FC = () => {
                   borderTopLeftRadius: "0rem",
                 }}
                 transition={{ duration: 0.7 }}
-                style={{ borderRadius: "1.5rem"}}
+                style={{ borderRadius: "1.5rem" }}
                 className=" bg-[#FE81BD] px-8 py-4  text-white font-poppins font-normal hover:bg-[#f869ae]"
               >
                 Agenda una cita ahora!
@@ -97,7 +102,8 @@ const Footer: React.FC = () => {
                 <h1 className="text-white text-2xl py-8">Links Rapidos</h1>
                 {footerLinks.map((link, index) => (
                   <a
-                  href={link === 'Home' ? '/' : `/${link.toLowerCase()}`}                    key={index}
+                    href={link === "inicio" ? "/" : `/${link.toLowerCase()}`}
+                    key={index}
                     className="text-lg font-medium hover:text-pink-400 flex justify-start items-start flex-col text-white dark:text-white"
                   >
                     {link}
@@ -111,7 +117,7 @@ const Footer: React.FC = () => {
                     <img src={Instagram} className="size-7" alt="" />
                   </a>
                   <a
-                    href="https://www.facebook.com/BITES.ESTETICADENTAL/?locale=es_LA"
+                    href="https://m.facebook.com/BitesCreadoresdeSonrisas"
                     target="_blank"
                   >
                     <img src={Facebook} className="size-7" alt="" />

@@ -5,17 +5,17 @@ import image3 from "../assets/Tooth Drill 1.png";
 const dataCard = [
   {
     image: image,
-    title: "Lorem ipsum dolor sit amet consectetur",
+    title: "Alta tecnología de instrumentación dental ",
     paragraph: "consecteturLorem ipsum dolor sit amet consectetur"
   },
   {
     image: image2,
-    title: "Lorem ipsum dolor sit amet consectetur",
+    title: "Citas y agenda digital",
     paragraph: "consecteturLorem ipsum dolor sit amet consectetur"
   },
   {
     image: image3,
-    title: "Lorem ipsum dolor sit amet consectetur",
+    title: "Materiales de alta calidad ",
     paragraph: "consecteturLorem ipsum dolor sit amet consectetur"
   }
 ];

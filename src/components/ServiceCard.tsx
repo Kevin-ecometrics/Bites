@@ -1,6 +1,6 @@
 import React from "react";
 import CardService from "./CardService";
-
+import ImageService from "../assets/image_card.png";
 const Service: React.FC = () => {
   return (
     <main>
@@ -14,21 +14,21 @@ const Service: React.FC = () => {
         <div className="flex flex-col gap-0 md:gap-4 md:flex-row">
           <CardService
             comments="Estética Dental Personalizada Desde carillas de porcelana hasta rehabilitación oral..., "
-            hoverComments="Odontología Estética Personalizada: Desde facetas de porcelana hasta restauración oral completa..."  
+            hoverComments="Odontología Estética Personalizada: Desde facetas de porcelana hasta restauración oral completa..."
             date="22 Mar, 2020  .  2 comments"
-            image="/src/assets/image_card.png"
+            image={ImageService}
           />
           <CardService
             comments="Cirugía y Periodoncia Realizamos procedimientos especializados... "
             hoverComments="Cirugía y Periodoncia: Ejecutamos intervenciones especializadas..."
             date="22 Mar, 2020  .  2 comments"
-            image="/src/assets/image_card.png"
+            image={ImageService}
           />
           <CardService
             comments="Endodoncia y Ortodoncia Con enfoque en tratamientos de conducto avanzados... "
             hoverComments="Endodoncia y Ortodoncia: Centrándonos en procedimientos avanzados de tratamiento de conductos..."
             date="22 Mar, 2020  .  2 comments"
-            image="/src/assets/image_card.png"
+            image={ImageService}
           />
         </div>
       </div>

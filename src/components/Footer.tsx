@@ -29,7 +29,13 @@ const Footer: React.FC = () => {
     // Puedes agregar más objetos aquí si tienes más ubicaciones
   ];
 
-  const footerLinks = ["Home", "About", "Gallery", "Contact", "Services"];
+  const footerLinks = [
+    "Inicio",
+    "Nosotros",
+    "Galeria",
+    "Contacto",
+    "Servicios",
+  ];
   const services = [
     "Limpieza Dental",
     "Resinas",
@@ -96,7 +102,7 @@ const Footer: React.FC = () => {
                 <h1 className="text-white text-2xl py-8">Links Rapidos</h1>
                 {footerLinks.map((link, index) => (
                   <a
-                    href={link === "Home" ? "/" : `/${link.toLowerCase()}`}
+                    href={link === "Inicio" ? "/" : `/${link.toLowerCase()}`}
                     key={index}
                     className="text-lg font-medium hover:text-blue-400 flex justify-start items-start flex-col text-white dark:text-white"
                   >
@@ -111,7 +117,7 @@ const Footer: React.FC = () => {
                     <img src={Instagram} className="size-7" alt="" />
                   </a>
                   <a
-                    href="https://www.facebook.com/BITES.ESTETICADENTAL/?locale=es_LA"
+                    href="https://m.facebook.com/BitesCreadoresdeSonrisas"
                     target="_blank"
                   >
                     <img src={Facebook} className="size-7" alt="" />

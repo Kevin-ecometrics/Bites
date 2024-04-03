@@ -1,8 +1,9 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import FacebookWhite from "../../assets/icons/facebook_white.svg";
 import InstagramWhite from "../../assets/icons/instagram_white.svg";
 import Facebook from "../../assets/icons/facebook.svg";
 import Instagram from "../../assets/icons/instagram.svg";
+import AboutImage from "../../assets/about_image.png";
 const About: React.FC = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -12,11 +13,11 @@ const About: React.FC = () => {
     };
 
     // Actualizar isMobile cuando cambia el tamaño de la ventana
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     // Limpiar el controlador de eventos cuando se desmonta el componente
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
   return (
@@ -33,7 +34,7 @@ const About: React.FC = () => {
             Hola ¡Bienvenido!
           </h1>
           <h1 className="font-pompiere font-normal  text-white md:text-[#E72381] text-6xl text-center mb-4">
-          Conoce más acerca de Bites
+            Conoce más acerca de Bites
           </h1>
           <p className="text-lg font-poppins font-normal px-8 mb-4 text-justify">
             {" "}
@@ -83,33 +84,25 @@ const About: React.FC = () => {
             <li>
               Tratamientos ortodóncicos para corregir la alineación dental.
             </li>
-            <li>
-                Rehabilitación oral de coronas.
-            </li>
-            <li>
-                Implantes y prótesis removibles o totales.
-            </li>
+            <li>Rehabilitación oral de coronas.</li>
+            <li>Implantes y prótesis removibles o totales.</li>
           </ul>
         </div>
         <div className="md:my-32 flex justify-center items-center flex-col px-8">
-            <img src="/src/assets/about_image.png" className="mb-8" alt="" />
-            <div className="flex justify-center items-center gap-8 mb-8">
-
-              {
-                isMobile ? (
-                  <>
-                    <img src={InstagramWhite} alt="" />
-                    <img src={FacebookWhite} alt="" />
-                  </>
-                ) : (
-                  <>
-                    <img src={Instagram} alt="" />
-                    <img src={Facebook} alt="" />
-                  </>
-                )
-              
-              } 
-            </div>
+          <img src={AboutImage} className="mb-8" alt="" />
+          <div className="flex justify-center items-center gap-8 mb-8">
+            {isMobile ? (
+              <>
+                <img src={InstagramWhite} alt="" />
+                <img src={FacebookWhite} alt="" />
+              </>
+            ) : (
+              <>
+                <img src={Instagram} alt="" />
+                <img src={Facebook} alt="" />
+              </>
+            )}
+          </div>
         </div>
       </div>
     </div>

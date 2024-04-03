@@ -1,14 +1,35 @@
 import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight, FaStar } from "react-icons/fa";
 import { motion } from "framer-motion";
-import Avatar from "../../assets/icons/avatar.png"
+import Avatar from "../../assets/icons/avatar.png";
+import Hero from "../../assets/hero_about.png";
 const Reviews: React.FC = () => {
-    const reviews = [
-        { text: "Review 1: This is a longer review text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.", rating: 5, name: "John Doe", avatar: Avatar },
-        { text: "Review 2: This is another longer review text. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", rating: 4, name: "Jane Doe", avatar: Avatar },
-        { text: "Review 3: Here's some more lengthy review text. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.", rating: 3, name: "Jim Doe", avatar: Avatar},
-        { text: "Review 4: And finally, this is the last long review text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", rating: 2, name: "Jill Doe", avatar: Avatar },
-    ];
+  const reviews = [
+    {
+      text: "The best dental care I have ever experienced! Professional, courteous, and super friendly made me feel like family… would highly recommend to anyone!!! Such a pleasant time here. ",
+      rating: 5,
+      name: "Edgar Enrique Lopez",
+      avatar: Avatar,
+    },
+    {
+      text: "Gracias a bites por hacer mi visita de dentista la mejor, las recomiendo mil veces por su excelente trabajo y profesionalismo.",
+      rating: 4,
+      name: "Vivienne Miranda",
+      avatar: Avatar,
+    },
+    {
+      text: "They were so gentle, and the office is beautiful. More like a spa then a dentista. They even put an eye mask on me while they worked",
+      rating: 5,
+      name: "Clara Banda",
+      avatar: Avatar,
+    },
+    {
+      text: "I could not be happier with my new smile!! These ladies are so kind, gentle and go above and beyond. Wonderful experience and so happy!",
+      rating: 4,
+      name: "Jennifer Foerster ",
+      avatar: Avatar,
+    },
+  ];
 
   const [current, setCurrent] = useState(0);
 
@@ -23,11 +44,7 @@ const Reviews: React.FC = () => {
   return (
     <main className="relative">
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-      <img
-        src="/src/assets/hero_about.png"
-        className="w-screen h-[650px] md:h-[550px]"
-        alt=""
-      />
+      <img src={Hero} className="w-screen h-[650px] md:h-[550px]" alt="" />
       <div className="absolute inset-0 flex items-center justify-between px-12">
         <button onClick={handlePrev}>
           <FaArrowLeft className="text-white text-4xl" />
@@ -48,7 +65,11 @@ const Reviews: React.FC = () => {
             ))}
           </div>
           <p className="text-white mb-8 text-2xl">{reviews[current].name}</p>
-            <img src={reviews[current].avatar} alt="" className="w-20 h-20 rounded-full" />
+          <img
+            src={reviews[current].avatar}
+            alt=""
+            className="w-20 h-20 rounded-full"
+          />
         </motion.div>
         <button onClick={handleNext}>
           <FaArrowRight className="text-white text-4xl" />

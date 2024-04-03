@@ -6,10 +6,10 @@ const ContactForm: React.FC = () => {
   return (
     <div className="flex justify-center items-center flex-col">
       <h1 className="text-center my-16 text-[#6BBAE9] mb-8 font-poppins font-normal text-2xl">
-        Contact With Us
+        Contacte con nosotros
       </h1>
       <h1 className="text-center mb-8 font-pompiere font-normal text-6xl">
-        STILL HAVE A QUESTION?
+        ¿AÚN TIENE ALGUNA PREGUNTA?
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <Input type="text" placeholder="Name" />
@@ -26,7 +26,10 @@ const ContactForm: React.FC = () => {
           required
         ></textarea>
       </div>
-      <Button name="Send Message" className="bg-[#FE81BD] text-white py-2 px-6 mb-8 rounded-3xl hover:bg-[#fc6fb3]" />
+      <Button
+        name="Send Message"
+        className="bg-[#FE81BD] text-white py-2 px-6 mb-8 rounded-3xl hover:bg-[#fc6fb3]"
+      />
     </div>
   );
 };
