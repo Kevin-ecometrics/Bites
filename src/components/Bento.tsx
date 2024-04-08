@@ -42,12 +42,6 @@ const BentoGrid: React.FC = () => {
       id: "fifth-pic",
     },
     {
-      src: foto6,
-      width: 728,
-      height: 568,
-      id: "sixth-pic",
-    },
-    {
       src: foto7,
       width: 728,
       height: 568,
@@ -58,6 +52,12 @@ const BentoGrid: React.FC = () => {
       width: 728,
       height: 568,
       id: "eighth-pic",
+    },
+    {
+      src: foto6,
+      width: 728,
+      height: 568,
+      id: "sixth-pic",
     },
   ];
 
@@ -73,13 +73,23 @@ const BentoGrid: React.FC = () => {
               <div
                 key={i}
                 className={`rounded-xl ${
-                  i === 0 || i === 1
+                  i === 0
                     ? "row-span-2"
-                    : i === 4 || i === 6
+                    : i === 1
                       ? "row-span-2"
-                      : i === 5
+                      : i === 2
                         ? "row-span-1"
-                        : ""
+                        : i === 3
+                          ? "row-span-1"
+                          : i === 4
+                            ? "row-span-1"
+                            : i === 5
+                              ? "row-span-2"
+                              : i === 6
+                                ? "row-span-1"
+                                : i === 7
+                                  ? "row-span-2"
+                                  : ""
                 }`}
               >
                 <Item
