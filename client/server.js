@@ -76,11 +76,55 @@ app.get("/bookedHours", async (req, res) => {
   let query = "SELECT date FROM information";
   db.query(query, async (error, results) => {
     if (error) throw error;
-    const bookedHours = results.map(result => ({
-      date: moment(result.date).format('YYYY-MM-DD'),
-      hour: moment(result.date).format('HH:mm:ss')
+    const bookedHours = results.map((result) => ({
+      date: moment(result.date).format("YYYY-MM-DD"),
+      hour: moment(result.date).format("HH:mm:ss"),
     }));
     res.json(bookedHours);
+  });
+});
+
+app.post("/contact/form", async (req) => {
+  let { nombre, email, telefono, asunto, mensaje } = req.body;
+
+  let transporter = nodemailer.createTransport({
+    host: "host11.registrar-servers.com",
+    port: 465,
+    secure: true, // true for 465, false for other ports
+    auth: {
+      user: "pacientes@bitescreadoresdesonrisas.com",
+      pass: "gr6m~tAX$^=H",
+    },
+  });
+
+  let mailOptions = {
+    from: "pacientes@bitescreadoresdesonrisas.com",
+    to: email,
+    cc: "pacientes@bitescreadoresdesonrisas.com",
+    subject: `${asunto}`,
+    text: `
+      Hola,
+  
+      Has recibido un nuevo mensaje a través del formulario de contacto de nuestra pagina web.
+  
+      Detalles:
+      Nombre: ${nombre}
+      Teléfono: ${telefono}
+  
+      Mensaje:
+      ${mensaje}
+  
+      Saludos,
+      El equipo de Bites Creadores de Sonrisas
+    `,
+  };
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.log("Error al enviar el correo electrónico: " + error);
+    } else {
+      console.log("Correo electrónico enviado: " + info.response);
+    }
   });
 });
 
