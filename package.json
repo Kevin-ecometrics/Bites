@@ -7,15 +7,37 @@
     "dev": "vite --host",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview --host"
   },
   "dependencies": {
+    "@fontsource/pompiere": "^5.0.18",
+    "@fontsource/poor-story": "^5.0.11",
+    "@fontsource/poppins": "^5.0.8",
+    "@fontsource/roboto": "^5.0.8",
+    "@react-pdf/renderer": "^3.3.8",
+    "axios": "^1.6.7",
+    "express": "^4.18.2",
+    "framer-motion": "^11.0.5",
+    "moment-timezone": "^0.5.45",
+    "photoswipe": "^5.4.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-datepicker": "^6.1.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.0.1",
+    "react-modal": "^3.16.1",
+    "react-modern-calendar-datepicker": "^3.1.6",
+    "react-parallax": "^3.5.1",
+    "react-photoswipe-gallery": "^3.0.1",
+    "react-player": "^2.14.1",
+    "react-router-dom": "^6.21.2",
+    "tailwindcss-animated": "^1.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
+    "@types/react-datepicker": "^4.19.6",
     "@types/react-dom": "^18.2.17",
+    "@types/react-modal": "^3.16.3",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
     "@vitejs/plugin-react": "^4.2.1",
@@ -24,6 +46,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "postcss": "^8.4.33",
+    "prettier": "^3.2.4",
+    "prettier-plugin-tailwindcss": "^0.5.11",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"

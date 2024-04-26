@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+        'poorstory': ['Poor Story', 'serif'],
+        'roboto': ['Roboto', 'sans-serif'],
+        'pompiere': ['Pompiere', 'cursive'],
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    // eslint-disable-next-line no-undef
+    require('tailwindcss-animated')
+  ],
 }
