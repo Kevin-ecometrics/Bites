@@ -2,14 +2,14 @@ import React from "react";
 
 const ServicesSection: React.FC = () => {
   const services = [
-    { name: "Limpieza Dental", url: "/services/limpieza-dental" },
-    { name: "Endodoncia", url: "/services/endodoncia" },
-    { name: "Rehabilitación Oral", url: "/services/rehabilitacion-oral" },
-    { name: "Blanqueamiento", url: "/services/blanqueamiento" },
-    { name: "Carillas", url: "/services/carillas" },
-    { name: "Coronas", url: "/services/coronas" },
-    { name: "Ortodoncia", url: "/services/ortodoncia" },
-    { name: "Resinas", url: "/services/resinas" },
+    { name: "Limpieza Dental", url: "/servicios/limpieza-dental" },
+    { name: "Endodoncia", url: "/servicios/endodoncia" },
+    { name: "Rehabilitación Oral", url: "/servicios/rehabilitacion-oral" },
+    { name: "Blanqueamiento", url: "/servicios/blanqueamiento" },
+    { name: "Carillas", url: "/servicios/carillas" },
+    { name: "Coronas", url: "/servicios/coronas" },
+    { name: "Ortodoncia", url: "/servicios/ortodoncia" },
+    { name: "Resinas", url: "/servicios/resinas" },
   ];
 
   return (
@@ -25,7 +25,9 @@ const ServicesSection: React.FC = () => {
                 key={index}
                 className="text-[#E72381] text-base font-normal font-poppins"
               >
-                <a className="hover:text-blue-500" href={service.url}>{service.name}</a>
+                <a className="hover:text-blue-500" href={service.url}>
+                  {service.name}
+                </a>
               </li>
             ))}
           </ul>

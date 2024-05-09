@@ -30,11 +30,11 @@ const Footer: React.FC = () => {
   ];
 
   const footerLinks = [
-    "inicio",
-    "nosotros",
-    "galeria",
-    "contacto",
-    "servicios",
+    "Inicio",
+    "Nosotros",
+    "Galeria",
+    "Contacto",
+    "Servicios",
   ];
   const services = [
     "Limpieza Dental",
@@ -69,7 +69,16 @@ const Footer: React.FC = () => {
                 />
                 <div className="flex justify-center items-center flex-col gap-4 font-pompiere">
                   <span className="text-xl font-medium text-black dark:text-black">
-                    {location.address}
+                    {location.alt === "663 324 9611" ? (
+                      <a
+                        className="hover:text-blue-500"
+                        href="https://wa.me/+526633249611/?text=Quiero obtener mas información sobre sus servicios."
+                      >
+                        {location.address}
+                      </a>
+                    ) : (
+                      location.address
+                    )}
                   </span>
                   {location.optionalText && (
                     <span className="text-xl font-medium text-black dark:text-black">
@@ -93,7 +102,7 @@ const Footer: React.FC = () => {
                 style={{ borderRadius: "1.5rem" }}
                 className=" bg-[#FE81BD] px-8 py-4  text-white font-poppins font-normal hover:bg-[#f869ae]"
               >
-                Agenda una cita ahora!
+                ¡Agenda una cita ahora!{" "}
               </motion.button>
             </a>
 

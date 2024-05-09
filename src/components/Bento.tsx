@@ -7,6 +7,10 @@ import foto5 from "../assets/hero_background.png";
 import foto6 from "../assets/info2.png";
 import foto7 from "../assets/info1.png";
 import foto8 from "../assets/parallax.webp";
+import foto9 from "../assets/foto9.jpg";
+import foto10 from "../assets/foto10.jpg";
+import foto11 from "../assets/foto11.jpg";
+import foto12 from "../assets/foto12.webp";
 import { Gallery, Item } from "react-photoswipe-gallery";
 
 const BentoGrid: React.FC = () => {
@@ -59,6 +63,30 @@ const BentoGrid: React.FC = () => {
       height: 568,
       id: "sixth-pic",
     },
+    {
+      src: foto12,
+      width: 728,
+      height: 568,
+      id: "sixth-pic",
+    },
+    {
+      src: foto10,
+      width: 728,
+      height: 568,
+      id: "sixth-pic",
+    },
+    {
+      src: foto11,
+      width: 728,
+      height: 568,
+      id: "sixth-pic",
+    },
+    {
+      src: foto9,
+      width: 728,
+      height: 568,
+      id: "sixth-pic",
+    },
   ];
 
   return (
@@ -89,7 +117,15 @@ const BentoGrid: React.FC = () => {
                                 ? "row-span-1"
                                 : i === 7
                                   ? "row-span-2"
-                                  : ""
+                                  : i === 8
+                                    ? "row-span-2"
+                                    : i === 9
+                                      ? "row-span-2"
+                                      : i === 10
+                                        ? "row-span-2"
+                                        : i === 11
+                                          ? "row-span-2"
+                                          : ""
                 }`}
               >
                 <Item
