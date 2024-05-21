@@ -63,7 +63,7 @@ export const Information = (): JSX.Element => {
             >
               <iframe
                 title="vimeo-player"
-                src="https://player.vimeo.com/video/930045677?h=05b342d3b0"
+                src="https://player.vimeo.com/video/948822686?h=aebb1bba75"
                 width="640"
                 height="560"
               ></iframe>

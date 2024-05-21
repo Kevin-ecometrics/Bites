@@ -43,7 +43,7 @@ const CalendarReact: React.FC = () => {
   const [selectedTime, setSelectedTime] = useState("");
   const [bookedHours, setBookedHours] = useState<BookedHour[]>([]);
   const [resetSelect, setResetSelect] = useState(false); // Estado para reiniciar el select
-  const hours = Array.from({ length: 10 }, (_, i) => 9 + i);
+  const hours = Array.from({ length: 9 }, (_, i) => 9 + i);
   const allHoursBooked = hours.every((hour) => {
     const time24 = hour < 10 ? `0${hour}:00:00` : `${hour}:00:00`;
     const date = selectedDay
