@@ -37,14 +37,15 @@ const Footer: React.FC = () => {
     "Servicios",
   ];
   const services = [
-    "Limpieza Dental",
+    "Limpieza-Dental",
     "Resinas",
     "Endodoncia",
-    "Rehabilitacion Oral",
+    "Rehabilitacion-Oral",
     "Blanqueamiento",
     "Carillas",
     "Coronas",
-    "Ortodoncias",
+    "Ortodoncia",
+    "Implantes-Dentales",
   ];
   return (
     <main className="flex justify-center items-center relative">
@@ -137,7 +138,7 @@ const Footer: React.FC = () => {
                 <h1 className="text-white text-2xl md:py-8">Servicios</h1>
                 {services.map((service, index) => (
                   <a
-                    href={`/services/${service.toLowerCase()}`}
+                    href={`/servicios/${service.toLowerCase()}`}
                     key={index}
                     className="text-lg font-medium hover:text-blue-400 flex justify-start items-start flex-col text-white dark:text-white"
                   >

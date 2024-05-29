@@ -7,7 +7,7 @@ function Navbar() {
     <nav className="absolute top-0 left-0 z-50 w-full bg-transparent">
       <div className="max-w-screen-xl flex items-center justify-center mx-auto p-4 gap-24">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src={logo} className="w-[169px] h-[130px]" alt="logo bites" />
+          <img src={logo} className="w-[250px] h-[150px]" alt="logo bites" />
         </a>
         <div className="hidden w-screen md:block md:w-auto text-2xl font-poppins font-medium">
           <ul className="flex flex-col p-4 md:p-0 items-center border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
@@ -53,7 +53,7 @@ function Navbar() {
             </li>
             <li>
               <a
-                href="https://www.facebook.com/BITES.ESTETICADENTAL/?locale=es_LA"
+                href="https://www.facebook.com/BitesCreadoresdeSonrisas"
                 target="_blank"
               >
                 <img src={facebook} alt="" />

@@ -1,5 +1,5 @@
 import React from "react";
-import Parralax from "../../assets/parallax.webp";
+import Parralax from "../../assets/parrallax.webp";
 import { Parallax } from "react-parallax";
 
 const Contact: React.FC = () => {
@@ -7,10 +7,9 @@ const Contact: React.FC = () => {
     <main>
       <Parallax
         bgImage={Parralax}
-        className="h-[550px]"
-        bgImageAlt=""
+        className="h-[300px] sm:h-[500px] md:h-[800px]"
+        bgImageAlt="Parrallax"
         strength={-380}
-
       />
     </main>
   );

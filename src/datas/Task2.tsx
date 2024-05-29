@@ -22,9 +22,9 @@ const taskInformation = [
   },
   {
     image: "/icon8.svg",
-    title: "Ortodoncia ",
+    title: "Implantes Dentales  ",
     paragraph:
-      "Desde  brackets hasta sistemas más discretos como Invisalign, diseñamos planes de tratamiento personalizados para lograr una sonrisa saludable. La ortodoncia es una experiencia estética, donde cada alineación es un paso hacia la perfección dental.",
+      "Con implantes luce una sonrisa completa con beneficios prácticos y estéticos que te permitan masticar, hablar y sonreír ampliamente Son la mejor opción para quienes han perdido uno o varios dientes ",
     number: 4,
   },
 ];

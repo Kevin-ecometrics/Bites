@@ -22,7 +22,7 @@ export const Information = (): JSX.Element => {
           Nuestro trabajo
         </h1>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-8 py-4 ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-8 py-8 ">
         <div className="">
           <img
             src={info1}
@@ -31,10 +31,10 @@ export const Information = (): JSX.Element => {
           />
           <img
             src={info2}
-            className="h-[340px] hidden lg:block translate-x-[-60px] translate-y-[-170px]"
+            className="hidden lg:block translate-x-[-60px] translate-y-[-170px] absolute"
             alt=""
           />
-          <div className="size-32 absolute bg-gradient-to-l from-pink-600 via-pink-400 to-blue-400 translate-x-24 translate-y-[-230px] md:translate-x-[260px] md:translate-y-[-280px] lg:translate-x-40 lg:translate-y-[-580px]  rounded-full flex items-center justify-center">
+          <div className="size-32 absolute bg-gradient-to-l from-pink-600 via-pink-400 to-blue-400 translate-x-24 translate-y-[-230px] md:translate-x-[260px] md:translate-y-[-280px] lg:translate-x-40 lg:translate-y-[-200px]  rounded-full flex items-center justify-center">
             <img
               onClick={playVideo}
               className="size-16 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
@@ -42,7 +42,7 @@ export const Information = (): JSX.Element => {
               alt={Play}
             />
           </div>
-          <div className="flex gap-4 lg:justify-start justify-center items-center py-4 lg:py-0 lg:translate-x-72 lg:translate-y-[-240px]">
+          <div className="flex gap-4 lg:justify-start justify-center items-center py-4 lg:py-0 lg:translate-x-72 lg:translate-y-[100px]">
             <a href="/galeria">
               <img
                 src={diente2}
@@ -71,7 +71,7 @@ export const Information = (): JSX.Element => {
           )}
         </div>
         <div className="flex justify-center">
-          <div className="md:px-12 text-justify">
+          <div className="text-justify">
             <div className="text-pink-600 text-center lg:text-start text-lg md:text-2xl font-normal font-poppins">
               Acerca de nuestra labor
             </div>
@@ -131,7 +131,7 @@ export const Information = (): JSX.Element => {
         <h1 className="text-7xl font-semibold font-pompiere text-pink-500 text-center">
           2,000
         </h1>
-        <p className="mt-3 text-black text-lg md:text-3xl font-light font-poppins mb-16 text-center">
+        <p className="mt-3 text-black text-lg md:text-3xl font-light font-poppins mb-8 text-center">
           Pacientes con una sonrisa brillante{" "}
         </p>
         <h1 className="text-base font-normal text-center font-poppins text-pink-500">

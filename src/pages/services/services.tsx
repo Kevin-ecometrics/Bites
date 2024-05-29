@@ -10,6 +10,7 @@ const ServicesSection: React.FC = () => {
     { name: "Coronas", url: "/servicios/coronas" },
     { name: "Ortodoncia", url: "/servicios/ortodoncia" },
     { name: "Resinas", url: "/servicios/resinas" },
+    { name: "Implantes Dentales", url: "/servicios/implantes-dentales" },
   ];
 
   return (

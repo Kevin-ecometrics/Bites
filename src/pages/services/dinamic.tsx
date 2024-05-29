@@ -16,6 +16,7 @@ const ServicesDinamic: React.FC = () => {
     { name: "Coronas", url: "coronas" },
     { name: "Ortodoncia", url: "ortodoncia" },
     { name: "Resinas", url: "resinas" },
+    { name: "Implantes Dentales", url: "implantes-dentales" },
   ];
 
   const { id } = useParams<{ id: string }>();
@@ -36,6 +37,8 @@ const ServicesDinamic: React.FC = () => {
       "Nuestro servicio de ortodoncia previene y corrige problemas de mordida, espacios entre dientes, desviaciones de mandíbula entre otros.",
     resinas:
       "Las resinas mejoran la apariencia de las grietas y astillados de tus dientes, así como cavidades, te ayuda a protegerlos de la hipersensibilidad al consumir alimentos fríos o calientes, por medio de este procedimiento nuestros expertos restauran tus dientes frontales y premolares dándoles un acabado altamente estético y funcional. ",
+    "implantes-dentales":
+      "Los implantes dentales restauran tu sonrisa evitando que el hueso de tu mandíbula se absorba cuando has perdido uno o varios dientes. Pueden ser de diferentes materiales los más populares son: Titanio y zirconio pueden ir en la parte superior o inferior de tus hueso maxilar  ",
   };
   const subtitles: { [key: string]: string } = {
     "limpieza-dental": "",
@@ -50,6 +53,8 @@ const ServicesDinamic: React.FC = () => {
     ortodoncia:
       "Gracias a nuestros procedimientos logramos corregirlos, proporcionarte funcionalidad y mejorar tu estética facial, a su vez te instruimos a una buena práctica de higiene bucal con una explicación detallada y un seguimiento puntual y de eficiencia donde veas resultados progresivos. ",
     resinas: "",
+    "implantes-dentales":
+      "Es un proceso que se realiza por etapas con tiempo de curación entre cada procedimiento ya que el primer paso es una revisión exhaustiva posterior a la colocación, una vez puesto el implante y que este se fusione con el hueso de la mandíbula se hace la colocación del pilar para finalizar con la colocación de la corona ",
   };
 
   let title;

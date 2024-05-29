@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 import FooterText from "./components/FooterText";
 function Bites() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Navbar />
       <Hero />
       <Information />
