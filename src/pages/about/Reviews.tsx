@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight, FaStar } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Avatar from "../../assets/icons/avatar.png";
-import Hero from "../../assets/hero_about.png";
+import Hero from "../../assets/Somos Bites CreadoRes de Sonrisa los numero uno en veneers en Tijuana.png";
 const Reviews: React.FC = () => {
   const reviews = [
     {
@@ -44,7 +44,12 @@ const Reviews: React.FC = () => {
   return (
     <main className="relative">
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-      <img src={Hero} className="w-screen h-[650px] md:h-[550px]" alt="" />
+      <img
+        src={Hero}
+        className="w-screen h-[650px] md:h-[550px]"
+        alt="En Bites creamos sonrisas espectaculares y saludables"
+        title="En Bites creamos sonrisas espectaculares y saludables"
+      />
       <div className="absolute inset-0 flex items-center justify-between px-12">
         <button onClick={handlePrev}>
           <FaArrowLeft className="text-white text-4xl" />

@@ -1,16 +1,16 @@
 import "photoswipe/dist/photoswipe.css";
-import foto1 from "../assets/foto.png";
-import foto5 from "../assets/foto2.png";
-import foto2 from "../assets/foto13.jpeg";
-import foto8 from "../assets/foto4.webp";
-import foto4 from "../assets/hero_background.png";
-import foto11 from "../assets/info2.png";
-import foto7 from "../assets/info1.png";
-import foto3 from "../assets/parallax.webp";
-import foto9 from "../assets/foto9.jpg";
-import foto10 from "../assets/foto10.jpg";
-import foto6 from "../assets/foto11.jpg";
-import foto12 from "../assets/foto12.webp";
+import foto1 from "../assets/Top rated dental treatments in Mexico with great technical detail.png";
+import foto5 from "../assets/At Bites We work with passionate and well prepare hygienists and cosmetic dentists.png";
+import foto2 from "../assets/Our mission at is to provide you with warm and comprehensive treatment.jpeg";
+import foto8 from "../assets/Veneers de porcelana vs Veneers de composite en bites te ayudamos a decidir.webp";
+import foto4 from "../assets/Contamos con equipo de alta gama para crear tu Veneers.png";
+import foto11 from "../assets/Top cleaning Protocols guarantee your well-being.png";
+import foto7 from "../assets/Area de trabajo amplia y esterilizada para aplicar tus veeners.png";
+import foto3 from "../assets/Somos una clinica especializada en diseno de sonrisa.webp";
+import foto9 from "../assets/Meet the Bites  team ready to create a smile.jpg";
+import foto10 from "../assets/Nuestros implantes dentales te garantizaran una sonrisa bella.jpg";
+import foto6 from "../assets/The smile wall is a proof of our happy customers.jpg";
+import foto12 from "../assets/Doctor anyi Manchola is passionate about creating smiles.webp";
 import { Gallery, Item } from "react-photoswipe-gallery";
 
 const BentoGrid: React.FC = () => {
@@ -19,73 +19,73 @@ const BentoGrid: React.FC = () => {
       src: foto1,
       width: 512,
       height: 512,
-      id: "first-pic",
+      id: "The specialist Anyi Manchola makes high- detail procedures with delicacy and precision to improve   function and beauty of your teeth  ",
     },
     {
       src: foto3,
       width: 512,
       height: 512,
-      id: "second-pic",
+      id: "Somos una clínica especializada en diseño de sonrisa con procedimientos no invasivos con técnicas y equipo de primer nivel en Tijuana ",
     },
     {
       src: foto2,
       width: 512,
-      height: 512,
-      id: "third-pic",
+      height: 812,
+      id: "At Bites We humanize, sensitize and listen to your needs and expectations in this dental journey  ",
     },
     {
       src: foto4,
       width: 512,
       height: 512,
-      id: "fourth-pic",
+      id: "instalaciones de alta gama que te haran sentir lo cómodo durante tus procedimientos de estética dental ",
     },
     {
       src: foto5,
-      width: 728,
-      height: 568,
-      id: "fifth-pic",
+      width: 512,
+      height: 812,
+      id: "Every Bites team member is ready to provide you the best experience  ",
     },
     {
       src: foto7,
-      width: 728,
-      height: 568,
-      id: "seventh-pic",
+      width: 512,
+      height: 812,
+      id: "En Bites Nos aseguramos de preparar todo lo necesario en nuestro espacio para que tu visita sea agradable. ",
     },
     {
       src: foto8,
-      width: 728,
-      height: 568,
-      id: "eighth-pic",
+      width: 512,
+      height: 812,
+      id: "En bites te guiamos a elegir lo mejor para tu sonrisa, ya sea carillas de porcelana o carillas de composite  ",
     },
     {
       src: foto6,
-      width: 728,
-      height: 568,
-      id: "sixth-pic",
+      width: 512,
+      height: 512,
+      id: "Thousands of smiles we created in Bites Creadores de Sonrisas ",
     },
     {
       src: foto12,
-      width: 728,
-      height: 568,
-      id: "sixth-pic",
+      width: 612,
+      height: 512,
+      id: "Anyi Manchola is a expert in veneers, one of her mission its making s",
     },
     {
       src: foto10,
-      width: 728,
-      height: 568,
-      id: "sixth-pic",
+      width: 512,
+      height: 812,
+      id: "En bites hacemos una exhaustiva tarea para crear el mejor plan para tu sonrisa y nuestros implantes son un plan de largo plazo bello y funcional  ",
     },
     {
       src: foto11,
-      width: 728,
-      height: 568,
-      id: "sixth-pic",
+      width: 512,
+      height: 812,
+      id: "We follow rigorous protocols to provide you and your family the best dental services  ",
     },
     {
       src: foto9,
-      width: 728,
-      height: 568,
-      id: "sixth-pic",
+      width: 512,
+      height: 512,
+      id: "Dentist Anyi Manchola and Lesly await you with open arms to help you create your ideal smile",
     },
   ];
 
@@ -134,13 +134,16 @@ const BentoGrid: React.FC = () => {
                   width={photo.width}
                   height={photo.height}
                   id={photo.id}
-                  caption={photo.src}
+                  alt={photo.id}
+                  caption={photo.id}
                 >
                   {({ ref, open }) => (
                     <img
                       ref={ref}
                       onClick={open}
                       src={photo.src}
+                      title={photo.id}
+                      alt={photo.id}
                       className="size-full object-cover rounded-xl p-1 transition-transform duration-500 ease-in-out hover:scale-105"
                     />
                   )}

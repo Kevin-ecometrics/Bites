@@ -8,6 +8,7 @@ import Booking from "./pages/index/Booking";
 import Map from "./components/Map";
 import Footer from "./components/Footer";
 import FooterText from "./components/FooterText";
+import ServiceCard from "./components/ServiceCard";
 function Bites() {
   return (
     <div className="overflow-x-hidden">
@@ -19,6 +20,7 @@ function Bites() {
       <Contact />
       <Booking />
       <Map />
+      <ServiceCard />
       <Footer />
       <FooterText className="bg-[#FE81BD]" hoverColor="hover:text-blue-400" />
     </div>

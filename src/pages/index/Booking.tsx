@@ -1,6 +1,6 @@
 import React from "react";
 import "react-datepicker/dist/react-datepicker.css";
-import BookingImage from "../../assets/booking_dental.webp";
+import BookingImage from "../../assets/Anyi Manchola best cosmetic dentist founder of Bites Creadores de Sonrisas.webp";
 import Map from "../../assets/icons/map.svg";
 import CalendarReact from "../../components/Calendar";
 const Booking: React.FC = () => {
@@ -17,7 +17,8 @@ const Booking: React.FC = () => {
           <div>
             <img
               src={BookingImage}
-              alt={`Booking ${BookingImage}`}
+              alt="Anyi Manchola Is a colombian dentist Providing a high end service in Tijuana, Founder of Bites Creadores de Sonrisas, "
+              title="Anyi Manchola Is a colombian dentist Providing a high end service in Tijuana, Founder of Bites Creadores de Sonrisas, "
               className="w-auto h-[550px] rounded-xl"
             />
           </div>

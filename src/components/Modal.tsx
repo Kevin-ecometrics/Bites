@@ -36,7 +36,7 @@ const MyComponent: React.FC<MyComponentProps> = ({
           <div className="border-b mb-2 flex gap-4">
             <img
               src={`/${image}.png`}
-              alt="Logo de la página web"
+              alt="Bites Creadores de Sonrisa it's a place carefully design for your comfort "
               className="w-64 h-15 mx-auto"
             />{" "}
           </div>

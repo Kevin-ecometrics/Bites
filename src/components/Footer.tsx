@@ -1,7 +1,7 @@
 import React from "react";
-import Logo from "../assets/logo_footer.png";
-import Instagram from "../assets/icons/ig.svg";
-import Facebook from "../assets/icons/fb.svg";
+import Logo from "../assets/At Bites Creadores de Sonrisas We prioritize your family comfort.png";
+import Instagram from "../assets/icons/Unete a la familia Bites Síguenos en Instagram para más contenido.svg";
+import Facebook from "../assets/icons/Find us in Facebook as Bites Creadores de Sonrisas.svg";
 import MapMarker from "../assets/icons/map.svg";
 import Phone from "../assets/icons/phone.png";
 import Clock from "../assets/icons/clock.png";
@@ -35,6 +35,8 @@ const Footer: React.FC = () => {
     "Galeria",
     "Contacto",
     "Servicios",
+    "Terminos de Servicio",
+    "Politica de Privacidad",
   ];
   const services = [
     "Limpieza-Dental",
@@ -59,7 +61,11 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 mx-auto my-12 gap-12">
           <div className="rounded-tr-[100px] rounded-bl-[100px]  shadow-xl shadow-black bg-white w-80 h-[480px]">
             <div className="flex justify-center items-center">
-              <img src={Logo} alt="Bites Logo" />
+              <img
+                src={Logo}
+                alt="Bites Creadores de Sonrisa it's a place carefully design for your comfort "
+                title="Bites Creadores de Sonrisa it's a place carefully design for your comfort "
+              />
             </div>
             {locations.map((location, index) => (
               <div key={index} className="flex gap-4 py-4 px-12">
@@ -124,13 +130,23 @@ const Footer: React.FC = () => {
                     href="https://www.instagram.com/bitescreadoresdesonrisas/"
                     target="_blank"
                   >
-                    <img src={Instagram} className="size-7" alt="" />
+                    <img
+                      src={Instagram}
+                      className="size-7"
+                      alt="No te pierdas de contenido, procedimientos de alta estética dental en nuestro Instagram bitescreadoresdesonrisas "
+                      title="No te pierdas de contenido, procedimientos de alta estética dental en nuestro Instagram bitescreadoresdesonrisas "
+                    />
                   </a>
                   <a
                     href="https://m.facebook.com/BitesCreadoresdeSonrisas"
                     target="_blank"
                   >
-                    <img src={Facebook} className="size-7" alt="" />
+                    <img
+                      src={Facebook}
+                      className="size-7"
+                      alt="Give us a like on our Facebook page, we are the best option for dental design  "
+                      title="Give us a like on our Facebook page, we are the best option for dental design  "
+                    />
                   </a>
                 </div>
               </div>

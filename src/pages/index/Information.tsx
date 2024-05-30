@@ -1,6 +1,6 @@
 import { useState } from "react";
-import info1 from "../../assets/Info1.png";
-import info2 from "../../assets/Info2.png";
+import info1 from "../../assets/Area de trabajo amplia y esterilizada para aplicar tus veeners.png";
+import info2 from "../../assets/Top cleaning Protocols guarantee your well-being.png";
 import Play from "../../assets/icons/Play.svg";
 import diente from "../../assets/icons/diente.svg";
 import diente2 from "../../assets/icons/diente2.svg";
@@ -27,12 +27,14 @@ export const Information = (): JSX.Element => {
           <img
             src={info1}
             className="translate-x-0 xl:translate-x-36 w-96"
-            alt=""
+            alt="En Bites Nos aseguramos de preparar todo lo necesario en nuestro espacio para que tu visita sea agradable. "
+            title="En Bites Nos aseguramos de preparar todo lo necesario en nuestro espacio para que tu visita sea agradable. "
           />
           <img
             src={info2}
             className="hidden lg:block translate-x-[-60px] translate-y-[-170px] absolute"
-            alt=""
+            alt="We follow rigorous protocols to provide you and your family the best dental services  "
+            title="We follow rigorous protocols to provide you and your family the best dental services  "
           />
           <div className="size-32 absolute bg-gradient-to-l from-pink-600 via-pink-400 to-blue-400 translate-x-24 translate-y-[-230px] md:translate-x-[260px] md:translate-y-[-280px] lg:translate-x-40 lg:translate-y-[-200px]  rounded-full flex items-center justify-center">
             <img

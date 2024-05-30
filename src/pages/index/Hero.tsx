@@ -1,8 +1,6 @@
 import { useState } from "react";
-import Mask from "../../assets/hero_image_rounded.png";
-import Background from "../../assets/hero_background.png";
+import Mask from "../../assets/Top rated dental treatments in Mexico with great technical detail.png";
 import Play from "../../assets/icons/Play.svg";
-// import video from "../assets/video/video_hero.mp4";
 
 export const Hero = (): JSX.Element => {
   const [playing, setPlaying] = useState(false);
@@ -17,7 +15,9 @@ export const Hero = (): JSX.Element => {
   return (
     <main
       className="h-screen relative bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${Background})` }}
+      style={{
+        backgroundImage: "url(/background.png)",
+      }}
     >
       <div className="absolute inset-0 bg-pink-500 opacity-70" />
       <div className="hidden sm:hidden md:hidden lg:hidden xl:block w-screen md:w-[500px] animate-fade-left animate-delay-300 h-screen overflow-hidden absolute right-0">
@@ -26,7 +26,8 @@ export const Hero = (): JSX.Element => {
       <div className="flex justify-center items-center h-screen">
         <img
           className="rounded-full md:animate-fade-left animate-delay-700 sm:right-56 absolute px-2 md:h-[500px] lg:h-[700px]"
-          alt="Mask group"
+          alt="The specialist Anyi Manchola makes high- detail procedures with delicacy and precision to improve   function and beauty of your teeth  "
+          title="The specialist Anyi Manchola makes high- detail procedures with delicacy and precision to improve   function and beauty of your teeth  "
           src={Mask}
         />
       </div>

@@ -22,7 +22,7 @@ const Card: React.FC<CardProps> = ({ image, title }) => {
       </div>
       <img
         src="/src/assets/elipse.svg"
-        className="translate-y-[-70px] hidden md:block lg:translate-x-60 translate-x-20 z-0 absolute"
+        className="translate-y-[-70px] hidden md:block lg:translate-x-52 translate-x-20 z-0 absolute"
         alt="poligono"
       />
     </main>

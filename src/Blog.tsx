@@ -30,7 +30,7 @@ const BlogPost: React.FC = () => {
   return (
     <main>
       <Navbar />
-      <Hero title={id} />
+      <Hero title="Blog de Bites" />
       <section className="w-[80%] mx-auto md:py-16 py-8">
         <Content />
       </section>{" "}

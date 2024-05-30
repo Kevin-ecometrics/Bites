@@ -3,7 +3,7 @@ import FacebookWhite from "../../assets/icons/facebook_white.svg";
 import InstagramWhite from "../../assets/icons/instagram_white.svg";
 import Facebook from "../../assets/icons/facebook.svg";
 import Instagram from "../../assets/icons/instagram.svg";
-import AboutImage from "../../assets/about_image.png";
+import AboutImage from "../../assets/Hacemos veneers que luzcan naturales para resaltar tu belleza.png";
 const About: React.FC = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -89,13 +89,19 @@ const About: React.FC = () => {
           </ul>
         </div>
         <div className="md:my-32 flex justify-center items-center flex-col px-8">
-          <img src={AboutImage} className="mb-8" alt="" />
+          <img
+            src={AboutImage}
+            className="mb-8"
+            alt="Nuestra misión es trasformar vidas a través de sonrisas saludables y radiantes que sean unicas como tu rostro "
+            title="Nuestra misión es trasformar vidas a través de sonrisas saludables y radiantes que sean unicas como tu rostro "
+          />
           <div className="flex justify-center items-center gap-8 mb-8">
             {isMobile ? (
               <>
                 <img
                   src={InstagramWhite}
-                  alt="Instagram"
+                  alt="No te pierdas de contenido, procedimientos de alta estética dental en nuestro Instagram bitescreadoresdesonrisas "
+                  title="No te pierdas de contenido, procedimientos de alta estética dental en nuestro Instagram bitescreadoresdesonrisas "
                   className="cursor-pointer"
                   onClick={() =>
                     window.open(
@@ -106,7 +112,8 @@ const About: React.FC = () => {
                 />
                 <img
                   src={FacebookWhite}
-                  alt="Facebook"
+                  alt="Give us a like on our Facebook page, we are the best option for dental design  "
+                  title="Give us a like on our Facebook page, we are the best option for dental design  "
                   className="cursor-pointer"
                   onClick={() =>
                     window.open(
@@ -120,7 +127,8 @@ const About: React.FC = () => {
               <>
                 <img
                   src={Instagram}
-                  alt="Instagram"
+                  alt="No te pierdas de contenido, procedimientos de alta estética dental en nuestro Instagram bitescreadoresdesonrisas "
+                  title="No te pierdas de contenido, procedimientos de alta estética dental en nuestro Instagram bitescreadoresdesonrisas "
                   className="cursor-pointer"
                   onClick={() =>
                     window.open(
@@ -131,7 +139,8 @@ const About: React.FC = () => {
                 />
                 <img
                   src={Facebook}
-                  alt="Facebook"
+                  alt="Give us a like on our Facebook page, we are the best option for dental design  "
+                  title="Give us a like on our Facebook page, we are the best option for dental design  "
                   className="cursor-pointer"
                   onClick={() =>
                     window.open(

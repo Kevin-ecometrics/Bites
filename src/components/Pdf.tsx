@@ -6,7 +6,7 @@ import {
   StyleSheet,
   Image,
 } from "@react-pdf/renderer";
-import logo from "../assets/logo_footer.png";
+import logo from "../assets/At Bites Creadores de Sonrisas We prioritize your family comfort.png";
 
 const styles = StyleSheet.create({
   page: {

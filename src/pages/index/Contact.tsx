@@ -1,5 +1,5 @@
 import React from "react";
-import Parralax from "../../assets/parrallax.webp";
+import Parralax from "../../assets/Somos una clinica especializada en diseno de sonrisa.webp";
 import { Parallax } from "react-parallax";
 
 const Contact: React.FC = () => {
@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
       <Parallax
         bgImage={Parralax}
         className="h-[300px] sm:h-[500px] md:h-[800px]"
-        bgImageAlt="Parrallax"
+        bgImageAlt="Somos una clínica especializada en diseño de sonrisa con procedimientos no invasivos con técnicas y equipo de primer nivel en Tijuana "
         strength={-380}
       />
     </main>

@@ -7,6 +7,8 @@ import ServicesPage from "./Services";
 import ServicesDinamic from "./pages/services/dinamic";
 import ContactPage from "./Contact";
 import BlogPage from "./Blog";
+import Politicas from "./Politicas";
+import Terminos from "./Terminos";
 const App: React.FC = () => {
   return (
     <Router>
@@ -18,6 +20,8 @@ const App: React.FC = () => {
         <Route path="/servicios/:id" element={<ServicesDinamic />} />
         <Route path="/contacto" element={<ContactPage />} />
         <Route path="/blog/:id" element={<BlogPage />} />
+        <Route path="/politica de privacidad" element={<Politicas />} />
+        <Route path="/terminos de servicio" element={<Terminos />} />
       </Routes>
     </Router>
   );
