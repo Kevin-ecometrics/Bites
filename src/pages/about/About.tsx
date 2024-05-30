@@ -30,7 +30,7 @@ const About: React.FC = () => {
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <div className="my-8 md:my-32 lg:w-[650px] sm:w-full">
-          <h1 className="font-pompiere font-normal md:my-12 text-white md:text-[#E72381] text-6xl text-center mb-4">
+          <h1 className="font-pompiere font-normal md:my-24 text-white md:text-[#E72381] text-6xl text-center mb-4">
             Hola ¡Bienvenido!
           </h1>
           <h1 className="font-pompiere font-normal  text-white md:text-[#E72381] text-6xl text-center mb-4">
@@ -93,13 +93,53 @@ const About: React.FC = () => {
           <div className="flex justify-center items-center gap-8 mb-8">
             {isMobile ? (
               <>
-                <img src={InstagramWhite} alt="" />
-                <img src={FacebookWhite} alt="" />
+                <img
+                  src={InstagramWhite}
+                  alt="Instagram"
+                  className="cursor-pointer"
+                  onClick={() =>
+                    window.open(
+                      "https://www.instagram.com/bitescreadoresdesonrisas/",
+                      "_blank"
+                    )
+                  }
+                />
+                <img
+                  src={FacebookWhite}
+                  alt="Facebook"
+                  className="cursor-pointer"
+                  onClick={() =>
+                    window.open(
+                      "https://www.facebook.com/BitesCreadoresdeSonrisas",
+                      "_blank"
+                    )
+                  }
+                />
               </>
             ) : (
               <>
-                <img src={Instagram} alt="" />
-                <img src={Facebook} alt="" />
+                <img
+                  src={Instagram}
+                  alt="Instagram"
+                  className="cursor-pointer"
+                  onClick={() =>
+                    window.open(
+                      "https://www.instagram.com/bitescreadoresdesonrisas/",
+                      "_blank"
+                    )
+                  }
+                />
+                <img
+                  src={Facebook}
+                  alt="Facebook"
+                  className="cursor-pointer"
+                  onClick={() =>
+                    window.open(
+                      "https://www.facebook.com/BitesCreadoresdeSonrisas",
+                      "_blank"
+                    )
+                  }
+                />
               </>
             )}
           </div>

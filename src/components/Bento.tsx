@@ -1,15 +1,15 @@
 import "photoswipe/dist/photoswipe.css";
 import foto1 from "../assets/foto.png";
-import foto2 from "../assets/foto2.png";
-import foto3 from "../assets/foto3.png";
-import foto4 from "../assets/foto4.png";
-import foto5 from "../assets/hero_background.png";
-import foto6 from "../assets/info2.png";
+import foto5 from "../assets/foto2.png";
+import foto2 from "../assets/foto13.jpeg";
+import foto8 from "../assets/foto4.webp";
+import foto4 from "../assets/hero_background.png";
+import foto11 from "../assets/info2.png";
 import foto7 from "../assets/info1.png";
-import foto8 from "../assets/parallax.webp";
+import foto3 from "../assets/parallax.webp";
 import foto9 from "../assets/foto9.jpg";
 import foto10 from "../assets/foto10.jpg";
-import foto11 from "../assets/foto11.jpg";
+import foto6 from "../assets/foto11.jpg";
 import foto12 from "../assets/foto12.webp";
 import { Gallery, Item } from "react-photoswipe-gallery";
 
@@ -22,13 +22,13 @@ const BentoGrid: React.FC = () => {
       id: "first-pic",
     },
     {
-      src: foto2,
+      src: foto3,
       width: 512,
       height: 512,
       id: "second-pic",
     },
     {
-      src: foto3,
+      src: foto2,
       width: 512,
       height: 512,
       id: "third-pic",
@@ -104,9 +104,9 @@ const BentoGrid: React.FC = () => {
                   i === 0
                     ? "row-span-2"
                     : i === 1
-                      ? "row-span-2"
+                      ? "row-span-1"
                       : i === 2
-                        ? "row-span-1"
+                        ? "row-span-2"
                         : i === 3
                           ? "row-span-1"
                           : i === 4

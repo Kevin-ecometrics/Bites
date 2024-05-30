@@ -6,6 +6,7 @@ import AboutPage from "./About";
 import ServicesPage from "./Services";
 import ServicesDinamic from "./pages/services/dinamic";
 import ContactPage from "./Contact";
+import BlogPage from "./Blog";
 const App: React.FC = () => {
   return (
     <Router>
@@ -16,6 +17,7 @@ const App: React.FC = () => {
         <Route path="servicios" element={<ServicesPage />} />
         <Route path="/servicios/:id" element={<ServicesDinamic />} />
         <Route path="/contacto" element={<ContactPage />} />
+        <Route path="/blog/:id" element={<BlogPage />} />
       </Routes>
     </Router>
   );
