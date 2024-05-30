@@ -3,7 +3,7 @@ import FacebookWhite from "../../assets/icons/facebook_white.svg";
 import InstagramWhite from "../../assets/icons/instagram_white.svg";
 import Facebook from "../../assets/icons/facebook.svg";
 import Instagram from "../../assets/icons/instagram.svg";
-import AboutImage from "../../assets/Hacemos veneers que luzcan naturales para resaltar tu belleza.png";
+import AboutImage from "../../assets/Hacemos veneers que luzcan naturales para resaltar tu belleza.webp";
 const About: React.FC = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 

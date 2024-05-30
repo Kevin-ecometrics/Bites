@@ -1,15 +1,15 @@
 import "photoswipe/dist/photoswipe.css";
 import foto1 from "../assets/Top rated dental treatments in Mexico with great technical detail.png";
-import foto5 from "../assets/At Bites We work with passionate and well prepare hygienists and cosmetic dentists.png";
+import foto5 from "../assets/At Bites We work with passionate and well prepare hygienists and cosmetic dentists.webp";
 import foto2 from "../assets/Our mission at is to provide you with warm and comprehensive treatment.jpeg";
 import foto8 from "../assets/Veneers de porcelana vs Veneers de composite en bites te ayudamos a decidir.webp";
-import foto4 from "../assets/Contamos con equipo de alta gama para crear tu Veneers.png";
+import foto4 from "../assets/Contamos con equipo de alta gama para crear tu Veneers.webp";
 import foto11 from "../assets/Top cleaning Protocols guarantee your well-being.png";
 import foto7 from "../assets/Area de trabajo amplia y esterilizada para aplicar tus veeners.png";
 import foto3 from "../assets/Somos una clinica especializada en diseno de sonrisa.webp";
-import foto9 from "../assets/Meet the Bites  team ready to create a smile.jpg";
-import foto10 from "../assets/Nuestros implantes dentales te garantizaran una sonrisa bella.jpg";
-import foto6 from "../assets/The smile wall is a proof of our happy customers.jpg";
+import foto9 from "../assets/Meet the Bites  team ready to create a smile.webp";
+import foto10 from "../assets/Nuestros implantes dentales te garantizaran una sonrisa bella.webp";
+import foto6 from "../assets/The smile wall is a proof of our happy customers.webp";
 import foto12 from "../assets/Doctor anyi Manchola is passionate about creating smiles.webp";
 import { Gallery, Item } from "react-photoswipe-gallery";
 
@@ -144,6 +144,7 @@ const BentoGrid: React.FC = () => {
                       src={photo.src}
                       title={photo.id}
                       alt={photo.id}
+                      loading="lazy"
                       className="size-full object-cover rounded-xl p-1 transition-transform duration-500 ease-in-out hover:scale-105"
                     />
                   )}

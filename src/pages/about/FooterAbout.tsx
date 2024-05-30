@@ -118,7 +118,7 @@ const Footer: React.FC = () => {
                 <h1 className="text-white text-2xl py-8">Links Rapidos</h1>
                 {footerLinks.map((link, index) => (
                   <a
-                    href={link === "inicio" ? "/" : `/${link.toLowerCase()}`}
+                    href={link === "Inicio" ? "/" : `/${link.toLowerCase()}`}
                     key={index}
                     className="text-lg font-medium hover:text-pink-400 flex justify-start items-start flex-col text-white dark:text-white"
                   >

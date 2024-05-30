@@ -1,5 +1,5 @@
 import React from "react";
-import fondo from "../assets/Somos Bites CreadoRes de Sonrisa los numero uno en veneers en Tijuana.png";
+import fondo from "../assets/Somos Bites CreadoRes de Sonrisa los numero uno en veneers en Tijuana.webp";
 type HeroAboutProps = {
   title?: string;
 };

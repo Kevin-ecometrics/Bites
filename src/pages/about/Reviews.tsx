@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight, FaStar } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Avatar from "../../assets/icons/avatar.png";
-import Hero from "../../assets/Somos Bites CreadoRes de Sonrisa los numero uno en veneers en Tijuana.png";
+import Hero from "../../assets/Somos Bites CreadoRes de Sonrisa los numero uno en veneers en Tijuana.webp";
 const Reviews: React.FC = () => {
   const reviews = [
     {
