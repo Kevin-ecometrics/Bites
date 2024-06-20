@@ -3,16 +3,18 @@ import React from "react";
 interface CardProps {
   image: string;
   title: string;
+  alt: string;
   // paragraph: string;
 }
 
-const Card: React.FC<CardProps> = ({ image, title }) => {
+const Card: React.FC<CardProps> = ({ image, title, alt }) => {
   return (
     <main>
-      <div className="bg-white m-2 p-4 shadow-md flex justify-center items-center h-96 shadow-pink-300 flex-col rounded-xl relative z-10">
+      <div className="bg-white m-2 p-4 shadow-md flex justify-center items-center h-96 shadow-pink-300 flex-col rounded-xl relative z-10 ">
         <img
           src={image}
-          alt={title}
+          alt={alt}
+          title={alt}
           className="size-28 bg-pink-500 rounded-full relative z-10"
         />
         <h2 className="text-black text-3xl my-4 text-center font-normal font-poppins z-10">

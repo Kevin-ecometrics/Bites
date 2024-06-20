@@ -2,7 +2,7 @@ import React from "react";
 
 const TerminosPage: React.FC = () => {
   return (
-    <div className="mx-auto w-[70%] md:py-8 py-4 text-2xl">
+    <div className="mx-auto md:w-[70%] md:py-8 py-4 text-xl md:text-2xl px-8">
       <p className="mb-4">
         La página de
         <strong className="text-pink-600">
@@ -27,7 +27,7 @@ const TerminosPage: React.FC = () => {
       <p className="mb-4">
         Toda situación que se presente por cambio o devolución deberán ser
         notificado por correo electrónico a{" "}
-        <strong className="text-pink-600">
+        <strong className="text-pink-600 break-words ">
           draanyimanchola@bitescreadoresdesonrisas.com
         </strong>{" "}
         enviando descripción del problema o razón de la cancelación.

@@ -46,13 +46,6 @@ export const Hero = (): JSX.Element => {
           className="fixed z-50 top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50"
           onClick={closeModal}
         >
-          {/* <iframe
-            title="vimeo-player"
-            src="https://player.vimeo.com/video/903365181?h=009fe878dc"
-            
-            width="640"
-            height="360"
-          ></iframe> */}
           <iframe
             title="vimeo-player"
             src="https://player.vimeo.com/video/948822167?h=b161f955c9"

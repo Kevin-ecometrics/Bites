@@ -2,29 +2,30 @@ import React from "react";
 import Logo from "../assets/At Bites Creadores de Sonrisas We prioritize your family comfort.png";
 import Instagram from "../assets/icons/Unete a la familia Bites Síguenos en Instagram para más contenido.svg";
 import Facebook from "../assets/icons/Find us in Facebook as Bites Creadores de Sonrisas.svg";
-import MapMarker from "../assets/icons/map.svg";
-import Phone from "../assets/icons/phone.png";
-import Clock from "../assets/icons/clock.png";
+import MapMarker from "../assets/icons/Nos ubicamos cerca de ti en Tijuana Baja California.svg";
+import Phone from "../assets/icons/Llamanos para agendar tu diseno de sonrisa.png";
+import Clock from "../assets/icons/Monday to Saturday we are ready to transform your smile.png";
 import { motion } from "framer-motion";
-
+import { useTranslation } from "react-i18next";
 const Footer: React.FC = () => {
+  const { t } = useTranslation();
   const locations = [
     {
       src: MapMarker,
-      alt: "Map Marker",
-      address: "Calle Frida Kahlo 10410-404 Tijuana, Mexico, 22010",
+      alt: "Nos ubicamos en Tijuana,22010 calle Frida Kahlo 10410-404",
+      address: t("mapmarker"),
     },
     {
       src: Phone,
-      alt: "663 324 9611",
+      alt: "Con gusto te atendemos Y creamos tu sonrisa",
       address: "663 324 9611",
       // No optionalText for the second location
     },
     {
       src: Clock,
-      alt: "Lunes a Viernes 9:00 am - 6:00 pm",
-      address: "09:00 am - 6:30 pm",
-      optionalText: "09:00 am - 4:00 pm",
+      alt: "Get to know our office hours Monday to Friday 9 am to 6:30 pm Saturday 9 am to 4pm",
+      address: t("clock"),
+      optionalText: t("clock2"),
     },
     // Puedes agregar más objetos aquí si tienes más ubicaciones
   ];
@@ -35,8 +36,8 @@ const Footer: React.FC = () => {
     "Galeria",
     "Contacto",
     "Servicios",
-    "Terminos de Servicio",
-    "Politica de Privacidad",
+    "Términos de Servicio",
+    "Política de Privacidad",
   ];
   const services = [
     "Limpieza-Dental",
@@ -73,10 +74,11 @@ const Footer: React.FC = () => {
                   src={location.src}
                   className="size-8 flex justify-center items-center"
                   alt={location.alt}
+                  title={location.alt}
                 />
                 <div className="flex justify-center items-center flex-col gap-4 font-pompiere">
                   <span className="text-xl font-medium text-black dark:text-black">
-                    {location.alt === "663 324 9611" ? (
+                    {location.address === "663 324 9611" ? (
                       <a
                         className="hover:text-blue-500"
                         href="https://wa.me/+526633249611/?text=Quiero obtener mas información sobre sus servicios."
@@ -109,20 +111,34 @@ const Footer: React.FC = () => {
                 style={{ borderRadius: "1.5rem" }}
                 className=" bg-[#5C9BC0] px-8 py-4  text-white font-poppins font-normal hover:bg-[#588faf]"
               >
-                ¡Agenda una cita ahora!{" "}
+                {t("agendacita")}
               </motion.button>
             </a>
 
             <div className="grid grid-cols-1 md:grid-cols-2 py-4 gap-12">
               <div className="gap-8">
-                <h1 className="text-white text-2xl py-8">Links Rápidos</h1>
+                <h1 className="text-white text-2xl py-8">
+                  {t("linksrapidos")}
+                </h1>
                 {footerLinks.map((link, index) => (
                   <a
                     href={link === "Inicio" ? "/" : `/${link.toLowerCase()}`}
+                    target={
+                      link === "Términos de Servicio" ||
+                      link === "Política de Privacidad"
+                        ? "_blank"
+                        : "_self"
+                    }
+                    rel={
+                      link === "Términos de Servicio" ||
+                      link === "Política de Privacidad"
+                        ? "noopener noreferrer"
+                        : ""
+                    }
                     key={index}
                     className="text-lg font-medium hover:text-blue-400 flex justify-start items-start flex-col text-white dark:text-white"
                   >
-                    {link}
+                    {t(link)}
                   </a>
                 ))}
                 <div className="flex justify-start my-4 md:my-12 items-start gap-8">
@@ -151,14 +167,16 @@ const Footer: React.FC = () => {
                 </div>
               </div>
               <div>
-                <h1 className="text-white text-2xl md:py-8">Servicios</h1>
+                <h1 className="text-white text-2xl md:py-8">
+                  {t("servicios")}
+                </h1>
                 {services.map((service, index) => (
                   <a
                     href={`/servicios/${service.toLowerCase()}`}
                     key={index}
                     className="text-lg font-medium hover:text-blue-400 flex justify-start items-start flex-col text-white dark:text-white"
                   >
-                    {service}
+                    {t(service)}
                   </a>
                 ))}
               </div>

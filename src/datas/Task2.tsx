@@ -1,32 +1,42 @@
-const taskInformation = [
-  {
-    image: "/icon5.svg",
-    title: "Blanqueamiento ",
-    paragraph:
-      "Disfruta de una sonrisa más blanca y radiante. En Bites, no solo iluminamos tus dientes, sino que elevamos tu confianza y presencia.",
-    number: 1,
-  },
-  {
-    image: "/icon6.svg",
-    title: "Carillas ",
-    paragraph:
-      "En Bites, personalizamos carillas para lograr una sonrisa natural y atractiva que se adapte a tus características faciales únicas, logrando una sonrisa natural y atractiva.  ",
-    number: 2,
-  },
-  {
-    image: "/icon7.svg",
-    title: "Coronas ",
-    paragraph:
-      "Estas coronas proporcionan resistencia y durabilidad al diente brindando un resultado estético excepcional, creando sonrisas que destacan con elegancia.  ",
-    number: 3,
-  },
-  {
-    image: "/icon8.svg",
-    title: "Implantes Dentales  ",
-    paragraph:
-      "Con implantes luce una sonrisa completa con beneficios prácticos y estéticos que te permitan masticar, hablar y sonreír ampliamente Son la mejor opción para quienes han perdido uno o varios dientes ",
-    number: 4,
-  },
-];
+import { useTranslation } from "react-i18next";
 
-export default taskInformation;
+export const Serviciosesteticos = () => {
+  const { t } = useTranslation();
+  const taskInformation = [
+    {
+      image:
+        "/Tonos mas blancos y radiantes solo con los expertos en bites.svg",
+      title: t("blanqueamiento"),
+      alt: "Dientes blancos sin sensibilidad solo se hacen en Bites",
+      paragraph: t("blanqueamientotext"),
+      number: 1,
+      link: "/servicios/blanqueamiento",
+    },
+    {
+      image: "/Una Sonrisa natural y atractiva es gracias a Bites.svg",
+      title: t("carillas"),
+      alt: "Las carillas hechas por Bites siempre son esteticas y funcionales",
+      paragraph: t("carillastext"),
+      number: 2,
+      link: "/servicios/carillas",
+    },
+    {
+      image:
+        "/Bites are experts on Orthodontic treatments providing a warm treatment during the process.svg",
+      title: t("coronas"),
+      alt: "Enjoy your orthodontic treatmets with Bites Creadores de Sonrisas",
+      paragraph: t("coronastext"),
+      number: 3,
+      link: "/servicios/coronas",
+    },
+    {
+      image: "/icon8.svg",
+      title: t("implantesdentales"),
+      paragraph: t("implantesdentalestext"),
+      number: 4,
+      link: "/servicios/implantes-dentales",
+    },
+  ];
+
+  return taskInformation;
+};

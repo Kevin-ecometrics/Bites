@@ -8,7 +8,7 @@ const TerminosPage: React.FC = () => {
         <strong className="text-pink-600">bitescreadoresdesonrisas.com</strong>,
         accesible desde
         <a
-          className="hover:underline hover:text-pink-700 text-pink-600 font-bold"
+          className="hover:underline hover:text-pink-700 text-pink-600 font-bold break-words"
           href="/"
         >
           {" "}

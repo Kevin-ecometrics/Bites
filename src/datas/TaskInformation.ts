@@ -1,30 +1,44 @@
+import { useTranslation } from "react-i18next";
 
-const taskInformation = [
+export const Servicioshigienistas = ()  => {
+
+    const { t } = useTranslation();
+    const taskInformation = [
     {
-        image: "/icon1.svg",
-        title: "Limpieza Dental ",
-        paragraph: "Nuestros servicios de limpieza dental eliminan placa y sarro, promoviendo encías saludables y previniendo problemas dentales.         ",
-        number: 1  
+        image: "/Con Bites manten tus encias saludables libres de cualquier enfermedad.svg",
+        alt: "Bites te ayuda a eliminar problemas de sarro y placa con limpiezas dentales.",
+        title: t("limpieza"),
+        paragraph: t("limpiezatext"),
+        number: 1,
+        link: "/servicios/limpieza-dental"  
+        
     },
     {
-        image: "/icon2.svg",
-        title: "Resinas ",
-        paragraph: "Utilizamos resinas compuestas de alta calidad. Restaura tus dientes de manera que luzcan y se sientan increíbles. La estética y la durabilidad se unen en cada aplicación.  ",
-        number: 2
+        image: "/Fix any detail of your smile with resin with the experts on aesthetic dentistry.svg",
+        title: t("resinas"),
+        alt: "Our high quality of resign allows you to have a functional and beautiful smile",
+        paragraph: t("resinastext"),
+        number: 2,
+        link: "/servicios/resinas"
     },
     {
-        image: "/icon3.svg",
-        title: "Endodoncia  ",
-        paragraph: "Nuestros expertos en endodoncia utilizan técnicas avanzadas para preservar la salud dental y restaurar la funcionalidad de tus dientes. ", 
-        number: 3
+        image: "/Nuestros expertos en endodoncia alivian el dolor y restauran tu sonrisa.svg",
+        title: t("endodoncia"),
+        alt: "Una endodoncia con bites preserva tu salud oral y la estética general de tus dientes",
+        paragraph: t("endodonciatext"),
+        number: 3,
+        link: "/servicios/endodoncia"
     },
     {
-        image: "/icon4.svg",
-        title: "Rehabilitación oral  ",
-        paragraph: "Desde coronas de cerámica hasta prótesis removibles, trabajamos para devolver la salud y la belleza a tu sonrisa, que no solo te hace sentir bien, sino que también refleja tu mejor versión.",
-         number: 4
+        image: "/Smile with our hygienist services.svg",
+        title: t("rehabilitacion"),
+        alt: "Smile with our hygienist services",
+        paragraph: t("rehabilitaciontext"),
+         number: 4,
+         link: "/servicios/rehabilitacion-oral"
     },
     
-]
+];
 
-export default taskInformation;
+return taskInformation;
+};

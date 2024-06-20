@@ -13,7 +13,7 @@ const Reviews: React.FC = () => {
     },
     {
       text: "Gracias a bites por hacer mi visita de dentista la mejor, las recomiendo mil veces por su excelente trabajo y profesionalismo.",
-      rating: 4,
+      rating: 5,
       name: "Vivienne Miranda",
       avatar: Avatar,
     },
@@ -25,7 +25,7 @@ const Reviews: React.FC = () => {
     },
     {
       text: "I could not be happier with my new smile!! These ladies are so kind, gentle and go above and beyond. Wonderful experience and so happy!",
-      rating: 4,
+      rating: 5,
       name: "Jennifer Foerster ",
       avatar: Avatar,
     },
@@ -61,7 +61,7 @@ const Reviews: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <motion.h1 className="text-white text-4xl font-poppins font-light mb-8 text-center">
+          <motion.h1 className="text-white text-xl md:text-4xl font-poppins font-light mb-8 text-center">
             {reviews[current].text}
           </motion.h1>
           <div className="flex">
@@ -70,11 +70,6 @@ const Reviews: React.FC = () => {
             ))}
           </div>
           <p className="text-white mb-8 text-2xl">{reviews[current].name}</p>
-          <img
-            src={reviews[current].avatar}
-            alt=""
-            className="w-20 h-20 rounded-full"
-          />
         </motion.div>
         <button onClick={handleNext}>
           <FaArrowRight className="text-white text-4xl" />

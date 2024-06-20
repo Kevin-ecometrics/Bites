@@ -20,8 +20,8 @@ const App: React.FC = () => {
         <Route path="/servicios/:id" element={<ServicesDinamic />} />
         <Route path="/contacto" element={<ContactPage />} />
         <Route path="/blog/:id" element={<BlogPage />} />
-        <Route path="/politica de privacidad" element={<Politicas />} />
-        <Route path="/terminos de servicio" element={<Terminos />} />
+        <Route path="/política de privacidad" element={<Politicas />} />
+        <Route path="/términos de servicio" element={<Terminos />} />
       </Routes>
     </Router>
   );

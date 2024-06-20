@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import "react-modern-calendar-datepicker/lib/DatePicker.css";
 import {
   Calendar,
@@ -14,6 +15,8 @@ import PDFDocument from "./Pdf";
 import { PDFDownloadLink } from "@react-pdf/renderer";
 
 const CalendarReact: React.FC = () => {
+  const { t } = useTranslation();
+
   interface BookedHour {
     date: string;
     hour: string;
@@ -53,55 +56,53 @@ const CalendarReact: React.FC = () => {
       : "";
     return bookedHours.some((bh) => bh.date === date && bh.hour === time24);
   });
-  const title = allHoursBooked
-    ? "No hay horario disponible"
-    : "Selecciona una hora";
+  const title = allHoursBooked ? t("noAvailableTime") : t("selectTime");
   const myCustomLocale = {
     months: [
-      "Enero",
-      "Febrero",
-      "Marzo",
-      "Abril",
-      "Mayo",
-      "Junio",
-      "Julio",
-      "Agosto",
-      "Septiembre",
-      "Octubre",
-      "Noviembre",
-      "Diciembre",
+      t("months.january"),
+      t("months.february"),
+      t("months.march"),
+      t("months.april"),
+      t("months.may"),
+      t("months.june"),
+      t("months.july"),
+      t("months.august"),
+      t("months.september"),
+      t("months.october"),
+      t("months.november"),
+      t("months.december"),
     ],
 
     // week days by order
     weekDays: [
       {
-        name: "Domingo", // used for accessibility
-        short: "D", // displayed at the top of days' rows
-        isWeekend: true, // is it a formal weekend or not?
+        name: t("weekDays.sunday"),
+        short: t("weekDaysShort.sunday"),
+        isWeekend: true,
       },
       {
-        name: "Lunes",
-        short: "L",
+        name: t("weekDays.monday"),
+        short: t("weekDaysShort.monday"),
       },
       {
-        name: "Martes",
-        short: "M",
+        name: t("weekDays.tuesday"),
+        short: t("weekDaysShort.tuesday"),
       },
       {
-        name: "Miércoles",
-        short: "M",
+        name: t("weekDays.wednesday"),
+        short: t("weekDaysShort.wednesday"),
       },
       {
-        name: "Jueves",
-        short: "J",
+        name: t("weekDays.thursday"),
+        short: t("weekDaysShort.thursday"),
       },
       {
-        name: "Viernes",
-        short: "V",
+        name: t("weekDays.friday"),
+        short: t("weekDaysShort.friday"),
       },
       {
-        name: "Sabado",
-        short: "S",
+        name: t("weekDays.saturday"),
+        short: t("weekDaysShort.saturday"),
         isWeekend: false,
       },
     ],
@@ -318,7 +319,7 @@ const CalendarReact: React.FC = () => {
               className="bg-pink-500 text-white p-2 rounded-md w-64 focus:outline-none hover:bg-pink-700 transition duration-300 ease-in-out"
               type="submit"
             >
-              Agendar
+              {t("agendar")}
             </button>
           </form>
           <Modal

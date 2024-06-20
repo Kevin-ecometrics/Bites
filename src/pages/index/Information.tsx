@@ -5,6 +5,7 @@ import Play from "../../assets/icons/Play.svg";
 import diente from "../../assets/icons/diente.svg";
 import diente2 from "../../assets/icons/diente2.svg";
 import check from "../../assets/icons/check.svg";
+import { useTranslation } from "react-i18next";
 export const Information = (): JSX.Element => {
   const [playing, setPlaying] = useState(false);
 
@@ -15,14 +16,17 @@ export const Information = (): JSX.Element => {
   const closeModal = () => {
     setPlaying(false);
   };
+
+  const { t } = useTranslation();
+
   return (
     <main className="w-[80%] mx-auto">
       <div className="bg-[#6BBAE9] rounded-b-[30px]">
         <h1 className="text-white flex justify-center items-center text-6xl py-4 font-pompiere ">
-          Nuestro trabajo
+          {t("nuestrotrabajo")}
         </h1>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-8 py-8 ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-32 px-8 py-8 ">
         <div className="">
           <img
             src={info1}
@@ -54,8 +58,9 @@ export const Information = (): JSX.Element => {
             <a
               className="bg-blue-400 hover:bg-blue-500 rounded-xl block md:block lg:hidden xl:block text-white font-poppins font-light p-4"
               href="https://wa.me/+526633249611/?text=Quiero obtener mas información sobre sus servicios."
+              target="_blank"
             >
-              contáctanos ya
+              {t("contactanos")}
             </a>
           </div>
           {playing && (
@@ -73,13 +78,13 @@ export const Information = (): JSX.Element => {
           )}
         </div>
         <div className="flex justify-center">
-          <div className="text-justify">
-            <div className="text-pink-600 text-center lg:text-start text-lg md:text-2xl font-normal font-poppins">
-              Acerca de nuestra labor
+          <div className="text-justify py-1">
+            <div className="text-pink-600 text-center lg:text-start text-lg md:text-2xl font-normal font-poppins mb-4">
+              {t("labor")}
             </div>
 
-            <div className="text-black text-4xl font-normal font-poppins">
-              <h1 className="font-pompiere text-3xl md:text-5xl text-center lg:text-start">
+            <div className="text-black text-4xl font-normal font-poppins mb-2">
+              <h1 className="font-pompiere text-3xl md:text-5xl text-center lg:text-start py-2">
                 Bites Creadores de Sonrisas{" "}
               </h1>
             </div>
@@ -88,60 +93,56 @@ export const Information = (): JSX.Element => {
                 src={diente}
                 className="size-16 px-2 rounded-2xl hidden md:block"
               />
-              <div className=" text-black md:text-2xl font-normal font-poppins">
-                Bienvenido a Bites Creadores de Sonrisas, tu destino confiable
-                para transformar y cuidar tu salud dental.
+              <div className=" text-black md:text-2xl mb-2 font-normal font-poppins">
+                {t("bienvenido")}
               </div>
             </div>
-            <div className="text-black md:text-2xl text-center lg:text-start font-normal font-poppins">
-              Ofrecemos tratamientos dentales excepcionales, y una experiencia
-              única. Nuestra clínica se ha convertido en un destino popular para
-              el turismo dental, atrayendo pacientes de todo el mundo.
+            <div className="text-black md:text-2xl text-center lg:text-start font-normal font-poppins mb-8">
+              {t("ofrecemos")}
             </div>
-            <div className="flex justify-center lg:justify-start gap-6 mt-2 mb-2">
+            <div className="flex justify-center lg:justify-start gap-6 mt-2 mb-3">
               <img src={check} alt="" />
-              <span>Obten una sonrisa bella y saludable</span>
+              <span>{t("obtensonrisa")}</span>
             </div>
-            <div className="flex justify-center lg:justify-start gap-6 mb-2">
+            <div className="flex justify-center lg:justify-start gap-6 mb-3">
               <img src={check} alt="" />
-              <span>Equipo dental profesional y de calidad</span>
+              <span>{t("equipodental")}</span>
             </div>
-            <div className="flex justify-center lg:justify-start gap-6 mb-2">
+            <div className="flex justify-center lg:justify-start gap-6 mb-3">
               <img src={check} alt="" />
-              <span>Servicio exclusivo para una experiencia cómoda.</span>
+              <span>{t("servicioexclusivo")}</span>
             </div>
-            <div className="flex justify-center lg:justify-start gap-6 mb-2">
+            <div className="flex justify-center lg:justify-start gap-6 mb-3">
               <img src={check} alt="" />
-              <span>Desde carillas hasta rehabilitación oral</span>
+              <span>{t("desdecarillas")}</span>
             </div>
-            <div className="flex justify-center lg:justify-start gap-6 mb-2">
+            <div className="flex justify-center lg:justify-start gap-6 mb-3">
               <img src={check} alt="" />
-              <span>Tratamientos avanzados y ortodoncia personalizada</span>
+              <span>{t("tratamientosavanzados")}</span>
             </div>
             <div className="flex justify-center items-center lg:justify-start">
               <a
                 href="/servicios"
                 className="text-white text-lg py-4 px-12 hover:bg-pink-500 my-8 rounded-xl font-bold font-poppins bg-[#FF77B8]"
               >
-                Ver más
+                {t("vermas")}
               </a>
             </div>
           </div>
         </div>
       </div>
       <div className="flex  flex-col items-center justify-center">
-        <h1 className="text-7xl font-semibold font-pompiere text-pink-500 text-center">
-          2,000
+        <h1 className="text-7xl font-semibold font-pompiere text-pink-500 text-center mb-2">
+          1868{" "}
         </h1>
         <p className="mt-3 text-black text-lg md:text-3xl font-light font-poppins mb-8 text-center">
-          Pacientes con una sonrisa brillante{" "}
+          {t("pacientessonrisa")}
         </p>
-        <h1 className="text-base font-normal text-center font-poppins text-pink-500">
-          Contamos con servicios altamente especializados para que obtengas la
-          sonrisa que deseas{" "}
+        <h1 className="text-xl font-normal text-center font-poppins text-pink-500 mb-4">
+          {t("contamos")}
         </h1>
-        <p className="mt-3 text-black text-lg md:text-5xl font-normal font-poorstory">
-          Estética Dental Personalizada
+        <p className="mt-3 text-black text-lg md:text-5xl font-normal font-poorstory mb-6">
+          {t("esteticapersonalizada")}
         </p>
       </div>
     </main>

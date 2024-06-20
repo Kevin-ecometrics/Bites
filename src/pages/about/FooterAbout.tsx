@@ -2,29 +2,29 @@ import React from "react";
 import Logo from "../../assets/At Bites Creadores de Sonrisas We prioritize your family comfort.png";
 import Instagram from "../../assets/icons/Unete a la familia Bites Síguenos en Instagram para más contenido.svg";
 import Facebook from "../../assets/icons/Find us in Facebook as Bites Creadores de Sonrisas.svg";
-import MapMarker from "../../assets/icons/map.svg";
-import Phone from "../../assets/icons/phone.png";
-import Clock from "../../assets/icons/clock.png";
+import MapMarker from "../../assets/icons/Nos ubicamos cerca de ti en Tijuana Baja California.svg";
+import Phone from "../../assets/icons/Llamanos para agendar tu diseno de sonrisa.png";
+import Clock from "../../assets/icons/Monday to Saturday we are ready to transform your smile.png";
 import { motion } from "framer-motion";
 
 const Footer: React.FC = () => {
   const locations = [
     {
       src: MapMarker,
-      alt: "Map Marker",
+      alt: "Nos ubicamos en Tijuana,22010 calle Frida Kahlo 10410-404",
       address: "Calle Frida Kahlo 10410-404 Tijuana, Mexico, 22010",
     },
     {
       src: Phone,
-      alt: "663 324 9611",
+      alt: "Con gusto te atendemos Y creamos tu sonrisa",
       address: "663 324 9611",
       // No optionalText for the second location
     },
     {
       src: Clock,
-      alt: "Lunes a Viernes 9:00 am - 6:00 pm",
-      address: "09:00 am - 6:30 pm",
-      optionalText: "09:00 am - 4:00 pm",
+      alt: "Get to know our office hours Monday to Friday 9 am to 6:30 pm Saturday 9 am to 4pm",
+      address: "Lunes a Viernes 09:00 am - 6:30 pm",
+      optionalText: "Sabados 09:00 am - 4:00 pm",
     },
     // Puedes agregar más objetos aquí si tienes más ubicaciones
   ];
@@ -35,8 +35,8 @@ const Footer: React.FC = () => {
     "Galeria",
     "Contacto",
     "Servicios",
-    "Terminos de Servicio",
-    "Politica de Privacidad",
+    "Términos de Servicio",
+    "Política de Privacidad",
   ];
   const services = [
     "Limpieza-Dental",
@@ -73,10 +73,11 @@ const Footer: React.FC = () => {
                   src={location.src}
                   className="size-8 flex justify-center items-center"
                   alt={location.alt}
+                  title={location.alt}
                 />
                 <div className="flex justify-center items-center flex-col gap-4 font-pompiere">
                   <span className="text-xl font-medium text-black dark:text-black">
-                    {location.alt === "663 324 9611" ? (
+                    {location.address === "663 324 9611" ? (
                       <a
                         className="hover:text-blue-500"
                         href="https://wa.me/+526633249611/?text=Quiero obtener mas información sobre sus servicios."
@@ -115,10 +116,22 @@ const Footer: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 py-4 gap-12">
               <div className="gap-8">
-                <h1 className="text-white text-2xl py-8">Links Rapidos</h1>
+                <h1 className="text-white text-2xl py-8">Links Rápidos</h1>
                 {footerLinks.map((link, index) => (
                   <a
                     href={link === "Inicio" ? "/" : `/${link.toLowerCase()}`}
+                    target={
+                      link === "Términos de Servicio" ||
+                      link === "Política de Privacidad"
+                        ? "_blank"
+                        : "_self"
+                    }
+                    rel={
+                      link === "Términos de Servicio" ||
+                      link === "Política de Privacidad"
+                        ? "noopener noreferrer"
+                        : ""
+                    }
                     key={index}
                     className="text-lg font-medium hover:text-pink-400 flex justify-start items-start flex-col text-white dark:text-white"
                   >

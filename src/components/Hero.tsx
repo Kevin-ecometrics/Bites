@@ -15,7 +15,7 @@ const HeroAbout: React.FC<HeroAboutProps> = ({ title }) => {
         title="En Bites creamos sonrisas espectaculares y saludables "
       />
       <div className="absolute inset-0 flex items-center justify-center">
-        <h1 className="text-white text-6xl font-poppins font-bold uppercase">
+        <h1 className="text-white text-2xl md:text-6xl font-poppins font-bold uppercase">
           {title}
         </h1>
       </div>

@@ -59,7 +59,9 @@ const ContactForm: React.FC = () => {
         ¿TIENES DUDAS SOBRE NUESTROS PROCEDIMIENTOS?{" "}
       </h1>
       <h1 className="text-center text-[#6BBAE9] mb-8 font-poppins font-normal text-2xl">
-        contáctanos{" "}
+        Estamos aquí para responder a tus preguntas y ayudarte en tu viaje hacia
+        una sonrisa más saludable y hermosa. Ponte en contacto con nosotros para
+        programar una consulta o conocer más sobre nuestros servicios.{" "}
       </h1>
       <form
         onSubmit={handleSubmit}

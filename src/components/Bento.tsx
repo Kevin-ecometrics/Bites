@@ -85,7 +85,7 @@ const BentoGrid: React.FC = () => {
       src: foto9,
       width: 512,
       height: 512,
-      id: "Dentist Anyi Manchola and Lesly await you with open arms to help you create your ideal smile",
+      id: "Dentist Anyi Manchola and Leslie await you with open arms to help you create your ideal smile",
     },
   ];
 
@@ -94,8 +94,8 @@ const BentoGrid: React.FC = () => {
       className="flex items-center justify-center"
       style={{ backgroundColor: "rgba(231, 35, 129, 0.7)" }}
     >
-      <div className="mx-48 my-32 z-10">
-        <div className="grid grid-cols-3 gap-4">
+      <div className="md:mx-48 my-32 z-10">
+        <div className="grid grid-cols-1 h-full md:grid-cols-3 gap-4">
           <Gallery id="my-gallery" withCaption>
             {photos.map((photo, i) => (
               <div
