@@ -110,6 +110,33 @@ i18n.use(initReactI18next).init({
           "Ortodoncia": "Orthodontics",
           "Implantes-Dentales": "Dental Implants",
           servicios: "Services",
+          about: {
+            title: "Hello, welcome! ",
+            subtitle: "Get to know more about Bites ",
+            platicamos: "We are going to walk you briefly about our mission at Bites Creadores de Sonrisas: ",
+            queremos: "We want to transform lives through a healthy and radiance smiles ",  
+            destino: "We aspire to be the number 1 destination par excellence to transform and take care of your smile  ",
+            cuidamos: "At Bites, you are not only taking care of your smile, but we also offer you an exclusive service that listens to your needs, from the start until your procedure finishes, our team wants you to experience a comfortable and pleasant treatment  ",
+            creemos: "We believe that a healthful smile can empower you by gradually improving your self-confidence and upgrading your overall quality of life ",
+            contamos: "Our high-end facilities are designed based on a gentle and cozy space, we don't want to be a   typical dental office, we want you to feel safe, relaxed, and heard by our experts, with a wide range of knowledge in cosmetic dentistry and hygiene services  ",
+            servicios: "Our range of services:",
+            estetica: "Cosmetic dentistry, periodontics, endodontics and orthodontics  ",
+            higienistas: "Hygienist services such as cavities removal and resign restorations. ",
+            ortodóncicos: "Orthodontic treatment for dental alignment  ",
+            oral: "Oral crown rehabilitation ",
+            implantes: "Dental implants, partial dentures, and full dentures  ",
+            review1: "The best dental care I have ever experienced! Professional, courteous, and super friendly made me feel like family… would highly recommend to anyone!!! Such a pleasant time here. ",
+            review2: "I had a great experience at Bites. The staff was very friendly and professional. The office is very clean and modern. I would highly recommend Bites to anyone looking for a great dentist. ",
+            review3: "They were so gentle, and the office is beautiful. More like a spa then a dentista. They even put an eye mask on me while they worked",
+            review4: "I could not be happier with my new smile!! These ladies are so kind, gentle and go above and beyond. Wonderful experience and so happy!",
+
+          },
+      
+        services: {
+          services: "Services",
+
+        }
+      
         },
     },
     es: {
@@ -220,6 +247,30 @@ i18n.use(initReactI18next).init({
         "Ortodoncia": "Ortodoncia",
         "Implantes-Dentales": "Implantes Dentales",
         servicios: "Servicios",
+        about: {
+          title: "¡Hola, bienvenido!",
+          subtitle: "Conoce más acerca de Bites",
+          platicamos: "Te platicaremos brevemente sobre nuestra misión en Bites Creadores de Sonrisas:",
+          queremos: "Queremos transformar vidas a través de sonrisas saludables y radiantes.",
+          destino: "Ser el destino por excelencia para transformar y cuidar tu salud dental.",
+          cuidamos: "No solo cuidamos de tu sonrisa, sino que también te ofrecemos un servicio exclusivo que escucha tus necesidades de inicio a fin para que tu experiencia sea cómoda y placentera.",
+          creemos:  "Creemos que una sonrisa sana puede empoderar, mejorando significativamente la imagen de uno mismo e implementar una calidad de vida más elevada.",
+          contamos: "Contamos con equipo de alta gama y personal dental profesional, aptos para todo tipo de procedimientos de una manera segura y eficaz.",
+          servicios: "Nuestros servicios abarcan desde:",
+          estetica: "Estética dental, cirugía y periodoncia, endodoncias y ortodoncia.",
+          higienistas: "Servicios higienistas como eliminación de caries y colocación de resinas.",
+          ortodóncicos: "Tratamientos ortodóncicos para corregir la alineación dental.",
+          oral: "Rehabilitación oral de coronas.",
+          implantes: "Implantes y prótesis removibles o totales.",
+          review1: "¡La mejor atención dental que he experimentado! Profesional, cortés y súper amable, me hicieron sentir como en familia... ¡lo recomendaría a cualquiera! ¡Una experiencia tan agradable aquí!",
+          review2: "Gracias a bites por hacer mi visita de dentista la mejor, las recomiendo mil veces por su excelente trabajo y profesionalismo. ",
+          review3: "Fueron tan gentiles, y la oficina es hermosa. Más como un spa que un dentista. Incluso me pusieron una máscara para los ojos mientras trabajaban.",
+          review4: "¡No podría estar más feliz con mi nueva sonrisa! Estas damas son tan amables, gentiles y van más allá. ¡Experiencia maravillosa y muy feliz!",
+
+        },
+        services: {
+          services: "Servicios",
+        }
       
       },
     },

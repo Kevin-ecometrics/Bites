@@ -3,28 +3,30 @@ import { FaArrowLeft, FaArrowRight, FaStar } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Avatar from "../../assets/icons/avatar.png";
 import Hero from "../../assets/Somos Bites CreadoRes de Sonrisa los numero uno en veneers en Tijuana.webp";
+import { useTranslation } from "react-i18next";
 const Reviews: React.FC = () => {
+  const { t } = useTranslation();
   const reviews = [
     {
-      text: "The best dental care I have ever experienced! Professional, courteous, and super friendly made me feel like family… would highly recommend to anyone!!! Such a pleasant time here. ",
+      text: t("about.review1"),
       rating: 5,
       name: "Edgar Enrique Lopez",
       avatar: Avatar,
     },
     {
-      text: "Gracias a bites por hacer mi visita de dentista la mejor, las recomiendo mil veces por su excelente trabajo y profesionalismo.",
+      text: t("about.review2"),
       rating: 5,
       name: "Vivienne Miranda",
       avatar: Avatar,
     },
     {
-      text: "They were so gentle, and the office is beautiful. More like a spa then a dentista. They even put an eye mask on me while they worked",
+      text: t("about.review3"),
       rating: 5,
       name: "Clara Banda",
       avatar: Avatar,
     },
     {
-      text: "I could not be happier with my new smile!! These ladies are so kind, gentle and go above and beyond. Wonderful experience and so happy!",
+      text: t("about.review4"),
       rating: 5,
       name: "Jennifer Foerster ",
       avatar: Avatar,

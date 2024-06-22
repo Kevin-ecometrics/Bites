@@ -136,13 +136,13 @@ const tema2: React.FC = () => {
       </p>
       <footer className="flex justify-between items-center py-4 ">
         <a
-          href="tema1"
+          href="La-solución-para-una-sonrisa-ideal"
           className="px-8 py-2 rounded-md bg-pink-500 text-white hover:bg-pink-700"
         >
           Anterior blog
         </a>
         <a
-          href="tema3"
+          href="con-el-implante-dental-elévala-al-siguiente-nivel"
           className="px-8 py-2 rounded-md bg-pink-500 text-white hover:bg-pink-700"
         >
           Siguiente blog

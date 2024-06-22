@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://bitescreadoresdesonrisas.com/</loc>
-        <lastmod>2024-05-30</lastmod>
+        <lastmod>2024-06-21</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -27,6 +27,51 @@
         <priority>0.8</priority>
     </url>
     <url>
+    <loc>https://bitescreadoresdesonrisas.com/servicios/Limpieza-Dental</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://bitescreadoresdesonrisas.com/servicios/Resinas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://bitescreadoresdesonrisas.com/servicios/Endodoncia</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://bitescreadoresdesonrisas.com/servicios/Rehabilitacion-Oral</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://bitescreadoresdesonrisas.com/servicios/Blanqueamiento</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://bitescreadoresdesonrisas.com/servicios/Carillas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://bitescreadoresdesonrisas.com/servicios/Coronas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://bitescreadoresdesonrisas.com/servicios/Ortodoncia</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://bitescreadoresdesonrisas.com/servicios/Implantes-Dentales</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+    <url>
         <loc>https://bitescreadoresdesonrisas.com/terminos%20de%20servicio</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -41,7 +86,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    \    <url>
+        <url>
         <loc>https://bitescreadoresdesonrisas.com/blog/tema2</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>

@@ -147,7 +147,7 @@ const tema3: React.FC = () => {
 
       <footer className="flex justify-between items-center py-4 ">
         <a
-          href="tema2"
+          href="Descubre-como-obtener-una-sonrisa-deslumbrante-con-blanqueamiento-dental"
           className="px-8 py-2 rounded-md bg-pink-500 text-white hover:bg-pink-700"
         >
           Blog anterior

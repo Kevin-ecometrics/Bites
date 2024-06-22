@@ -4,7 +4,10 @@ import InstagramWhite from "../../assets/icons/instagram_white.svg";
 import Facebook from "../../assets/icons/facebook.svg";
 import Instagram from "../../assets/icons/instagram.svg";
 import AboutImage from "../../assets/Hacemos veneers que luzcan naturales para resaltar tu belleza.png";
+import { useTranslation } from "react-i18next";
+
 const About: React.FC = () => {
+  const { t } = useTranslation();
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
@@ -31,61 +34,40 @@ const About: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <div className="my-8 md:my-32 lg:w-[650px] sm:w-full">
           <h1 className="font-pompiere font-normal md:my-24 text-white md:text-[#E72381] text-6xl text-center mb-4">
-            Hola ¡Bienvenido!
+            {t("about.title")}
           </h1>
           <h1 className="font-pompiere font-normal  text-white md:text-[#E72381] text-6xl text-center mb-4">
-            Conoce más acerca de Bites
+            {t("about.subtitle")}
           </h1>
           <p className="text-lg font-poppins font-normal px-8 mb-4 text-justify">
             {" "}
-            Te platicaremos brevemente sobre nuestra misión en Bites Creadores
-            de Sonrisas:
+            {t("about.platicamos")}
           </p>
           <ul className="text-lg font-poppins font-normal px-8 text-justify list-disc list-inside mb-8">
-            <li>
-              Queremos transformar vidas a través de sonrisas saludables y
-              radiantes.
-            </li>
-            <li>
-              Ser el destino por excelencia para transformar y cuidar tu salud
-              dental.
-            </li>
+            <li>{t("about.queremos")}</li>
+            <li>{t("about.destino")}</li>
           </ul>
           <p className="text-lg font-poppins font-normal px-8 mb-8 text-justify">
             {" "}
-            No solo cuidamos de tu sonrisa, sino que también te ofrecemos un
-            servicio exclusivo que escucha tus necesidades de inicio a fin para
-            que tu experiencia sea cómoda y placentera.
+            {t("about.cuidamos")}
           </p>
           <p className="text-lg font-poppins font-normal px-8 mb-8 text-justify">
             {" "}
-            Creemos que una sonrisa sana puede empoderar, mejorando
-            significativamente la imagen de uno mismo e implementar una calidad
-            de vida más elevada.
+            {t("about.creemos")}
           </p>
           <p className="text-lg font-poppins font-normal px-8 mb-8 text-justify">
-            {" "}
-            Contamos con equipo de alta gama y personal dental profesional,
-            aptos para todo tipo de procedimientos de una manera segura y
-            eficaz.
+            {t("about.contamos")}
           </p>
           <p className="text-lg font-poppins font-normal px-8 mb-2 text-justify">
             {" "}
-            Nuestros servicios abarcan desde:
+            {t("about.servicios")}
           </p>
           <ul className="text-lg font-poppins font-normal px-8 mb-8 text-justify list-inside list-disc">
-            <li>
-              Estética dental, cirugía y periodoncia, endodoncias y ortodoncia.
-            </li>
-            <li>
-              Servicios higienistas como eliminación de caries y colocación de
-              resinas.
-            </li>
-            <li>
-              Tratamientos ortodóncicos para corregir la alineación dental.
-            </li>
-            <li>Rehabilitación oral de coronas.</li>
-            <li>Implantes y prótesis removibles o totales.</li>
+            <li>{t("about.estetica")}</li>
+            <li>{t("about.higienistas")}</li>
+            <li>{t("about.ortodóncicos")}</li>
+            <li> {t("about.oral")}</li>
+            <li> {t("about.implantes")}</li>
           </ul>
         </div>
         <div className="md:my-32 flex justify-center items-center flex-col px-8">

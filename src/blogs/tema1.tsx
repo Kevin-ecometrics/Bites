@@ -162,7 +162,7 @@ const tema1: React.FC = () => {
           Regresar al inicio
         </a>
         <a
-          href="tema2"
+          href="Descubre-como-obtener-una-sonrisa-deslumbrante-con-blanqueamiento-dental"
           className="px-8 py-2 rounded-md bg-pink-500 text-white hover:bg-pink-700"
         >
           Siguiente blog

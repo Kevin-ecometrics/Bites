@@ -10,11 +10,12 @@ import Footer from "./components/Footer";
 interface BlogContent {
   [key: string]: FC;
 }
-
 const BLOG_CONTENT: BlogContent = {
-  tema1: Tema1,
-  tema2: Tema2,
-  tema3: Tema3,
+  "La-solución-para-una-sonrisa-ideal": Tema1,
+  "Descubre-como-obtener-una-sonrisa-deslumbrante-con-blanqueamiento-dental":
+    Tema2,
+
+  "con-el-implante-dental-elévala-al-siguiente-nivel": Tema3,
 };
 
 const BlogPost: React.FC = () => {

@@ -22,7 +22,7 @@ const Service: React.FC = () => {
             date="11 Mar, 2024  "
             image={ImageService1}
             alt="Composite veneers combine functionality and aesthetic  "
-            url="/blog/tema1"
+            url="/blog/La-solución-para-una-sonrisa-ideal"
           />
           <CardService
             comments={t("card2")}
@@ -30,7 +30,7 @@ const Service: React.FC = () => {
             date="25 Mar, 2024  "
             image={ImageService3}
             alt="Top rated dentist in Tijuana Bites heps you  to achieve your dream smile "
-            url="/blog/tema3"
+            url="/blog/Descubre-como-obtener-una-sonrisa-deslumbrante-con-blanqueamiento-dental"
           />
           <CardService
             comments={t("card3")}
@@ -38,7 +38,7 @@ const Service: React.FC = () => {
             date="15 Abri, 2024  "
             image={ImageService2}
             alt="With Bites dental implants aren't intimidating anymore "
-            url="/blog/tema2"
+            url="/blog/con-el-implante-dental-elévala-al-siguiente-nivel"
           />
         </div>
       </div>
