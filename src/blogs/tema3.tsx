@@ -1,4 +1,8 @@
 import React from "react";
+import {
+  ReactCompareSlider,
+  ReactCompareSliderImage,
+} from "react-compare-slider";
 
 const tema3: React.FC = () => {
   return (
@@ -97,6 +101,22 @@ const tema3: React.FC = () => {
         tono en especial. Si es importantísimo hacer las medidas para evitar un
         retroceso en tu tratamiento.{" "}
       </p>
+      <div className="flex justify-center items-center mx-auto">
+        <ReactCompareSlider
+          itemOne={
+            <ReactCompareSliderImage
+              src="/src/assets/Blog3 A.png"
+              alt="Image one"
+            />
+          }
+          itemTwo={
+            <ReactCompareSliderImage
+              src="/src/assets/Blog3 B.png"
+              alt="Image two"
+            />
+          }
+        />
+      </div>
       <h1>¿Cuál es la edad adecuada para hacerme un blanqueamiento? </h1>
       <p>
         Si tu salud oral es excelente te queremos invitar a animarte, nunca es

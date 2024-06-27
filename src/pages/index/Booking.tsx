@@ -12,9 +12,9 @@ const Booking: React.FC = () => {
         <h1 className="text-black text-4xl font-bold font-poppins mb-8">
           {t("agenda")}
         </h1>
-        <h3 className="text-pink-600 font-pompiere text-4xl font-normal">
+        <h2 className="text-pink-600 font-pompiere text-4xl font-normal">
           {t("seleccionaDia")}
-        </h3>
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 mt-16 gap-16">
           <div>
             <img

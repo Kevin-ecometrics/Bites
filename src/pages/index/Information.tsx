@@ -22,7 +22,7 @@ export const Information = (): JSX.Element => {
   return (
     <main className="w-[80%] mx-auto">
       <div className="bg-[#6BBAE9] rounded-b-[30px]">
-        <h1 className="text-white flex justify-center items-center text-6xl py-4 font-pompiere ">
+        <h1 className="text-white flex justify-center items-center text-3xl px-8 text-center md:text-6xl py-4 font-pompiere ">
           {t("nuestrotrabajo")}
         </h1>
       </div>
@@ -79,13 +79,13 @@ export const Information = (): JSX.Element => {
         </div>
         <div className="flex justify-center">
           <div className="text-justify py-1">
-            <div className="text-pink-600 text-center lg:text-start text-lg md:text-2xl font-normal font-poppins mb-4">
+            <h2 className="text-pink-600 text-center lg:text-start text-lg md:text-2xl font-normal font-poppins mb-4">
               {t("labor")}
-            </div>
+            </h2>
 
             <div className="text-black text-4xl font-normal font-poppins mb-2">
               <h1 className="font-pompiere text-3xl md:text-5xl text-center lg:text-start py-2">
-                Bites Creadores de Sonrisas{" "}
+                {t("bites")}
               </h1>
             </div>
             <div className="flex gap-8 my-4 ">
@@ -93,32 +93,35 @@ export const Information = (): JSX.Element => {
                 src={diente}
                 className="size-16 px-2 rounded-2xl hidden md:block"
               />
-              <div className=" text-black md:text-2xl mb-2 font-normal font-poppins">
+              <h4 className=" text-black md:text-2xl mb-2 font-normal font-poppins">
                 {t("bienvenido")}
-              </div>
+              </h4>
             </div>
-            <div className="text-black md:text-2xl text-center lg:text-start font-normal font-poppins mb-8">
+            <h4 className=" text-black md:text-2xl mb-4 font-normal font-poppins">
+              {t("bienvenido2")}
+            </h4>
+            <h4 className="text-black md:text-2xl text-start font-normal font-poppins mb-8">
               {t("ofrecemos")}
-            </div>
+            </h4>
             <div className="flex justify-center lg:justify-start gap-6 mt-2 mb-3">
               <img src={check} alt="" />
-              <span>{t("obtensonrisa")}</span>
+              <h4>{t("obtensonrisa")}</h4>
             </div>
             <div className="flex justify-center lg:justify-start gap-6 mb-3">
               <img src={check} alt="" />
-              <span>{t("equipodental")}</span>
+              <h4>{t("equipodental")}</h4>
             </div>
             <div className="flex justify-center lg:justify-start gap-6 mb-3">
               <img src={check} alt="" />
-              <span>{t("servicioexclusivo")}</span>
+              <h4>{t("servicioexclusivo")}</h4>
             </div>
             <div className="flex justify-center lg:justify-start gap-6 mb-3">
               <img src={check} alt="" />
-              <span>{t("desdecarillas")}</span>
+              <h4>{t("desdecarillas")}</h4>
             </div>
             <div className="flex justify-center lg:justify-start gap-6 mb-3">
               <img src={check} alt="" />
-              <span>{t("tratamientosavanzados")}</span>
+              <h4>{t("tratamientosavanzados")}</h4>
             </div>
             <div className="flex justify-center items-center lg:justify-start">
               <a
@@ -132,18 +135,18 @@ export const Information = (): JSX.Element => {
         </div>
       </div>
       <div className="flex  flex-col items-center justify-center">
-        <h1 className="text-7xl font-semibold font-pompiere text-pink-500 text-center mb-2">
+        <h2 className="text-7xl font-semibold font-pompiere text-pink-500 text-center mb-2">
           1868{" "}
-        </h1>
-        <p className="mt-3 text-black text-lg md:text-3xl font-light font-poppins mb-8 text-center">
+        </h2>
+        <h2 className="mt-3 text-black text-lg md:text-3xl font-light font-poppins mb-8 text-center">
           {t("pacientessonrisa")}
-        </p>
-        <h1 className="text-xl font-normal text-center font-poppins text-pink-500 mb-4">
+        </h2>
+        <h3 className="text-xl font-normal text-center font-poppins text-pink-500 mb-4">
           {t("contamos")}
-        </h1>
-        <p className="mt-3 text-black text-lg md:text-5xl font-normal font-poorstory mb-6">
+        </h3>
+        <h2 className="mt-3 text-black text-lg md:text-5xl font-normal font-poorstory mb-6">
           {t("esteticapersonalizada")}
-        </p>
+        </h2>
       </div>
     </main>
   );

@@ -15,9 +15,9 @@ const Task: React.FC = () => {
         <div className="border border-blue-400">
           {" "}
           <div className="bg-[#6BBAE9] h-32 px-16 text-white items-center flex justify-center border border-blue-400">
-            <h1 className="text-center font-poorstory text-4xl">
+            <h2 className="text-center font-poorstory text-4xl">
               {t("higienicos")}
-            </h1>{" "}
+            </h2>{" "}
             <img
               src={poligono}
               className="transform translate-y-[85px] absolute"
@@ -43,11 +43,11 @@ const Task: React.FC = () => {
                   className="text-black hover:text-blue-500 hover:underline font-poorstory text-2xl"
                 >
                   {" "}
-                  {task.title}
+                  <h3>{task.title}</h3>
                 </a>
-                <span className="text-gray-500 font-poppins text-base">
+                <h4 className="text-gray-500 font-poppins text-base">
                   {task.paragraph}
-                </span>
+                </h4>
               </div>
             </div>
           ))}
@@ -55,9 +55,9 @@ const Task: React.FC = () => {
         <div className="border border-[#FE81BD]">
           {" "}
           <div className="bg-[#FE81BD] h-32 px-16 text-white items-center flex justify-center">
-            <h1 className="text-center font-poorstory text-4xl">
+            <h2 className="text-center font-poorstory text-4xl">
               {t("esteticos")}
-            </h1>{" "}
+            </h2>{" "}
             <img
               src={poligono2}
               className="transform translate-y-[85px] absolute"
@@ -79,11 +79,11 @@ const Task: React.FC = () => {
                   href={task.link}
                   className="text-black hover:text-pink-500 hover:underline font-poorstory text-2xl"
                 >
-                  {task.title}
+                  <h3>{task.title}</h3>
                 </a>
-                <span className="text-gray-500 font-poppins text-base">
+                <h4 className="text-gray-500 font-poppins text-base">
                   {task.paragraph}
-                </span>
+                </h4>
               </div>
             </div>
           ))}

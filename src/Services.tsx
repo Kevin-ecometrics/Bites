@@ -5,11 +5,14 @@ import ServicesSection from "./pages/services/services";
 import Booking from "./pages/index/Booking";
 import Footer from "./components/Footer";
 import FooterText from "./components/FooterText";
+import { useTranslation } from "react-i18next";
+
 const Services: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <Navbar />
-      <HeroServices title="Servicios" />
+      <HeroServices title={t("services.services")} />
       <ServicesSection />
       <Booking />
       <Footer />

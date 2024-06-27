@@ -5,18 +5,20 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import FooterText from "../../components/FooterText";
 import Booking from "../index/Booking";
+import { useTranslation } from "react-i18next";
 
 const ServicesDinamic: React.FC = () => {
+  const { t } = useTranslation();
   const services = [
-    { name: "Limpieza Dental", url: "limpieza-dental" },
+    { name: "Limpieza-Dental", url: "limpieza-dental" },
     { name: "Endodoncia", url: "endodoncia" },
-    { name: "Rehabilitación Oral", url: "rehabilitacion-oral" },
+    { name: "Rehabilitacion-Oral", url: "rehabilitacion-oral" },
     { name: "Blanqueamiento", url: "blanqueamiento" },
     { name: "Carillas", url: "carillas" },
     { name: "Coronas", url: "coronas" },
     { name: "Ortodoncia", url: "ortodoncia" },
     { name: "Resinas", url: "resinas" },
-    { name: "Implantes Dentales", url: "implantes-dentales" },
+    { name: "Implantes-Dentales", url: "implantes-dentales" },
   ];
 
   const { id } = useParams<{ id: string }>();
@@ -75,7 +77,7 @@ const ServicesDinamic: React.FC = () => {
         <article className="flex gap-8">
           <div className="w-3/12 px-4 hidden md:block ">
             <h1 className="text-[#E72381] text-3xl font-normal font-poppins">
-              Servicios
+              {t("services.services")}
             </h1>
             <ul>
               {services.map((service, index) => (
@@ -84,7 +86,7 @@ const ServicesDinamic: React.FC = () => {
                   className={`text-base font-normal font-poppins ${id === service.url ? "text-blue-500" : "text-[#E72381]"}`}
                 >
                   <a className="hover:text-blue-500" href={service.url}>
-                    {service.name}
+                    {t(service.name)}
                   </a>
                 </li>
               ))}

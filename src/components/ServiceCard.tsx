@@ -12,9 +12,9 @@ const Service: React.FC = () => {
         <h1 className="font-normal font-poppins text-center text-3xl mb-6 text-pink-600">
           {t("obten")}
         </h1>
-        <h3 className="text-black text-2xl text-center md:text-6xl px-2 font-normal font-pompiere">
+        <h2 className="text-black text-2xl text-center md:text-6xl px-2 font-normal font-pompiere">
           {t("encontrar")}
-        </h3>
+        </h2>
         <div className="flex flex-col gap-0 md:gap-4 md:flex-row">
           <CardService
             comments={t("card1")}

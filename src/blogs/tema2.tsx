@@ -1,4 +1,8 @@
 import React from "react";
+import {
+  ReactCompareSlider,
+  ReactCompareSliderImage,
+} from "react-compare-slider";
 
 const tema2: React.FC = () => {
   return (
@@ -68,6 +72,22 @@ const tema2: React.FC = () => {
           provocando desprendimiento.
         </li>
       </ol>
+      <div className="flex justify-center items-center mx-auto">
+        <ReactCompareSlider
+          itemOne={
+            <ReactCompareSliderImage
+              src="/src/assets/Blog2 A.png"
+              alt="Image one"
+            />
+          }
+          itemTwo={
+            <ReactCompareSliderImage
+              src="/src/assets/Blog2 B.png"
+              alt="Image two"
+            />
+          }
+        />
+      </div>
       <h1>El implante dental es una decisión final, resistente y estética. </h1>
       <p>
         Es un proceso que es bajo anestesia local, no existe sensación extraña

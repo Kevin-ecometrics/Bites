@@ -1,4 +1,8 @@
 import React from "react";
+import {
+  ReactCompareSlider,
+  ReactCompareSliderImage,
+} from "react-compare-slider";
 
 const tema1: React.FC = () => {
   return (
@@ -80,6 +84,23 @@ const tema1: React.FC = () => {
         Esto se realiza en una sola sesión, quedando un resultado de aspecto muy
         natural, siendo un procedimiento sin dolor.
       </p>
+      <div className="flex justify-center items-center mx-auto">
+        <ReactCompareSlider
+          itemOne={
+            <ReactCompareSliderImage
+              src="/src/assets/Blog1 A.png"
+              alt="Image one"
+            />
+          }
+          itemTwo={
+            <ReactCompareSliderImage
+              src="/src/assets/Blog1 B.png"
+              alt="Image two"
+            />
+          }
+        />
+      </div>
+
       <h1>¿Se verán raros?</h1>
       <p>
         Para nada, ¡No te preocupes! La doctora Anyi y su equipo de dentistas

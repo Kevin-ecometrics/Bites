@@ -63,9 +63,9 @@ const Reviews: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <motion.h1 className="text-white text-xl md:text-4xl font-poppins font-light mb-8 text-center">
+          <motion.h2 className="text-white text-xl md:text-4xl font-poppins font-light mb-8 text-center">
             {reviews[current].text}
-          </motion.h1>
+          </motion.h2>
           <div className="flex">
             {[...Array(reviews[current].rating)].map((i) => (
               <FaStar key={i} className="text-white mb-4 size-10" />

@@ -47,14 +47,14 @@ const CardService: React.FC<CardServiceProps> = ({
           </span>
           <ul>
             {!isHovered && (
-              <li className="text-black text-2xl font-normal font-poorstory">
+              <h2 className="text-black text-2xl font-normal font-poorstory">
                 {comments}
-              </li>
+              </h2>
             )}
             {isHovered && (
-              <li className="text-black text-2xl font-normal font-poorstory">
+              <h2 className="text-black text-2xl font-normal font-poorstory">
                 {hoverComments}
-              </li>
+              </h2>
             )}
           </ul>
         </div>

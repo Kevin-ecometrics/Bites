@@ -95,6 +95,16 @@ const BentoGrid: React.FC = () => {
       style={{ backgroundColor: "rgba(231, 35, 129, 0.7)" }}
     >
       <div className="md:mx-48 my-32 z-10">
+        <div className="py-8 text-white">
+          <h1 className="text-3xl text-center mb-4">
+            ¡Bienvenido a nuestra galería, un pequeño vistazo de Bites!
+          </h1>
+          <h2 className="text-2xl text-center mb-8">
+            Te queremos compartir nuestra apasionante labor con nuestro atento y
+            profesional equipo expertos en odontología estética
+          </h2>
+        </div>
+
         <div className="grid grid-cols-1 h-full md:grid-cols-3 gap-4">
           <Gallery id="my-gallery" withCaption>
             {photos.map((photo, i) => (

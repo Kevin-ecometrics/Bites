@@ -1,22 +1,30 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import HeroAbout from './components/Hero';
-import AboutSection from './pages/about/About';
-import Reviews from './pages/about/Reviews';
-import FooterAbout from './pages/about/FooterAbout';
-import FooterText from './components/FooterText';
+import React from "react";
+import Navbar from "./components/Navbar";
+import HeroAbout from "./components/Hero";
+import AboutSection from "./pages/about/About";
+import Reviews from "./pages/about/Reviews";
+import FooterAbout from "./pages/about/FooterAbout";
+import FooterText from "./components/FooterText";
+import { Helmet } from "react-helmet-async";
 
 const About: React.FC = () => {
-    return (
-        <div>
-            <Navbar />
-            <HeroAbout  />
-            <AboutSection />
-            <Reviews />
-            <FooterAbout />
-            <FooterText className='bg-[#6BBAE9]'  hoverColor='hover:text-pink-400'/>
-        </div>
-    );
+  return (
+    <div>
+      <Helmet>
+        <title>Get to know the best high-aesthetic dentistry center. </title>
+        <meta
+          name="description"
+          content="Discover the art of cosmetic dentistry. From whitening to oral rehabilitation, create a healthy, dazzling smile with our oral care experts in aesthetic dentistry. "
+        />
+      </Helmet>
+      <Navbar />
+      <HeroAbout />
+      <AboutSection />
+      <Reviews />
+      <FooterAbout />
+      <FooterText className="bg-[#6BBAE9]" hoverColor="hover:text-pink-400" />
+    </div>
+  );
 };
 
 export default About;

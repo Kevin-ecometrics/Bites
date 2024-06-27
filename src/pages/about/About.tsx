@@ -33,35 +33,38 @@ const About: React.FC = () => {
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <div className="my-8 md:my-32 lg:w-[650px] sm:w-full">
-          <h1 className="font-pompiere font-normal md:my-24 text-white md:text-[#E72381] text-6xl text-center mb-4">
+          <h3 className="font-pompiere font-normal md:my-24 text-black text-6xl text-center mb-4">
             {t("about.title")}
-          </h1>
-          <h1 className="font-pompiere font-normal  text-white md:text-[#E72381] text-6xl text-center mb-4">
+          </h3>
+          <h1 className="font-pompiere font-normal  text-black md:text-[#E72381] text-6xl text-center mb-8">
             {t("about.subtitle")}
           </h1>
-          <p className="text-lg font-poppins font-normal px-8 mb-4 text-justify">
+          <h2 className="font-pompiere font-normal  text-black text-4xl text-center mb-4">
+            {t("about.subtitle2")}
+          </h2>
+          <h3 className="text-lg font-poppins font-normal px-8 mb-4 text-justify">
             {" "}
             {t("about.platicamos")}
-          </p>
+          </h3>
           <ul className="text-lg font-poppins font-normal px-8 text-justify list-disc list-inside mb-8">
             <li>{t("about.queremos")}</li>
             <li>{t("about.destino")}</li>
           </ul>
-          <p className="text-lg font-poppins font-normal px-8 mb-8 text-justify">
+          <h4 className="text-lg font-poppins font-normal px-8 mb-8 text-justify">
             {" "}
             {t("about.cuidamos")}
-          </p>
-          <p className="text-lg font-poppins font-normal px-8 mb-8 text-justify">
+          </h4>
+          <h4 className="text-lg font-poppins font-normal px-8 mb-8 text-justify">
             {" "}
             {t("about.creemos")}
-          </p>
-          <p className="text-lg font-poppins font-normal px-8 mb-8 text-justify">
+          </h4>
+          <h4 className="text-lg font-poppins font-normal px-8 mb-8 text-justify">
             {t("about.contamos")}
-          </p>
-          <p className="text-lg font-poppins font-normal px-8 mb-2 text-justify">
+          </h4>
+          <h2 className="text-lg font-poppins font-normal px-8 mb-2 text-justify">
             {" "}
             {t("about.servicios")}
-          </p>
+          </h2>
           <ul className="text-lg font-poppins font-normal px-8 mb-8 text-justify list-inside list-disc">
             <li>{t("about.estetica")}</li>
             <li>{t("about.higienistas")}</li>
@@ -69,6 +72,14 @@ const About: React.FC = () => {
             <li> {t("about.oral")}</li>
             <li> {t("about.implantes")}</li>
           </ul>
+          <div className="flex justify-center items-center lg:justify-start px-8">
+            <a
+              href="/servicios"
+              className="text-white text-lg py-4 px-12 hover:bg-pink-500 my-8 rounded-xl font-bold font-poppins bg-[#FF77B8]"
+            >
+              {t("vermas")}
+            </a>
+          </div>
         </div>
         <div className="md:my-32 flex justify-center items-center flex-col px-8">
           <img
