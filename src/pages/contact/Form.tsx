@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
 import toast, { Toaster } from "react-hot-toast";
+
 import axios from "axios";
+import { useTranslation } from "react-i18next";
 const ContactForm: React.FC = () => {
+  const { t } = useTranslation();
   const initialState = {
     nombre: "",
     email: "",
@@ -56,13 +59,11 @@ const ContactForm: React.FC = () => {
     <div className="flex justify-center items-center flex-col px-4">
       <Toaster position="top-right" />
       <h1 className="text-center my-16 mb-8 font-pompiere font-normal text-6xl">
-        ¿TIENES DUDAS SOBRE NUESTROS PROCEDIMIENTOS?{" "}
+        {t("contact.contactText1")}
       </h1>
-      <h1 className="text-center text-[#6BBAE9] mb-8 font-poppins font-normal text-2xl">
-        Estamos aquí para responder a tus preguntas y ayudarte en tu viaje hacia
-        una sonrisa más saludable y hermosa. Ponte en contacto con nosotros para
-        programar una consulta o conocer más sobre nuestros servicios.{" "}
-      </h1>
+      <h3 className="text-center text-[#6BBAE9] mb-8 font-poppins font-normal text-2xl">
+        {t("contact.contactText2")}
+      </h3>
       <form
         onSubmit={handleSubmit}
         className="flex justify-center items-center flex-col border px-4 rounded-lg border-gray-400 mb-4 shadow-lg shadow-gray-400"

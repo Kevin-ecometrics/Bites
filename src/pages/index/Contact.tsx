@@ -7,9 +7,9 @@ const Contact: React.FC = () => {
     <main>
       <Parallax
         bgImage={Parralax}
-        className="h-[300px] sm:h-[500px] md:h-[800px]"
+        className="h-[500px] w-full bg-cover bg-center"
         bgImageAlt="Somos una clínica especializada en diseño de sonrisa con procedimientos no invasivos con técnicas y equipo de primer nivel en Tijuana "
-        strength={-380}
+        strength={-750}
       />
     </main>
   );

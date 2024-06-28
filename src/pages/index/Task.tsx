@@ -26,21 +26,19 @@ const Task: React.FC = () => {
           {task.map((task, index) => (
             <div
               key={index}
-              className="flex flex-col md:flex-row items-start md:items-center mt-7 px-4 gap-8 justify-start md:justify-center py-4 pb-4"
+              className="flex flex-col md:flex-row items-start md:items-center mt-7 px-4 gap-12 justify-start md:justify-center py-4 pb-4"
             >
-              <a href={task.link}>
-                <img
-                  src={task.image}
-                  className="size-32 rounded-full"
-                  alt={task.alt}
-                  title={task.alt}
-                />
-              </a>
+              <img
+                src={task.image}
+                className="w-16"
+                alt={task.alt}
+                title={task.alt}
+              />
 
               <div className="flex flex-col pb-4">
                 <a
                   href={task.link}
-                  className="text-black hover:text-blue-500 hover:underline font-poorstory text-2xl"
+                  className="text-black hover:text-blue-500 hover:underline font-poorstory text-xl"
                 >
                   {" "}
                   <h3>{task.title}</h3>
@@ -70,7 +68,7 @@ const Task: React.FC = () => {
             >
               <img
                 src={task.image}
-                className="size-16 bg-pink-500 rounded-full p-4 "
+                className="w-16"
                 alt={task.alt}
                 title={task.alt}
               />

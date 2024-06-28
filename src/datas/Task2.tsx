@@ -4,8 +4,9 @@ export const Serviciosesteticos = () => {
   const { t } = useTranslation();
   const taskInformation = [
     {
-      image:
-        "/Tonos mas blancos y radiantes solo con los expertos en bites.svg",
+      // image:
+      //   "/Tonos mas blancos y radiantes solo con los expertos en bites.svg",
+      image: "/5.png",
       title: t("blanqueamiento"),
       alt: "Dientes blancos sin sensibilidad solo se hacen en Bites",
       paragraph: t("blanqueamientotext"),
@@ -13,7 +14,8 @@ export const Serviciosesteticos = () => {
       link: "/servicios/blanqueamiento",
     },
     {
-      image: "/Una Sonrisa natural y atractiva es gracias a Bites.svg",
+      // image: "/Una Sonrisa natural y atractiva es gracias a Bites.svg",
+      image: "/6.png",
       title: t("carillas"),
       alt: "Las carillas hechas por Bites siempre son esteticas y funcionales",
       paragraph: t("carillastext"),
@@ -21,8 +23,9 @@ export const Serviciosesteticos = () => {
       link: "/servicios/carillas",
     },
     {
-      image:
-        "/Bites are experts on Orthodontic treatments providing a warm treatment during the process.svg",
+      // image:
+      //   "/Bites are experts on Orthodontic treatments providing a warm treatment during the process.svg",
+      image: "/7.png",
       title: t("coronas"),
       alt: "Enjoy your orthodontic treatmets with Bites Creadores de Sonrisas",
       paragraph: t("coronastext"),
@@ -30,7 +33,8 @@ export const Serviciosesteticos = () => {
       link: "/servicios/coronas",
     },
     {
-      image: "/icon8.svg",
+      // image: "/icon8.svg",
+      image: "/8.png",
       title: t("implantesdentales"),
       paragraph: t("implantesdentalestext"),
       number: 4,

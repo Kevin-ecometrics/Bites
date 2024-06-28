@@ -11,9 +11,21 @@ import foto9 from "../assets/Meet the Bites  team ready to create a smile.webp";
 import foto10 from "../assets/Nuestros implantes dentales te garantizaran una sonrisa bella.webp";
 import foto6 from "../assets/The smile wall is a proof of our happy customers.webp";
 import foto12 from "../assets/Doctor anyi Manchola is passionate about creating smiles.webp";
+import foto13 from "../assets/Conoce nuestras comodas y amplias instalaciones pensadas en ti.webp";
+import foto14 from "../assets/Conoce a la doctora Anyi comprometida a crear tu sonrisa soñada.webp";
+import foto15 from "../assets/Book your appointment for a new smile with veneers.webp";
+import foto16 from "../assets/You can book now on bitesCreadoresde Sonrisas.com.webp";
+import foto17 from "../assets/We are bites rated high-aesthetic dentistry center in tijuana.webp";
+import foto18 from "../assets/Vive la exclusividad y atencion calida en la mejor clinica de odontologia de alta estetica en tijuana.webp";
+import foto19 from "../assets/Teeth whitening treatment near you at bites CS in Tijuana.webp";
+import foto20 from "../assets/Lesly the manager at Bites CS is best known for her warm and professional treatment with patients.webp";
+import foto21 from "../assets/El diseño de sonrisa mas increible esta hecho por Bites Creadores de Sonrisa.webp";
+
 import { Gallery, Item } from "react-photoswipe-gallery";
+import { useTranslation } from "react-i18next";
 
 const BentoGrid: React.FC = () => {
+  const { t } = useTranslation();
   const photos = [
     {
       src: foto1,
@@ -87,6 +99,60 @@ const BentoGrid: React.FC = () => {
       height: 512,
       id: "Dentist Anyi Manchola and Leslie await you with open arms to help you create your ideal smile",
     },
+    {
+      src: foto13,
+      width: 812,
+      height: 612,
+      id: "Diseñamos una sala de estar y consultorio pensando en tus necesidades y comodidad para que te sientas en confianza",
+    },
+    {
+      src: foto14,
+      width: 512,
+      height: 812,
+      id: "Conoce a la doctora Anyi especializada en Odontología de alta estética, comprometida a crear tu sonrisa ideal ",
+    },
+    {
+      src: foto15,
+      width: 512,
+      height: 812,
+      id: "We are best known for our veneers, book your appointment today to enjoy a new smile  ",
+    },
+    {
+      src: foto16,
+      width: 512,
+      height: 812,
+      id: "Your dental appointment  just one click away, book now on bitescreadores desonrisas.com ",
+    },
+    {
+      src: foto17,
+      width: 512,
+      height: 812,
+      id: "Your dental appointment  just one click away, book now on bitescreadores desonrisas.com ",
+    },
+    {
+      src: foto18,
+      width: 512,
+      height: 812,
+      id: "En bites vive la exclusividad y atención calida somos la mejor clínica de odontología de alta estética en Tijuana  ",
+    },
+    {
+      src: foto19,
+      width: 512,
+      height: 812,
+      id: "Get your teeth whitening treatment with the experts at Bites CS  we are near you in Tijuana  ",
+    },
+    {
+      src: foto20,
+      width: 512,
+      height: 812,
+      id: "Professional and warm dental treatments only with Bites, our team is ready to help you in your smile journey  ",
+    },
+    {
+      src: foto21,
+      width: 512,
+      height: 812,
+      id: "En bites nuestros expertos en diseño de sonrisa harán de tu sonrisa una obra de arte increíble ",
+    },
   ];
 
   return (
@@ -96,12 +162,27 @@ const BentoGrid: React.FC = () => {
     >
       <div className="md:mx-48 my-32 z-10">
         <div className="py-8 text-white">
-          <h1 className="text-3xl text-center mb-4">
-            ¡Bienvenido a nuestra galería, un pequeño vistazo de Bites!
-          </h1>
+          <h1 className="text-3xl text-center mb-4">{t("gallery.title")}</h1>
           <h2 className="text-2xl text-center mb-8">
-            Te queremos compartir nuestra apasionante labor con nuestro atento y
-            profesional equipo expertos en odontología estética
+            {t("gallery.subtitle")}
+            <a
+              href="https://www.instagram.com/bitescreadoresdesonrisas/"
+              target="_blank"
+              className="hover:text-blue-500"
+            >
+              {" "}
+              {t("gallery.Instagram")}{" "}
+            </a>
+            {t("gallery.and")}
+            <a
+              href="https://www.facebook.com/BitesCreadoresdeSonrisas"
+              target="_blank"
+              className="hover:text-blue-500"
+            >
+              {" "}
+              {t("gallery.Facebook")}
+              {""}
+            </a>
           </h2>
         </div>
 
@@ -135,7 +216,21 @@ const BentoGrid: React.FC = () => {
                                         ? "row-span-2"
                                         : i === 11
                                           ? "row-span-2"
-                                          : ""
+                                          : i === 12
+                                            ? "row-span-2"
+                                            : i === 13
+                                              ? "row-span-2"
+                                              : i === 14
+                                                ? "row-span-2"
+                                                : i === 15
+                                                  ? "row-span-2"
+                                                  : i === 16
+                                                    ? "row-span-2"
+                                                    : i === 17
+                                                      ? "row-span-2"
+                                                      : i === 18
+                                                        ? "row-span-2"
+                                                        : "row-span-1"
                 }`}
               >
                 <Item

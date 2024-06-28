@@ -3,10 +3,20 @@ import {
   ReactCompareSlider,
   ReactCompareSliderImage,
 } from "react-compare-slider";
+import { Helmet } from "react-helmet-async";
 
 const tema1: React.FC = () => {
   return (
     <div className="[&>h1]:text-pink-600 [&>h1]:text-2xl *:mb-4 [&>p]:text-xl [&>ol]:text-xl [&>h1]:font-medium">
+      <Helmet>
+        <title>
+          La solución para una sonrisa ideal son las carillas de composite
+        </title>
+        <meta
+          name="description"
+          content="Conoce el arte de la odontología estética en Bites CDS con las carillas de composite que hacen posible combinar la estética y la funcionalidad."
+        />
+      </Helmet>
       <strong className="text-start font-poorstory text-pink-600 font-medium text-5xl">
         Las carillas dentales de composite: La solución para una sonrisa ideal{" "}
       </strong>

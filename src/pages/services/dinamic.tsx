@@ -6,6 +6,7 @@ import Footer from "../../components/Footer";
 import FooterText from "../../components/FooterText";
 import Booking from "../index/Booking";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet-async";
 
 const ServicesDinamic: React.FC = () => {
   const { t } = useTranslation();
@@ -22,41 +23,45 @@ const ServicesDinamic: React.FC = () => {
   ];
 
   const { id } = useParams<{ id: string }>();
+
+  const service = services.find((service) => service.url === id);
+
   const titles: { [key: string]: string } = {
-    "limpieza-dental":
-      "Nuestros servicios de limpieza dental eliminan placa y sarro, promoviendo encías saludables y previniendo problemas dentales, asegurando que cada limpieza sea un paso hacia una sonrisa que no solo brilla, sino que también refleja una salud óptima.",
-    endodoncia:
-      "Nuestros expertos en endodoncia utilizan técnicas avanzadas para preservar la salud dental y restaurar la funcionalidad de tus dientes. Descubre cómo la endodoncia en Bites es más que un tratamiento, es una revitalización dental. ",
-    "rehabilitacion-oral":
-      "Nuestros especialistas logran resultados impresionantes mediante diferentes procedimientos integrales de acuerdo con lo que necesites, puede ser mediante: Prótesis, estas pueden ser fijas o removibles; realizamos de la misma manera alineamiento de mordida e implantes dentales.",
-    blanqueamiento:
-      "Nuestro servicio de blanqueamiento  es de los tratamientos más rápidos y no invasivos que mejora gradualmente la apariencia de tus dientes que padecen de oscurecimiento y manchas amarillas. ",
-    carillas:
-      "En Bites somos reconocidos por nuestras carillas, somos expertos en el diseño y aplicación de carillas de composite o porcelana que, además de restaurar y modificar la estructura de tus dientes, te proporcionan un aspecto estético increíble, empoderándote a sonreír más que nunca. ",
-    coronas:
-      "Es unos de los servicios más populares en restauración si tus dientes tienen cavidades grandes, o se encuentra desgastado o solamente te gustaría mejorar su apariencia.",
+    "limpieza-dental": t("services.DentalCleaningText1"),
+    endodoncia: t("services.EndodonticsText1"),
+    "rehabilitacion-oral": t("services.OralText1"),
+    blanqueamiento: t("services.WhiteningText1"),
+    carillas: t("services.VennerText1"),
+    coronas: t("services.CrowText1"),
     ortodoncia:
       "Nuestro servicio de ortodoncia previene y corrige problemas de mordida, espacios entre dientes, desviaciones de mandíbula entre otros.",
-    resinas:
-      "Las resinas mejoran la apariencia de las grietas y astillados de tus dientes, así como cavidades, te ayuda a protegerlos de la hipersensibilidad al consumir alimentos fríos o calientes, por medio de este procedimiento nuestros expertos restauran tus dientes frontales y premolares dándoles un acabado altamente estético y funcional. ",
-    "implantes-dentales":
-      "Los implantes dentales restauran tu sonrisa evitando que el hueso de tu mandíbula se absorba cuando has perdido uno o varios dientes. Pueden ser de diferentes materiales los más populares son: Titanio y zirconio pueden ir en la parte superior o inferior de tus hueso maxilar  ",
+    resinas: t("services.ResinText1"),
+    "implantes-dentales": t("services.ImplantText"),
   };
   const subtitles: { [key: string]: string } = {
-    "limpieza-dental": "",
-    endodoncia: "",
-    "rehabilitacion-oral":
-      "Nos encargamos de restaurar áreas dañadas, para recuperar de forma estética la capacidad de comer, hablar y sonreír de la forma más espectacular posible.",
-    blanqueamiento:
-      "Logrando aclarar y dar la apariencia de dientes luminosos, más sanos y con uniformidad desde la primera sesión. Anímate a realizarte este procedimiento en manos de nuestros expertos.",
-    carillas: "",
-    coronas:
-      "Te aplicamos coronas dentales que son prótesis que nos permite cubrir y proteger el diente afectado, para recuperar su forma, darle más resistencia y mejorar su apariencia en general. ",
+    "limpieza-dental": t("services.DentalCleaningText2"),
+    endodoncia: t("services.EndodonticsText2"),
+
+    "rehabilitacion-oral": "",
+    blanqueamiento: t("services.WhiteningText2"),
+    carillas: t("services.VennerText2"),
+    coronas: t("services.CrowText2"),
     ortodoncia:
       "Gracias a nuestros procedimientos logramos corregirlos, proporcionarte funcionalidad y mejorar tu estética facial, a su vez te instruimos a una buena práctica de higiene bucal con una explicación detallada y un seguimiento puntual y de eficiencia donde veas resultados progresivos. ",
-    resinas: "",
-    "implantes-dentales":
-      "Es un proceso que se realiza por etapas con tiempo de curación entre cada procedimiento ya que el primer paso es una revisión exhaustiva posterior a la colocación, una vez puesto el implante y que este se fusione con el hueso de la mandíbula se hace la colocación del pilar para finalizar con la colocación de la corona ",
+    resinas: t("services.ResinText2"),
+    "implantes-dentales": "",
+  };
+
+  const subtitles2: { [key: string]: string } = {
+    "limpieza-dental": t("services.DentalCleaningText3"),
+    endodoncia: t("services.EndodonticsText3"),
+    "rehabilitacion-oral": "",
+    blanqueamiento: t("services.WhiteningText3"),
+    carillas: t("services.VennerText3"),
+    coronas: t("services.CrowText3"),
+    ortodoncia: "",
+    resinas: t("services.ResinText3"),
+    "implantes-dentales": "",
   };
 
   let title;
@@ -69,10 +74,22 @@ const ServicesDinamic: React.FC = () => {
     subtitle = subtitles[id];
   }
 
+  let subtitle2;
+  if (typeof id === "string") {
+    subtitle2 = subtitles2[id];
+  }
+
   return (
     <main>
+      <Helmet>
+        <title>{service ? t(service.name) : t("serviceNotFound")}</title>
+        <meta
+          name="description"
+          content={title ? `${title}` : "Servicio no encontrado"}
+        />
+      </Helmet>
       <Navbar />
-      <Hero title={id} />
+      <Hero title={service ? t(service.name) : t("serviceNotFound")} />
       <section className="md:py-32 md:px-24">
         <article className="flex gap-8">
           <div className="w-3/12 px-4 hidden md:block ">
@@ -116,12 +133,15 @@ const ServicesDinamic: React.FC = () => {
                 <option value="servicios">Regresar a servicios</option>
               </select>
             </div>
-            <h1 className="text-2xl mb-8 text-justify">
-              {title ? `${title}` : "Servicio no encontrado"}
-            </h1>
-            <h2 className="text-2xl mb-24 text-justify">
+            <h4 className="text-2xl mb-8 text-justify">
+              {title ? `${title}` : ""}
+            </h4>
+            <h3 className="text-2xl mb-8 font-bold text-pink-600 text-justify">
               {subtitle ? `${subtitle}` : ""}
-            </h2>
+            </h3>
+            <h4 className="text-2xl mb-8 text-justify">
+              {subtitle2 ? `${subtitle2}` : ""}
+            </h4>
           </div>
         </article>
         <Booking />

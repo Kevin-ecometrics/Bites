@@ -54,7 +54,7 @@ i18n.use(initReactI18next).init({
           vermas: "See more",
           pacientessonrisa: "Patients with a bright smile",
           contamos: "We have highly specialized aesthetic dentistry services for the smile you deserve.",
-          esteticapersonalizada: "Specialize Cosmetic dentistry",
+          esteticapersonalizada: "Specialized Cosmetic dentistry",
           altatecnologia: "High-grade dental instrumentation ",
           agendadigital: "Digital agenda and appointments  ",
           materiales: "High-quality materials  ",
@@ -66,7 +66,7 @@ i18n.use(initReactI18next).init({
           resinastext: "We use high-quality composite resins providing a long-lasting solution, so they look and feel amazing. Beauty and durability come together in every application",
           endodoncia: "Endodontics",
           endodonciatext: "Our endodontic experts use advanced techniques to preserve dental health and restore functionality to your teeth.",
-          rehabilitacion: "Dental implants ",
+          rehabilitacion: "Oral Rehabilitation ",
           rehabilitaciontext: "With implants, you can have a complete smile with practical and aesthetic benefits that allow you to chew, speak, and smile widely. ",
           blanqueamiento: "Teeth whitening",
           blanqueamientotext: "At Bites CDS, we don't just brighten your teeth, we elevate your confidence and presence with whitening that makes a difference. Enjoy a whiter, more radiant smile, safely and effectively.  ",
@@ -112,6 +112,13 @@ i18n.use(initReactI18next).init({
           "Ortodoncia": "Orthodontics",
           "Implantes-Dentales": "Dental Implants",
           servicios: "Services",
+          gallery: {
+            title: "A glimpse of Bites Creadores de Sonrisas! ",
+            subtitle: " Experts in high aesthetic dentistry as seen in ",
+            and: "and",
+            Facebook: "Facebook",
+            Instagram: "Instagram",
+          },
           about: {
             title: "Hello, welcome! ",
             subtitle: "Get to know more about Bites ",
@@ -136,9 +143,35 @@ i18n.use(initReactI18next).init({
       
         services: {
           services: "Services",
-          serviceTitle: "At Bites Creadores de Sonrisas we are proud to be a high-aesthetic dentistry center, with a broad range of dental services to improve your smile's appearance and functionality.",
-          serviceSubtitle: "We invite you to discover how Bites Creadores de Sonrisas will provide you with a comfortable, nice, and life-changing dental journey. There's nothing to worry about, this dental journey is all about you, our team will be here to make your dream smile possible with care and respectful treatment.",
-          
+          serviceText1: "We invite you to learn more about our services",
+          serviceText2: "At Bites Creadores de Sonrisas we are proud to be a high-aesthetic dentistry center, with a broad range of dental services to improve your smile's appearance and functionality. ",
+          serviceText3: "We invite you to discover how Bites Creadores de Sonrisas will provide you with a comfortable, nice, and life-changing dental journey. ",
+          serviceText4: "There's nothing to worry about, this dental journey is all about you, our team will be here to make your dream smile possible with care and respectful treatment. ",
+          DentalCleaningText1: "Our dental cleaning services get rid of plaque and tartar between your teeth and around your gum line, making your gumlines healthful again, and preventing oral diseases, and tooth loss. Every cleaning is a step towards a smile that not only looks beautiful but also reflects optimal health.  We recommend having your teeth professionally cleaned every six months",
+          DentalCleaningText2: "How does this procedure work?",
+          DentalCleaningText3: "Your dentist will use scalers to remove plaque and tartar, then use an ultrasonic scaler which uses vibration to remove any substances or residues left This procedure can vary in duration, depending on the state of your teeth and gums",
+          EndodonticsText1: "Our experts in endodontics use advanced techniques to preserve your oral health and restore teeth functionality. At Bites CDS It’s more than a treatment it's a smile revitalization",
+          EndodonticsText2: "How does it work?",
+          EndodonticsText3: "This treatment consists of numbing the area around your tooth, then placing a sheet or rubber in the infected area to isolate it from the rest of the teeth, later the expert will drill a hole in the top of the tooth to remove the infected tissue, after that your dentist will clean and disinfect the root canals then the final step will be to fill and to sea",
+          OralText1: "Our Bites Creadores de Sonrisas’ team accomplishes impressive results through integral treatments by listening to your needs, we have you covered with solutions to every dental issue, like tooth decay, missing teeth, partial dentures, and full dentures, we also do bite alignment and dental implants. We perform oral rehabilitations to restore and enhance your entire mouth's function like eating, speaking, and smiling. This procedure will help to prevent future damage and to improve a better quality of life. If you have in mind a cosmetic dental procedure, our team will perform an examination, in case is required to rehabilitate or correct a problem before aesthetics.",
+          WhiteningText1: "Our teeth whitening procedure is the fastest and non-invasive treatment that gradually improves your teeth' appearance. Give your teeth a brighter, healthier, and more uniform appearance from the first visit with our expert hands.",
+          WhiteningText2: "How does it work?",
+          WhiteningText3: "The procedure involves applying hydrogen peroxide or carbamide peroxide-based gel to the superficies of your teeth, and then this compound breaks on the stains, resulting in a brighter tooth.",
+          VennerText1: "We are well-known for our veneers, either porcelain or composite, our experts on smile makeovers will restore and change the structure of your teeth, enhancing your aesthetics, and empowering your self-confidence to smile more than ever",
+          VennerText2: "How does it work",
+          VennerText3: "Veneers are custom-made coverings that fit mostly over the front side of your teeth by concealing imperfections like chips, gaps, and tooth discoloration. If you are looking to get porcelain veneers; before the placement, the dentist will remove enamel from your natural teeth and then make an impression to make a mold to create the perfect tooth once this is done the dentist will then process to place them in each tooth. If you prefer composite veneers the dentist will use a tooth-colored composite resin and mold the layers, once they achieve your desired form, the last step will be hardening the material with a special light",
+          CrowText1:"With crowns recover shape, durability, and overall appearance. It is one of the most popular restorative procedures for cavities, broken decay, and worn-down teeth.",
+          CrowText2:"How does it work?",
+          CrowText3:"We apply a tooth-shaped cap that fits over your entire tooth, if is needed a tooth reshaped or enamel remover is necessary, then a dental impression will be taken to create a custom crown. The last step will be bonding your crown.",
+          ResinText1: "Resins improve the look of chipped and cracked teeth and even some superficial cavities and help protect the teeth from hypersensitivity when consuming hot or cold foods. Through this procedure, our experts restore your front teeth and premolars giving them a highly aesthetic and functional finish.",
+          ResinText2: "How does it work?",
+          ResinText3: "Bites Creadores de Sonrisas experts will numb the area surrounding the affected tooth to remove the decayed part. Then is prepared to create a clean and stable foundation for the composite filling, in this part, the dentist will sculpt and shape the composite material to match your teeth structure, once the filling is done, the decisive step will be to polish it.",
+          ImplantText: "Dental implants restore your smile by preventing your jaw bone from being absorbed when you have lost one or more teeth. They can be made of different materials the most popular are: Titanium and zirconium they can go in the upper or lower part of your jaw bone It is a process that is done in stages with healing time between each procedure since the first step is a thorough revision after placement, once the implant is placed and it is fused with the jaw bone the abutment placement is done to finish with the placement of the crown."
+        },
+        contact: {
+          contact: "Contact",
+          contactText1: "Any Question About our procedures?",
+          contactText2: "We are here to respond to your questions and help in this journey to make a healthy and beautiful smile. Contact us to schedule a consultation or learn more about our services."
         }
       
         },
@@ -253,6 +286,13 @@ i18n.use(initReactI18next).init({
         "Ortodoncia": "Ortodoncia",
         "Implantes-Dentales": "Implantes Dentales",
         servicios: "Servicios",
+        gallery: {
+          title: " ¡Un pequeño vistazo a Bites Creadores de Sonrisas!",
+          subtitle: " Expertos en odontología estética  como lo viste en",
+          and: "y",
+          Facebook: "Facebook",
+          Instagram: "Instagram",
+        },
         about: {
           title: " Hola Mucho gusto",
           subtitle: "¡Bienvenido a la mejor clínica de odontología de alta estética!",
@@ -277,8 +317,36 @@ i18n.use(initReactI18next).init({
         },
         services: {
           services: "Servicios",
-          serviceTitle: "En Bites Creadores de Sonrisas, nos enorgullece ofrecer una variedad de servicios estéticos de alta calidad diseñados para mejorar la apariencia y funcionalidad de tu sonrisa",
-          serviceSubtitle: "¡Descubre cómo Bites Creadores de Sonrisas puede hacer que tu viaje dental sea cómodo, agradable y transformador!",
+          serviceText1: "Te invitamos a saber más sobre nuestros Servicios",
+          serviceText2: "En Bites Creadores de Sonrisas, nos enorgullecemos de ser una clínica de odontología de alta estética que ofrece una amplia variedad de servicios con la más alta tecnología y calidad para mejorar la apariencia y funcionalidad de tu sonrisa ",
+          serviceText3: "¡Descubre cómo Bites Creadores de Sonrisas puede hacer que tu viaje dental sea cómodo, agradable y transformador! ",
+          serviceText4: "No hay nada de qué preocuparse, este viaje dental este hecho pensado en ti, nuestro equipo estará a tus órdenes para hacer realidad tu sonrisa soñada con un tratamiento respetuoso y consciente. ",
+          DentalCleaningText1: "Nuestros servicios de limpieza dental eliminan placa y sarro, que se acumula entre tus dientes y encías, devolviéndoles su estado de salud más optimo, previniendo enfermedades orales y perdida de los dientes asegurando que cada limpieza sea un paso hacia una sonrisa que no solo brilla, sino que también refleja una salud óptima. Te recomendamos realizarte una limpieza profesional cada 6 meses",
+          DentalCleaningText2: "¿En qué consiste la limpieza dental?",
+          DentalCleaningText3: "Tu dentista usara raspadores manuales un instrumento especializado que remueve el sarro y placa para luego usar un raspador ultrasónico que usa la vibración para eliminar cualquier residuo o sustancia que haya quedado Este procedimiento puede variar en cuanto a duracion ya que todo dependera del estado en que se encuentren tus dientes y encias",
+          EndodonticsText1: "Nuestros expertos en endodoncia utilizan técnicas avanzadas para preservar la salud dental y restaurar la funcionalidad de tus dientes. Descubre cómo la endodoncia en Bites es más que un tratamiento, es una revitalización dental.",
+          EndodonticsText2: "¿En qué consiste la endodoncia?",
+          EndodonticsText3: "Consiste en anestesiar el área alrededor del diente, se cubre con una malla y un eleático la zona infectada para aislarla del resto de los dientes, luego el dentista experto, hará un hoyo en la parte superior del diente, removiendo el tejido mejor conocido como pulpa que este infectado , después de esto procederá a limpiar y desinfectar los canales, una vez finalizado el paso final será rellenar y sellar",
+          OralText1: "Nuestros especialistas logran resultados impresionantes mediante diferentes procedimientos integrales de acuerdo con lo que necesites, te tenemos cubierto para solucionar cualquier problema como puede ser caries, falta de dientes, prótesis parciales y totales, alineamiento de mordida e implantes Nos encargamos de restaurar áreas dañadas, para recuperar de forma estética la capacidad de comer, hablar y sonreír de la forma más espectacular posible. Gracias a la rehabilitación oral podemos prevenir futuros daños y mejorar la calidad de vida Para hacerte un procedimiento estético dental, nuestros expertos harán una examinación si es necesario, rehabilitar o corregir previo a lo estético, para garantizarte resultados duraderos y espectaculares.",
+          WhiteningText1: "Nuestro servicio de blanqueamiento es de los tratamientos más rápidos y no invasivos que mejora gradualmente la apariencia de tus dientes que padecen de oscurecimiento y manchas amarillas. Logrando aclarar y dar la apariencia de dientes luminosos, más sanos y con uniformidad desde la primera sesión. Anímate a realizarte este procedimiento en manos de nuestros expertos",
+          WhiteningText2: "¿En qué consiste el blanqueamiento dental?",
+          WhiteningText3: "Previo al procedimiento se realizará una limpieza una vez terminada la limpieza se aplicará un peróxido de hidrogeno o una base de peróxido de carbonato en gel en la superficie de los dientes, este compuesto deshace las manchas y el oscurecimiento, dando como resultado una sonrisa más brillant",
+          VennerText1: "En Bites somos reconocidos por nuestras carillas, somos expertos en el diseño y aplicación de carillas de composite o porcelana que, además de restaurar y modificar la estructura de tus dientes, te proporcionan un aspecto estético increíble, empoderándote a sonreír más que nunca.",
+          VennerText2: "¿En qué consiste la aplicación de carillas?",
+          VennerText3: "Las carillas están hechas a las medidas de los dientes y se colocan frente a estos sirven para cubrir imperfecciones como separaciones, algún diente roto y descoloración Si estas buscando hacerte carillas de porcelana, previamente el dentista removerá un poco de tu esmalte y realizará una impresión para crear el molde perfecto para tus dientes, una vez listo el molde el dentista procederá colocar cada carilla El dentista usará una resina del color que elijas para moldear la resina sobre tus dientes hasta lograrlo, una vez hecho el paso final será endurecer los dientes, lijarlos y pulirlos.",
+          CrowText1:"Con las coronas recupera la forma, durabilidad y buena apariencia en general, Es unos de los servicios más populares en restauración si tus dientes tienen cavidades grandes, o se encuentra desgastado o solamente te gustaría mejorar su apariencia.",
+          CrowText2:"¿En qué consiste colocar una corona?",
+          CrowText3:"Se aplica una prótesis que se coloca sobre tu diente, si es necesario, el diente se tendrá que adaptar para que la prótesis se ajuste de la mejor forma, posterior a eso se hará una impresión para crear la corona. El último paso será colocarl",
+          ResinText1: "Las resinas mejoran la apariencia de las grietas y astillados de tus dientes, así como cavidades, te protegen de la hipersensibilidad al consumir alimentos fríos o calientes. Por medio de este procedimiento nuestros expertos restauran los dientes frontales y premolares dándoles un acabado estético y funcional.",
+          ResinText2: " ¿En qué consiste la aplicación de resinas?",
+          ResinText3: "Nuestros expertos aplican anestesia en el área que rodea al diente afectado y removerá la caries, posterior a eso se rellena con una resina que el dentista esculpirá de acuerdo con la forma de tu diente, para que luzca lo más parecido a tu diente natural, una vez terminado se aplica una luz especial para endurecer la resina y finalmente se pule",
+          ImplantText: "Los implantes dentales restauran tu sonrisa evitando que el hueso de tu mandíbula se absorba cuando has perdido uno o varios dientes. Pueden ser de diferentes materiales los más populares son: Titanio y zirconio pueden ir en la parte superior o inferior de tu hueso maxilar Es un proceso que se realiza por etapas con tiempo de curación entre cada procedimiento ya que el primer paso es una revisión exhaustiva posterior a la colocación, una vez puesto el implante y que este se fusione con el hueso de la mandíbula se hace la colocación del pilar para finalizar con la colocación de la coron"
+
+        },
+        contact: {
+          contact: "Contacto",
+          contactText1: "¿Tienes dudas sobre nuestros procedimientos?",
+          contactText2: "Estamos aquí para responder a tus preguntas y ayudarte en tu viaje hacia una sonrisa más saludable y hermosa. Ponte en contacto con nosotros para programar una consulta o conocer más sobre nuestros servicios"
         }
       
       },
