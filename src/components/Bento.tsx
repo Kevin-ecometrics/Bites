@@ -12,14 +12,14 @@ import foto10 from "../assets/Nuestros implantes dentales te garantizaran una so
 import foto6 from "../assets/The smile wall is a proof of our happy customers.webp";
 import foto12 from "../assets/Doctor anyi Manchola is passionate about creating smiles.webp";
 import foto13 from "../assets/Conoce nuestras comodas y amplias instalaciones pensadas en ti.webp";
-import foto14 from "../assets/Conoce a la doctora Anyi comprometida a crear tu sonrisa soñada.webp";
+import foto14 from "../assets/Conoce a la doctora Anyi comprometida a crear tu sonrisa sonada.webp";
 import foto15 from "../assets/Book your appointment for a new smile with veneers.webp";
 import foto16 from "../assets/You can book now on bitesCreadoresde Sonrisas.com.webp";
 import foto17 from "../assets/We are bites rated high-aesthetic dentistry center in tijuana.webp";
 import foto18 from "../assets/Vive la exclusividad y atencion calida en la mejor clinica de odontologia de alta estetica en tijuana.webp";
 import foto19 from "../assets/Teeth whitening treatment near you at bites CS in Tijuana.webp";
 import foto20 from "../assets/Lesly the manager at Bites CS is best known for her warm and professional treatment with patients.webp";
-import foto21 from "../assets/El diseño de sonrisa mas increible esta hecho por Bites Creadores de Sonrisa.webp";
+import foto21 from "../assets/El diseno de sonrisa mas increible esta hecho por Bites Creadores de Sonrisa.webp";
 
 import { Gallery, Item } from "react-photoswipe-gallery";
 import { useTranslation } from "react-i18next";

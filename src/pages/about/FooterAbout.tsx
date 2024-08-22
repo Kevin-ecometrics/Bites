@@ -69,12 +69,23 @@ const Footer: React.FC = () => {
             </div>
             {locations.map((location, index) => (
               <div key={index} className="flex gap-4 py-4 px-12">
-                <img
-                  src={location.src}
-                  className="size-8 flex justify-center items-center"
-                  alt={location.alt}
-                  title={location.alt}
-                />
+                {location.src === Phone ? (
+                  <a href="https://wa.me/+526633249611/?text=Quiero obtener más información sobre sus servicios.">
+                    <img
+                      src={location.src}
+                      className="size-8 flex justify-center items-center"
+                      alt={location.alt}
+                      title={location.alt}
+                    />
+                  </a>
+                ) : (
+                  <img
+                    src={location.src}
+                    className="size-8 flex justify-center items-center"
+                    alt={location.alt}
+                    title={location.alt}
+                  />
+                )}
                 <div className="flex justify-center items-center flex-col gap-4 font-pompiere">
                   <span className="text-xl font-medium text-black dark:text-black">
                     {location.address === "663 324 9611" ? (
@@ -160,6 +171,29 @@ const Footer: React.FC = () => {
                       alt="Give us a like on our Facebook page, we are the best option for dental design  "
                       title="Give us a like on our Facebook page, we are the best option for dental design  "
                     />
+                  </a>
+                  <a
+                    href="https://wa.me/+526633249611/?text=Quiero obtener más información sobre sus servicios."
+                    className="cursor-pointer"
+                    target="_blank"
+                  >
+                    {" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#ffffff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      className="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                      <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                    </svg>
                   </a>
                 </div>
               </div>

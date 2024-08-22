@@ -7,11 +7,33 @@ import FooterText from "../../components/FooterText";
 import Booking from "../index/Booking";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
-
+import {
+  ReactCompareSlider,
+  ReactCompareSliderImage,
+} from "react-compare-slider";
+import image1 from "../../assets/At bites CS be are believers of the positive impact of a healthy smile.png";
+import image4 from "../../assets/Nuestros dentistas en Bites CS rehabilitan sonrisas para que esten saludables y luzcan radiantes.png";
+import image5 from "../../assets/At Bites CS you will find affordable prices and spectacular results in teeth whitening treatments.jpg";
+import image6 from "../../assets/We are bites Cs   qualified dentist team experienced in aesthetic dentistry near you.jpg";
+import image7 from "../../assets/We are Bites CS with Personalized consultation and skilled dentistry that guides patients through the smile enhancement journey.jpg";
+import image8 from "../../assets/Somos Bites CS queremos ser los aliados detras de tu sonrisaa, conoce nuestra cdontologia de alta  estetica.jpg";
+import image9 from "../../assets/Veneers are custom-made shells that cover teeth to hide any imperfections    Book your dream smile with Bites CS.jpg";
+import image10 from "../../assets/Bites CS Smile design considers your facial features to achieve a balanced smile.jpg";
+import image11 from "../../assets/We are Bites CS we offer a personalized Plan treatments to achieve a balanced smile that complements the patient's facial structure and personality.jpg";
+import image12 from "../../assets/We are Bites CS high-aesthetic dentistry center that offers Budget friendly Treatments in tijuana to boost confidence and enhance quality of life.jpg";
+import image13 from "../../assets/Transform your smile and boost self-esteem with great prices in Tijuana at Bites CS.jpg";
+import image14 from "../../assets/Resins are perfect for those who want a natural and subtle look get them done with Bites CS.png";
+import image15 from "../../assets/Treat yourself with a smile design and enhance your features with the top-rated dentist at Bites CS.png";
+import image16 from "../../assets/Bites CS Dental implants are the number one solution for missing teeth get your implants with experts in cosmetic dentistry.png";
+import image17 from "../../assets/AT bites CS Preserve your bone and gums health with dental implants with the most qualified dentists in Tijuana.png";
+import image18 from "../../assets/Bites CS tooth preparation ensure durable results aligned with a smile design.png";
 const ServicesDinamic: React.FC = () => {
   const { t } = useTranslation();
   const services = [
-    { name: "Limpieza-Dental", url: "limpieza-dental" },
+    {
+      name: "Limpieza-Dental",
+      url: "limpieza-dental",
+    },
     { name: "Endodoncia", url: "endodoncia" },
     { name: "Rehabilitacion-Oral", url: "rehabilitacion-oral" },
     { name: "Blanqueamiento", url: "blanqueamiento" },
@@ -64,6 +86,42 @@ const ServicesDinamic: React.FC = () => {
     "implantes-dentales": "",
   };
 
+  const images: { [key: string]: string[] } = {
+    "limpieza-dental": [image1],
+    endodoncia: [image18],
+    "rehabilitacion-oral": [image4],
+    blanqueamiento: [image5],
+    carillas: [image8],
+    coronas: [image11],
+    ortodoncia: [""],
+    resinas: [image14],
+    "implantes-dentales": [image15],
+  };
+
+  const sliders1: { [key: string]: string } = {
+    "limpieza-dental": "",
+    endodoncia: "",
+    "rehabilitacion-oral": "",
+    blanqueamiento: image6,
+    carillas: image9,
+    coronas: image12,
+    ortodoncia: "",
+    resinas: "",
+    "implantes-dentales": image16,
+  };
+
+  const sliders2: { [key: string]: string } = {
+    "limpieza-dental": "",
+    endodoncia: "",
+    "rehabilitacion-oral": "",
+    blanqueamiento: image7,
+    carillas: image10,
+    coronas: image13,
+    ortodoncia: "",
+    resinas: "",
+    "implantes-dentales": image17,
+  };
+
   let title;
   if (typeof id === "string") {
     title = titles[id];
@@ -79,6 +137,20 @@ const ServicesDinamic: React.FC = () => {
     subtitle2 = subtitles2[id];
   }
 
+  let image;
+  if (typeof id === "string") {
+    image = images[id];
+  }
+
+  let slider1;
+  if (typeof id === "string") {
+    slider1 = sliders1[id];
+  }
+
+  let slider2;
+  if (typeof id === "string") {
+    slider2 = sliders2[id];
+  }
   return (
     <main>
       <Helmet>
@@ -133,15 +205,32 @@ const ServicesDinamic: React.FC = () => {
                 <option value="servicios">Regresar a servicios</option>
               </select>
             </div>
-            <h4 className="text-2xl mb-8 text-justify">
+            <h4 className=" font-poppins font-normal text-xl mb-8 ">
               {title ? `${title}` : ""}
             </h4>
-            <h3 className="text-2xl mb-8 font-bold text-pink-600 text-justify">
+            <h3 className=" font-poppins text-xl mb-8 font-bold text-pink-600 ">
               {subtitle ? `${subtitle}` : ""}
             </h3>
-            <h4 className="text-2xl mb-8 text-justify">
+            <h4 className=" font-poppins font-normal text-lg mb-8 ">
               {subtitle2 ? `${subtitle2}` : ""}
             </h4>
+            <div className=" font-poppins font-normal flex gap-8 md:flex-row flex-col">
+              {image?.map((img, index) =>
+                img ? (
+                  <img key={index} src={img} alt="" className="w-96" />
+                ) : null
+              )}
+              {slider1 && slider2 && (
+                <ReactCompareSlider
+                  itemOne={
+                    <ReactCompareSliderImage src={slider1} alt="Image one" />
+                  }
+                  itemTwo={
+                    <ReactCompareSliderImage src={slider2} alt="Image two" />
+                  }
+                />
+              )}
+            </div>
           </div>
         </article>
         <Booking />

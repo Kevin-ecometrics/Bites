@@ -58,14 +58,18 @@ const ServicesSection: React.FC = () => {
             </select>
           </div>
 
-          <h1 className="text-2xl mb-8 text-justify">
+          <h1 className=" font-poppins font-normal text-2xl mb-8">
             {t("services.serviceText1")}
           </h1>
-          <h3 className="text-lg text-justify mb-8">
+          <h3 className=" font-poppins font-normal text-lg mb-8">
             {t("services.serviceText2")}
           </h3>
-          <h2 className="mb-4 text-lg">{t("services.serviceText3")}</h2>
-          <h4 className="mb-4 text-lg">{t("services.serviceText4")}</h4>
+          <h2 className=" font-poppins font-normal mb-4 text-lg">
+            {t("services.serviceText3")}
+          </h2>
+          <h4 className=" font-poppins font-normal mb-4 text-lg">
+            {t("services.serviceText4")}
+          </h4>
         </div>
       </article>
     </main>

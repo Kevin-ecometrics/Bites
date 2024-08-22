@@ -6,6 +6,7 @@ import Tema1 from "./blogs/tema1";
 import Tema2 from "./blogs/tema2";
 import Tema3 from "./blogs/tema3";
 import Footer from "./components/Footer";
+import { useTranslation } from "react-i18next";
 
 interface BlogContent {
   [key: string]: FC;
@@ -19,6 +20,7 @@ const BLOG_CONTENT: BlogContent = {
 };
 
 const BlogPost: React.FC = () => {
+  const { t } = useTranslation();
   const { id = "" } = useParams<{ id: string }>();
 
   if (!Object.keys(BLOG_CONTENT).includes(id)) {
@@ -31,7 +33,7 @@ const BlogPost: React.FC = () => {
   return (
     <main>
       <Navbar />
-      <Hero title="Blog de Bites" />
+      <Hero title={t("blog")} />
       <section className="w-[80%] mx-auto md:py-16 py-8">
         <Content />
       </section>{" "}
