@@ -1,9 +1,13 @@
+require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const moment = require("moment-timezone");
 const nodemailer = require("nodemailer");
 const mysql = require("mysql");
+const stripe = require("stripe")(
+  "sk_test_51Pr88I2KWLC44QaexI4WORNilAarw2EjMZYoNtlfX0bGWwX3WAcCUdJsehtzrudjSEHyOJ1Uc0fs2UtScRoUPYvb00Fmp1sXb4"
+); // Usar la clave secreta desde las variables de entorno
 
 const app = express();
 const port = 3001;
@@ -38,37 +42,37 @@ app.post("/booking", async (req, res) => {
     if (error) throw error;
     res.json("Datos del formulario almacenados");
 
-    let transporter = nodemailer.createTransport({
-      host: "host11.registrar-servers.com",
-      port: 465,
-      secure: true, // true for 465, false for other ports
-      auth: {
-        user: "pacientes@bitescreadoresdesonrisas.com",
-        pass: "gr6m~tAX$^=H",
-      },
-    });
+    // let transporter = nodemailer.createTransport({
+    //   host: "host11.registrar-servers.com",
+    //   port: 465,
+    //   secure: true, // true for 465, false for other ports
+    //   auth: {
+    //     user: "pacientes@bitescreadoresdesonrisas.com",
+    //     pass: "gr6m~tAX$^=H",
+    //   },
+    // });
 
-    let mailOptions = {
-      from: "pacientes@bitescreadoresdesonrisas.com",
-      to: email,
-      cc: "pacientes@bitescreadoresdesonrisas.com",
-      subject: `Booking Confirmation for ${name}`,
-      text: `
-          Thank you for booking your appointment with Bites Creadores de Sonrisas.
-          We have received your information for the following appointment:
-          Name: ${name}
-          Phone Number: ${phone}
-          Date of your appointment: ${dateInCalifornia}
-          If you have any questions, we are here to help.
-          `,
-    };
-    transporter.sendMail(mailOptions, (error, info) => {
-      if (error) {
-        console.log("Error al enviar el correo electrónico: " + error);
-      } else {
-        console.log("Correo electrónico enviado: " + info.response);
-      }
-    });
+    // let mailOptions = {
+    //   from: "pacientes@bitescreadoresdesonrisas.com",
+    //   to: email,
+    //   cc: "pacientes@bitescreadoresdesonrisas.com",
+    //   subject: `Booking Confirmation for ${name}`,
+    //   text: `
+    //       Thank you for booking your appointment with Bites Creadores de Sonrisas.
+    //       We have received your information for the following appointment:
+    //       Name: ${name}
+    //       Phone Number: ${phone}
+    //       Date of your appointment: ${dateInCalifornia}
+    //       If you have any questions, we are here to help.
+    //       `,
+    // };
+    // transporter.sendMail(mailOptions, (error, info) => {
+    //   if (error) {
+    //     console.log("Error al enviar el correo electrónico: " + error);
+    //   } else {
+    //     console.log("Correo electrónico enviado: " + info.response);
+    //   }
+    // });
   });
 });
 
@@ -126,6 +130,23 @@ app.post("/contact/form", async (req) => {
       console.log("Correo electrónico enviado: " + info.response);
     }
   });
+});
+
+app.post("/create-payment-intent", async (req, res) => {
+  const { amount } = req.body;
+
+  try {
+    const paymentIntent = await stripe.paymentIntents.create({
+      amount: amount,
+      currency: "usd",
+    });
+
+    res.status(200).send({
+      clientSecret: paymentIntent.client_secret,
+    });
+  } catch (error) {
+    res.status(500).send({ error: error.message });
+  }
 });
 
 app.listen(port, () => {

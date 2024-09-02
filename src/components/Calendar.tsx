@@ -1,5 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, FormEvent } from "react";
+import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
 import { useTranslation } from "react-i18next";
+import CheckoutForm from "./CheckoutForm";
 import "react-modern-calendar-datepicker/lib/DatePicker.css";
 import {
   Calendar,
@@ -38,6 +41,18 @@ const CalendarReact: React.FC = () => {
     setPhone("");
     setSelectedTime("");
   };
+  const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLIC_KEY);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const ModalOpen = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault(); // Previene el comportamiento predeterminado del botón
+    setIsModalOpen(true);
+  };
+
+  const ModalClose = () => {
+    setIsModalOpen(false);
+  };
+
   const [open, setOpen] = React.useState(false);
   const [selectedDay, setSelectedDay] = useState<Day | null>(null);
   const [name, setName] = useState("");
@@ -228,7 +243,7 @@ const CalendarReact: React.FC = () => {
           transition={{ duration: 0.5 }}
         >
           <form
-            onSubmit={handleSubmit}
+            onSubmit={ModalOpen}
             className="flex gap-4 flex-col items-center"
           >
             <input
@@ -322,6 +337,32 @@ const CalendarReact: React.FC = () => {
               {t("agendar")}
             </button>
           </form>
+          {isModalOpen && (
+            <div className="fixed inset-0 flex items-center justify-center z-50">
+              <div
+                className="fixed inset-0 bg-black opacity-50"
+                onClick={ModalClose}
+              ></div>
+              <div className="relative bg-white p-8 rounded-lg shadow-lg z-10">
+                <button
+                  onClick={ModalClose}
+                  className="absolute top-0 right-0 mt-4 mr-4 text-2xl 
+                     focus:outline-none bg-[#FE81BD]
+                  text-white px-4 py-2 rounded-full"
+                >
+                  &times;
+                </button>
+                <Elements stripe={stripePromise}>
+                  <CheckoutForm
+                    day={`${new Date(selectedDay.year, selectedDay.month - 1, selectedDay.day).toLocaleDateString("es-ES", { year: "numeric", month: "long", day: "numeric" })}`}
+                    time={selectedTime}
+                    onClose={ModalClose}
+                    onSubmit={handleSubmit}
+                  />
+                </Elements>
+              </div>
+            </div>
+          )}
           <Modal
             cancelButton={
               <PDFDownloadLink
