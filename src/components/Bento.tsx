@@ -78,7 +78,7 @@ const BentoGrid: React.FC = () => {
     {
       src: foto12,
       width: 612,
-      height: 512,
+      height: 712,
       id: "Anyi Manchola is a expert in veneers, one of her mission its making s",
     },
     {

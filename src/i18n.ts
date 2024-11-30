@@ -285,7 +285,19 @@ i18n.use(initReactI18next).init({
           "text31": "Interested in an evaluation?",
           "text32": "Call 663 324 9611.",
           "text33": "Or make an appointment through this medium, select the day and time to start your dental transformation."
+        },
+        stripe: {
+          Reservar: "Book Appointment",
+          Hora: "Appointment Time",
+          Fecha: "Appointment Date",
+          Numero: "Card Number",
+          Vencimiento: "MM/YY",
+          Procesando: "Processing",
+          Pagar: "Pay",
+          Appointment: "en-EN",
+
         }
+
       
         },
     },
@@ -575,6 +587,16 @@ i18n.use(initReactI18next).init({
           "text31": "¿Te interesa una valoración?",
           "text32": "Marca al 663 324 9611.",
           "text33": "O bien realiza una cita a través de este medio, selecciona el día y hora para empezar tu transformación dental."
+        },
+        stripe: {
+          Reservar: "Reservar Cita",
+          Hora: "Hora Cita",
+          Fecha: "Fecha Cita",
+          Numero: "Número de Teléfono",
+          Vencimiento: "MM/AA",
+          Procesando: "Procesando",
+          Pagar: "Pagar",
+          Appointment: "es-ES",
         }
         
       

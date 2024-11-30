@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import {
   CardNumberElement,
   CardExpiryElement,
@@ -37,7 +38,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({
       },
     },
   };
-
+  const { t } = useTranslation();
   const stripe = useStripe();
   const elements = useElements();
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -119,15 +120,21 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({
       <div className="w-full max-w-lg mx-auto p-4 bg-white shadow-md rounded-lg">
         <img src="/bites_logo.png" alt="Logo" className="mx-auto w-full" />
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-bold text-gray-700">Reservar Cita</h2>
-          <p className="text-gray-800 font-semibold">$50.00</p>
+          <h2 className="text-lg font-bold text-gray-700">
+            {t("stripe.Reservar")}{" "}
+          </h2>
+          <p className="text-gray-800 font-semibold">$50.00 USD</p>
         </div>
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-bold text-gray-700">Hora Cita</h2>
+          <h2 className="text-lg font-bold text-gray-700">
+            {t("stripe.Hora")}
+          </h2>
           <p className="text-gray-800 font-semibold">{day}</p>
         </div>
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-bold text-gray-700">Fecha Cita</h2>
+          <h2 className="text-lg font-bold text-gray-700">
+            {t("stripe.Fecha")}
+          </h2>
           <p className="text-gray-800 font-semibold">{time}</p>
         </div>
         <hr className="w-full border border-gray-500 mb-4" />
@@ -137,7 +144,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({
               className="block text-gray-700 text-sm font-bold mb-2"
               htmlFor="card-number-element"
             >
-              Número de Tarjeta
+              {t("stripe.Numero")}{" "}
             </label>
             <div className="p-2 border border-gray-300 rounded">
               <CardNumberElement
@@ -151,7 +158,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({
               className="block text-gray-700 text-sm font-bold mb-2"
               htmlFor="card-expiry-element"
             >
-              MM/AA
+              {t("stripe.Vencimiento")}
             </label>
             <div className="p-2 border border-gray-300 rounded">
               <CardExpiryElement
@@ -180,7 +187,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({
               type="submit"
               disabled={isSubmitting}
             >
-              {isSubmitting ? "Procesando..." : "Pagar"}
+              {isSubmitting ? t("stripe.Procesando") : t("stripe.Pagar")}
             </button>
           </div>
         </form>

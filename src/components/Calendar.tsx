@@ -354,7 +354,7 @@ const CalendarReact: React.FC = () => {
                 </button>
                 <Elements stripe={stripePromise}>
                   <CheckoutForm
-                    day={`${new Date(selectedDay.year, selectedDay.month - 1, selectedDay.day).toLocaleDateString("es-ES", { year: "numeric", month: "long", day: "numeric" })}`}
+                    day={`${new Date(selectedDay.year, selectedDay.month - 1, selectedDay.day).toLocaleDateString(t("stripe.Appointment"), { year: "numeric", month: "long", day: "numeric" })}`}
                     time={selectedTime}
                     onClose={ModalClose}
                     onSubmit={handleSubmit}
@@ -369,13 +369,13 @@ const CalendarReact: React.FC = () => {
                 document={
                   <PDFDocument
                     email={email}
-                    date={`${new Date(selectedDay.year, selectedDay.month - 1, selectedDay.day).toLocaleDateString("es-ES", { year: "numeric", month: "long", day: "numeric" })}`}
+                    date={`${new Date(selectedDay.year, selectedDay.month - 1, selectedDay.day).toLocaleDateString(t("stripe.Appointment"), { year: "numeric", month: "long", day: "numeric" })}`}
                     modalEvent="Bites Creadores de Sonrisas"
                     modalLocation="Frida Kahlo 10410, Zona Urbana Rio Piso #4 404, 22010 Tijuana, B.C."
                     time={selectedTime}
                   />
                 }
-                fileName={`Cita_${name}_${new Date(selectedDay.year, selectedDay.month - 1, selectedDay.day).toLocaleDateString("es-ES", { year: "numeric", month: "long", day: "numeric" })}.pdf`}
+                fileName={`Cita_${name}_${new Date(selectedDay.year, selectedDay.month - 1, selectedDay.day).toLocaleDateString(t("stripe.Appointment"), { year: "numeric", month: "long", day: "numeric" })}.pdf`}
               >
                 {({ loading }) =>
                   loading ? "Cargando documento..." : "Descargar PDF"
@@ -388,7 +388,7 @@ const CalendarReact: React.FC = () => {
               `Telefono: ${phone}`,
               `Nombre: ${name}`,
               `Hora: ${selectedTime}`,
-              `Fecha de la cita: ${new Date(selectedDay.year, selectedDay.month - 1, selectedDay.day).toLocaleDateString("es-ES", { year: "numeric", month: "long", day: "numeric" })}`,
+              `Fecha de la cita: ${new Date(selectedDay.year, selectedDay.month - 1, selectedDay.day).toLocaleDateString(t("stripe.Appointment"), { year: "numeric", month: "long", day: "numeric" })}`,
               `Dirección: Frida Kahlo 10410, Zona Urbana Rio Piso #4 404, 22010 Tijuana, B.C.`,
             ]}
             image="logo_footer"

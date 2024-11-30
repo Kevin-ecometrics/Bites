@@ -6,7 +6,9 @@ import AboutPage from "./About";
 import ServicesPage from "./Services";
 import ServicesDinamic from "./pages/services/dinamic";
 import ContactPage from "./Contact";
-import BlogPage from "./Blog";
+import BlogID from "./Blog";
+import IndexBlog from "./pages/blog/IndexBlog";
+import BlogPage from "./BlogPage";
 import Politicas from "./Politicas";
 import Terminos from "./Terminos";
 const App: React.FC = () => {
@@ -19,7 +21,9 @@ const App: React.FC = () => {
         <Route path="servicios" element={<ServicesPage />} />
         <Route path="/servicios/:id" element={<ServicesDinamic />} />
         <Route path="/contacto" element={<ContactPage />} />
-        <Route path="/blog/:id" element={<BlogPage />} />
+        {/* <Route path="/blog/:id" element={<BlogID />} /> */}
+        <Route path="/blog/" element={<BlogPage />} />
+        <Route path="/blog/:id" element={<IndexBlog />} />
         <Route path="/política de privacidad" element={<Politicas />} />
         <Route path="/términos de servicio" element={<Terminos />} />
       </Routes>
