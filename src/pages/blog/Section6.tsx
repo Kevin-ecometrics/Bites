@@ -3,8 +3,8 @@ import {
   ReactCompareSlider,
   ReactCompareSliderImage,
 } from "react-compare-slider";
-import imagenA from "../../assets/A dental implant it's a procedure that requires an expert in odontology and aesthetic dentistry.png";
-import imagenB from "../../assets/Una sonrisa completa y sana permite que disfrutes del comer y hablar con libertad y comodidad.png";
+// import imagenA from "../../assets/A dental implant it's a procedure that requires an expert in odontology and aesthetic dentistry.png";
+// import imagenB from "../../assets/Una sonrisa completa y sana permite que disfrutes del comer y hablar con libertad y comodidad.png";
 
 const Section5: React.FC = () => {
   const HandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -26,8 +26,9 @@ const Section5: React.FC = () => {
         <div className="text-start col-span-2 flex justify-end items-start flex-col">
           <h1 className="font-bold text-2xl">(Tendencias)</h1>
           <p className="mt-4 text-4xl">
-            Renueva tu sonrisa sin cirugía con carillas de porcelana en Bites
-            Creadores de Sonrisas tu trasformación es radiantemente natural.
+            Descubre como trasformamos una sonrisa juvenil a una sonrisa
+            sofisticada: La Sonrisa de ensueño diseñada para armonizar tu
+            rostro.
           </p>
           <p className="mt-4 text-2xl">
             Por{" "}
@@ -76,11 +77,11 @@ const Section5: React.FC = () => {
               />
               <div className="flex gap-2 py-2">
                 <input type="checkbox" name="" id="" />
-                <p className="text-xl">The Zoe Report Beauty</p>
+                <p className="text-lg">The Zoe Report Beauty</p>
               </div>
               <div className="flex gap-2 mb-8">
                 <input type="checkbox" name="" id="" />
-                <p className="text-xl">Up Next</p>
+                <p className="text-lg">Up Next</p>
               </div>
               <button
                 type="submit"
@@ -151,117 +152,110 @@ const Section5: React.FC = () => {
           </aside>
         </div>
         <div className="col-span-2 ">
-          <p className="text-7xl float-left mr-4 text-[#E72381]">E</p>
+          <p className="text-7xl float-left mr-4 text-[#E72381]">H</p>
           <p className="text-xl">
-            n Este blog te presentamos el “behind the scenes” de una paciente
-            cuya personalidad deseaba que se manifestara en una sonrisa
-            resplandeciente llena de seguridad y felicidad.
-            <br />
-            <br />
-            Llegó una paciente a nuestra clínica de alta estética buscando
-            fortalecer su autoestima aún más con una sonrisa que emparejará su
-            energía y felicidad.
-            <br /> <br />
-            El primer día fue muy fácil pues la paciente que nos había conocido
-            por{" "}
-            <a
-              href="https://Instagram.com/bitescreadoresdesonrisas"
-              className="font-bold hover:underline"
-            >
-              Bitescreadoresdesonrisas
-            </a>
-            , había hecho una cita con nosotros por internet, comenzamos a la
-            hora que ella agendó, nosotras estábamos listas para recibirla.
-            <br />
-            <br />
-            Comenzamos con una evaluación profunda en consultorio, seguido de un
-            modelo de estudio, fotografías y radiografías para conocer el estado
-            de salud bucal generaly una vez completado le recomendamos
-            transformar su sonrisa con carillas de porcelana, la paciente
-            buscaba una opción que le brindara alta durabilidad y una apariencia
-            natural a su sonrisa.
-            <br /> <br />
-            Las carillas de porcelana son recomendadas en pacientes que tienen
-            bordes irregulares en sus dientes, algún diente más corto respecto a
-            los demás, fisuras ligeras, ligeros espacios interdentales que
-            buscan cambiar la apariencia y tono de su sonrisa con aspecto muy
-            natural.
-            <br />
-            <br />
-            En su primera elaboramos diferentes procedimientos higienistas
-            mínimos a fin de que quedara limpia y sana para sus nuevas carillas
-            <br /> <br />
-            La segunda visita fue poner manos a la obra donde, tras el modelo de
-            estudio, se hace un encerado diagnóstico; con ello podremos hacer el
-            tallado de las carillas también llamadas veneres en inglés.
-            <br />
-            <br />
-            Durante esta consulta nuestra paciente eligió las características
-            deseadas para sus carillas por ejemplo el tono, forma y tamaño, en
-            este caso ella buscaba unos incisivos más grandes y ligeramente más
-            redondeados para para darse una apariencia más juvenil. En cuanto al
-            tono, recomendamos uno que combinara con su tono de labios y piel
-            para que resaltara sus rasgos faciales, logrando proyectar armonía y
-            naturalidad.
-            <br />
-            <br />
-            El siguiente paso fue crear impresiones de silicona que permitirán
-            proponer unas carillas provisionales que probamos en nuestra
-            paciente para que pueda observar cómo quedará su sonrisa y si es
-            necesario corregir algún detalle. Esto se hace previo a realizar las
-            carillas de porcelana finales en el laboratorio bajo la supervisión
-            experta de un técnico especialista en materiales dentales como la
-            porcelana.
-            <br />
-            <br />
-            Un par de días después quedan listas las carillas de porcelana y
-            comienza el proceso de trasformación con una limpieza profunda y
-            preparáramos la superficie de sus dientes donde removemos un poquito
-            del esmalte de la superficie frontal para que las carillas queden a
-            la perfección para luego aplicar el adhesivo especial sobre cada
-            diente y fijarlos. Finalizamos esta trasformación con un detallado y
-            pulido para que la paciente no sienta la diferencia en apariencia y
-            sensación de sus carillas.
-            <br />
-            <br />
-            Todo el proceso de las carillas toma un par de horas y es un momento
-            muy especial al revelar la sonrisa finalmente terminada, donde
-            nuestra paciente se sintió muy feliz con los resultados amando cada
-            detalle de su ahora nueva sonrisa.
-            <br />
-            <br />
-            Posterior a esta trasformación de sonrisa le recomendamos a nuestra
-            paciente acudir puntualmente a sus citas de mantenimiento para que
-            su sonrisa siempre se mantenga radiante como ella.
+            oy nos gustaría que nos acompañaras a conocer como en nuestra
+            clínica estética trasformamos la sonrisa de nuestra paciente con una
+            sonrisa bella con un aspecto más juvenil, que buscaba tener una
+            sonrisa con más proyección, elegante y sofisticada que reflejara tu
+            seguridad y madurez.
           </p>
           <br />
           <br />
-          <h1 className="text-[#E72381] font-bold text-3xl">
-            Las carillas de porcelana tienen una duración de 10 a 15 años, para
-            ello será indispensable cuidarlas con visitas de mantenimiento
+          <h1 className="text-[#E72381] text-3xl font-bold">
+            Antes de Bites CDS
           </h1>
           <br />
           <br />
           <p className="text-xl">
-            Es difícil que las carillas de porcelana se manchen sin embargo es
-            importantísimo recordar que debajo de toda carilla hay un diente que
-            requiere los mismo cuidados de siempre por ello es recomendable,
-            tener una buena técnica de cepillado uso de enjuague e hilo dental,
-            para mantenerlos sanos.
-            <br />
-            <br />
-            ¿Qué opinas de estos resultados? Nos llenó de satisfacción ver la
-            felicidad de nuestra paciente con su nueva sonrisa, nuestra misión
-            en Bites Creadores de Sonrisas es escuchar atentamente a nuestros
-            pacientes y brindarles belleza y funcionalidad en su sonrisa.
-            <br />
-            <br />
-            Si estas interesado en trasformar tu sonrisa de forma no invasiva y
-            natural, te recomendamos ampliamente acudir a tu consulta de
-            valoración para conocer tu caso y poder acompañarte en el proceso
-            para tener una sonrisa linda, radiante que refleje tu personalidad
-            con carillas de porcelana.
+            A través de nuestro diseño de carillas de porcelana creamos para
+            nuestra paciente una sonrisa pensada en su gusto y personalidad, que
+            fuera deslumbrante y que armonizara perfectamente con sus belleza
+            faciales.
           </p>
+          <br />
+          <br />
+          <h1 className="text-[#E72381] text-3xl font-bold">
+            A través de nuestro diseño de carillas de porcelana creamos para
+            nuestra paciente una sonrisa pensada en su gusto y personalidad, que
+            fuera deslumbrante y que armonizara perfectamente con sus belleza
+            faciales.
+          </h1>
+          <br />
+          <br />
+          <p className="text-xl">
+            La Primera visita a nuestra clínica estética consistió en realizar
+            una evaluación general para conocer el estado de sus dientes; esta
+            evaluación fue para examinar cada diente y determinar si las
+            condiciones de las encías nos ayudarían y para detectar si no había
+            algún problema que requiera tratarse previo al tratamiento estético.
+            <br /> <br />
+            Después realizamos la toma de radiografías que nos permitió ver más
+            allá de la vista y donde se puede apreciar la estructura ósea y
+            permite descartar algún problema. Una vez inspeccionado todo,
+            nuestra paciente resultó ser candidata ideal para poderle aplicar
+            carillas de porcelana ya que deseaba un aspecto natural, duradero y
+            sofisticado y nuestras carillas de porcelana al ser elaboradas en
+            laboratorio garantizan una alta estética y durabilidad.
+          </p>
+          <br />
+          <br />
+          <h1 className="text-[#E72381] text-3xl font-bold">
+            Impresiones digitales:
+          </h1>
+          <br />
+          <br />
+          <p className="text-xl">
+            Le realizamos a la paciente una impresión digital que consistió en
+            introducir un aparato con una pequeña cámara que nos permitió
+            escanear imágenes 3D de sus dientes y con ayuda de esto diseñamos la
+            sonrisa en la forma y el tamaño que deseaba
+            <br />
+            <br />
+            La paciente buscaba una sonrisa con incisivos más grandes y
+            ligeramente más rectos para una apariencia más elegante y madura.
+            <br />
+            <br />
+            Este método se pudo llevar a cabo debido a que la sonrisa de nuestra
+            paciente se encontraba saludable haciendo el proceso más rápido y
+            cómodo.
+            <br />
+            <br />
+            El siguiente paso fue enviar al laboratorio para crear las carillas
+            de porcelana con todas las especificaciones acordadas en la cita.
+          </p>
+          <br />
+          <br />
+          <h1 className="text-[#E72381] text-3xl font-bold">
+            El siguiente paso fue enviar al laboratorio para crear las carillas
+            de porcelana con todas las especificaciones acordadas en la cita.
+          </h1>
+          <br />
+          <br />
+          <p className="text-xl">
+            El siguiente paso fue enviar al laboratorio para crear las carillas
+            de porcelana con todas las especificaciones acordadas en la cita.
+            <br />
+            <br />
+            Comenzamos primero con una limpieza profunda y preparáramos la
+            superficie de sus dientes donde removimos un poco el esmalte frontal
+            de los dientes para ahí mismo poder aplicar el pegamento dental y
+            colocar las carillas de porcelana sobre el diente. Finalizamos esta
+            trasformación con un detallado y pulido para que queden
+            perfectamente estéticas.
+            <br />
+            <br />
+            Nuestra paciente quedo muy emocionada por su nueva sonrisa, y
+            nosotros más que contentos de poder hacer posible una sonrisa soñada
+            en nuestra clínica estética.
+          </p>
+          <br />
+          <br />
+          <h1 className="text-[#E72381] text-3xl font-bold">
+            Si te gusto esta trasformación de sonrisa con carillas de porcelana
+            te invitamos a agendar tu cita de valoración para trabajar juntos en
+            crear tu sonrisa soñada.
+          </h1>
         </div>
       </div>
     </div>

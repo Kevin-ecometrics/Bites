@@ -11,9 +11,9 @@ const Section1: React.FC = () => {
     console.log("Form Submitted");
   };
   return (
-    <div className="px-8">
+    <div className="px-8 font-poppins">
       <div
-        className="grid grid-cols-1 md:grid-cols-3 text-white w-full h-96"
+        className="grid grid-cols-1 md:grid-cols-3 text-white w-full md:h-96"
         style={{
           backgroundColor: "#6BBAE9",
           padding: "20px",
@@ -34,7 +34,7 @@ const Section1: React.FC = () => {
               <a href="/">Bites creadores de sonrisas</a>
             </strong>
           </p>
-          <p className="mt-4 text-lg">Oct. 24, 2024</p>
+          <p className="mt-4 text-xl">Oct. 24, 2024</p>
         </div>
         <div className="flex justify-center items-center mx-auto">
           <ReactCompareSlider
@@ -57,7 +57,7 @@ const Section1: React.FC = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 mt-20 gap-8">
         <div className="col-span-1">
-          <aside className="w-96">
+          <aside className="w-full">
             <hr className="w-full border border-gray-300 mb-4" />
             <h1 className="text-[#5C9BC0] mb-8 font-bold">(Stay Up To Date)</h1>
             <h2>Become A Style Insider</h2>
@@ -71,7 +71,7 @@ const Section1: React.FC = () => {
                 name="email"
                 id="email"
                 placeholder="Enter your email"
-                className="border-b border-black w-96 h-12"
+                className="border-b border-black w-full h-12"
               />
               <div className="flex gap-2 py-2">
                 <input type="checkbox" name="" id="" />
@@ -101,19 +101,25 @@ const Section1: React.FC = () => {
                 alt=""
               />
               <div className="flex flex-col">
-                <h1 className="text-xl mb-4 font-semibold">Title</h1>
+                <h1 className="text-xl mb-4 font-semibold">
+                  Carillas de Porcelana
+                </h1>
                 <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eligendi
+                  Las carillas de porcelana son una excelente opción para
+                  mejorar la estética dental, ofreciendo una apariencia natural
+                  y duradera.
                 </p>
               </div>
             </div>
             <div className="flex gap-4 border-t border-gray-300 py-8">
               <div className="flex flex-col">
-                <h1 className="text-xl mb-4 font-semibold">Title</h1>
+                <h1 className="text-xl mb-4 font-semibold">
+                  Carillas de Composite
+                </h1>
                 <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eligendi
+                  Las carillas de composite son una alternativa económica y
+                  efectiva para corregir imperfecciones dentales y lograr una
+                  sonrisa perfecta.
                 </p>
               </div>
               <img
@@ -127,19 +133,21 @@ const Section1: React.FC = () => {
                 alt=""
               />
               <div className="flex flex-col">
-                <h1 className="text-xl mb-4 font-semibold">Title</h1>
+                <h1 className="text-xl mb-4 font-semibold">Implante dental</h1>
                 <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eligendi
+                  Los implantes dentales son la solución ideal para reemplazar
+                  dientes perdidos, proporcionando una base sólida y estética
+                  para coronas dentales.
                 </p>
               </div>
             </div>
             <div className="flex gap-4 border-t border-gray-300 py-8">
               <div className="flex flex-col">
-                <h1 className="text-xl mb-4 font-semibold">Title</h1>
+                <h1 className="text-xl mb-4 font-semibold">Gingivoplastia</h1>
                 <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eligendi
+                  La gingivoplastia es un procedimiento quirúrgico que mejora la
+                  apariencia de las encías, creando una sonrisa más armoniosa y
+                  saludable.
                 </p>
               </div>
               <img
@@ -151,7 +159,7 @@ const Section1: React.FC = () => {
         </div>
         <div className="col-span-2 ">
           <p className="text-7xl float-left mr-4 text-[#E72381]">U</p>
-          <p className="text-lg">
+          <p className="text-xl">
             na sonrisa espectacular está al alcance de todos. En Bites creadores
             de sonrisas somos fieles creyentes que mereces disfrutar cuando
             sonríes, y que esa misma sonrisa sea funcional al comer y hablar.
@@ -169,11 +177,11 @@ const Section1: React.FC = () => {
             <br /> <br />
           </p>
 
-          <h1 className="text-[#E72381] text-4xl">
+          <h1 className="text-[#E72381] text-3xl font-bold">
             ¿Cómo identificar si eres candidato?
           </h1>
           <br />
-          <ul className="list-decimal text-lg mb-2">
+          <ul className="list-decimal text-xl mb-2">
             <li>
               Si tus dientes son naturalmente pequeños, las carillas pueden
               darle ese realce que necesitas.
@@ -193,16 +201,16 @@ const Section1: React.FC = () => {
               tonalidades diferentes.
             </li>
           </ul>
-          <p className="text-lg">
+          <p className="text-xl">
             Te recomendamos la carilla composite, ya que no es necesario un
             procedimiento invasivo.
           </p>
           <br />
-          <h1 className="text-[#E72381] text-4xl">
+          <h1 className="text-[#E72381] text-3xl font-bold">
             ¿Son costosas las carillas?
           </h1>
           <br />
-          <p className="text-lg">
+          <p className="text-xl">
             Tranquilo, las carillas de composite son más económicas que las de
             porcelana. La inversión que realices depende de la cantidad de
             carillas que requieras. Puedes iniciar con las carillas superiores y
@@ -210,11 +218,11 @@ const Section1: React.FC = () => {
             paso para tu sonrisa ideal.
           </p>
           <br />
-          <h1 className="text-[#E72381] text-4xl">
+          <h1 className="text-[#E72381] text-3xl font-bold">
             ¿Qué hacer antes del procedimiento?
           </h1>
           <br />
-          <p className="text-lg">
+          <p className="text-xl">
             Previo a colocar las carillas, hacemos un estudio de sonrisa para
             conocer tu salud oral para saber cómo perfeccionarla. Tú eres la
             pieza clave más importante y estamos para escuchar tus necesidades

@@ -5,16 +5,21 @@ import {
 } from "react-compare-slider";
 import imagenA from "../../assets/A dental implant it's a procedure that requires an expert in odontology and aesthetic dentistry.png";
 import imagenB from "../../assets/Una sonrisa completa y sana permite que disfrutes del comer y hablar con libertad y comodidad.png";
+import Profile from "../../assets/blog4-profile.webp";
+import BlogA from "../../assets/blog4-1.webp";
+import BlogB from "../../assets/blog4-2.webp";
+import BlogC from "../../assets/blog4-3.webp";
+import BlogD from "../../assets/blog4-4.webp";
 
-const Section1: React.FC = () => {
+const Section4: React.FC = () => {
   const HandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form Submitted");
   };
   return (
-    <div className="px-8">
+    <div className="px-8 font-poppins">
       <div
-        className="grid grid-cols-1 md:grid-cols-3 text-white w-full h-96"
+        className="grid grid-cols-1 md:grid-cols-3 text-white w-full"
         style={{
           backgroundColor: "#6BBAE9",
           padding: "20px",
@@ -35,10 +40,10 @@ const Section1: React.FC = () => {
               <a href="/">Bites creadores de sonrisas</a>
             </strong>
           </p>
-          <p className="mt-4 text-lg">Oct. 24, 2024</p>
+          <p className="mt-4 text-xl">Oct. 24, 2024</p>
         </div>
         <div className="flex justify-center items-center mx-auto">
-          <ReactCompareSlider
+          {/* <ReactCompareSlider
             itemOne={
               <ReactCompareSliderImage
                 src={imagenA}
@@ -53,16 +58,17 @@ const Section1: React.FC = () => {
                 title="resalta tu belleza e ilumina tu rostro  con la doctora anyi experta en estetica dental  "
               />
             }
-          />
+          /> */}
+          <img src={Profile} alt="" className="rounded-2xl h-96" />
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 mt-20 gap-8">
         <div className="col-span-1">
-          <aside className="w-96">
+          <aside className="w-full">
             <hr className="w-full border border-gray-300 mb-4" />
             <h1 className="text-[#5C9BC0] mb-8 font-bold">(Stay Up To Date)</h1>
             <h2>Become A Style Insider</h2>
-            <p className="text-lg">
+            <p className="text-xl">
               Join The Zoe Report’s exclusive email list for the latest trends,
               shopping guides, celebrity style, and more.
             </p>
@@ -72,15 +78,15 @@ const Section1: React.FC = () => {
                 name="email"
                 id="email"
                 placeholder="Enter your email"
-                className="border-b border-black w-96 h-12"
+                className="border-b border-black w-full h-12"
               />
               <div className="flex gap-2 py-2">
                 <input type="checkbox" name="" id="" />
-                <p className="text-lg">The Zoe Report Beauty</p>
+                <p className="text-xl">The Zoe Report Beauty</p>
               </div>
               <div className="flex gap-2 mb-8">
                 <input type="checkbox" name="" id="" />
-                <p className="text-lg">Up Next</p>
+                <p className="text-xl">Up Next</p>
               </div>
               <button
                 type="submit"
@@ -96,7 +102,7 @@ const Section1: React.FC = () => {
               </p>
             </form>
             <h1 className="text-2xl mb-6">(More Like This)</h1>
-            <div className="flex gap-4 border-t border-gray-300 py-8">
+            <div className="flex gap-4 lg:flex-row flex-col border-t border-gray-300 py-8">
               <img
                 src="https://imgix.bustle.com/uploads/image/2024/11/22/9a1ce370/464139536_1242095683792698_686201517551108879_n.jpg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.3119"
                 alt=""
@@ -109,7 +115,7 @@ const Section1: React.FC = () => {
                 </p>
               </div>
             </div>
-            <div className="flex gap-4 border-t border-gray-300 py-8">
+            <div className="flex gap-4 lg:flex-row flex-col border-t border-gray-300 py-8">
               <div className="flex flex-col">
                 <h1 className="text-xl mb-4 font-semibold">Title</h1>
                 <p className="text-sm">
@@ -122,7 +128,7 @@ const Section1: React.FC = () => {
                 alt=""
               />
             </div>
-            <div className="flex gap-4 border-t border-gray-300 py-8">
+            <div className="flex gap-4 lg:flex-row flex-col border-t border-gray-300 py-8">
               <img
                 src="https://imgix.bustle.com/uploads/image/2024/11/19/c8010d91/20241101_samimiro_img_0198.jpg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.4141&fp-y=0.3714"
                 alt=""
@@ -135,7 +141,7 @@ const Section1: React.FC = () => {
                 </p>
               </div>
             </div>
-            <div className="flex gap-4 border-t border-gray-300 py-8">
+            <div className="flex gap-4 lg:flex-row flex-col border-t border-gray-300 py-8">
               <div className="flex flex-col">
                 <h1 className="text-xl mb-4 font-semibold">Title</h1>
                 <p className="text-sm">
@@ -152,7 +158,7 @@ const Section1: React.FC = () => {
         </div>
         <div className="col-span-2 ">
           <p className="text-7xl float-left mr-4 text-[#E72381]">T</p>
-          <p className="text-lg">
+          <p className="text-xl">
             e compartimos el cambio increíble y natural de nuestra paciente con
             ayuda de una gingivoplastia combinada con un blanqueamiento dental y
             resinas para corregir detalles mínimos.
@@ -190,25 +196,31 @@ const Section1: React.FC = () => {
             espectacular.
             <br /> <br />
           </p>
-          <h1 className="text-[#E72381] text-4xl">
+          <img src={BlogA} alt="" />
+          <br />
+          <br />
+          <h1 className="text-[#E72381] text-3xl font-bold">
             Nos pusimos manos a la obra, en su trasformación de sonrisa,
             encantadas cuando confían en nuestro trabajo para lograr un balance
             perfecto entre funcionalidad y belleza.{" "}
           </h1>
           <br /> <br />
-          <p className="text-lg">
+          <p className="text-xl">
             El Primer paso para esta trasformación fue una limpieza dental para
             dejar la zona libre de cualquier acumulación de sarro o bacterias
             entre la encía y dientes. Una vez terminada la limpieza preparamos
             todo para realizar la gingivoplastía.
           </p>
           <br /> <br />
-          <h1 className="text-[#E72381] text-4xl">
+          <img src={BlogB} alt="" />
+          <br />
+          <br />
+          <h1 className="text-[#E72381] text-3xl font-bold">
             Gingivoplastía para un diseño de sonrisa:
           </h1>
           <br />
           <br />
-          <p className="text-lg">
+          <p className="text-xl">
             {" "}
             Para la gingivoplastia comenzamos anestesiando la zona de la encía
             con anestesia local, realizamos las mediciones y marcación para
@@ -217,7 +229,7 @@ const Section1: React.FC = () => {
           </p>{" "}
           <br />
           <br />
-          <p className="text-lg">
+          <p className="text-xl">
             Después de realizar la gingivoplastía, compartimos con nuestra
             paciente algunas recomendaciones importantes para su recuperación.
             Le sugerimos cepillar sus dientes con delicadeza, utilizar un
@@ -229,7 +241,7 @@ const Section1: React.FC = () => {
           </p>{" "}
           <br />
           <br />
-          <p className="text-lg">
+          <p className="text-xl">
             Queremos puntualizar como expertos en odontología estética, que la
             gingivoplastía es un procedimiento mínimamente invasivo y bastante
             breve con una duración de 30 a 40 minutos y su postoperatorio
@@ -238,13 +250,16 @@ const Section1: React.FC = () => {
           </p>{" "}
           <br />
           <br />
-          <h1 className="text-[#E72381] text-4xl">
+          <img src={BlogC} alt="" />
+          <br />
+          <br />
+          <h1 className="text-[#E72381] text-3xl font-bold">
             {" "}
             Blanqueamiento dental para finalizar el diseño de sonrisa{" "}
           </h1>{" "}
           <br />
           <br />
-          <p className="text-lg">
+          <p className="text-xl">
             Pasado 4 semanas de la gingivoplastía, continuamos con el siguiente
             paso de la trasformación de sonrisa. Realizamos un blanqueamiento
             dental para iluminar la nueva forma de su sonrisa, en el caso de
@@ -255,16 +270,19 @@ const Section1: React.FC = () => {
           </p>{" "}
           <br />
           <br />
-          <p className="text-lg"> Resinas estéticas</p> <br />
+          <h1 className="text-[#E72381] text-3xl font-bold">
+            Resinas estéticas
+          </h1>{" "}
           <br />
-          <p className="text-lg">
+          <br />
+          <p className="text-xl">
             Comenzamos agregando poco a poco la resina para darle forma y tamaño
             deseado. Utilizamos luz ultravioleta para endurecer y asegurar que
             se adhiera a los dientes perfectamente.
           </p>{" "}
           <br />
           <br />
-          <p className="text-lg">
+          <p className="text-xl">
             {" "}
             Una vez listas, mostramos la forma a nuestra paciente para que
             pudiera ver su nueva sonrisa y nos diera su aprobación. El último
@@ -274,7 +292,10 @@ const Section1: React.FC = () => {
           </p>{" "}
           <br />
           <br />
-          <h1 className="text-[#E72381] text-4xl">
+          <img src={BlogD} alt="" />
+          <br />
+          <br />
+          <h1 className="text-[#E72381] text-3xl font-bold">
             En Bites Creadores de Sonrisas trasformamos de forma sutil y
             elegante una sonrisa, en este blog pudimos ver como le dimos
             mantenimiento, restructuramos su forma, le facilitamos más luz con
@@ -283,7 +304,7 @@ const Section1: React.FC = () => {
           </h1>{" "}
           <br />
           <br />
-          <p className="text-lg">
+          <p className="text-xl">
             Estos cambios se hicieron de manera que respetamos la forma natural
             de sus dientes, que era el principal deseo de nuestra paciente
             linda, que quedo maravillada al ver los resultados tan sutiles pero
@@ -291,9 +312,17 @@ const Section1: React.FC = () => {
           </p>{" "}
           <br />
           <br />
-          <p className="text-lg">¿Qué te pareció esta trasformación?</p> <br />
+          <div className="w-full flex justify-start items-start">
+            <iframe
+              src="https://www.instagram.com/reel/C5-XbQ4uW9W/embed"
+              title="Instagram video"
+              className="w-full aspect-square"
+              scrolling="No"
+            ></iframe>
+          </div>
+          <p className="text-xl">¿Qué te pareció esta trasformación?</p> <br />
           <br />
-          <p className="text-lg">
+          <p className="text-xl">
             Para nosotros fue algo muy lindo, discreto y muy elegante. Nos
             encantó trasformar esta sonrisa y ver nuestra paciente disfrutarla y
             sonreír ampliamente. Si buscas resultados sutiles definitivamente te
@@ -308,4 +337,4 @@ const Section1: React.FC = () => {
   );
 };
 
-export default Section1;
+export default Section4;

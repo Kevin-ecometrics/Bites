@@ -6,17 +6,12 @@ import Section2 from "./Section2";
 import Section3 from "./Section3";
 import Section4 from "./Section4";
 import Section5 from "./Section5";
+import Section6 from "./Section6";
 import { Helmet } from "react-helmet-async";
+import Footer from "../../components/Footer";
+import { sectionIds } from "./Links";
 
 const IndexBlog: React.FC = () => {
-  const sectionIds = [
-    "La-solucion-para-una-sonrisa-ideal",
-    "Descubre-como-obtener-una-sonrisa-deslumbrante-con-blanqueamiento-dental",
-    "Con-el-implante-dental-elevala-al-siguiente-nivel",
-    "Remodela-tus-encias-luce-unos-dientes-mas-grandes-y-bellos-te-presentamos-la-gingivoplastia",
-    "Renueva-tu-sonrisa-sin-cirugia-con-carillas-de-porcelana-en-Bites-Creadores-de-Sonrisas-tu-trasformacion-es-radiantemente-natural",
-  ];
-
   const [currentSection, setCurrentSection] = useState(0);
   const navigate = useNavigate(); // Inicializa useNavigate
   const location = useLocation(); // Inicializa useLocation
@@ -29,6 +24,7 @@ const IndexBlog: React.FC = () => {
       document.getElementById("section3"),
       document.getElementById("section4"),
       document.getElementById("section5"),
+      document.getElementById("section6"),
     ];
 
     sections.forEach((section, index) => {
@@ -103,8 +99,11 @@ const IndexBlog: React.FC = () => {
         <div className="scroll-mt-32 mt-48" id="section5">
           <Section5 />
         </div>
+        <div className="scroll-mt-32 mt-48" id="section6">
+          <Section6 />
+        </div>
       </section>
-      <footer>2</footer>
+      <Footer />
     </main>
   );
 };

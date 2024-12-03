@@ -5,15 +5,15 @@ import {
 } from "react-compare-slider";
 import imagenA from "../../assets/Una sonrisa saludable solo necesita un blaqueamiento dental.png";
 import imagenB from "../../assets/Una sonrisa se ve espectacular despues de hacerse un blaqueamiento con los mejores en Bites Creadores de Sonrisas.png";
-const Section1: React.FC = () => {
+const Section2: React.FC = () => {
   const HandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form Submitted");
   };
   return (
-    <div className="px-8">
+    <div className="px-8 font-poppins">
       <div
-        className="grid grid-cols-1 md:grid-cols-3 text-white w-full h-96"
+        className="grid grid-cols-1 md:grid-cols-3 text-white w-full md:h-96"
         style={{
           backgroundColor: "#6BBAE9",
           padding: "20px",
@@ -34,7 +34,7 @@ const Section1: React.FC = () => {
               <a href="/">Bites creadores de sonrisas</a>
             </strong>
           </p>
-          <p className="mt-4 text-lg">Oct. 24, 2024</p>
+          <p className="mt-4 text-xl">Oct. 24, 2024</p>
         </div>
         <div className="flex justify-center items-center mx-auto">
           <ReactCompareSlider
@@ -57,7 +57,7 @@ const Section1: React.FC = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 mt-20 gap-8">
         <div className="col-span-1">
-          <aside className="w-96">
+          <aside className="w-full">
             <hr className="w-full border border-gray-300 mb-4" />
             <h1 className="text-[#5C9BC0] mb-8 font-bold">(Stay Up To Date)</h1>
             <h2>Become A Style Insider</h2>
@@ -71,7 +71,7 @@ const Section1: React.FC = () => {
                 name="email"
                 id="email"
                 placeholder="Enter your email"
-                className="border-b border-black w-96 h-12"
+                className="border-b border-black w-full h-12"
               />
               <div className="flex gap-2 py-2">
                 <input type="checkbox" name="" id="" />
@@ -151,7 +151,7 @@ const Section1: React.FC = () => {
         </div>
         <div className="col-span-2 ">
           <p className="text-7xl float-left mr-4">E</p>
-          <p className="text-lg">
+          <p className="text-xl">
             l blanqueamiento dental es uno de los tratamientos dentales
             estéticos con los resultados más visibles de forma inmediata.
             <br />
@@ -187,12 +187,12 @@ const Section1: React.FC = () => {
             <br /> <br />
           </p>
 
-          <h1 className="text-[#E72381] text-4xl">
+          <h1 className="text-[#E72381] text-3xl font-bold">
             ¿Puedo tener los dientes del tono más blanco en la primera sesión?
           </h1>
           <br />
 
-          <p className="text-lg">
+          <p className="text-xl">
             Es normal buscar cambios drásticos para vernos diferentes, pero es
             esencial conocer los límites de nuestros dientes para poder
             disfrutar más de ellos. <br /> <br />
@@ -212,11 +212,11 @@ const Section1: React.FC = () => {
             armoniosos y naturales.
           </p>
           <br />
-          <h1 className="text-[#E72381] text-4xl">
+          <h1 className="text-[#E72381] text-3xl font-bold">
             ¿Vuelven a su color anterior?{" "}
           </h1>
           <br />
-          <p className="text-lg">
+          <p className="text-xl">
             Es importante seguir nuestras recomendaciones, entre ellas es seguir
             una dieta libre de alimentos y bebidas que no manchen los dientes
             durante las 72 horas posteriores. <br /> <br />
@@ -227,11 +227,11 @@ const Section1: React.FC = () => {
             evitar un retroceso en tu tratamiento.
           </p>
           <br />
-          <h1 className="text-[#E72381] text-4xl">
+          <h1 className="text-[#E72381] text-3xl font-bold">
             ¿Cuál es la edad adecuada para hacerme un blanqueamiento?{" "}
           </h1>
           <br />
-          <p className="text-lg">
+          <p className="text-xl">
             Si tu salud oral es excelente, te queremos invitar a animarte, nunca
             es tarde. <br /> <br />
             Recomendamos una vez pasada la adolescencia. Previo a realizar
@@ -243,9 +243,12 @@ const Section1: React.FC = () => {
             te proyectes más seguro, rejuvenecido, que tu salud oral se preserve
             y que disfrutes del proceso adaptado siempre a ti.
           </p>
-          <h1 className="text-[#E72381] text-4xl">Proceso ambulatorio</h1>
           <br />
-          <p className="text-lg">
+          <h1 className="text-[#E72381] font-bold text-3xl">
+            Proceso ambulatorio
+          </h1>
+          <br />
+          <p className="text-xl">
             Sentirte recibido con amor y ternura y despedirte con la misma
             ilusión. <br /> <br />
             Te permite retomar tus actividades una vez acabado el procedimiento,
@@ -254,12 +257,13 @@ const Section1: React.FC = () => {
             visualmente y que te sientas relajado. Cuando sea momento de irte,
             te sientas feliz y satisfecho.
           </p>
-          <h1 className="text-[#E72381] text-4xl">
+          <br />
+          <h1 className="text-[#E72381] text-3xl font-bold">
             ¿Por qué hacerte un blanqueamiento dental en Bites Creadores de
             Sonrisas?
           </h1>
           <br />
-          <p className="text-lg">
+          <p className="text-xl">
             Sonreír o reírse a carcajadas es un gozo de la vida que no queremos
             que te avergüence hacer debido al color de tus dientes. Es momento
             de dejar de taparte la sonrisa con la mano al momento de expresar
@@ -278,4 +282,4 @@ const Section1: React.FC = () => {
   );
 };
 
-export default Section1;
+export default Section2;
