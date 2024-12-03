@@ -9,6 +9,7 @@ interface Content {
   image: string;
   description: string;
   extendedTitle: string;
+  link: string;
   gridContent: {
     col1: GridContent;
     col2: GridContent;
@@ -27,13 +28,15 @@ interface Content {
 
 export const contentMap: { [key: string]: Content } = {
   "Carillas de Porcelana": {
-    text: "Contenido de TCarillas",
+    text: "Contenido de nuestros blogs",
     image:
       "https://girlboss.com/cdn/shop/articles/GB_Editorial_Nov_Gifting_Etiquette_1056x640.webp?v=1672812010",
     description:
-      "'Should I Give My Boss A Gift?' And Other Holiday Gifting Questions—Answered",
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.",
+    link: "/blog/Descubre-como-trasformamos-una-sonrisa-juvenil-a-una-sonrisa-sofisticada-La-Sonrisa-de-ensueno-disenada-para-armonizar-tu-rostro",
+
     extendedTitle:
-      "Two etiquette experts tell you the dos and don’ts of gifting at work.",
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.",
     gridContent: {
       col1: {
         image:
@@ -103,6 +106,8 @@ export const contentMap: { [key: string]: Content } = {
     text: "Contenido de Trends",
     image: "trends.jpg",
     description: "Descripción de Trends",
+    link: "",
+
     extendedTitle: "Últimas tendencias en el mundo",
     gridContent: {
       col1: {
@@ -163,6 +168,8 @@ export const contentMap: { [key: string]: Content } = {
     text: "Contenido de Wellness",
     image: "wellness.jpg",
     description: "Descripción de Wellness",
+    link: "",
+
     extendedTitle: "Bienestar y salud para una vida mejor",
     gridContent: {
       col1: {
@@ -219,10 +226,12 @@ export const contentMap: { [key: string]: Content } = {
       },
     },
   },
-  "Gingivoplastia": {
+  Gingivoplastia: {
     text: "Contenido de Success Stories",
     image: "success-stories.jpg",
     description: "Descripción de Success Stories",
+    link: "",
+
     extendedTitle: "Historias de éxito inspiradoras",
     gridContent: {
       col1: {
@@ -279,5 +288,4 @@ export const contentMap: { [key: string]: Content } = {
       },
     },
   },
- 
-  };
+};

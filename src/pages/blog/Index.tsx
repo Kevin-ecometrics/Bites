@@ -34,6 +34,9 @@ const Blog: React.FC = () => {
     <div className="mt-48 px-8 md:px-0">
       <section className="mx-auto container">
         <strong className="text-3xl">
+          Explora nuestros blogs y aprende más sobre nuestros servicios
+        </strong>
+        {/* <strong className="text-3xl">
           {contentMap[selectedTitle].extendedTitle}
         </strong>
         <ul className="flex mt-8">
@@ -46,11 +49,11 @@ const Blog: React.FC = () => {
               {title}
             </li>
           ))}
-        </ul>
+        </ul> */}
         <div className="mt-8">
-          <div className="cursor-pointer ">
+          <a className="cursor-pointer " href={contentMap[selectedTitle].link}>
             <img src={contentMap[selectedTitle].image} alt={selectedTitle} />
-          </div>
+          </a>
           <h2 className="text-4xl py-4">{selectedContent}</h2>
           <p className="text-2xl mb-8">
             {contentMap[selectedTitle].description}
