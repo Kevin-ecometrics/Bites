@@ -71,17 +71,19 @@ const Blog: React.FC = () => {
                 return (
                   <div key={colKey}>
                     <div className="w-full bg-cover overflow-hidden cursor-pointer">
-                      <img
-                        src={colContent.image}
-                        alt={colContent.title}
-                        className="transform w-full
+                      <a href={colContent?.link}>
+                        <img
+                          src={colContent?.image}
+                          alt={colContent?.title}
+                          className="transform w-full
                         transition duration-500 
                         hover:scale-110"
-                      />
+                        />
+                      </a>
                     </div>
 
-                    <h3 className="text-2xl font-bold">{colContent.title}</h3>
-                    <p className="text-lg">{colContent.description}</p>
+                    <h3 className="text-2xl font-bold">{colContent?.title}</h3>
+                    <p className="text-lg">{colContent?.description}</p>
                   </div>
                 );
               }
@@ -100,14 +102,16 @@ const Blog: React.FC = () => {
             return (
               <div key={colKey}>
                 <div className=" overflow-hidden cursor-pointer">
-                  <img
-                    src={colContent.image}
-                    alt={colContent.title}
-                    className="transform w-full transition duration-500 hover:scale-110"
-                  />
+                  <a href={colContent?.link}>
+                    <img
+                      src={colContent?.image}
+                      alt={colContent?.title}
+                      className="transform w-full transition duration-500 hover:scale-110"
+                    />
+                  </a>
                 </div>
-                <h3 className="text-2xl font-bold">{colContent.title}</h3>
-                <p className="text-lg">{colContent.description}</p>
+                <h3 className="text-2xl font-bold">{colContent?.title}</h3>
+                <p className="text-lg">{colContent?.description}</p>
               </div>
             );
           })}
