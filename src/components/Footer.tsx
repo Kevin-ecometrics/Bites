@@ -36,6 +36,7 @@ const Footer: React.FC = () => {
     "Galeria",
     "Contacto",
     "Servicios",
+    "Blog",
     "Términos de Servicio",
     "Política de Privacidad",
   ];

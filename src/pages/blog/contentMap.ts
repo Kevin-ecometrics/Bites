@@ -29,27 +29,25 @@ interface Content {
 
 export const contentMap: { [key: string]: Content } = {
   "Carillas de Porcelana": {
-    text: "Contenido de nuestros blogs",
-    image:
-      "https://girlboss.com/cdn/shop/articles/GB_Editorial_Nov_Gifting_Etiquette_1056x640.webp?v=1672812010",
+    text: "Descubre como trasformamos una sonrisa juvenil a una sonrisa sofisticada: La Sonrisa de ensueño diseñada para armonizar tu rostro.",
+    image: "/blog6-card.webp",
+
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.",
+      " Hoy nos gustaría que nos acompañaras a conocer como en nuestra clínica estética trasformamos la sonrisa de nuestra paciente con una sonrisa bella con un aspecto más juvenil, que buscaba tener una sonrisa con más proyección, elegante y sofisticada que reflejara tu seguridad y madurez.",
     link: "/blog/Descubre-como-trasformamos-una-sonrisa-juvenil-a-una-sonrisa-sofisticada-La-Sonrisa-de-ensueno-disenada-para-armonizar-tu-rostro",
 
-    extendedTitle:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.",
+    extendedTitle: "",
     gridContent: {
       col1: {
-        image:
-          "https://girlboss.com/cdn/shop/articles/Politics_Web_Article_672x416.png?v=1729673082",
+        image: "/blog5-card.webp",
+
         title: "Renueva tu sonrisa sin cirugía con carillas de porcelana",
         description:
           "En Este blog te presentamos el “behind the scenes” de una paciente cuya personalidad deseaba que se manifestara en una sonrisa resplandeciente llena de seguridad y felicidad.",
         link: "/blog/Renueva-tu-sonrisa-sin-cirugia-con-carillas-de-porcelana-en-Bites-Creadores-de-Sonrisas-tu-trasformacion-es-radiantemente-natural",
       },
       col2: {
-        image:
-          "https://girlboss.com/cdn/shop/articles/Semrush_Academy_672x416.png?v=1727131914",
+        image: "/blog4-card.webp",
         title:
           "Remodela tus encías luce unos dientes más grandes y bellos, te presentamos la gingivoplastia.",
         description:

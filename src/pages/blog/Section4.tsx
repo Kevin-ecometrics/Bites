@@ -10,12 +10,16 @@ import BlogA from "../../assets/blog4-1.webp";
 import BlogB from "../../assets/blog4-2.webp";
 import BlogC from "../../assets/blog4-3.webp";
 import BlogD from "../../assets/blog4-4.webp";
+import { useLocation } from "react-router-dom";
 
 const Section4: React.FC = () => {
   const HandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form Submitted");
   };
+
+  const URL = useLocation();
+
   return (
     <div className="px-8 font-poppins">
       <div
@@ -110,59 +114,92 @@ const Section4: React.FC = () => {
                 nuestra Política de Privacidad y Términos de Uso.
               </p>
             </form>
-            <strong className="text-2xl mb-6">Nuestros blogs </strong>
-            <div className="flex gap-4 lg:flex-row flex-col border-t border-gray-300 py-8">
-              <img
-                src="https://imgix.bustle.com/uploads/image/2024/11/22/9a1ce370/464139536_1242095683792698_686201517551108879_n.jpg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.3119"
-                alt=""
-              />
-              <div className="flex flex-col">
-                <h1 className="text-xl mb-4 font-semibold">Title</h1>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eligendi
-                </p>
+            {URL.pathname ===
+            "/blog/Remodela-tus-encias-luce-unos-dientes-mas-grandes-y-bellos-te-presentamos-la-gingivoplastia" ? (
+              <div>
+                <strong className="text-2xl mb-6">Nuestros blogs </strong>
+                <div className="flex gap-4 lg:flex-row flex-col border-t border-gray-300 py-8">
+                  <img
+                    src="https://imgix.bustle.com/uploads/image/2024/11/22/9a1ce370/464139536_1242095683792698_686201517551108879_n.jpg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.3119"
+                    alt=""
+                  />
+                  <div className="flex flex-col">
+                    <h1 className="text-xl mb-4 font-semibold">
+                      {" "}
+                      Descubre cómo trasformamos una sonrisa juvenil a una
+                      sonrisa sofisticada{" "}
+                    </h1>
+                    <p className="text-sm">
+                      En Este blog te presentamos el “behind the scenes” de una
+                      paciente.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4 lg:flex-row flex-col border-t border-gray-300 py-8">
+                  <div className="flex flex-col">
+                    <h1 className="text-xl mb-4 font-semibold">
+                      {" "}
+                      Renueva tu sonrisa sin cirugía con carillas de porcelana
+                    </h1>
+                    <p className="text-sm">
+                      En Este blog te presentamos el “behind the scenes” de una
+                      paciente.
+                    </p>
+                  </div>
+                  <img
+                    src="https://imgix.bustle.com/uploads/image/2024/11/14/2dab5afb/459312207_392932597184609_1904214669238524394_n-1.jpg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.5329&fp-y=0.1047"
+                    alt=""
+                  />
+                </div>
+                <div className="flex gap-4 lg:flex-row flex-col border-t border-gray-300 py-8">
+                  <img
+                    src="https://imgix.bustle.com/uploads/image/2024/11/19/c8010d91/20241101_samimiro_img_0198.jpg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.4141&fp-y=0.3714"
+                    alt=""
+                  />
+                  <div className="flex flex-col">
+                    <h1 className="text-xl mb-4 font-semibold">
+                      {" "}
+                      Con el implante dental elevala al siguiente nivel
+                    </h1>
+                    <p className="text-sm">
+                      En Este blog te presentamos el “behind the scenes” de una
+                      paciente.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4 lg:flex-row flex-col border-t border-gray-300 py-8">
+                  <div className="flex flex-col">
+                    <h1 className="text-xl mb-4 font-semibold">
+                      {" "}
+                      Descubre como obtener una sonrisa deslumbrante
+                    </h1>
+                    <p className="text-sm">
+                      En Este blog te presentamos el “behind the scenes” de una
+                      paciente.
+                    </p>
+                  </div>
+                  <img
+                    src="https://imgix.bustle.com/uploads/image/2024/11/12/6be48854/productroundup_template-4001.jpeg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.4571&fp-y=0.4959"
+                    alt=""
+                  />
+                </div>
+                <div className="flex gap-4 border-t border-gray-300 py-8">
+                  <img
+                    src="https://imgix.bustle.com/uploads/image/2024/12/3/074985c0/465806669_18467131660060317_7140895878199682650_n-1.jpg?w=110&h=110&fit=crop&crop=faces"
+                    alt=""
+                  />
+                  <div className="flex flex-col">
+                    <h1 className="text-xl mb-4 font-semibold">
+                      La solucion para una sonrisa ideal
+                    </h1>
+                    <p className="text-sm">
+                      En este blog te presentamos el “behind the scenes” de una
+                      paciente.
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="flex gap-4 lg:flex-row flex-col border-t border-gray-300 py-8">
-              <div className="flex flex-col">
-                <h1 className="text-xl mb-4 font-semibold">Title</h1>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eligendi
-                </p>
-              </div>
-              <img
-                src="https://imgix.bustle.com/uploads/image/2024/11/14/2dab5afb/459312207_392932597184609_1904214669238524394_n-1.jpg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.5329&fp-y=0.1047"
-                alt=""
-              />
-            </div>
-            <div className="flex gap-4 lg:flex-row flex-col border-t border-gray-300 py-8">
-              <img
-                src="https://imgix.bustle.com/uploads/image/2024/11/19/c8010d91/20241101_samimiro_img_0198.jpg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.4141&fp-y=0.3714"
-                alt=""
-              />
-              <div className="flex flex-col">
-                <h1 className="text-xl mb-4 font-semibold">Title</h1>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eligendi
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-4 lg:flex-row flex-col border-t border-gray-300 py-8">
-              <div className="flex flex-col">
-                <h1 className="text-xl mb-4 font-semibold">Title</h1>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eligendi
-                </p>
-              </div>
-              <img
-                src="https://imgix.bustle.com/uploads/image/2024/11/12/6be48854/productroundup_template-4001.jpeg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.4571&fp-y=0.4959"
-                alt=""
-              />
-            </div>
+            ) : null}
           </aside>
         </div>
         <div className="col-span-2 ">
@@ -205,7 +242,9 @@ const Section4: React.FC = () => {
             espectacular.
             <br /> <br />
           </p>
-          <img src={BlogA} alt="" />
+          <div className="flex justify-center items-center">
+            <img src={BlogA} alt="" />
+          </div>
           <br />
           <br />
           <h1 className="text-[#E72381] text-3xl font-bold">
@@ -221,7 +260,9 @@ const Section4: React.FC = () => {
             todo para realizar la gingivoplastía.
           </p>
           <br /> <br />
-          <img src={BlogB} alt="" />
+          <div className="flex justify-center items-center">
+            <img src={BlogB} alt="" />
+          </div>
           <br />
           <br />
           <h1 className="text-[#E72381] text-3xl font-bold">
@@ -259,7 +300,9 @@ const Section4: React.FC = () => {
           </p>{" "}
           <br />
           <br />
-          <img src={BlogC} alt="" />
+          <div className="flex justify-center items-center">
+            <img src={BlogC} alt="" />
+          </div>
           <br />
           <br />
           <h1 className="text-[#E72381] text-3xl font-bold">
@@ -301,7 +344,9 @@ const Section4: React.FC = () => {
           </p>{" "}
           <br />
           <br />
-          <img src={BlogD} alt="" />
+          <div className="flex justify-center items-center">
+            <img src={BlogD} alt="" />
+          </div>
           <br />
           <br />
           <h1 className="text-[#E72381] text-3xl font-bold">
@@ -321,14 +366,15 @@ const Section4: React.FC = () => {
           </p>{" "}
           <br />
           <br />
-          <div className="w-full flex justify-start items-start">
+          <div className="w-full flex justify-center items-center">
             <iframe
               src="https://www.instagram.com/reel/C5-XbQ4uW9W/embed"
               title="Instagram video"
-              className="w-full aspect-square"
+              className="md:w-[800px] md:h-[1300px] w-full h-[550px]"
               scrolling="No"
             ></iframe>
           </div>
+          <br />
           <p className="text-xl">¿Qué te pareció esta trasformación?</p> <br />
           <br />
           <p className="text-xl">

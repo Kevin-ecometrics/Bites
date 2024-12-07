@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { contentMap } from "./contentMap";
-import Form from "./Form";
+import Form from "../contact/Form";
 
 const Blog: React.FC = () => {
   const [selectedTitle, setSelectedTitle] = useState<string>(
@@ -31,12 +31,12 @@ const Blog: React.FC = () => {
   ).slice(startIndex, endIndex);
 
   return (
-    <div className="mt-48 px-8 md:px-0">
+    <div className="mt-48 px-8 font-poppins">
       <section className="mx-auto container">
-        <strong className="text-3xl">
-          Explora nuestros blogs y aprende más sobre nuestros servicios
+        <strong className="text-3xl text-[#E72381]">
+          Explora nuestros blogs disponibles en la página
         </strong>
-        {/* <strong className="text-3xl">
+        <strong className="text-3xl">
           {contentMap[selectedTitle].extendedTitle}
         </strong>
         <ul className="flex mt-8">
@@ -49,16 +49,29 @@ const Blog: React.FC = () => {
               {title}
             </li>
           ))}
-        </ul> */}
+        </ul>
         <div className="mt-8">
-          <a className="cursor-pointer " href={contentMap[selectedTitle].link}>
-            <img src={contentMap[selectedTitle].image} alt={selectedTitle} />
-          </a>
-          <h2 className="text-4xl py-4">{selectedContent}</h2>
-          <p className="text-2xl mb-8">
+          <div className="w-full bg-cover overflow-hidden cursor-pointer">
+            <a
+              className="cursor-pointer "
+              href={contentMap[selectedTitle].link}
+            >
+              <img
+                src={contentMap[selectedTitle].image}
+                alt={selectedTitle}
+                className="transform w-[900px]
+                        transition duration-500 
+                        hover:scale-110   "
+              />
+            </a>
+          </div>
+          <h2 className="text-3xl py-4 font-bold text-[#E72381]">
+            {selectedContent}
+          </h2>
+          <p className="text-xl mb-8">
             {contentMap[selectedTitle].description}
           </p>
-          <p className="text-2xl mb-4">
+          <p className="text-xl mb-4">
             {contentMap[selectedTitle].extendedTitle}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -82,7 +95,9 @@ const Blog: React.FC = () => {
                       </a>
                     </div>
 
-                    <h3 className="text-2xl font-bold">{colContent?.title}</h3>
+                    <h3 className="text-2xl font-bold text-[#E72381]">
+                      {colContent?.title}
+                    </h3>
                     <p className="text-lg">{colContent?.description}</p>
                   </div>
                 );
@@ -110,7 +125,9 @@ const Blog: React.FC = () => {
                     />
                   </a>
                 </div>
-                <h3 className="text-2xl font-bold">{colContent?.title}</h3>
+                <h3 className="text-2xl font-bold text-[#E72381]">
+                  {colContent?.title}
+                </h3>
                 <p className="text-lg">{colContent?.description}</p>
               </div>
             );

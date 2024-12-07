@@ -5,16 +5,26 @@ import {
 } from "react-compare-slider";
 import imagenA from "../../assets/A dental implant it's a procedure that requires an expert in odontology and aesthetic dentistry.png";
 import imagenB from "../../assets/Una sonrisa completa y sana permite que disfrutes del comer y hablar con libertad y comodidad.png";
+import { useLocation } from "react-router-dom";
+import Profile from "../../assets/blog5-profile.webp";
+import BlogA from "../../assets/blog5-1.webp";
+import BlogB from "../../assets/blog5-2.webp";
+import BlogC from "../../assets/blog5-3.webp";
+import BlogD from "../../assets/blog5-4.webp";
+import BlogE from "../../assets/blog5-5.webp";
 
 const Section5: React.FC = () => {
   const HandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form Submitted");
   };
+
+  const URL = useLocation();
+
   return (
     <div className="px-8 font-poppins">
       <div
-        className="grid grid-cols-1 md:grid-cols-3 text-white w-full md:h-96"
+        className="grid grid-cols-1 md:grid-cols-3 text-white w-full"
         style={{
           backgroundColor: "#6BBAE9",
           padding: "20px",
@@ -54,6 +64,7 @@ const Section5: React.FC = () => {
               />
             }
           /> */}
+          <img src={Profile} alt="" className="rounded-2xl h-96" />{" "}
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 mt-20 gap-8">
@@ -104,59 +115,92 @@ const Section5: React.FC = () => {
                 nuestra Política de Privacidad y Términos de Uso.
               </p>
             </form>
-            <strong className="text-2xl mb-6">Nuestros blogs </strong>
-            <div className="flex gap-4 border-t border-gray-300 py-8">
-              <img
-                src="https://imgix.bustle.com/uploads/image/2024/11/22/9a1ce370/464139536_1242095683792698_686201517551108879_n.jpg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.3119"
-                alt=""
-              />
-              <div className="flex flex-col">
-                <h1 className="text-xl mb-4 font-semibold">Title</h1>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eligendi
-                </p>
+            {URL.pathname ===
+            "/blog/Renueva-tu-sonrisa-sin-cirugia-con-carillas-de-porcelana-en-Bites-Creadores-de-Sonrisas-tu-trasformacion-es-radiantemente-natural" ? (
+              <div>
+                <strong className="text-2xl mb-6">Nuestros blogs </strong>
+                <div className="flex gap-4 lg:flex-row flex-col border-t border-gray-300 py-8">
+                  <img
+                    src="https://imgix.bustle.com/uploads/image/2024/11/22/9a1ce370/464139536_1242095683792698_686201517551108879_n.jpg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.3119"
+                    alt=""
+                  />
+                  <div className="flex flex-col">
+                    <h1 className="text-xl mb-4 font-semibold">
+                      {" "}
+                      Descubre como trasformamos una sonrisa juvenil a una
+                      sonrisa sofisticada
+                    </h1>
+                    <p className="text-sm">
+                      En Este blog te presentamos el “behind the scenes” de una
+                      paciente.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4 lg:flex-row flex-col border-t border-gray-300 py-8">
+                  <div className="flex flex-col">
+                    <h1 className="text-xl mb-4 font-semibold">
+                      {" "}
+                      Remodela tus encias, luce unos dientes mas grandes.
+                    </h1>
+                    <p className="text-sm">
+                      En Este blog te presentamos el “behind the scenes” de una
+                      paciente.
+                    </p>
+                  </div>
+                  <img
+                    src="https://imgix.bustle.com/uploads/image/2024/11/14/2dab5afb/459312207_392932597184609_1904214669238524394_n-1.jpg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.5329&fp-y=0.1047"
+                    alt=""
+                  />
+                </div>
+                <div className="flex gap-4 lg:flex-row flex-col border-t border-gray-300 py-8">
+                  <img
+                    src="https://imgix.bustle.com/uploads/image/2024/11/19/c8010d91/20241101_samimiro_img_0198.jpg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.4141&fp-y=0.3714"
+                    alt=""
+                  />
+                  <div className="flex flex-col">
+                    <h1 className="text-xl mb-4 font-semibold">
+                      {" "}
+                      Con el implante dental elevala al siguiente nivel
+                    </h1>
+                    <p className="text-sm">
+                      En Este blog te presentamos el “behind the scenes” de una
+                      paciente.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4 lg:flex-row flex-col border-t border-gray-300 py-8">
+                  <div className="flex flex-col">
+                    <h1 className="text-xl mb-4 font-semibold">
+                      {" "}
+                      Descubre como obtener una sonrisa deslumbrante
+                    </h1>
+                    <p className="text-sm">
+                      En Este blog te presentamos el “behind the scenes” de una
+                      paciente.
+                    </p>
+                  </div>
+                  <img
+                    src="https://imgix.bustle.com/uploads/image/2024/11/12/6be48854/productroundup_template-4001.jpeg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.4571&fp-y=0.4959"
+                    alt=""
+                  />
+                </div>
+                <div className="flex gap-4 border-t border-gray-300 py-8">
+                  <img
+                    src="https://imgix.bustle.com/uploads/image/2024/12/3/074985c0/465806669_18467131660060317_7140895878199682650_n-1.jpg?w=110&h=110&fit=crop&crop=faces"
+                    alt=""
+                  />
+                  <div className="flex flex-col">
+                    <h1 className="text-xl mb-4 font-semibold">
+                      La solucion para una sonrisa ideal
+                    </h1>
+                    <p className="text-sm">
+                      En este blog te presentamos el “behind the scenes” de una
+                      paciente.
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="flex gap-4 border-t border-gray-300 py-8">
-              <div className="flex flex-col">
-                <h1 className="text-xl mb-4 font-semibold">Title</h1>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eligendi
-                </p>
-              </div>
-              <img
-                src="https://imgix.bustle.com/uploads/image/2024/11/14/2dab5afb/459312207_392932597184609_1904214669238524394_n-1.jpg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.5329&fp-y=0.1047"
-                alt=""
-              />
-            </div>
-            <div className="flex gap-4 border-t border-gray-300 py-8">
-              <img
-                src="https://imgix.bustle.com/uploads/image/2024/11/19/c8010d91/20241101_samimiro_img_0198.jpg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.4141&fp-y=0.3714"
-                alt=""
-              />
-              <div className="flex flex-col">
-                <h1 className="text-xl mb-4 font-semibold">Title</h1>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eligendi
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-4 border-t border-gray-300 py-8">
-              <div className="flex flex-col">
-                <h1 className="text-xl mb-4 font-semibold">Title</h1>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eligendi
-                </p>
-              </div>
-              <img
-                src="https://imgix.bustle.com/uploads/image/2024/11/12/6be48854/productroundup_template-4001.jpeg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.4571&fp-y=0.4959"
-                alt=""
-              />
-            </div>
+            ) : null}
           </aside>
         </div>
         <div className="col-span-2 ">
@@ -171,6 +215,9 @@ const Section5: React.FC = () => {
             fortalecer su autoestima aún más con una sonrisa que emparejará su
             energía y felicidad.
             <br /> <br />
+            <div className="flex justify-center items-center">
+              <img src={BlogA} alt="" />
+            </div>
             El primer día fue muy fácil pues la paciente que nos había conocido
             por{" "}
             <a
@@ -183,6 +230,9 @@ const Section5: React.FC = () => {
             hora que ella agendó, nosotras estábamos listas para recibirla.
             <br />
             <br />
+            <div className="flex justify-center items-center">
+              <img src={BlogB} alt="" />
+            </div>
             Comenzamos con una evaluación profunda en consultorio, seguido de un
             modelo de estudio, fotografías y radiografías para conocer el estado
             de salud bucal generaly una vez completado le recomendamos
@@ -197,6 +247,9 @@ const Section5: React.FC = () => {
             natural.
             <br />
             <br />
+            <div className="flex justify-center items-center">
+              <img src={BlogC} alt="" />
+            </div>
             En su primera elaboramos diferentes procedimientos higienistas
             mínimos a fin de que quedara limpia y sana para sus nuevas carillas
             <br /> <br />
@@ -212,6 +265,9 @@ const Section5: React.FC = () => {
             tono, recomendamos uno que combinara con su tono de labios y piel
             para que resaltara sus rasgos faciales, logrando proyectar armonía y
             naturalidad.
+            <div className="flex justify-center items-center">
+              <img src={BlogD} alt="" />
+            </div>
             <br />
             <br />
             El siguiente paso fue crear impresiones de silicona que permitirán
@@ -233,6 +289,9 @@ const Section5: React.FC = () => {
             sensación de sus carillas.
             <br />
             <br />
+            <div className="flex justify-center items-center">
+              <img src={BlogE} alt="" />
+            </div>
             Todo el proceso de las carillas toma un par de horas y es un momento
             muy especial al revelar la sonrisa finalmente terminada, donde
             nuestra paciente se sintió muy feliz con los resultados amando cada

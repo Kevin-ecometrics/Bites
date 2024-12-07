@@ -29,17 +29,19 @@ const CardService: React.FC<CardServiceProps> = ({
 
   return (
     <div className="py-12">
-      <div className="w-80 bg-white border border-gray-200 rounded-xl shadow">
-        <a href={url}>
-          <img
-            className="w-80 h-64 transition duration-300 transform hover:scale-110"
-            src={image}
-            alt={alt}
-            title={alt}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          />
-        </a>
+      <div className="w-[500px] bg-white border border-gray-200 rounded-xl shadow">
+        <div className=" overflow-hidden cursor-pointer">
+          <a href={url}>
+            <img
+              className="w-[500px] h-[300px] transform transition duration-500 hover:scale-110"
+              src={image}
+              alt={alt}
+              title={alt}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            />
+          </a>
+        </div>
 
         <div className="p-4">
           <span className="font-roboto font-light text-xs text-indigo-600">

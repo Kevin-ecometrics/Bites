@@ -1,20 +1,30 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import {
   ReactCompareSlider,
   ReactCompareSliderImage,
 } from "react-compare-slider";
 // import imagenA from "../../assets/A dental implant it's a procedure that requires an expert in odontology and aesthetic dentistry.png";
 // import imagenB from "../../assets/Una sonrisa completa y sana permite que disfrutes del comer y hablar con libertad y comodidad.png";
-
-const Section5: React.FC = () => {
+import Profile from "../../assets/blog6-profile.webp";
+import BlogA from "../../assets/blog6-1.webp";
+import BlogB from "../../assets/blog6-2.webp";
+import BlogC from "../../assets/blog6-3.webp";
+import BlogD from "../../assets/blog6-4.webp";
+import Profile2 from "../../assets/blog4-profile.webp";
+import Profile3 from "../../assets/blog5-profile.webp";
+const Section6: React.FC = () => {
   const HandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form Submitted");
   };
+
+  const URL = useLocation();
+
   return (
     <div className="px-8 font-poppins">
       <div
-        className="grid grid-cols-1 md:grid-cols-3 text-white w-full md:h-96"
+        className="grid grid-cols-1 md:grid-cols-3 text-white w-full"
         style={{
           backgroundColor: "#6BBAE9",
           padding: "20px",
@@ -55,6 +65,7 @@ const Section5: React.FC = () => {
               />
             }
           /> */}
+          <img src={Profile} alt="" className="rounded-2xl h-96" />{" "}
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 mt-20 gap-8">
@@ -105,59 +116,84 @@ const Section5: React.FC = () => {
                 nuestra Política de Privacidad y Términos de Uso.
               </p>
             </form>
-            <strong className="text-2xl mb-6">Nuestros blogs </strong>
-            <div className="flex gap-4 border-t border-gray-300 py-8">
-              <img
-                src="https://imgix.bustle.com/uploads/image/2024/11/22/9a1ce370/464139536_1242095683792698_686201517551108879_n.jpg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.3119"
-                alt=""
-              />
-              <div className="flex flex-col">
-                <h1 className="text-xl mb-4 font-semibold">Title</h1>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eligendi
-                </p>
+            {URL.pathname ===
+            "/blog/Descubre-como-trasformamos-una-sonrisa-juvenil-a-una-sonrisa-sofisticada-La-Sonrisa-de-ensueno-disenada-para-armonizar-tu-rostro" ? (
+              <div>
+                <strong className="text-2xl mb-6">Nuestros blogs </strong>
+                <div className="flex gap-4 border-t border-gray-300 py-8">
+                  <img src={Profile3} alt="" className="w-28 h-28" />
+                  <div className="flex flex-col">
+                    <h1 className="text-xl mb-4 font-semibold">
+                      Renueva tu sonrisa sin cirugia con carillas de porcelana
+                    </h1>
+                    <p className="text-sm">
+                      En Este blog te presentamos el “behind the scenes” de una
+                      paciente.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4 border-t border-gray-300 py-8">
+                  <div className="flex flex-col">
+                    <h1 className="text-xl mb-4 font-semibold">
+                      Remodela tus encias, luce unos dientes mas grandes.
+                    </h1>
+                    <p className="text-sm">
+                      En este blog te presentamos el “behind the scenes” de una
+                      paciente.
+                    </p>
+                  </div>
+                  <img src={Profile2} alt="" className="w-28 h-28" />
+                </div>
+                <div className="flex gap-4 border-t border-gray-300 py-8">
+                  <img
+                    src="/Dental implants the ambulatory procedure that guarantees a good-looking and healthy smile.png"
+                    alt=""
+                    className="w-28 h-28"
+                  />
+                  <div className="flex flex-col">
+                    <h1 className="text-xl mb-4 font-semibold">
+                      Con el implante dental elevala al siguiente nivel
+                    </h1>
+                    <p className="text-sm">
+                      En este blog te presentamos el “behind the scenes” de una
+                      paciente.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4 border-t border-gray-300 py-8">
+                  <div className="flex flex-col">
+                    <h1 className="text-xl mb-4 font-semibold">
+                      Descubre como obtener una sonrisa deslumbrante
+                    </h1>
+                    <p className="text-sm">
+                      En este blog te presentamos el “behind the scenes” de una
+                      paciente.
+                    </p>
+                  </div>
+                  <img
+                    src="/Improve your self-confidence enjoy your smile with the top-rated dentist in Tijuana Bites Creadores de Sonrisas.png"
+                    alt=""
+                    className="w-28 h-28"
+                  />
+                </div>
+                <div className="flex gap-4 border-t border-gray-300 py-8">
+                  <img
+                    src="/Composite veneers enhance your smile without shaving teeth.png"
+                    alt=""
+                    className="w-28 h-28"
+                  />
+                  <div className="flex flex-col">
+                    <h1 className="text-xl mb-4 font-semibold">
+                      La solucion para una sonrisa ideal
+                    </h1>
+                    <p className="text-sm">
+                      En este blog te presentamos el “behind the scenes” de una
+                      paciente.
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="flex gap-4 border-t border-gray-300 py-8">
-              <div className="flex flex-col">
-                <h1 className="text-xl mb-4 font-semibold">Title</h1>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eligendi
-                </p>
-              </div>
-              <img
-                src="https://imgix.bustle.com/uploads/image/2024/11/14/2dab5afb/459312207_392932597184609_1904214669238524394_n-1.jpg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.5329&fp-y=0.1047"
-                alt=""
-              />
-            </div>
-            <div className="flex gap-4 border-t border-gray-300 py-8">
-              <img
-                src="https://imgix.bustle.com/uploads/image/2024/11/19/c8010d91/20241101_samimiro_img_0198.jpg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.4141&fp-y=0.3714"
-                alt=""
-              />
-              <div className="flex flex-col">
-                <h1 className="text-xl mb-4 font-semibold">Title</h1>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eligendi
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-4 border-t border-gray-300 py-8">
-              <div className="flex flex-col">
-                <h1 className="text-xl mb-4 font-semibold">Title</h1>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eligendi
-                </p>
-              </div>
-              <img
-                src="https://imgix.bustle.com/uploads/image/2024/11/12/6be48854/productroundup_template-4001.jpeg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.4571&fp-y=0.4959"
-                alt=""
-              />
-            </div>
+            ) : null}
           </aside>
         </div>
         <div className="col-span-2 ">
@@ -171,24 +207,29 @@ const Section5: React.FC = () => {
           </p>
           <br />
           <br />
+          <div className="flex justify-center items-center">
+            <img src={BlogA} alt="" />
+          </div>
+          <br /> <br />
           <h1 className="text-[#E72381] text-3xl font-bold">
             Antes de Bites CDS
           </h1>
           <br />
           <br />
           <p className="text-xl">
-            A través de nuestro diseño de carillas de porcelana creamos para
+            A través de nuestro diseño de carillas de composite creamos para
             nuestra paciente una sonrisa pensada en su gusto y personalidad, que
-            fuera deslumbrante y que armonizara perfectamente con sus belleza
-            faciales.
+            fuera deslumbrante y que armonizara perfectamente con su belleza
+            facial.
           </p>
           <br />
           <br />
+          <div className="flex justify-center items-center">
+            <img src={BlogB} alt="" />
+          </div>
+          <br /> <br />
           <h1 className="text-[#E72381] text-3xl font-bold">
-            A través de nuestro diseño de carillas de porcelana creamos para
-            nuestra paciente una sonrisa pensada en su gusto y personalidad, que
-            fuera deslumbrante y que armonizara perfectamente con sus belleza
-            faciales.
+            Primera visita al consultorio de Bites Creadores de Sonrisa:
           </h1>
           <br />
           <br />
@@ -203,10 +244,16 @@ const Section5: React.FC = () => {
             allá de la vista y donde se puede apreciar la estructura ósea y
             permite descartar algún problema. Una vez inspeccionado todo,
             nuestra paciente resultó ser candidata ideal para poderle aplicar
-            carillas de porcelana ya que deseaba un aspecto natural, duradero y
-            sofisticado y nuestras carillas de porcelana al ser elaboradas en
-            laboratorio garantizan una alta estética y durabilidad.
+            carillas de composite ya que deseaba un aspecto natural, duradero y
+            sofisticado y nuestras carillas de composite al ser elaboradas a
+            mano garantizan una personalización absoluta con una alta estética y
+            durabilidad.
           </p>
+          <br />
+          <br />
+          <div className="flex justify-center items-center">
+            <img src={BlogC} alt="" />
+          </div>
           <br />
           <br />
           <h1 className="text-[#E72381] text-3xl font-bold">
@@ -228,30 +275,28 @@ const Section5: React.FC = () => {
             Este método se pudo llevar a cabo debido a que la sonrisa de nuestra
             paciente se encontraba saludable haciendo el proceso más rápido y
             cómodo.
-            <br />
-            <br />
-            El siguiente paso fue enviar al laboratorio para crear las carillas
-            de porcelana con todas las especificaciones acordadas en la cita.
           </p>
           <br />
           <br />
+          <div className="flex justify-center items-center">
+            <img src={BlogD} alt="" />
+          </div>
+          <br />
+          <br />
           <h1 className="text-[#E72381] text-3xl font-bold">
-            El siguiente paso fue enviar al laboratorio para crear las carillas
-            de porcelana con todas las especificaciones acordadas en la cita.
+            Último paso en la transformación de sonrisa:
           </h1>
           <br />
           <br />
           <p className="text-xl">
-            El siguiente paso fue enviar al laboratorio para crear las carillas
-            de porcelana con todas las especificaciones acordadas en la cita.
+            siguiente paso fue ponernos en marcha con su trasformación y aplicar
+            las carillas
             <br />
             <br />
             Comenzamos primero con una limpieza profunda y preparáramos la
-            superficie de sus dientes donde removimos un poco el esmalte frontal
-            de los dientes para ahí mismo poder aplicar el pegamento dental y
-            colocar las carillas de porcelana sobre el diente. Finalizamos esta
-            trasformación con un detallado y pulido para que queden
-            perfectamente estéticas.
+            superficie de sus dientes para poder moldear el composite a cada
+            diente, una vez moldeado. Finalizamos esta trasformación con un
+            detallado y pulido para que queden perfectamente estéticas.
             <br />
             <br />
             Nuestra paciente quedo muy emocionada por su nueva sonrisa, y
@@ -261,7 +306,7 @@ const Section5: React.FC = () => {
           <br />
           <br />
           <h1 className="text-[#E72381] text-3xl font-bold">
-            Si te gusto esta trasformación de sonrisa con carillas de porcelana
+            Si te gusto esta trasformación de sonrisa con carillas de composite
             te invitamos a agendar tu cita de valoración para trabajar juntos en
             crear tu sonrisa soñada.
           </h1>
@@ -271,4 +316,4 @@ const Section5: React.FC = () => {
   );
 };
 
-export default Section5;
+export default Section6;
