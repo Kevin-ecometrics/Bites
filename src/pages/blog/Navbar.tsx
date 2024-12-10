@@ -18,7 +18,6 @@ const Navbar: React.FC = React.memo(() => {
   const { t, i18n } = useTranslation();
 
   const itemLinks: ItemLink[] = [
-    { name: t("Inicio "), link: "/" },
     { name: t("Nosotros"), link: "/nosotros" },
     { name: t("Galeria"), link: "/galeria" },
     { name: t("Servicios"), link: "/servicios" },
@@ -54,7 +53,7 @@ const Navbar: React.FC = React.memo(() => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full bg-white z-50 px-8 py-2 flex justify-between items-center transition-shadow duration-300 ${
+      className={`fixed top-0 left-0 w-full bg-white z-50 px-16 py-2 flex justify-evenly items-center transition-shadow duration-300 ${
         isScrolled ? "shadow-md" : ""
       }`}
     >
@@ -86,12 +85,12 @@ const Navbar: React.FC = React.memo(() => {
           title="En Bites Creadores de Sonrisas brindamos servicios de estética dental con veneers de porcelana o composite"
         />
       </Link>
-      <ul className="md:flex space-x-4 hidden">
+      <ul className="md:flex space-x-8 hidden font-bold">
         {itemLinks.map((itemLink) => (
           <li key={itemLink.name}>
             <Link
               to={itemLink.link}
-              className="text-xl text-gray-800 hover:text-blue-500"
+              className="text-2xl text-gray-800 hover:text-blue-500"
             >
               {itemLink.name}
             </Link>

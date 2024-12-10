@@ -6,7 +6,9 @@ import {
 import imagenA from "../../assets/A dental implant it's a procedure that requires an expert in odontology and aesthetic dentistry.png";
 import imagenB from "../../assets/Una sonrisa completa y sana permite que disfrutes del comer y hablar con libertad y comodidad.png";
 import { useLocation } from "react-router-dom";
-
+import Profile2 from "../../assets/blog4-profile.webp";
+import Profile3 from "../../assets/blog5-profile.webp";
+import Profile1 from "../../assets/blog6-profile.webp";
 const Section3: React.FC = () => {
   const HandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -112,15 +114,11 @@ const Section3: React.FC = () => {
             "/blog/Con-el-implante-dental-elevala-al-siguiente-nivel" ? (
               <div>
                 <strong className="text-2xl mb-6">Nuestros blogs </strong>
-                <div className="flex gap-4 lg:flex-row flex-col border-t border-gray-300 py-8">
-                  <img
-                    src="https://imgix.bustle.com/uploads/image/2024/11/22/9a1ce370/464139536_1242095683792698_686201517551108879_n.jpg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.3119"
-                    alt=""
-                  />
+                <div className="flex gap-4 border-t border-gray-300 py-8">
+                  <img src={Profile1} alt="" className="w-28 h-28" />
                   <div className="flex flex-col">
                     <h1 className="text-xl mb-4 font-semibold">
-                      {" "}
-                      Descubre cómo trasformamos una sonrisa juvenil a una
+                      Descubre como trasformamos una sonrisa juvenil a una
                       sonrisa sofisticada
                     </h1>
                     <p className="text-sm">
@@ -129,59 +127,52 @@ const Section3: React.FC = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex gap-4 lg:flex-row flex-col border-t border-gray-300 py-8">
+                <div className="flex gap-4 border-t border-gray-300 py-8">
                   <div className="flex flex-col">
                     <h1 className="text-xl mb-4 font-semibold">
-                      {" "}
-                      Renueva tu sonrisa sin cirugía con carillas de porcelana
+                      Renueva tu sonrisa sin cirugia con carillas de porcelana
                     </h1>
                     <p className="text-sm">
                       En Este blog te presentamos el “behind the scenes” de una
                       paciente.
                     </p>
                   </div>
-                  <img
-                    src="https://imgix.bustle.com/uploads/image/2024/11/14/2dab5afb/459312207_392932597184609_1904214669238524394_n-1.jpg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.5329&fp-y=0.1047"
-                    alt=""
-                  />
+                  <img src={Profile3} alt="" className="w-28 h-28" />
                 </div>
-                <div className="flex gap-4 lg:flex-row flex-col border-t border-gray-300 py-8">
-                  <img
-                    src="https://imgix.bustle.com/uploads/image/2024/11/19/c8010d91/20241101_samimiro_img_0198.jpg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.4141&fp-y=0.3714"
-                    alt=""
-                  />
+                <div className="flex gap-4 border-t border-gray-300 py-8">
+                  <img src={Profile2} alt="" className="w-28 h-28" />
+
                   <div className="flex flex-col">
                     <h1 className="text-xl mb-4 font-semibold">
-                      {" "}
-                      Remodela tus encías, luce unos dientes más grandes y
-                      bellos
+                      Remodela tus encias, luce unos dientes mas grandes.
                     </h1>
                     <p className="text-sm">
-                      En Este blog te presentamos el “behind the scenes” de una
+                      En este blog te presentamos el “behind the scenes” de una
                       paciente.
                     </p>
                   </div>
                 </div>
-                <div className="flex gap-4 lg:flex-row flex-col border-t border-gray-300 py-8">
+                <div className="flex gap-4 border-t border-gray-300 py-8">
                   <div className="flex flex-col">
                     <h1 className="text-xl mb-4 font-semibold">
-                      {" "}
                       Descubre como obtener una sonrisa deslumbrante
                     </h1>
                     <p className="text-sm">
-                      En Este blog te presentamos el “behind the scenes” de una
+                      En este blog te presentamos el “behind the scenes” de una
                       paciente.
                     </p>
                   </div>
                   <img
-                    src="https://imgix.bustle.com/uploads/image/2024/11/12/6be48854/productroundup_template-4001.jpeg?w=110&h=110&fit=crop&crop=focalpoint&fp-x=0.4571&fp-y=0.4959"
+                    src="/Improve your self-confidence enjoy your smile with the top-rated dentist in Tijuana Bites Creadores de Sonrisas.png"
                     alt=""
+                    className="w-28 h-28"
                   />
                 </div>
                 <div className="flex gap-4 border-t border-gray-300 py-8">
                   <img
-                    src="https://imgix.bustle.com/uploads/image/2024/12/3/074985c0/465806669_18467131660060317_7140895878199682650_n-1.jpg?w=110&h=110&fit=crop&crop=faces"
+                    src="/Composite veneers enhance your smile without shaving teeth.png"
                     alt=""
+                    className="w-28 h-28"
                   />
                   <div className="flex flex-col">
                     <h1 className="text-xl mb-4 font-semibold">

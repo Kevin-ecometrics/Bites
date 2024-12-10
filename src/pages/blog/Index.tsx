@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { contentMap } from "./contentMap";
 import Form from "../contact/Form";
-
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 const Blog: React.FC = () => {
   const [selectedTitle, setSelectedTitle] = useState<string>(
     "Carillas de Porcelana"
@@ -145,6 +145,13 @@ const Blog: React.FC = () => {
           </button>
         ))}
       </div>{" "}
+      <FloatingWhatsApp
+        phoneNumber="526633249611"
+        accountName="Bites Creadores de Sonrisas"
+        avatar="https://bitescreadoresdesonrisas.com/wp-content/uploads/2021/09/Logo-Bites-Creadores-de-Sonrisas.png"
+        chatMessage="Hola, ¿en qué puedo ayudarte?"
+        allowClickAway
+      />
     </div>
   );
 };
