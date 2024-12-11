@@ -55,7 +55,7 @@ const IndexBlog: React.FC = () => {
       <nav
         className={`fixed top-0 w-full bg-white ${navShadow ? "z-10 shadow-2xl" : ""}`}
       >
-        <div className="container mx-auto">
+        <div className="container mx-auto px-16">
           <Link
             to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -69,7 +69,7 @@ const IndexBlog: React.FC = () => {
           </Link>
         </div>
       </nav>
-      <section className="container mx-auto px-20 scroll-mt-32 mt-48">
+      <section className="container mx-auto px-8 md:px-20 scroll-mt-32 mt-48">
         {orderedSections.map((id: string) => {
           const Component = sectionComponents[id];
           return (

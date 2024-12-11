@@ -35,28 +35,33 @@ const Service: React.FC = () => {
       url: "/blog/Con-el-implante-dental-elevala-al-siguiente-nivel",
     },
     {
-      comments: t("card1"),
-      hoverComments: t("card1text"),
-      date: "11 Mar, 2024",
+      comments:
+        "Remodela tus encías luce unos dientes más grandes y bellos, te presentamos la gingivoplastia.",
+      hoverComments:
+        "Te compartimos el cambio increíble y natural de nuestra paciente con ayuda de una gingivoplastia combinada con un blanqueamiento dental y resinas para corregir detalles mínimos.",
+      date: "26 Nov, 2024",
       image: "/blog4-card.webp",
-      alt: "Composite veneers combine functionality and aesthetic",
-      url: "/blog/La-solucion-para-una-sonrisa-ideal",
+      alt: "Remodela tus encías, luce unos dientes más grandes y bellos",
+      url: "/blog/Remodela-tus-encias-luce-unos-dientes-mas-grandes-y-bellos-te-presentamos-la-gingivoplastia",
     },
     {
-      comments: t("card2"),
-      hoverComments: t("card2text"),
-      date: "25 Mar, 2024",
+      comments: "Renueva tu sonrisa sin cirugía con carillas de porcelana",
+      hoverComments:
+        "En Este blog te presentamos el “behind the scenes” de una paciente cuya personalidad deseaba que se manifestara en una sonrisa resplandeciente llena de seguridad y felicidad.",
+      date: "03 Dic, 2024",
       image: "/blog5-card.webp",
-      alt: "Top rated dentist in Tijuana Bites helps you to achieve your dream smile",
-      url: "/blog/Descubre-como-obtener-una-sonrisa-deslumbrante-con-blanqueamiento-dental",
+      alt: "Renueva tu sonrisa sin cirugía con carillas de porcelana en Bites Creadores de Sonrisas, tu transformación es radiante y natural",
+      url: "/blog/Renueva-tu-sonrisa-sin-cirugia-con-carillas-de-porcelana-en-Bites-Creadores-de-Sonrisas-tu-trasformacion-es-radiantemente-natural",
     },
     {
-      comments: t("card2"),
-      hoverComments: t("card2text"),
-      date: "25 Mar, 2024",
+      comments:
+        "Descubre como trasformamos una sonrisa juvenil a una sonrisa sofisticada: La Sonrisa de ensueño diseñada para armonizar tu rostro.",
+      hoverComments:
+        "Hoy nos gustaría que nos acompañaras a conocer como en nuestra clínica estética trasformamos la sonrisa de nuestra paciente con una sonrisa bella con un aspecto más juvenil, que buscaba tener una sonrisa con más proyección, elegante y sofisticada que reflejara tu seguridad y madurez.",
+      date: "10 Dic, 2024",
       image: "/blog6-card.webp",
-      alt: "Top rated dentist in Tijuana Bites helps you to achieve your dream smile",
-      url: "/blog/Descubre-como-obtener-una-sonrisa-deslumbrante-con-blanqueamiento-dental",
+      alt: "Descubre cómo trasformamos una sonrisa juvenil a una sonrisa sofisticada. La Sonrisa de ensueño diseñada para armonizar tu rostro",
+      url: "blog/Descubre-como-trasformamos-una-sonrisa-juvenil-a-una-sonrisa-sofisticada-La-Sonrisa-de-ensueno-disenada-para-armonizar-tu-rostro",
     },
   ].reverse(); // Invertir el array para mostrar del más reciente al más viejo
 

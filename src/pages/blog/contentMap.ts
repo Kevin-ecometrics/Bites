@@ -28,7 +28,7 @@ interface Content {
 }
 
 export const contentMap: { [key: string]: Content } = {
-  "Carillas de Porcelana": {
+  "Todos los blogs": {
     text: "Descubre como trasformamos una sonrisa juvenil a una sonrisa sofisticada: La Sonrisa de ensueño diseñada para armonizar tu rostro.",
     image: "/blog6-card.webp",
 
@@ -116,190 +116,71 @@ export const contentMap: { [key: string]: Content } = {
       // },
     },
   },
-  "Carillas de Composite": {
-    text: "Contenido de Trends",
-    image: "trends.jpg",
-    description: "Descripción de Trends",
-    link: "",
+  "Carillas de Porcelana": {
+    text: " Renueva tu sonrisa sin cirugía con carillas de porcelana en Bites Creadores de Sonrisas tu trasformación es radiantemente natural.",
+    image: "/blog5-card.webp",
+    description:
+      "En Este blog te presentamos el “behind the scenes” de una paciente cuya personalidad deseaba que se manifestara en una sonrisa resplandeciente llena de seguridad y felicidad.",
+    link: "/blog/Renueva-tu-sonrisa-sin-cirugia-con-carillas-de-porcelana-en-Bites-Creadores-de-Sonrisas-tu-trasformacion-es-radiantemente-natural",
 
-    extendedTitle: "Últimas tendencias en el mundo",
-    gridContent: {
-      col1: {
-        image: "https://example.com/image1.jpg",
-        title: "Título 1",
-        description: "Descripción 1",
-      },
-      col2: {
-        image: "https://example.com/image2.jpg",
-        title: "Título 2",
-        description: "Descripción 2",
-      },
-      col3: {
-        image: "https://example.com/image3.jpg",
-        title: "Título 3",
-        description: "Descripción 3",
-      },
-      col4: {
-        image: "https://example.com/image4.jpg",
-        title: "Título 4",
-        description: "Descripción 4",
-      },
-    },
+    extendedTitle: "",
+    gridContent: {},
+    gridContent2: {},
+  },
+  "Carillas de Composite": {
+    text: "Las carillas dentales de composite: La solución para una sonrisa ideal",
+    image: "/Composite veneers enhance your smile without shaving teeth.png",
+
+    description:
+      "Una sonrisa espectacular está al alcance de todos. En Bites creadores de sonrisas somos fieles creyentes que mereces disfrutar cuando sonríes, y que esa misma sonrisa sea funcional al comer y hablar. Creemos que la estética y funcionalidad son esenciales para una calidad de vida digna.",
+    link: "/blog/La-solucion-para-una-sonrisa-ideal",
+
+    extendedTitle: "",
+    gridContent: {},
     gridContent2: {
       col1: {
-        image: "https://example.com/image1.jpg",
-        title: "Título 1",
-        description: "Descripción 1",
-      },
-      col2: {
-        image: "https://example.com/image2.jpg",
-        title: "Título 2",
-        description: "Descripción 2",
-      },
-      col3: {
-        image: "https://example.com/image3.jpg",
-        title: "Título 3",
-        description: "Descripción 3",
-      },
-      col4: {
-        image: "https://example.com/image4.jpg",
-        title: "Título 4",
-        description: "Descripción 4",
-      },
-      col5: {
-        image: "https://example.com/image5.jpg",
-        title: "Título 5",
-        description: "Descripción 5",
-      },
-      col6: {
-        image: "https://example.com/image6.jpg",
-        title: "Título 6",
-        description: "Descripción 6",
+        title: " Carillas de composite que roban miradas solo en Bites CDS",
+        description:
+          "Hoy nos gustaría que nos acompañaras a conocer como en nuestra clínica estética trasformamos la sonrisa de nuestra paciente con una sonrisa bella con un aspecto más juvenil, que buscaba tener una sonrisa con más proyección, elegante y sofisticada que reflejara tu seguridad y madurez.",
+        image: "/blog6-card.webp",
+        link: "/blog/Descubre-como-trasformamos-una-sonrisa-juvenil-a-una-sonrisa-sofisticada-La-Sonrisa-de-ensueno-disenada-para-armonizar-tu-rostro",
       },
     },
+  },
+  "Blanqueamiento dental": {
+    text: "Descubre cómo obtener una sonrisa deslumbrante con blanqueamiento dental. Siéntete seguro de mostrarle a todos esa gran sonrisa.",
+    image:
+      "/Improve your self-confidence enjoy your smile with the top-rated dentist in Tijuana Bites Creadores de Sonrisas.png",
+
+    description:
+      "El blanqueamiento dental es uno de los tratamientos dentales estéticos con los resultados más visibles de forma inmediata.",
+    link: "/blog/Descubre-como-obtener-una-sonrisa-deslumbrante-con-blanqueamiento-dental",
+    extendedTitle: "",
+    gridContent: {},
+    gridContent2: {},
+  },
+
+  "Gingivoplastia y blanqueamiento dental": {
+    image: "/blog4-card.webp",
+    text: "Remodela tus encías luce unos dientes más grandes y bellos, te presentamos la gingivoplastia.",
+    description:
+      "Te compartimos el cambio increíble y natural de nuestra paciente con ayuda de una gingivoplastia combinada con un blanqueamiento dental y resinas para corregir detalles mínimos.",
+    link: "/blog/Remodela-tus-encias-luce-unos-dientes-mas-grandes-y-bellos-te-presentamos-la-gingivoplastia",
+    extendedTitle: "",
+    gridContent: {},
+    gridContent2: {},
   },
   "Implante dental": {
-    text: "Contenido de Wellness",
-    image: "wellness.jpg",
-    description: "Descripción de Wellness",
-    link: "",
+    image:
+      "/Dental implants the ambulatory procedure that guarantees a good-looking and healthy smile.png",
+    text: "No solo recuperes tu sonrisa; con el implante dental, elévala al siguiente nivel.",
+    description:
+      "Una sonrisa completa refleja nuestra salud. No solo es importante sentirnos bien, sino que funcione a la perfección.",
 
-    extendedTitle: "Bienestar y salud para una vida mejor",
-    gridContent: {
-      col1: {
-        image: "https://example.com/image1.jpg",
-        title: "Título 1",
-        description: "Descripción 1",
-      },
-      col2: {
-        image: "https://example.com/image2.jpg",
-        title: "Título 2",
-        description: "Descripción 2",
-      },
-      col3: {
-        image: "https://example.com/image3.jpg",
-        title: "Título 3",
-        description: "Descripción 3",
-      },
-      col4: {
-        image: "https://example.com/image4.jpg",
-        title: "Título 4",
-        description: "Descripción 4",
-      },
-    },
-    gridContent2: {
-      col1: {
-        image: "https://example.com/image1.jpg",
-        title: "Título 1",
-        description: "Descripción 1",
-      },
-      col2: {
-        image: "https://example.com/image2.jpg",
-        title: "Título 2",
-        description: "Descripción 2",
-      },
-      col3: {
-        image: "https://example.com/image3.jpg",
-        title: "Título 3",
-        description: "Descripción 3",
-      },
-      col4: {
-        image: "https://example.com/image4.jpg",
-        title: "Título 4",
-        description: "Descripción 4",
-      },
-      col5: {
-        image: "https://example.com/image5.jpg",
-        title: "Título 5",
-        description: "Descripción 5",
-      },
-      col6: {
-        image: "https://example.com/image6.jpg",
-        title: "Título 6",
-        description: "Descripción 6",
-      },
-    },
-  },
-  Gingivoplastia: {
-    text: "Contenido de Success Stories",
-    image: "success-stories.jpg",
-    description: "Descripción de Success Stories",
-    link: "",
+    link: "/blog/Con-el-implante-dental-elevala-al-siguiente-nivel",
 
-    extendedTitle: "Historias de éxito inspiradoras",
-    gridContent: {
-      col1: {
-        image: "https://example.com/image1.jpg",
-        title: "Título 1",
-        description: "Descripción 1",
-      },
-      col2: {
-        image: "https://example.com/image2.jpg",
-        title: "Título 2",
-        description: "Descripción 2",
-      },
-      col3: {
-        image: "https://example.com/image3.jpg",
-        title: "Título 3",
-        description: "Descripción 3",
-      },
-      col4: {
-        image: "https://example.com/image4.jpg",
-        title: "Título 4",
-        description: "Descripción 4",
-      },
-    },
-    gridContent2: {
-      col1: {
-        image: "https://example.com/image1.jpg",
-        title: "Título 1",
-        description: "Descripción 1",
-      },
-      col2: {
-        image: "https://example.com/image2.jpg",
-        title: "Título 2",
-        description: "Descripción 2",
-      },
-      col3: {
-        image: "https://example.com/image3.jpg",
-        title: "Título 3",
-        description: "Descripción 3",
-      },
-      col4: {
-        image: "https://example.com/image4.jpg",
-        title: "Título 4",
-        description: "Descripción 4",
-      },
-      col5: {
-        image: "https://example.com/image5.jpg",
-        title: "Título 5",
-        description: "Descripción 5",
-      },
-      col6: {
-        image: "https://example.com/image6.jpg",
-        title: "Título 6",
-        description: "Descripción 6",
-      },
-    },
+    extendedTitle: "",
+    gridContent: {},
+    gridContent2: {},
   },
 };

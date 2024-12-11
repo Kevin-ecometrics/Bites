@@ -3,11 +3,9 @@ import { contentMap } from "./contentMap";
 import Form from "../contact/Form";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 const Blog: React.FC = () => {
-  const [selectedTitle, setSelectedTitle] = useState<string>(
-    "Carillas de Porcelana"
-  );
+  const [selectedTitle, setSelectedTitle] = useState<string>("Todos los blogs");
   const [selectedContent, setSelectedContent] = useState<string>(
-    contentMap["Carillas de Porcelana"].text
+    contentMap["Todos los blogs"].text
   );
   const [currentPage, setCurrentPage] = useState<number>(1);
   const itemsPerPage = 3;
@@ -33,13 +31,10 @@ const Blog: React.FC = () => {
   return (
     <div className="mt-48 px-8 font-poppins">
       <section className="mx-auto container">
-        <strong className="text-3xl text-[#E72381]">
-          Explora nuestros blogs disponibles en la página
-        </strong>
         <strong className="text-3xl">
           {contentMap[selectedTitle].extendedTitle}
         </strong>
-        <ul className="flex mt-8">
+        <ul className="md:flex mt-8 hidden">
           {Object.keys(contentMap).map((title) => (
             <li
               key={title}
@@ -50,6 +45,19 @@ const Blog: React.FC = () => {
             </li>
           ))}
         </ul>
+        <div className="md:hidden block">
+          <select
+            value={selectedTitle}
+            onChange={(e) => handleItemClick(e.target.value)}
+            className="w-full p-2 border rounded"
+          >
+            {Object.keys(contentMap).map((title) => (
+              <option key={title} value={title}>
+                {title}
+              </option>
+            ))}
+          </select>
+        </div>
         <div className="mt-8">
           <div className="w-full bg-cover overflow-hidden cursor-pointer">
             <a

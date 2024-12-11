@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import {
   ReactCompareSlider,
   ReactCompareSliderImage,
@@ -14,15 +14,22 @@ import BlogD from "../../assets/blog6-4.webp";
 import Profile2 from "../../assets/blog4-profile.webp";
 import Profile3 from "../../assets/blog5-profile.webp";
 const Section6: React.FC = () => {
-  const HandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Form Submitted");
-  };
-
   const URL = useLocation();
 
+  const navigate = useNavigate();
+
+  const handleScrollToBooking = () => {
+    navigate("/#Booking");
+    setTimeout(() => {
+      const bookingElement = document.getElementById("Booking");
+      if (bookingElement) {
+        bookingElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 0);
+  };
+
   return (
-    <div className="px-8 font-poppins">
+    <div className="md:px-8 font-poppins">
       <div
         className="grid grid-cols-1 md:grid-cols-3 text-white w-full"
         style={{
@@ -75,52 +82,29 @@ const Section6: React.FC = () => {
             <h1 className="text-[#5C9BC0] mb-8 font-bold">
               (Mantente Actualizado)
             </h1>
-            <p className="text-xl">
-              Suscribete a{" "}
+            <p className="text-xl mb-4">
+              Agenda tu cita en{" "}
               <strong className="text-[#E72381]">
                 Bitescreadores de sonrisas
               </strong>{" "}
-              y recibe las últimas noticias y ofertas que tenemos para ti.
             </p>
-            <form onSubmit={HandleSubmit} className="py-8">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Ingresa tu correo"
-                className="border-b border-black w-full h-12"
-              />
-              <div className="flex gap-2 py-2">
-                <input type="checkbox" name="" id="" />
-                <p className="text-lg">
-                  Acepto los términos y condiciones de uso
-                </p>
-              </div>
-              <div className="flex gap-2 mb-8">
-                <input type="checkbox" name="" id="" />
-                <p className="text-lg">
-                  Acepto la política de privacidad y tratamiento de datos
-                </p>
-              </div>
+            <div className="mb-8">
+              {/* Otros contenidos de la sección */}
               <button
-                type="submit"
-                className="border border-black hover:bg-black hover:text-white 
-                transition duration-300 ease-in-out
-                px-8 py-2"
+                className="bg-[#E72381] text-white px-4 py-2 rounded mt-4 hover:opacity-80"
+                onClick={handleScrollToBooking}
               >
-                Enviar
+                Agendar cita
               </button>
-              <p className="text-[10px] mt-6">
-                Al hacer clic en el botón de enviar, aceptas recibir correos de
-                Bites creadores de sonrisas y confirmas que has leído y aceptado
-                nuestra Política de Privacidad y Términos de Uso.
-              </p>
-            </form>
+            </div>
             {URL.pathname ===
             "/blog/Descubre-como-trasformamos-una-sonrisa-juvenil-a-una-sonrisa-sofisticada-La-Sonrisa-de-ensueno-disenada-para-armonizar-tu-rostro" ? (
               <div>
                 <strong className="text-2xl mb-6">Nuestros blogs </strong>
-                <div className="flex gap-4 border-t border-gray-300 py-8">
+                <a
+                  href="Renueva-tu-sonrisa-sin-cirugia-con-carillas-de-porcelana-en-Bites-Creadores-de-Sonrisas-tu-trasformacion-es-radiantemente-natural"
+                  className="flex gap-4 border-t border-gray-300 py-8"
+                >
                   <img src={Profile3} alt="" className="w-28 h-28" />
                   <div className="flex flex-col">
                     <h1 className="text-xl mb-4 font-semibold">
@@ -131,8 +115,11 @@ const Section6: React.FC = () => {
                       paciente.
                     </p>
                   </div>
-                </div>
-                <div className="flex gap-4 border-t border-gray-300 py-8">
+                </a>
+                <a
+                  href="/Remodela-tus-encias-luce-unos-dientes-mas-grandes-y-bellos-te-presentamos-la-gingivoplastia"
+                  className="flex gap-4 border-t border-gray-300 py-8"
+                >
                   <div className="flex flex-col">
                     <h1 className="text-xl mb-4 font-semibold">
                       Remodela tus encias, luce unos dientes mas grandes.
@@ -143,8 +130,11 @@ const Section6: React.FC = () => {
                     </p>
                   </div>
                   <img src={Profile2} alt="" className="w-28 h-28" />
-                </div>
-                <div className="flex gap-4 border-t border-gray-300 py-8">
+                </a>
+                <a
+                  href="/Con-el-implante-dental-elevala-al-siguiente-nivel"
+                  className="flex gap-4 border-t border-gray-300 py-8"
+                >
                   <img
                     src="/Dental implants the ambulatory procedure that guarantees a good-looking and healthy smile.png"
                     alt=""
@@ -159,8 +149,11 @@ const Section6: React.FC = () => {
                       paciente.
                     </p>
                   </div>
-                </div>
-                <div className="flex gap-4 border-t border-gray-300 py-8">
+                </a>
+                <a
+                  href="/Descubre-como-obtener-una-sonrisa-deslumbrante-con-blanqueamiento-dental"
+                  className="flex gap-4 border-t border-gray-300 py-8"
+                >
                   <div className="flex flex-col">
                     <h1 className="text-xl mb-4 font-semibold">
                       Descubre como obtener una sonrisa deslumbrante
@@ -175,8 +168,11 @@ const Section6: React.FC = () => {
                     alt=""
                     className="w-28 h-28"
                   />
-                </div>
-                <div className="flex gap-4 border-t border-gray-300 py-8">
+                </a>
+                <a
+                  href="/La-solucion-para-una-sonrisa-ideal"
+                  className="flex gap-4 border-t border-gray-300 py-8"
+                >
                   <img
                     src="/Composite veneers enhance your smile without shaving teeth.png"
                     alt=""
@@ -191,13 +187,13 @@ const Section6: React.FC = () => {
                       paciente.
                     </p>
                   </div>
-                </div>
+                </a>
               </div>
             ) : null}
           </aside>
         </div>
         <div className="col-span-2 ">
-          <p className="text-7xl float-left mr-4 text-[#E72381]">H</p>
+          <p className="text-7xl float-left md:mr-4 text-[#E72381]">H</p>
           <p className="text-xl">
             oy nos gustaría que nos acompañaras a conocer como en nuestra
             clínica estética trasformamos la sonrisa de nuestra paciente con una

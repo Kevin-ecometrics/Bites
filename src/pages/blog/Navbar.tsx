@@ -53,12 +53,12 @@ const Navbar: React.FC = React.memo(() => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full bg-white z-50 px-16 py-2 flex justify-evenly items-center transition-shadow duration-300 ${
+      className={`fixed top-0 left-0 w-full bg-white z-50 md:px-16 py-2 flex justify-evenly items-center transition-shadow duration-300 ${
         isScrolled ? "shadow-md" : ""
       }`}
     >
       {" "}
-      <button
+      {/* <button
         className="md:hidden block"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
@@ -76,7 +76,7 @@ const Navbar: React.FC = React.memo(() => {
             d="M4 6h16M4 12h16m-7 6h7"
           />
         </svg>
-      </button>
+      </button> */}
       <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
         <img
           src={logo}
