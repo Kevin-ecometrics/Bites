@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  ReactCompareSlider,
-  ReactCompareSliderImage,
-} from "react-compare-slider";
-import imagenA from "../../assets/A dental implant it's a procedure that requires an expert in odontology and aesthetic dentistry.png";
-import imagenB from "../../assets/Una sonrisa completa y sana permite que disfrutes del comer y hablar con libertad y comodidad.png";
+
 import { useLocation, useNavigate } from "react-router-dom";
 import Profile from "../../assets/blog5-profile.webp";
 import BlogA from "../../assets/blog5-1.webp";
@@ -13,7 +8,6 @@ import BlogC from "../../assets/blog5-3.webp";
 import BlogD from "../../assets/blog5-4.webp";
 import BlogE from "../../assets/blog5-5.webp";
 import Profile2 from "../../assets/blog4-profile.webp";
-import Profile3 from "../../assets/blog5-profile.webp";
 import Profile1 from "../../assets/blog6-profile.webp";
 const Section5: React.FC = () => {
   const URL = useLocation();
@@ -31,9 +25,9 @@ const Section5: React.FC = () => {
   };
 
   return (
-    <div className="md:px-8 font-poppins">
+    <div className="lg:px-8 font-poppins">
       <div
-        className="grid grid-cols-1 md:grid-cols-3 text-white w-full"
+        className="grid grid-cols-1 lg:grid-cols-3 text-white w-full"
         style={{
           backgroundColor: "#6BBAE9",
           padding: "20px",
@@ -43,7 +37,7 @@ const Section5: React.FC = () => {
         }}
       >
         <div className="text-start col-span-2 flex justify-end items-start flex-col">
-          <h1 className="font-bold text-2xl">(Tendencias)</h1>
+          <h1 className="font-bold text-2xl">(Carillas de Porcelana)</h1>
           <p className="mt-4 text-4xl">
             Renueva tu sonrisa sin cirugía con carillas de porcelana en Bites
             Creadores de Sonrisas tu trasformación es radiantemente natural.
@@ -54,7 +48,7 @@ const Section5: React.FC = () => {
               <a href="/">Bites creadores de sonrisas</a>
             </strong>
           </p>
-          <p className="mt-4 text-lg">Oct. 24, 2024</p>
+          <p className="mt-4 text-lg">Dic. 03, 2024</p>
         </div>
         <div className="flex justify-center items-center mx-auto">
           {/* <ReactCompareSlider
@@ -76,12 +70,12 @@ const Section5: React.FC = () => {
           <img src={Profile} alt="" className="rounded-2xl h-96" />{" "}
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 mt-20 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 mt-20 gap-16">
         <div className="col-span-1">
           <aside className="w-full">
             <hr className="w-full border border-gray-300 mb-4" />
             <h1 className="text-[#5C9BC0] mb-8 font-bold">
-              (Mantente Actualizado)
+              (Transforma tu sonrisa)
             </h1>
             <p className="text-xl mb-4">
               Agenda tu cita en{" "}
@@ -103,7 +97,7 @@ const Section5: React.FC = () => {
               <div>
                 <strong className="text-2xl mb-6">Nuestros blogs </strong>
                 <a
-                  href="/Descubre-como-trasformamos-una-sonrisa-juvenil-a-una-sonrisa-sofisticada-La-Sonrisa-de-ensueno-disenada-para-armonizar-tu-rostro"
+                  href="Descubre-como-trasformamos-una-sonrisa-juvenil-a-una-sonrisa-sofisticada-La-Sonrisa-de-ensueno-disenada-para-armonizar-tu-rostro"
                   className="flex gap-4 border-t border-gray-300 py-8"
                 >
                   <img src={Profile1} alt="" className="w-28 h-28" />
@@ -113,13 +107,14 @@ const Section5: React.FC = () => {
                       sonrisa sofisticada{" "}
                     </h1>
                     <p className="text-sm">
-                      En Este blog te presentamos el “behind the scenes” de una
-                      paciente.
+                      Hoy nos gustaría que nos acompañaras a conocer como en
+                      nuestra clínica estética trasformamos la sonrisa de
+                      nuestra paciente con una sonrisa bella
                     </p>
                   </div>
                 </a>
                 <a
-                  href="/Remodela-tus-encias-luce-unos-dientes-mas-grandes-y-bellos-te-presentamos-la-gingivoplastia"
+                  href="Remodela-tus-encias-luce-unos-dientes-mas-grandes-y-bellos-te-presentamos-la-gingivoplastia"
                   className="flex gap-4 border-t border-gray-300 py-8"
                 >
                   <div className="flex flex-col">
@@ -127,14 +122,14 @@ const Section5: React.FC = () => {
                       Remodela tus encias, luce unos dientes mas grandes.
                     </h1>
                     <p className="text-sm">
-                      En este blog te presentamos el “behind the scenes” de una
-                      paciente.
+                      Te compartimos el cambio increíble y natural de nuestra
+                      paciente con ayuda de una gingivoplastia
                     </p>
                   </div>
                   <img src={Profile2} alt="" className="w-28 h-28" />
                 </a>
                 <a
-                  href="/Con-el-implante-dental-elevala-al-siguiente-nivel"
+                  href="Con-el-implante-dental-elevala-al-siguiente-nivel"
                   className="flex gap-4 border-t border-gray-300 py-8"
                 >
                   <img
@@ -147,13 +142,14 @@ const Section5: React.FC = () => {
                       Con el implante dental elevala al siguiente nivel
                     </h1>
                     <p className="text-sm">
-                      En este blog te presentamos el “behind the scenes” de una
-                      paciente.
+                      Una sonrisa completa refleja nuestra salud. No solo es
+                      importante sentirnos bien, sino que funcione a la
+                      perfección.
                     </p>
                   </div>
                 </a>
                 <a
-                  href="/Descubre-como-obtener-una-sonrisa-deslumbrante-con-blanqueamiento-dental"
+                  href="Descubre-como-obtener-una-sonrisa-deslumbrante-con-blanqueamiento-dental"
                   className="flex gap-4 border-t border-gray-300 py-8"
                 >
                   <div className="flex flex-col">
@@ -161,8 +157,9 @@ const Section5: React.FC = () => {
                       Descubre como obtener una sonrisa deslumbrante
                     </h1>
                     <p className="text-sm">
-                      En este blog te presentamos el “behind the scenes” de una
-                      paciente.
+                      El blanqueamiento dental es uno de los tratamientos
+                      dentales estéticos con los resultados más visibles de
+                      forma inmediata.
                     </p>
                   </div>
                   <img
@@ -172,7 +169,7 @@ const Section5: React.FC = () => {
                   />
                 </a>
                 <a
-                  href="/La-solucion-para-una-sonrisa-ideal"
+                  href="La-solucion-para-una-sonrisa-ideal"
                   className="flex gap-4 border-t border-gray-300 py-8"
                 >
                   <img
@@ -185,8 +182,7 @@ const Section5: React.FC = () => {
                       La solucion para una sonrisa ideal
                     </h1>
                     <p className="text-sm">
-                      En este blog te presentamos el “behind the scenes” de una
-                      paciente.
+                      Una sonrisa espectacular está al alcance de todos.
                     </p>
                   </div>
                 </a>
@@ -209,6 +205,7 @@ const Section5: React.FC = () => {
             <div className="flex justify-center items-center">
               <img src={BlogA} alt="" />
             </div>
+            <br />
             El primer día fue muy fácil pues la paciente que nos había conocido
             por{" "}
             <a
@@ -224,6 +221,7 @@ const Section5: React.FC = () => {
             <div className="flex justify-center items-center">
               <img src={BlogB} alt="" />
             </div>
+            <br />
             Comenzamos con una evaluación profunda en consultorio, seguido de un
             modelo de estudio, fotografías y radiografías para conocer el estado
             de salud bucal generaly una vez completado le recomendamos
@@ -241,6 +239,7 @@ const Section5: React.FC = () => {
             <div className="flex justify-center items-center">
               <img src={BlogC} alt="" />
             </div>
+            <br />
             En su primera elaboramos diferentes procedimientos higienistas
             mínimos a fin de que quedara limpia y sana para sus nuevas carillas
             <br /> <br />
@@ -256,10 +255,10 @@ const Section5: React.FC = () => {
             tono, recomendamos uno que combinara con su tono de labios y piel
             para que resaltara sus rasgos faciales, logrando proyectar armonía y
             naturalidad.
+            <br /> <br />
             <div className="flex justify-center items-center">
               <img src={BlogD} alt="" />
             </div>
-            <br />
             <br />
             El siguiente paso fue crear impresiones de silicona que permitirán
             proponer unas carillas provisionales que probamos en nuestra
@@ -283,6 +282,7 @@ const Section5: React.FC = () => {
             <div className="flex justify-center items-center">
               <img src={BlogE} alt="" />
             </div>
+            <br />
             Todo el proceso de las carillas toma un par de horas y es un momento
             muy especial al revelar la sonrisa finalmente terminada, donde
             nuestra paciente se sintió muy feliz con los resultados amando cada
@@ -308,12 +308,24 @@ const Section5: React.FC = () => {
             tener una buena técnica de cepillado uso de enjuague e hilo dental,
             para mantenerlos sanos.
             <br />
+            <br />{" "}
+            <div className="w-full flex justify-center items-center">
+              <iframe
+                src="https://www.instagram.com/reel/C-lrbK8SyCx/embed"
+                title="Instagram video"
+                className="md:w-[800px] md:h-[1300px] w-full h-[650px]"
+                scrolling="No"
+              ></iframe>
+            </div>
             <br />
             ¿Qué opinas de estos resultados? Nos llenó de satisfacción ver la
-            felicidad de nuestra paciente con su nueva sonrisa, nuestra misión
-            en Bites Creadores de Sonrisas es escuchar atentamente a nuestros
-            pacientes y brindarles belleza y funcionalidad en su sonrisa.
-            <br />
+            felicidad de nuestra paciente con su nueva sonrisa.
+            <br /> <br />
+            <h1 className="text-[#E72381] font-bold text-3xl">
+              nuestra misión en Bites Creadores de Sonrisas es escuchar
+              atentamente a nuestros pacientes y brindarles belleza y
+              funcionalidad en su sonrisa
+            </h1>
             <br />
             Si estas interesado en trasformar tu sonrisa de forma no invasiva y
             natural, te recomendamos ampliamente acudir a tu consulta de
@@ -321,6 +333,14 @@ const Section5: React.FC = () => {
             para tener una sonrisa linda, radiante que refleje tu personalidad
             con carillas de porcelana.
           </p>
+          <div className="flex justify-center items-center">
+            <button
+              className="bg-[#E72381] text-white px-4 py-2 rounded mt-4 hover:opacity-80"
+              onClick={handleScrollToBooking}
+            >
+              <strong>Agendar cita</strong>
+            </button>
+          </div>{" "}
         </div>
       </div>
     </div>

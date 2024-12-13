@@ -29,16 +29,16 @@ const Blog: React.FC = () => {
   ).slice(startIndex, endIndex);
 
   return (
-    <div className="mt-48 px-8 font-poppins">
+    <div className="mt-56 lg:mt-64 px-8 font-poppins">
       <section className="mx-auto container">
         <strong className="text-3xl">
           {contentMap[selectedTitle].extendedTitle}
         </strong>
-        <ul className="md:flex mt-8 hidden">
+        <ul className="md:flex flex-wrap mt-8 hidden">
           {Object.keys(contentMap).map((title) => (
             <li
               key={title}
-              className={`mr-4 hover:underline ${selectedTitle === title ? "font-bold" : ""} cursor-pointer`}
+              className={`mr-4 text-2xl hover:underline ${selectedTitle === title ? "text-[#E72381]" : ""} cursor-pointer`}
               onClick={() => handleItemClick(title)}
             >
               {title}
@@ -67,7 +67,7 @@ const Blog: React.FC = () => {
               <img
                 src={contentMap[selectedTitle].image}
                 alt={selectedTitle}
-                className="transform w-[900px]
+                className="transform w-[1000px]
                         transition duration-500 
                         hover:scale-110   "
               />
@@ -103,7 +103,7 @@ const Blog: React.FC = () => {
                       </a>
                     </div>
 
-                    <h3 className="text-2xl font-bold text-[#E72381]">
+                    <h3 className="text-2xl font-bold mb-4 text-[#E72381]">
                       {colContent?.title}
                     </h3>
                     <p className="text-lg">{colContent?.description}</p>
@@ -115,7 +115,7 @@ const Blog: React.FC = () => {
         </div>
       </section>
       <Form />
-      <section className="container mx-auto">
+      <section className="container mx-auto mt-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {currentItems.map((colKey) => {
             const colContent =
@@ -133,7 +133,7 @@ const Blog: React.FC = () => {
                     />
                   </a>
                 </div>
-                <h3 className="text-2xl font-bold text-[#E72381]">
+                <h3 className="text-2xl font-bold text-[#E72381] mb-4">
                   {colContent?.title}
                 </h3>
                 <p className="text-lg">{colContent?.description}</p>
@@ -156,7 +156,7 @@ const Blog: React.FC = () => {
       <FloatingWhatsApp
         phoneNumber="526633249611"
         accountName="Bites Creadores de Sonrisas"
-        avatar="https://bitescreadoresdesonrisas.com/wp-content/uploads/2021/09/Logo-Bites-Creadores-de-Sonrisas.png"
+        avatar="/whatsapp-icon.webp"
         chatMessage="Hola, ¿en qué puedo ayudarte?"
         allowClickAway
       />

@@ -1,11 +1,6 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import {
-  ReactCompareSlider,
-  ReactCompareSliderImage,
-} from "react-compare-slider";
-// import imagenA from "../../assets/A dental implant it's a procedure that requires an expert in odontology and aesthetic dentistry.png";
-// import imagenB from "../../assets/Una sonrisa completa y sana permite que disfrutes del comer y hablar con libertad y comodidad.png";
+
 import Profile from "../../assets/blog6-profile.webp";
 import BlogA from "../../assets/blog6-1.webp";
 import BlogB from "../../assets/blog6-2.webp";
@@ -13,6 +8,7 @@ import BlogC from "../../assets/blog6-3.webp";
 import BlogD from "../../assets/blog6-4.webp";
 import Profile2 from "../../assets/blog4-profile.webp";
 import Profile3 from "../../assets/blog5-profile.webp";
+
 const Section6: React.FC = () => {
   const URL = useLocation();
 
@@ -29,9 +25,9 @@ const Section6: React.FC = () => {
   };
 
   return (
-    <div className="md:px-8 font-poppins">
+    <div className="lg:px-8 font-poppins">
       <div
-        className="grid grid-cols-1 md:grid-cols-3 text-white w-full"
+        className="grid grid-cols-1 lg:grid-cols-3 text-white w-full"
         style={{
           backgroundColor: "#6BBAE9",
           padding: "20px",
@@ -41,7 +37,7 @@ const Section6: React.FC = () => {
         }}
       >
         <div className="text-start col-span-2 flex justify-end items-start flex-col">
-          <h1 className="font-bold text-2xl">(Tendencias)</h1>
+          <h1 className="font-bold text-2xl">(Carillas de Composite)</h1>
           <p className="mt-4 text-4xl">
             Descubre como trasformamos una sonrisa juvenil a una sonrisa
             sofisticada: La Sonrisa de ensueño diseñada para armonizar tu
@@ -53,7 +49,7 @@ const Section6: React.FC = () => {
               <a href="/">Bites creadores de sonrisas</a>
             </strong>
           </p>
-          <p className="mt-4 text-lg">Oct. 24, 2024</p>
+          <p className="mt-4 text-lg">Dic. 10, 2024</p>
         </div>
         <div className="flex justify-center items-center mx-auto">
           {/* <ReactCompareSlider
@@ -75,12 +71,12 @@ const Section6: React.FC = () => {
           <img src={Profile} alt="" className="rounded-2xl h-96" />{" "}
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 mt-20 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 mt-20 gap-16">
         <div className="col-span-1">
           <aside className="w-full">
             <hr className="w-full border border-gray-300 mb-4" />
             <h1 className="text-[#5C9BC0] mb-8 font-bold">
-              (Mantente Actualizado)
+              (Transforma tu sonrisa)
             </h1>
             <p className="text-xl mb-4">
               Agenda tu cita en{" "}
@@ -111,13 +107,13 @@ const Section6: React.FC = () => {
                       Renueva tu sonrisa sin cirugia con carillas de porcelana
                     </h1>
                     <p className="text-sm">
-                      En Este blog te presentamos el “behind the scenes” de una
-                      paciente.
+                      Una paciente cuya personalidad deseaba que se manifestara
+                      en una sonrisa resplandeciente
                     </p>
                   </div>
                 </a>
                 <a
-                  href="/Remodela-tus-encias-luce-unos-dientes-mas-grandes-y-bellos-te-presentamos-la-gingivoplastia"
+                  href="Remodela-tus-encias-luce-unos-dientes-mas-grandes-y-bellos-te-presentamos-la-gingivoplastia"
                   className="flex gap-4 border-t border-gray-300 py-8"
                 >
                   <div className="flex flex-col">
@@ -125,14 +121,14 @@ const Section6: React.FC = () => {
                       Remodela tus encias, luce unos dientes mas grandes.
                     </h1>
                     <p className="text-sm">
-                      En este blog te presentamos el “behind the scenes” de una
-                      paciente.
+                      Te compartimos el cambio increíble y natural de nuestra
+                      paciente con ayuda de una gingivoplastia
                     </p>
                   </div>
                   <img src={Profile2} alt="" className="w-28 h-28" />
                 </a>
                 <a
-                  href="/Con-el-implante-dental-elevala-al-siguiente-nivel"
+                  href="Con-el-implante-dental-elevala-al-siguiente-nivel"
                   className="flex gap-4 border-t border-gray-300 py-8"
                 >
                   <img
@@ -145,13 +141,14 @@ const Section6: React.FC = () => {
                       Con el implante dental elevala al siguiente nivel
                     </h1>
                     <p className="text-sm">
-                      En este blog te presentamos el “behind the scenes” de una
-                      paciente.
+                      Una sonrisa completa refleja nuestra salud. No solo es
+                      importante sentirnos bien, sino que funcione a la
+                      perfección.
                     </p>
                   </div>
                 </a>
                 <a
-                  href="/Descubre-como-obtener-una-sonrisa-deslumbrante-con-blanqueamiento-dental"
+                  href="Descubre-como-obtener-una-sonrisa-deslumbrante-con-blanqueamiento-dental"
                   className="flex gap-4 border-t border-gray-300 py-8"
                 >
                   <div className="flex flex-col">
@@ -159,8 +156,9 @@ const Section6: React.FC = () => {
                       Descubre como obtener una sonrisa deslumbrante
                     </h1>
                     <p className="text-sm">
-                      En este blog te presentamos el “behind the scenes” de una
-                      paciente.
+                      El blanqueamiento dental es uno de los tratamientos
+                      dentales estéticos con los resultados más visibles de
+                      forma inmediata.
                     </p>
                   </div>
                   <img
@@ -170,7 +168,7 @@ const Section6: React.FC = () => {
                   />
                 </a>
                 <a
-                  href="/La-solucion-para-una-sonrisa-ideal"
+                  href="La-solucion-para-una-sonrisa-ideal"
                   className="flex gap-4 border-t border-gray-300 py-8"
                 >
                   <img
@@ -183,8 +181,7 @@ const Section6: React.FC = () => {
                       La solucion para una sonrisa ideal
                     </h1>
                     <p className="text-sm">
-                      En este blog te presentamos el “behind the scenes” de una
-                      paciente.
+                      Una sonrisa espectacular está al alcance de todos.
                     </p>
                   </div>
                 </a>
@@ -295,6 +292,15 @@ const Section6: React.FC = () => {
             detallado y pulido para que queden perfectamente estéticas.
             <br />
             <br />
+            <div className="w-full flex justify-center items-center">
+              <iframe
+                src="https://www.instagram.com/reel/C-86TNHSjvW/embed"
+                title="Instagram video"
+                className="md:w-[800px] md:h-[1300px] w-full h-[650px]"
+                scrolling="No"
+              ></iframe>
+            </div>
+            <br />
             Nuestra paciente quedo muy emocionada por su nueva sonrisa, y
             nosotros más que contentos de poder hacer posible una sonrisa soñada
             en nuestra clínica estética.
@@ -306,6 +312,14 @@ const Section6: React.FC = () => {
             te invitamos a agendar tu cita de valoración para trabajar juntos en
             crear tu sonrisa soñada.
           </h1>
+          <div className="flex justify-center items-center">
+            <button
+              className="bg-[#E72381] text-white px-4 py-2 rounded mt-4 hover:opacity-80"
+              onClick={handleScrollToBooking}
+            >
+              <strong>Agendar cita</strong>
+            </button>
+          </div>
         </div>
       </div>
     </div>

@@ -300,6 +300,14 @@ function Navbar() {
                   </li>
                   <li>
                     <a
+                      href="/blog"
+                      className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100"
+                    >
+                      Blog
+                    </a>
+                  </li>
+                  <li>
+                    <a
                       href="tel:6633249611"
                       className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100"
                     >

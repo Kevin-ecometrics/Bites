@@ -160,7 +160,7 @@ export const contentMap: { [key: string]: Content } = {
     gridContent2: {},
   },
 
-  "Gingivoplastia y blanqueamiento dental": {
+  Gingivoplastia: {
     image: "/blog4-card.webp",
     text: "Remodela tus encías luce unos dientes más grandes y bellos, te presentamos la gingivoplastia.",
     description:

@@ -6,7 +6,6 @@ import AboutPage from "./About";
 import ServicesPage from "./Services";
 import ServicesDinamic from "./pages/services/dinamic";
 import ContactPage from "./Contact";
-import BlogID from "./Blog";
 import IndexBlog from "./pages/blog/IndexBlog";
 import BlogPage from "./BlogPage";
 import Politicas from "./Politicas";
