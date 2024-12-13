@@ -66,7 +66,7 @@ const ContactForm: React.FC = () => {
       </h3>
       <form
         onSubmit={handleSubmit}
-        className="flex justify-center items-center flex-col border px-4 rounded-lg border-gray-400 mb-4 shadow-lg shadow-gray-400"
+        className="flex justify-center items-center flex-col border p-4 rounded-lg border-gray-400 mb-4 shadow-lg shadow-gray-400"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
           <Input
@@ -100,16 +100,19 @@ const ContactForm: React.FC = () => {
             placeholder="Asunto"
           />
         </div>
-        <div className="grid grid-cols-1 gap-4 md:gap-8 mb-8">
+        <div className="grid grid-cols-1 w-full mb-8">
           <textarea
             name="mensaje"
             value={formState.mensaje}
             onChange={handleChange}
             placeholder="Escribe tu mensaje"
-            className="bg-[#D9D9D9] outline-none shadow-none w-[325px] md:w-[675px] mt-4 border-gray-300 text-gray-900 text-sm rounded-lg block  p-2.5 dark:bg-[#D9D9D9] dark:border-gray-600 dark:placeholder-gray-400 dark:text-black"
+            className="
+            bg-[#D9D9D9] outline-none shadow-none mt-4 border-gray-300 text-gray-900 text-sm rounded-lg block  p-2.5 dark:bg-[#D9D9D9] dark:border-gray-600 dark:placeholder-gray-400 dark:text-black
+            "
             required
           ></textarea>
         </div>
+
         <div className="flex justify-center items-center">
           <Button
             name="Enviar mensaje"

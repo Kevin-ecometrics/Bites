@@ -87,7 +87,7 @@ const Service: React.FC = () => {
 
   return (
     <main>
-      <div className="flex justify-center items-center flex-col mt-12">
+      <div className="flex justify-center items-center flex-col mt-12 md:px-0 px-8">
         <h1 className="font-normal font-poppins text-center text-3xl mb-6 text-pink-600">
           {t("obten")}
         </h1>
@@ -126,7 +126,7 @@ const Service: React.FC = () => {
               />
             ))}
           </div>
-          <div className="md:hidden flex-col gap-0 md:gap-4 md:flex-row flex ">
+          <div className="md:hidden flex-col gap-0 md:gap-4 md:flex-row flex md:mb-0">
             {getVisibleServices()
               .slice(0, 1)
               .map((service, index) => (
@@ -178,7 +178,7 @@ const Service: React.FC = () => {
             ))}
           </div>
         </div>
-        <button className="bg-[#6BBAE9] text-white font-poppins font-normal text-lg px-4 py-2 rounded-md mt-4 hover:opacity-80">
+        <button className="bg-[#6BBAE9] text-white font-poppins font-normal text-lg px-4 py-2 rounded-md mt-8 hover:opacity-80">
           <a href="/blog">Todos los blogs</a>
         </button>
       </div>

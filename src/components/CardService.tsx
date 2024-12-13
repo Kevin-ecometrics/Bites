@@ -29,11 +29,11 @@ const CardService: React.FC<CardServiceProps> = ({
 
   return (
     <div className="py-12">
-      <div className="w-[500px] bg-white border border-gray-200 rounded-xl shadow">
+      <div className="md:w-[500px] bg-white border border-gray-200 rounded-xl shadow">
         <div className=" overflow-hidden cursor-pointer">
           <a href={url}>
             <img
-              className="w-[500px] h-[300px] transform transition duration-500 hover:scale-110"
+              className="md:w-[500px] md:h-[300px] transform transition duration-500 hover:scale-110"
               src={image}
               alt={alt}
               title={alt}

@@ -27,7 +27,7 @@ const Input: React.FC<InputProps> = ({
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-        className="bg-[#D9D9D9] outline-none shadow-none w-80 mt-4 border-gray-300 text-gray-900 text-sm rounded-lg block  p-2.5 dark:bg-[#D9D9D9] dark:border-gray-600 dark:placeholder-gray-400 dark:text-black"
+        className="bg-[#D9D9D9] outline-none shadow-none md:w-80 mt-4 border-gray-300 text-gray-900 text-sm rounded-lg block  p-2.5 dark:bg-[#D9D9D9] dark:border-gray-600 dark:placeholder-gray-400 dark:text-black"
         required
         maxLength={type === "phone" ? 10 : undefined}
       />
