@@ -10,6 +10,7 @@ import Section5 from "./Section5";
 import Section6 from "./Section6";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import Navbar from "./Navbar";
+import { useEffect } from "react";
 
 const sectionComponents: { [key: string]: React.FC } = {
   "La-solucion-para-una-sonrisa-ideal": Section1,
@@ -36,6 +37,35 @@ const IndexBlog: React.FC = () => {
     ...sectionIds.slice(currentIndex + 1).reverse(), // Las mayores en orden inverso
     ...sectionIds.slice(0, currentIndex).reverse(), // Las menores en orden inverso
   ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section > div");
+      let currentSectionId = "";
+
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (
+          rect.top <= window.innerHeight / 2 &&
+          rect.bottom >= window.innerHeight / 2
+        ) {
+          currentSectionId = section.id;
+        }
+      });
+
+      if (
+        currentSectionId &&
+        currentSectionId !== location.pathname.split("/").pop()
+      ) {
+        window.history.replaceState(null, "", `/blog/${currentSectionId}`);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [location.pathname]);
 
   return (
     <main>
