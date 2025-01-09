@@ -64,12 +64,14 @@ const ServicesSection: React.FC = () => {
           <h3 className=" font-poppins font-normal text-lg mb-8">
             {t("services.serviceText2")}
           </h3>
+          <img src="/Service-Image1.webp" alt="" />
           <h2 className=" font-poppins font-normal mb-4 text-lg">
             {t("services.serviceText3")}
           </h2>
           <h4 className=" font-poppins font-normal mb-4 text-lg">
             {t("services.serviceText4")}
           </h4>
+          <img src="/Service-Image2.webp" alt="" />
         </div>
       </article>
     </main>

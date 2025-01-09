@@ -71,7 +71,7 @@ const Section4: React.FC = () => {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 mt-20 gap-16">
         <div className="col-span-1">
-          <aside className="w-full">
+          <aside className="w-full relative">
             <hr className="w-full border border-gray-300 mb-4" />
             <h1 className="text-[#5C9BC0] mb-8 font-bold">
               (Transforma tu sonrisa)
@@ -187,6 +187,12 @@ const Section4: React.FC = () => {
                 </a>
               </div>
             ) : null}
+            {URL.pathname ===
+            "/blog/Remodela-tus-encias-luce-unos-dientes-mas-grandes-y-bellos-te-presentamos-la-gingivoplastia" ? null : (
+              <div className="mt-8 md:absolute md:top-[2000px]">
+                <img src="/bites-blog-banner.webp" alt="" />
+              </div>
+            )}
           </aside>
         </div>
         <div className="col-span-2 ">

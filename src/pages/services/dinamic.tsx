@@ -26,7 +26,10 @@ import image14 from "../../assets/Resins are perfect for those who want a natura
 import image15 from "../../assets/Treat yourself with a smile design and enhance your features with the top-rated dentist at Bites CS.png";
 import image16 from "../../assets/Bites CS Dental implants are the number one solution for missing teeth get your implants with experts in cosmetic dentistry.png";
 import image17 from "../../assets/AT bites CS Preserve your bone and gums health with dental implants with the most qualified dentists in Tijuana.png";
-import image18 from "../../assets/Bites CS tooth preparation ensure durable results aligned with a smile design.png";
+import image18 from "../../assets/Endodoncia-Image1.webp";
+import image19 from "../../assets/Endodoncia-Image2.webp";
+import image20 from "../../assets/Ortodoncia-Image1.webp";
+import image21 from "../../assets/Ortodoncia-Image2.webp";
 const ServicesDinamic: React.FC = () => {
   const { t } = useTranslation();
   const services = [
@@ -88,12 +91,12 @@ const ServicesDinamic: React.FC = () => {
 
   const images: { [key: string]: string[] } = {
     "limpieza-dental": [image1],
-    endodoncia: [image18],
+    endodoncia: [image18, image19],
     "rehabilitacion-oral": [image4],
     blanqueamiento: [image5],
     carillas: [image8],
     coronas: [image11],
-    ortodoncia: [""],
+    ortodoncia: [image20, image21],
     resinas: [image14],
     "implantes-dentales": [image15],
   };

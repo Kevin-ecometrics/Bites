@@ -50,6 +50,7 @@ app.post("/booking", async (req, res) => {
     //     user: "pacientes@bitescreadoresdesonrisas.com",
     //     pass: "gr6m~tAX$^=H",
     //   },
+
     // });
 
     // let mailOptions = {
