@@ -9,7 +9,7 @@ const Politicas: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <HeroTerminos title="Términos de Servicio." />
+      <HeroTerminos title="Términos de Servicio" />
       <TerminosPage />
       <FooterAbout />
       <FooterText className="bg-[#6BBAE9]" hoverColor="hover:text-pink-400" />
