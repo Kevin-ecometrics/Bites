@@ -1,36 +1,24 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const TerminosPage: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <div className="mx-auto md:w-[70%] md:py-8 py-4 text-xl md:text-2xl px-8">
       <p className="mb-4">
-        La página de
-        <strong className="text-pink-600">
-          {" "}
-          bitescreadoresdesonrisas.com
-        </strong>{" "}
-        contiene el contacto directo con nuestro personal de atención al
-        cliente.
+        {t("terminos.text1")}
+        <strong className="text-pink-600"> {t("terminos.text2")}</strong>{" "}
+        {t("terminos.text3")}
       </p>
+      <p className="mb-4">{t("terminos.text4")}</p>
+      <p className="mb-4">{t("terminos.text5")}</p>
+      <p className="mb-4">{t("terminos.text6")}</p>
       <p className="mb-4">
-        Toda reservación realizada en la página es directa a nuestra agenda en
-        la recepción.
-      </p>
-      <p className="mb-4">
-        Las citas son confirmadas por teléfono y deberán ser atendidas por el
-        cliente en el periodo de 48hrs a 24hrs antes de la cita.
-      </p>
-      <p className="mb-4">
-        Citas no confirmadas podrán ser consideradas como canceladas por el
-        cliente.
-      </p>
-      <p className="mb-4">
-        Toda situación que se presente por cambio o devolución deberán ser
-        notificado por correo electrónico a{" "}
+        {t("terminos.text7")}{" "}
         <strong className="text-pink-600 break-words ">
-          draanyimanchola@bitescreadoresdesonrisas.com
+          {t("terminos.text8")}
         </strong>{" "}
-        enviando descripción del problema o razón de la cancelación.
+        {t("terminos.text9")}
       </p>
     </div>
   );

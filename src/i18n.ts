@@ -5,286 +5,407 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
-        "months": {
-          "january": "January",
-          "february": "February",
-          "march": "March",
-          "april": "April",
-          "may": "May",
-          "june": "June",
-          "july": "July",
-          "august": "August",
-          "september": "September",
-          "october": "October",
-          "november": "November",
-          "december": "December"
+        months: {
+          january: "January",
+          february: "February",
+          march: "March",
+          april: "April",
+          may: "May",
+          june: "June",
+          july: "July",
+          august: "August",
+          september: "September",
+          october: "October",
+          november: "November",
+          december: "December",
         },
-        "weekDays": {
-          "sunday": "Sunday",
-          "monday": "Monday",
-          "tuesday": "Tuesday",
-          "wednesday": "Wednesday",
-          "thursday": "Thursday",
-          "friday": "Friday",
-          "saturday": "Saturday"
+        weekDays: {
+          sunday: "Sunday",
+          monday: "Monday",
+          tuesday: "Tuesday",
+          wednesday: "Wednesday",
+          thursday: "Thursday",
+          friday: "Friday",
+          saturday: "Saturday",
         },
-        "weekDaysShort": {
-          "sunday": "S",
-          "monday": "M",
-          "tuesday": "T",
-          "wednesday": "W",
-          "thursday": "T",
-          "friday": "F",
-          "saturday": "S"
+        weekDaysShort: {
+          sunday: "S",
+          monday: "M",
+          tuesday: "T",
+          wednesday: "W",
+          thursday: "T",
+          friday: "F",
+          saturday: "S",
         },
         blog: "Bites Blog",
         bitesDescription:
           "At Bites we make sure to prepare everything necessary in our space so that your visit is pleasant.",
-          nuestrotrabajo: "Our job as a high-aesthetic dentistry center",
-          contactanos: "Contact us now",
-          labor: "About our work as the best for dental smile design",
-          bites: "Hello, we are Bites Creadores de Sonrisas",
-          bienvenido: "Welcome to the #1 Smile Design destination in Mexico! ",
-          bienvenido2: "We are very close to you in Tijuana, Baja California and we are ready to transform your smile with lots of love and a highly qualified team to create the beautiful and healthy smile you always dreamed of and deserve.",
-          ofrecemos: "We offer exceptional dental treatments giving you a unique experience. Our clinic has become a popular destination for dental tourism thanks to its proximity to the border attracting patients from all over the world to acquire a smile design at incredible costs.",
-          obtensonrisa: "Get a beautiful and healthy smile",
-          equipodental: "State of art dental equipment  ",
-          servicioexclusivo: "Exclusive service for a restful and enjoyable experience ",
-          desdecarillas: "From Veneers to Oral Rehabilitation ",
-          tratamientosavanzados: "Advanced treatments and personalized orthodontics  ",
-          vermas: "See more",
-          pacientessonrisa: "Patients with a bright smile",
-          contamos: "We have highly specialized aesthetic dentistry services for the smile you deserve.",
-          esteticapersonalizada: "Specialized Cosmetic dentistry",
-          altatecnologia: "High-grade dental instrumentation ",
-          agendadigital: "Digital agenda and appointments  ",
-          materiales: "High-quality materials  ",
-          higienicos: "Hygiene services",
-          esteticos: "Aesthetic Dentistry  ",
-          limpieza: "Teeth cleaning ",
-          limpiezatext: "Our dental cleaning services remove plaque and tartar, promoting healthy gums and preventing dental problems, ensuring every cleaning is a step towards a smile that shines and reflects the best health.",
-          resinas: "Resins",
-          resinastext: "We use high-quality composite resins providing a long-lasting solution, so they look and feel amazing. Beauty and durability come together in every application",
-          endodoncia: "Endodontics",
-          endodonciatext: "Our endodontic experts use advanced techniques to preserve dental health and restore functionality to your teeth.",
-          rehabilitacion: "Oral Rehabilitation ",
-          rehabilitaciontext: "With implants, you can have a complete smile with practical and aesthetic benefits that allow you to chew, speak, and smile widely. ",
-          blanqueamiento: "Teeth whitening",
-          blanqueamientotext: "At Bites CDS, we don't just brighten your teeth, we elevate your confidence and presence with whitening that makes a difference. Enjoy a whiter, more radiant smile, safely and effectively.  ",
-          carillas: "Veneers",
-          carillastext: "With Bites, customize your veneers to achieve a natural and attractive smile that matches your unique facial features, achieving a natural and beautiful smile.  ",
-          coronas: "Crowns",
-          coronastext: "Crowns provide strength and durability. They perfectly match the tooth, providing a natural smile.  ",
-          implantesdentales: "Dental implants ",
-          implantesdentalestext: "With implants, a complete smile with practical and esthetic benefits that allow you to chew, the best option for those who have lost one or more teeth. ",
-          agenda: "Book us now!",
-          seleccionaDia: "Select  day and time to start your dental transformation and our technique of smile design",
-          crearCita: "CREATE DENTAL APPOINTMENT",
-          noAvailableTime: "No available time",
-          selectTime: "Select a time",
-          agendar: "Schedule",
-          obten: "Get a beautiful and healthy smile through customized care",
-          encontrar: "With Bites Creadores de Sonrisas you can find all the general dental services and state-of-the-art dental esthetics in Tijuana.",
-          card1: "Composite veneers combine functionality and aesthetic ",
-          card1text: "Composite veneers make it possible to combine aesthetics and functionality. They have become the most frequent and popular dental aesthetic treatments for everyone. ",
-          card2: "Discover how to get a dazzling smile with teeth whitening ",
-          card2text: "Teeth whitening is one of the most visible dental aesthetic treatments with immediate results. ",
-          card3: "Not only recover your smile; with dental implants, take it to the next level ",
-          card3text: "If you have one or more missing teeth and are embarrassed to smile, and think, “Well, it's just aesthetic, I don't need them, I haven't felt any discomfort at the moment.” Wait, you may be putting your entire oral health at risk. ",
-          mapmarker: "Calle Frida Kahlo 10410-404 Tijuana, Mexico, 22010",
-          clock: "Monday to Friday 9:00 am - 6:30 pm",
-          clock2: "Saturday 9:00 am - 4:00 pm",
-          linksrapidos: "Quick Links",
-          agendacita:"Book an appointment now!",
-          "Inicio": "Home",
-          "Nosotros": "About Us",
-          "Galeria": "Gallery",
-          "Contacto": "Contact",
-          "Llamar": "Contact by Phone",
-          "Servicios": "Services",
-          "Términos de Servicio": "Terms of Service",
-          "Política de Privacidad": "Privacy Policy",
-          "Limpieza-Dental": "Dental Cleaning",
-          "Resinas": "Resins",
-          "Endodoncia": "Endodontics",
-          "Rehabilitacion-Oral": "Oral Rehabilitation",
-          "Blanqueamiento": "Whitening",
-          "Carillas": "Veneers",
-          "Coronas": "Crowns",
-          "Ortodoncia": "Orthodontics",
-          "Implantes-Dentales": "Dental Implants",
-          servicios: "Services",
-          gallery: {
-            title: "A glimpse of Bites Creadores de Sonrisas! ",
-            subtitle: " Experts in high aesthetic dentistry as seen in ",
-            and: "and",
-            Facebook: "Facebook",
-            Instagram: "Instagram",
-          },
-          about: {
-            title: "Hello, welcome! ",
-            subtitle: "Get to know more about Bites ",
-            platicamos: "We are going to walk you briefly about our mission at Bites Creadores de Sonrisas: ",
-            queremos: "We want to transform lives through a healthy and radiance smiles ",  
-            destino: "We aspire to be the number 1 destination par excellence to transform and take care of your smile  ",
-            cuidamos: "At Bites, you are not only taking care of your smile, but we also offer you an exclusive service that listens to your needs, from the start until your procedure finishes, our team wants you to experience a comfortable and pleasant treatment  ",
-            creemos: "We believe that a healthful smile can empower you by gradually improving your self-confidence and upgrading your overall quality of life ",
-            contamos: "Our high-end facilities are designed based on a gentle and cozy space, we don't want to be a   typical dental office, we want you to feel safe, relaxed, and heard by our experts, with a wide range of knowledge in cosmetic dentistry and hygiene services  ",
-            servicios: "Our range of services:",
-            estetica: "Cosmetic dentistry, periodontics, endodontics and orthodontics  ",
-            higienistas: "Hygienist services such as cavities removal and resign restorations. ",
-            ortodóncicos: "Orthodontic treatment for dental alignment  ",
-            oral: "Oral crown rehabilitation ",
-            implantes: "Dental implants, partial dentures, and full dentures  ",
-            review1: "The best dental care I have ever experienced! Professional, courteous, and super friendly made me feel like family… would highly recommend to anyone!!! Such a pleasant time here. ",
-            review2: "I had a great experience at Bites. The staff was very friendly and professional. The office is very clean and modern. I would highly recommend Bites to anyone looking for a great dentist. ",
-            review3: "They were so gentle, and the office is beautiful. More like a spa then a dentista. They even put an eye mask on me while they worked",
-            review4: "I could not be happier with my new smile!! These ladies are so kind, gentle and go above and beyond. Wonderful experience and so happy!",
+        nuestrotrabajo: "Our job as a high-aesthetic dentistry center",
+        contactanos: "Contact us now",
+        labor: "About our work as the best for dental smile design",
+        bites: "Hello, we are Bites Creadores de Sonrisas",
+        bienvenido: "Welcome to the #1 Smile Design destination in Mexico! ",
+        bienvenido2:
+          "We are very close to you in Tijuana, Baja California and we are ready to transform your smile with lots of love and a highly qualified team to create the beautiful and healthy smile you always dreamed of and deserve.",
+        ofrecemos:
+          "We offer exceptional dental treatments giving you a unique experience. Our clinic has become a popular destination for dental tourism thanks to its proximity to the border attracting patients from all over the world to acquire a smile design at incredible costs.",
+        obtensonrisa: "Get a beautiful and healthy smile",
+        equipodental: "State of art dental equipment  ",
+        servicioexclusivo:
+          "Exclusive service for a restful and enjoyable experience ",
+        desdecarillas: "From Veneers to Oral Rehabilitation ",
+        tratamientosavanzados:
+          "Advanced treatments and personalized orthodontics  ",
+        vermas: "See more",
+        pacientessonrisa: "Patients with a bright smile",
+        contamos:
+          "We have highly specialized aesthetic dentistry services for the smile you deserve.",
+        esteticapersonalizada: "Specialized Cosmetic dentistry",
+        altatecnologia: "High-grade dental instrumentation ",
+        agendadigital: "Digital agenda and appointments  ",
+        materiales: "High-quality materials  ",
+        higienicos: "Hygiene services",
+        esteticos: "Aesthetic Dentistry  ",
+        limpieza: "Teeth cleaning ",
+        limpiezatext:
+          "Our dental cleaning services remove plaque and tartar, promoting healthy gums and preventing dental problems, ensuring every cleaning is a step towards a smile that shines and reflects the best health.",
+        resinas: "Resins",
+        resinastext:
+          "We use high-quality composite resins providing a long-lasting solution, so they look and feel amazing. Beauty and durability come together in every application",
+        endodoncia: "Endodontics",
+        endodonciatext:
+          "Our endodontic experts use advanced techniques to preserve dental health and restore functionality to your teeth.",
+        rehabilitacion: "Oral Rehabilitation ",
+        rehabilitaciontext:
+          "With implants, you can have a complete smile with practical and aesthetic benefits that allow you to chew, speak, and smile widely. ",
+        blanqueamiento: "Teeth whitening",
+        blanqueamientotext:
+          "At Bites CDS, we don't just brighten your teeth, we elevate your confidence and presence with whitening that makes a difference. Enjoy a whiter, more radiant smile, safely and effectively.  ",
+        carillas: "Veneers",
+        carillastext:
+          "With Bites, customize your veneers to achieve a natural and attractive smile that matches your unique facial features, achieving a natural and beautiful smile.  ",
+        coronas: "Crowns",
+        coronastext:
+          "Crowns provide strength and durability. They perfectly match the tooth, providing a natural smile.  ",
+        implantesdentales: "Dental implants ",
+        implantesdentalestext:
+          "With implants, a complete smile with practical and esthetic benefits that allow you to chew, the best option for those who have lost one or more teeth. ",
+        agenda: "Book us now!",
+        seleccionaDia:
+          "Select  day and time to start your dental transformation and our technique of smile design",
+        crearCita: "CREATE DENTAL APPOINTMENT",
+        noAvailableTime: "No available time",
+        selectTime: "Select a time",
+        agendar: "Schedule",
+        obten: "Get a beautiful and healthy smile through customized care",
+        encontrar:
+          "With Bites Creadores de Sonrisas you can find all the general dental services and state-of-the-art dental esthetics in Tijuana.",
+        card1: "Composite veneers combine functionality and aesthetic ",
+        card1text:
+          "Composite veneers make it possible to combine aesthetics and functionality. They have become the most frequent and popular dental aesthetic treatments for everyone. ",
+        card2: "Discover how to get a dazzling smile with teeth whitening ",
+        card2text:
+          "Teeth whitening is one of the most visible dental aesthetic treatments with immediate results. ",
+        card3:
+          "Not only recover your smile; with dental implants, take it to the next level ",
+        card3text:
+          "If you have one or more missing teeth and are embarrassed to smile, and think, “Well, it's just aesthetic, I don't need them, I haven't felt any discomfort at the moment.” Wait, you may be putting your entire oral health at risk. ",
+        mapmarker: "Calle Frida Kahlo 10410-404 Tijuana, Mexico, 22010",
+        clock: "Monday to Friday 9:00 am - 6:30 pm",
+        clock2: "Saturday 9:00 am - 4:00 pm",
+        linksrapidos: "Quick Links",
+        agendacita: "Book an appointment now!",
+        Inicio: "Home",
+        Nosotros: "About Us",
+        Galeria: "Gallery",
+        Contacto: "Contact",
+        Llamar: "Contact by Phone",
+        Servicios: "Services",
+        "Términos de Servicio": "Terms of Service",
+        "Política de Privacidad": "Privacy Policy",
+        "Limpieza-Dental": "Dental Cleaning",
+        Resinas: "Resins",
+        Endodoncia: "Endodontics",
+        "Rehabilitacion-Oral": "Oral Rehabilitation",
+        Blanqueamiento: "Whitening",
+        Carillas: "Veneers",
+        Coronas: "Crowns",
+        Ortodoncia: "Orthodontics",
+        "Implantes-Dentales": "Dental Implants",
+        servicios: "Services",
+        gallery: {
+          title: "A glimpse of Bites Creadores de Sonrisas! ",
+          subtitle: " Experts in high aesthetic dentistry as seen in ",
+          and: "and",
+          Facebook: "Facebook",
+          Instagram: "Instagram",
+        },
+        about: {
+          title: "Hello, welcome! ",
+          subtitle: "Get to know more about Bites ",
+          platicamos:
+            "We are going to walk you briefly about our mission at Bites Creadores de Sonrisas: ",
+          queremos:
+            "We want to transform lives through a healthy and radiance smiles ",
+          destino:
+            "We aspire to be the number 1 destination par excellence to transform and take care of your smile  ",
+          cuidamos:
+            "At Bites, you are not only taking care of your smile, but we also offer you an exclusive service that listens to your needs, from the start until your procedure finishes, our team wants you to experience a comfortable and pleasant treatment  ",
+          creemos:
+            "We believe that a healthful smile can empower you by gradually improving your self-confidence and upgrading your overall quality of life ",
+          contamos:
+            "Our high-end facilities are designed based on a gentle and cozy space, we don't want to be a   typical dental office, we want you to feel safe, relaxed, and heard by our experts, with a wide range of knowledge in cosmetic dentistry and hygiene services  ",
+          servicios: "Our range of services:",
+          estetica:
+            "Cosmetic dentistry, periodontics, endodontics and orthodontics  ",
+          higienistas:
+            "Hygienist services such as cavities removal and resign restorations. ",
+          ortodóncicos: "Orthodontic treatment for dental alignment  ",
+          oral: "Oral crown rehabilitation ",
+          implantes: "Dental implants, partial dentures, and full dentures  ",
+          review1:
+            "The best dental care I have ever experienced! Professional, courteous, and super friendly made me feel like family… would highly recommend to anyone!!! Such a pleasant time here. ",
+          review2:
+            "I had a great experience at Bites. The staff was very friendly and professional. The office is very clean and modern. I would highly recommend Bites to anyone looking for a great dentist. ",
+          review3:
+            "They were so gentle, and the office is beautiful. More like a spa then a dentista. They even put an eye mask on me while they worked",
+          review4:
+            "I could not be happier with my new smile!! These ladies are so kind, gentle and go above and beyond. Wonderful experience and so happy!",
+        },
 
-          },
-      
         services: {
           services: "Services",
           serviceText1: "We invite you to learn more about our services",
-          serviceText2: "At Bites Creadores de Sonrisas we are proud to be a high-aesthetic dentistry center, with a broad range of dental services to improve your smile's appearance and functionality. ",
-          serviceText3: "We invite you to discover how Bites Creadores de Sonrisas will provide you with a comfortable, nice, and life-changing dental journey. ",
-          serviceText4: "There's nothing to worry about, this dental journey is all about you, our team will be here to make your dream smile possible with care and respectful treatment. ",
-          DentalCleaningText1: "Our dental cleaning services get rid of plaque and tartar between your teeth and around your gum line, making your gumlines healthful again, and preventing oral diseases, and tooth loss. Every cleaning is a step towards a smile that not only looks beautiful but also reflects optimal health.  We recommend having your teeth professionally cleaned every six months",
+          serviceText2:
+            "At Bites Creadores de Sonrisas we are proud to be a high-aesthetic dentistry center, with a broad range of dental services to improve your smile's appearance and functionality. ",
+          serviceText3:
+            "We invite you to discover how Bites Creadores de Sonrisas will provide you with a comfortable, nice, and life-changing dental journey. ",
+          serviceText4:
+            "There's nothing to worry about, this dental journey is all about you, our team will be here to make your dream smile possible with care and respectful treatment. ",
+          DentalCleaningText1:
+            "Our dental cleaning services get rid of plaque and tartar between your teeth and around your gum line, making your gumlines healthful again, and preventing oral diseases, and tooth loss. Every cleaning is a step towards a smile that not only looks beautiful but also reflects optimal health.  We recommend having your teeth professionally cleaned every six months",
           DentalCleaningText2: "How does this procedure work?",
-          DentalCleaningText3: "Your dentist will use scalers to remove plaque and tartar, then use an ultrasonic scaler which uses vibration to remove any substances or residues left This procedure can vary in duration, depending on the state of your teeth and gums",
-          EndodonticsText1: "Our experts in endodontics use advanced techniques to preserve your oral health and restore teeth functionality. At Bites CDS It’s more than a treatment it's a smile revitalization",
+          DentalCleaningText3:
+            "Your dentist will use scalers to remove plaque and tartar, then use an ultrasonic scaler which uses vibration to remove any substances or residues left This procedure can vary in duration, depending on the state of your teeth and gums",
+          EndodonticsText1:
+            "Our experts in endodontics use advanced techniques to preserve your oral health and restore teeth functionality. At Bites CDS It’s more than a treatment it's a smile revitalization",
           EndodonticsText2: "How does it work?",
-          EndodonticsText3: "This treatment consists of numbing the area around your tooth, then placing a sheet or rubber in the infected area to isolate it from the rest of the teeth, later the expert will drill a hole in the top of the tooth to remove the infected tissue, after that your dentist will clean and disinfect the root canals then the final step will be to fill and to sea",
-          OralText1: "Our Bites Creadores de Sonrisas’ team accomplishes impressive results through integral treatments by listening to your needs, we have you covered with solutions to every dental issue, like tooth decay, missing teeth, partial dentures, and full dentures, we also do bite alignment and dental implants. We perform oral rehabilitations to restore and enhance your entire mouth's function like eating, speaking, and smiling. This procedure will help to prevent future damage and to improve a better quality of life. If you have in mind a cosmetic dental procedure, our team will perform an examination, in case is required to rehabilitate or correct a problem before aesthetics.",
-          WhiteningText1: "Our teeth whitening procedure is the fastest and non-invasive treatment that gradually improves your teeth' appearance. Give your teeth a brighter, healthier, and more uniform appearance from the first visit with our expert hands.",
+          EndodonticsText3:
+            "This treatment consists of numbing the area around your tooth, then placing a sheet or rubber in the infected area to isolate it from the rest of the teeth, later the expert will drill a hole in the top of the tooth to remove the infected tissue, after that your dentist will clean and disinfect the root canals then the final step will be to fill and to sea",
+          OralText1:
+            "Our Bites Creadores de Sonrisas’ team accomplishes impressive results through integral treatments by listening to your needs, we have you covered with solutions to every dental issue, like tooth decay, missing teeth, partial dentures, and full dentures, we also do bite alignment and dental implants. We perform oral rehabilitations to restore and enhance your entire mouth's function like eating, speaking, and smiling. This procedure will help to prevent future damage and to improve a better quality of life. If you have in mind a cosmetic dental procedure, our team will perform an examination, in case is required to rehabilitate or correct a problem before aesthetics.",
+          WhiteningText1:
+            "Our teeth whitening procedure is the fastest and non-invasive treatment that gradually improves your teeth' appearance. Give your teeth a brighter, healthier, and more uniform appearance from the first visit with our expert hands.",
           WhiteningText2: "How does it work?",
-          WhiteningText3: "The procedure involves applying hydrogen peroxide or carbamide peroxide-based gel to the superficies of your teeth, and then this compound breaks on the stains, resulting in a brighter tooth.",
-          VennerText1: "We are well-known for our veneers, either porcelain or composite, our experts on smile makeovers will restore and change the structure of your teeth, enhancing your aesthetics, and empowering your self-confidence to smile more than ever",
+          WhiteningText3:
+            "The procedure involves applying hydrogen peroxide or carbamide peroxide-based gel to the superficies of your teeth, and then this compound breaks on the stains, resulting in a brighter tooth.",
+          VennerText1:
+            "We are well-known for our veneers, either porcelain or composite, our experts on smile makeovers will restore and change the structure of your teeth, enhancing your aesthetics, and empowering your self-confidence to smile more than ever",
           VennerText2: "How does it work",
-          VennerText3: "Veneers are custom-made coverings that fit mostly over the front side of your teeth by concealing imperfections like chips, gaps, and tooth discoloration. If you are looking to get porcelain veneers; before the placement, the dentist will remove enamel from your natural teeth and then make an impression to make a mold to create the perfect tooth once this is done the dentist will then process to place them in each tooth. If you prefer composite veneers the dentist will use a tooth-colored composite resin and mold the layers, once they achieve your desired form, the last step will be hardening the material with a special light",
-          CrowText1:"With crowns recover shape, durability, and overall appearance. It is one of the most popular restorative procedures for cavities, broken decay, and worn-down teeth.",
-          CrowText2:"How does it work?",
-          CrowText3:"We apply a tooth-shaped cap that fits over your entire tooth, if is needed a tooth reshaped or enamel remover is necessary, then a dental impression will be taken to create a custom crown. The last step will be bonding your crown.",
-          ResinText1: "Resins improve the look of chipped and cracked teeth and even some superficial cavities and help protect the teeth from hypersensitivity when consuming hot or cold foods. Through this procedure, our experts restore your front teeth and premolars giving them a highly aesthetic and functional finish.",
+          VennerText3:
+            "Veneers are custom-made coverings that fit mostly over the front side of your teeth by concealing imperfections like chips, gaps, and tooth discoloration. If you are looking to get porcelain veneers; before the placement, the dentist will remove enamel from your natural teeth and then make an impression to make a mold to create the perfect tooth once this is done the dentist will then process to place them in each tooth. If you prefer composite veneers the dentist will use a tooth-colored composite resin and mold the layers, once they achieve your desired form, the last step will be hardening the material with a special light",
+          CrowText1:
+            "With crowns recover shape, durability, and overall appearance. It is one of the most popular restorative procedures for cavities, broken decay, and worn-down teeth.",
+          CrowText2: "How does it work?",
+          CrowText3:
+            "We apply a tooth-shaped cap that fits over your entire tooth, if is needed a tooth reshaped or enamel remover is necessary, then a dental impression will be taken to create a custom crown. The last step will be bonding your crown.",
+          ResinText1:
+            "Resins improve the look of chipped and cracked teeth and even some superficial cavities and help protect the teeth from hypersensitivity when consuming hot or cold foods. Through this procedure, our experts restore your front teeth and premolars giving them a highly aesthetic and functional finish.",
           ResinText2: "How does it work?",
-          ResinText3: "Bites Creadores de Sonrisas experts will numb the area surrounding the affected tooth to remove the decayed part. Then is prepared to create a clean and stable foundation for the composite filling, in this part, the dentist will sculpt and shape the composite material to match your teeth structure, once the filling is done, the decisive step will be to polish it.",
-          ImplantText: "Dental implants restore your smile by preventing your jaw bone from being absorbed when you have lost one or more teeth. They can be made of different materials the most popular are: Titanium and zirconium they can go in the upper or lower part of your jaw bone It is a process that is done in stages with healing time between each procedure since the first step is a thorough revision after placement, once the implant is placed and it is fused with the jaw bone the abutment placement is done to finish with the placement of the crown."
+          ResinText3:
+            "Bites Creadores de Sonrisas experts will numb the area surrounding the affected tooth to remove the decayed part. Then is prepared to create a clean and stable foundation for the composite filling, in this part, the dentist will sculpt and shape the composite material to match your teeth structure, once the filling is done, the decisive step will be to polish it.",
+          ImplantText:
+            "Dental implants restore your smile by preventing your jaw bone from being absorbed when you have lost one or more teeth. They can be made of different materials the most popular are: Titanium and zirconium they can go in the upper or lower part of your jaw bone It is a process that is done in stages with healing time between each procedure since the first step is a thorough revision after placement, once the implant is placed and it is fused with the jaw bone the abutment placement is done to finish with the placement of the crown.",
         },
         contact: {
           contact: "Contact",
           contactText1: "Any Question About our procedures?",
-          contactText2: "We are here to respond to your questions and help in this journey to make a healthy and beautiful smile. Contact us to schedule a consultation or learn more about our services."
+          contactText2:
+            "We are here to respond to your questions and help in this journey to make a healthy and beautiful smile. Contact us to schedule a consultation or learn more about our services.",
         },
         blog1: {
-          "text1": "Composite Veneers: The Solution for an Ideal Smile",
-          "text2": "A spectacular smile is within everyone's reach. At Bites, creators of smiles, we are firm believers that you deserve to enjoy when you smile, and that same smile should be functional when eating and speaking. We believe that aesthetics and functionality are essential for a dignified quality of life.",
-          "text3": "Join us to learn all about composite veneers.",
-          "text4": "Composite veneers make it possible to combine aesthetics and functionality.",
-          "text5": "No longer just for celebrities or internet personalities, they have become one of the most frequent and popular dental aesthetic treatments for everyone.",
-          "text6": "How to identify if you are a candidate?",
-          "text7": "If your teeth are naturally small, veneers can give you that enhancement you need.",
-          "text8": "If your teeth have undergone several treatments throughout your life but you couldn't complete them or they returned to their previous shape, veneers can give them that aesthetic and attractive shape you've always wanted.",
-          "text9": "If you have a broken tooth or are missing one, veneers can restore that vitality.",
-          "text10": "If your teeth have an irregular shape, spaces, and different shades.",
-          "text11": "We recommend composite veneers because no invasive procedure is necessary.",
-          "text12": "Are veneers expensive?",
-          "text13": "Don't worry, composite veneers are more economical than porcelain veneers. The investment you make depends on the number of veneers you require. You can start with the upper veneers and then the lower ones. The important thing is to take that step towards your ideal smile.",
-          "text14": "What to do before the procedure?",
-          "text15": "Before placing the veneers, we conduct a smile study to assess your oral health and determine how to perfect it. You are the most important key piece, and we are here to listen to your dental needs.",
-          "text16": "The treatment consists of preparing the teeth without causing dental wear to place small amounts of a material molded from acrylic resin mixed with ceramic particles, which is shaped according to the patient's taste and needs.",
-          "text17": "Once the teeth have the desired shape, the next step is to harden it with a specialized halogen light, making it very similar in hardness to natural teeth. Finally, it is polished to remove any impurities and give it shine.",
-          "text18": "This is done in a single session, resulting in a very natural appearance and being a painless procedure.",
-          "text19": "Will they look strange?",
-          "text20": "Not at all, don't worry! Dr. Anyi and her team of dentists sculpt each tooth like artists, creating the ideal shape and size for you.",
-          "text21": "We understand that each person has special and unique characteristics, so we strive for total harmony, respecting your qualities and seeking to enhance your attributes.",
-          "text22": "Is there an age limit?",
-          "text23": "Many people don't dare because they consider themselves 'too old' for veneers, but the truth is there is no age limit, especially when it comes to feeling good.",
-          "text24": "How long does the procedure take?",
-          "text25": "We know your time is valuable, our veneer procedure can be done in one appointment.",
-          "text26": "You may wonder: How long will they last on your teeth?",
-          "text27": "They last 5 to 7 years, of course, this will depend on the habits and care given.",
-          "text28": "To keep that smile radiant, our experts recommend the following points:",
-          "text29": "Attend check-ups on time to give them a polish.",
-          "text30": "Moderate the consumption of foods like coffee and red wine.",
-          "text31": "Avoid opening plastics, corks, lids, or any movement that involves stretching or using your teeth as a lever to avoid damaging both the veneers and your teeth.",
-          "text32": "Avoid smoking",
-          "text33": "Maintain a strict hygiene regimen, brush daily, use dental floss and mouthwash.",
-          "text34": "My veneer broke, what can be done?",
-          "text35": "It is rare for this to happen, but if your veneer chips or fractures, it can be quickly and affordably repaired. Compared to a ceramic veneer, it will be a quick visit to continue enjoying your smile.",
-          "text36": "Do you want to go back to your previous smile?",
-          "text37": "No problem, being a non-invasive treatment, it is reversible, as the structure of your tooth and enamel is always respected.",
-          "text38": "What do you think?",
-          "text39": "There is no age or time that stands between you and your new version, one that is not afraid to stand out. With veneers, you can finally have that ideal smile and regain the aesthetics and functionality of your teeth.",
-          "text40": "If you have more questions, do not hesitate to write to us or call our office.",
-          "text41": "Our experts at Bites want to support you in making the best decision for your smile."
+          text1: "Composite Veneers: The Solution for an Ideal Smile",
+          text2:
+            "A spectacular smile is within everyone's reach. At Bites, creators of smiles, we are firm believers that you deserve to enjoy when you smile, and that same smile should be functional when eating and speaking. We believe that aesthetics and functionality are essential for a dignified quality of life.",
+          text3: "Join us to learn all about composite veneers.",
+          text4:
+            "Composite veneers make it possible to combine aesthetics and functionality.",
+          text5:
+            "No longer just for celebrities or internet personalities, they have become one of the most frequent and popular dental aesthetic treatments for everyone.",
+          text6: "How to identify if you are a candidate?",
+          text7:
+            "If your teeth are naturally small, veneers can give you that enhancement you need.",
+          text8:
+            "If your teeth have undergone several treatments throughout your life but you couldn't complete them or they returned to their previous shape, veneers can give them that aesthetic and attractive shape you've always wanted.",
+          text9:
+            "If you have a broken tooth or are missing one, veneers can restore that vitality.",
+          text10:
+            "If your teeth have an irregular shape, spaces, and different shades.",
+          text11:
+            "We recommend composite veneers because no invasive procedure is necessary.",
+          text12: "Are veneers expensive?",
+          text13:
+            "Don't worry, composite veneers are more economical than porcelain veneers. The investment you make depends on the number of veneers you require. You can start with the upper veneers and then the lower ones. The important thing is to take that step towards your ideal smile.",
+          text14: "What to do before the procedure?",
+          text15:
+            "Before placing the veneers, we conduct a smile study to assess your oral health and determine how to perfect it. You are the most important key piece, and we are here to listen to your dental needs.",
+          text16:
+            "The treatment consists of preparing the teeth without causing dental wear to place small amounts of a material molded from acrylic resin mixed with ceramic particles, which is shaped according to the patient's taste and needs.",
+          text17:
+            "Once the teeth have the desired shape, the next step is to harden it with a specialized halogen light, making it very similar in hardness to natural teeth. Finally, it is polished to remove any impurities and give it shine.",
+          text18:
+            "This is done in a single session, resulting in a very natural appearance and being a painless procedure.",
+          text19: "Will they look strange?",
+          text20:
+            "Not at all, don't worry! Dr. Anyi and her team of dentists sculpt each tooth like artists, creating the ideal shape and size for you.",
+          text21:
+            "We understand that each person has special and unique characteristics, so we strive for total harmony, respecting your qualities and seeking to enhance your attributes.",
+          text22: "Is there an age limit?",
+          text23:
+            "Many people don't dare because they consider themselves 'too old' for veneers, but the truth is there is no age limit, especially when it comes to feeling good.",
+          text24: "How long does the procedure take?",
+          text25:
+            "We know your time is valuable, our veneer procedure can be done in one appointment.",
+          text26: "You may wonder: How long will they last on your teeth?",
+          text27:
+            "They last 5 to 7 years, of course, this will depend on the habits and care given.",
+          text28:
+            "To keep that smile radiant, our experts recommend the following points:",
+          text29: "Attend check-ups on time to give them a polish.",
+          text30: "Moderate the consumption of foods like coffee and red wine.",
+          text31:
+            "Avoid opening plastics, corks, lids, or any movement that involves stretching or using your teeth as a lever to avoid damaging both the veneers and your teeth.",
+          text32: "Avoid smoking",
+          text33:
+            "Maintain a strict hygiene regimen, brush daily, use dental floss and mouthwash.",
+          text34: "My veneer broke, what can be done?",
+          text35:
+            "It is rare for this to happen, but if your veneer chips or fractures, it can be quickly and affordably repaired. Compared to a ceramic veneer, it will be a quick visit to continue enjoying your smile.",
+          text36: "Do you want to go back to your previous smile?",
+          text37:
+            "No problem, being a non-invasive treatment, it is reversible, as the structure of your tooth and enamel is always respected.",
+          text38: "What do you think?",
+          text39:
+            "There is no age or time that stands between you and your new version, one that is not afraid to stand out. With veneers, you can finally have that ideal smile and regain the aesthetics and functionality of your teeth.",
+          text40:
+            "If you have more questions, do not hesitate to write to us or call our office.",
+          text41:
+            "Our experts at Bites want to support you in making the best decision for your smile.",
         },
         blog2: {
-          "text1": "Discover How to Achieve a Dazzling Smile with Teeth Whitening. Feel Confident Showing Everyone That Great Smile",
-          "text2": "Teeth whitening is one of the dental aesthetic treatments with the most visible and immediate results.",
-          "text3": "Is there an exact reason why my teeth are yellow or stained?",
-          "text4": "Don't worry, there are many reasons that are even out of our control.",
-          "text5": "Age: It is common for teeth to darken and take on a more yellowish color over time.",
-          "text6": "Hereditary: During tooth formation, it may have had a different shade that becomes more visible over time.",
-          "text7": "Medications: Some compounds can affect your oral health, impact enamel, or stain teeth. It is advisable to inform our dentists if you are currently undergoing any medical treatment.",
-          "text8": "Trauma: A blow can damage the enamel, crown, or tooth, causing it to die or lose its aesthetic qualities.",
-          "text9": "Foods and Beverages: Frequent consumption of coffee, dark beer, dark chocolate, tea, wine, berries, and processed foods with green, red, and orange colorings.",
-          "text10": "Habits: Forgetting to brush teeth, using dental floss.",
-          "text11": "Smoking: These actions deteriorate the appearance of your teeth. The aforementioned reasons and the lack of visits for dental cleanings are cumulative factors that result in your teeth looking stained or yellow.",
-          "text12": "Can I have whiter teeth in the first session?",
-          "text13": "It is normal to seek drastic changes to look different, but it is essential to understand the limits of our teeth to enjoy them more.",
-          "text14": "The shades that can be changed will depend on your teeth; the composition of the dentin determines the color of the teeth. This is found beneath the enamel, which is translucent. Depending on the thickness, it shows more or less of the dentin color. The yellow color and intensity depend on the thickness and quality of the dentin.",
-          "text15": "At Bites, we care not only about aesthetics but also functionality. In cases where a brighter, whiter smile is desired, it is achieved in different sessions to get that result without affecting your enamel, as we strive to protect your teeth.",
-          "text16": "to avoid sensitivity and discomfort. We will recommend the most suitable shades for you to achieve harmonious and natural results.",
-          "text17": "Do they return to their original color?",
-          "text18": "It is important to follow our recommendations, including following a diet free of foods and beverages that can stain teeth for 72 hours after the procedure.",
-          "text19": "For longer-lasting results, ensure excellent oral hygiene while improving consumption habits of foods and beverages that can stain teeth. If your interest is to continue whitening your teeth to achieve a specific shade, it is essential to take measures to prevent a setback in your treatment.",
-          "text20": "What is the right age to get a whitening treatment?",
-          "text21": "If your oral health is excellent, we encourage you to go ahead, it is never too late.",
-          "text22": "We recommend it once adolescence is over. Before performing any treatment at Bites, we always verify your oral health, ensuring that dental tissues are healthy and that your teeth and gums are in perfect condition.",
-          "text23": "Our dentists have an artistic eye that allows them to have an aesthetic vision of your smile and make it a reality. We want you to feel more confident, rejuvenated, and to preserve your oral health while enjoying a process always adapted to you.",
-          "text24": "Outpatient Procedure",
-          "text25": "Feel welcomed with love and tenderness and leave with the same excitement.",
-          "text26": "You can resume your activities once the procedure is completed. It is odorless, so you won't feel discomfort before, during, or after. We ensure you feel visually comfortable and relaxed. When it's time to leave, you'll feel happy and satisfied.",
-          "text27": "Why get teeth whitening at Bites Smile Creators?",
-          "text28": "Smiling or laughing out loud is a joy of life that we don't want you to be ashamed of because of the color of your teeth. It's time to stop covering your smile with your hand when expressing happiness.",
-          "text29": "Now that you know a bit about this procedure, be confident that our team of experts wants to help you improve your image and confidence so that you can smile and laugh without limits or shame.",
-          "text30": "We listen to you, we suggest, and we give you the most aesthetic and functional results.",
-          "text31": "Are you interested in scheduling an appointment?"
+          text1:
+            "Discover How to Achieve a Dazzling Smile with Teeth Whitening. Feel Confident Showing Everyone That Great Smile",
+          text2:
+            "Teeth whitening is one of the dental aesthetic treatments with the most visible and immediate results.",
+          text3: "Is there an exact reason why my teeth are yellow or stained?",
+          text4:
+            "Don't worry, there are many reasons that are even out of our control.",
+          text5:
+            "Age: It is common for teeth to darken and take on a more yellowish color over time.",
+          text6:
+            "Hereditary: During tooth formation, it may have had a different shade that becomes more visible over time.",
+          text7:
+            "Medications: Some compounds can affect your oral health, impact enamel, or stain teeth. It is advisable to inform our dentists if you are currently undergoing any medical treatment.",
+          text8:
+            "Trauma: A blow can damage the enamel, crown, or tooth, causing it to die or lose its aesthetic qualities.",
+          text9:
+            "Foods and Beverages: Frequent consumption of coffee, dark beer, dark chocolate, tea, wine, berries, and processed foods with green, red, and orange colorings.",
+          text10: "Habits: Forgetting to brush teeth, using dental floss.",
+          text11:
+            "Smoking: These actions deteriorate the appearance of your teeth. The aforementioned reasons and the lack of visits for dental cleanings are cumulative factors that result in your teeth looking stained or yellow.",
+          text12: "Can I have whiter teeth in the first session?",
+          text13:
+            "It is normal to seek drastic changes to look different, but it is essential to understand the limits of our teeth to enjoy them more.",
+          text14:
+            "The shades that can be changed will depend on your teeth; the composition of the dentin determines the color of the teeth. This is found beneath the enamel, which is translucent. Depending on the thickness, it shows more or less of the dentin color. The yellow color and intensity depend on the thickness and quality of the dentin.",
+          text15:
+            "At Bites, we care not only about aesthetics but also functionality. In cases where a brighter, whiter smile is desired, it is achieved in different sessions to get that result without affecting your enamel, as we strive to protect your teeth.",
+          text16:
+            "to avoid sensitivity and discomfort. We will recommend the most suitable shades for you to achieve harmonious and natural results.",
+          text17: "Do they return to their original color?",
+          text18:
+            "It is important to follow our recommendations, including following a diet free of foods and beverages that can stain teeth for 72 hours after the procedure.",
+          text19:
+            "For longer-lasting results, ensure excellent oral hygiene while improving consumption habits of foods and beverages that can stain teeth. If your interest is to continue whitening your teeth to achieve a specific shade, it is essential to take measures to prevent a setback in your treatment.",
+          text20: "What is the right age to get a whitening treatment?",
+          text21:
+            "If your oral health is excellent, we encourage you to go ahead, it is never too late.",
+          text22:
+            "We recommend it once adolescence is over. Before performing any treatment at Bites, we always verify your oral health, ensuring that dental tissues are healthy and that your teeth and gums are in perfect condition.",
+          text23:
+            "Our dentists have an artistic eye that allows them to have an aesthetic vision of your smile and make it a reality. We want you to feel more confident, rejuvenated, and to preserve your oral health while enjoying a process always adapted to you.",
+          text24: "Outpatient Procedure",
+          text25:
+            "Feel welcomed with love and tenderness and leave with the same excitement.",
+          text26:
+            "You can resume your activities once the procedure is completed. It is odorless, so you won't feel discomfort before, during, or after. We ensure you feel visually comfortable and relaxed. When it's time to leave, you'll feel happy and satisfied.",
+          text27: "Why get teeth whitening at Bites Smile Creators?",
+          text28:
+            "Smiling or laughing out loud is a joy of life that we don't want you to be ashamed of because of the color of your teeth. It's time to stop covering your smile with your hand when expressing happiness.",
+          text29:
+            "Now that you know a bit about this procedure, be confident that our team of experts wants to help you improve your image and confidence so that you can smile and laugh without limits or shame.",
+          text30:
+            "We listen to you, we suggest, and we give you the most aesthetic and functional results.",
+          text31: "Are you interested in scheduling an appointment?",
         },
         blog3: {
-          "text1": "Don't just restore your smile; elevate it to the next level with a dental implant.",
-          "text2": "A complete smile reflects our health. It's not only important to feel good but also to function perfectly.",
-          "text3": "If you are missing one or more teeth and feel embarrassed to smile, and think: 'Well, it's just aesthetic, I don't need them, I haven't felt any discomfort at this moment.'",
-          "text4": "Wait, you might be endangering your overall oral health.",
-          "text5": "Next, we tell you why it is important to address this issue as soon as possible.",
-          "text6": "You have come to the right place, we support you in resolving the most common doubts. Our experts will provide the solution to restore your health and help you regain that confidence and feel empowered.",
-          "text7": "How does the lack of teeth affect our lives?",
-          "text8": "The lack of teeth not only affects aesthetically but also emotionally and physically, as it can affect our speech, accelerate the wear of healthy teeth since they become overloaded due to the absence of other teeth, and improper chewing can lead to digestive problems because food is not properly chewed and absorbed.",
-          "text9": "The bone weakens, that is, it loses density in the area, or irregularities start to arise in the jawbone. This can cause the lips to sink, premature facial aging, affecting not only aesthetics but also overall health.",
-          "text10": "There are various reasons why it is possible to lose teeth, and all have solutions.",
-          "text11": "One of the causes is cavities, as bacterial plaque accumulates on our teeth, weakening them, causing tissue infection, leading to weakening or extraction.",
-          "text12": "Periodontitis is a gum disease, which can be hereditary or due to poor oral care. This bacterial disease inflames and weakens tissues and structure, causing teeth to fall out.",
-          "text13": "Poorly executed root canals.",
-          "text14": "Bruxism, which is clenching the teeth causing severe wear.",
-          "text15": "Accident or impact, causing a fracture due to the impact, leading to detachment.",
-          "text16": "The dental implant is a final, resistant, and aesthetic decision.",
-          "text17": "It is a process under local anesthesia; there is no strange or foreign sensation once the procedure is 100% completed.",
-          "text18": "Dental implants are metal structures, generally titanium, that are inserted into the jawbones. Depending on the area or areas where you need it, the implant will be in your gum, either upper or lower.",
-          "text19": "The implant is a screw that is inserted, simulating the root of a tooth. The abutment is the piece that connects the implant with the crown.",
-          "text20": "The crown is the ceramic prosthesis that perfectly simulates your tooth, looking aesthetic and functioning excellently.",
-          "text21": "What happens during an implant.",
-          "text22": "The dental implant is an outpatient surgery, performed in stages, to ensure healing between each procedure. The interval between each session allows healing to be uninterrupted, bone or tissue growth to occur, and work on this in the next session to guarantee the most optimal final result.",
-          "text23": "This procedure is carried out as follows:",
-          "text24": "An incision is made in the gum, reaching the bone to insert the implant abutment. Thanks to the materials with which it is made, it allows tissues to adapt.",
-          "text25": "After the time recommended by our specialists for complete healing, the next step is to place the crown, which is the visible prosthesis.",
-          "text26": "Once the process is finished, it is very important to attend your check-up appointments.",
-          "text27": "Maintaining proper hygiene is essential. Implants are permanent and have a longevity of more than 10 years, so it is a long-lasting procedure. Of course, the factor that allows it to last is maintaining excellent hygiene.",
-          "text28": "Implants may seem intimidating when mentioned.",
-          "text29": "We believe that the consequences of not addressing your oral health are more intimidating, as it can significantly affect your health and quality of life.",
-          "text30": "There is nothing to fear; these are very common procedures. Our dentists have all the tools and training to incredibly improve your appearance and self-esteem, as well as prevent any possible health issues.",
-          "text31": "Interested in an evaluation?",
-          "text32": "Call 663 324 9611.",
-          "text33": "Or make an appointment through this medium, select the day and time to start your dental transformation."
+          text1:
+            "Don't just restore your smile; elevate it to the next level with a dental implant.",
+          text2:
+            "A complete smile reflects our health. It's not only important to feel good but also to function perfectly.",
+          text3:
+            "If you are missing one or more teeth and feel embarrassed to smile, and think: 'Well, it's just aesthetic, I don't need them, I haven't felt any discomfort at this moment.'",
+          text4: "Wait, you might be endangering your overall oral health.",
+          text5:
+            "Next, we tell you why it is important to address this issue as soon as possible.",
+          text6:
+            "You have come to the right place, we support you in resolving the most common doubts. Our experts will provide the solution to restore your health and help you regain that confidence and feel empowered.",
+          text7: "How does the lack of teeth affect our lives?",
+          text8:
+            "The lack of teeth not only affects aesthetically but also emotionally and physically, as it can affect our speech, accelerate the wear of healthy teeth since they become overloaded due to the absence of other teeth, and improper chewing can lead to digestive problems because food is not properly chewed and absorbed.",
+          text9:
+            "The bone weakens, that is, it loses density in the area, or irregularities start to arise in the jawbone. This can cause the lips to sink, premature facial aging, affecting not only aesthetics but also overall health.",
+          text10:
+            "There are various reasons why it is possible to lose teeth, and all have solutions.",
+          text11:
+            "One of the causes is cavities, as bacterial plaque accumulates on our teeth, weakening them, causing tissue infection, leading to weakening or extraction.",
+          text12:
+            "Periodontitis is a gum disease, which can be hereditary or due to poor oral care. This bacterial disease inflames and weakens tissues and structure, causing teeth to fall out.",
+          text13: "Poorly executed root canals.",
+          text14: "Bruxism, which is clenching the teeth causing severe wear.",
+          text15:
+            "Accident or impact, causing a fracture due to the impact, leading to detachment.",
+          text16:
+            "The dental implant is a final, resistant, and aesthetic decision.",
+          text17:
+            "It is a process under local anesthesia; there is no strange or foreign sensation once the procedure is 100% completed.",
+          text18:
+            "Dental implants are metal structures, generally titanium, that are inserted into the jawbones. Depending on the area or areas where you need it, the implant will be in your gum, either upper or lower.",
+          text19:
+            "The implant is a screw that is inserted, simulating the root of a tooth. The abutment is the piece that connects the implant with the crown.",
+          text20:
+            "The crown is the ceramic prosthesis that perfectly simulates your tooth, looking aesthetic and functioning excellently.",
+          text21: "What happens during an implant.",
+          text22:
+            "The dental implant is an outpatient surgery, performed in stages, to ensure healing between each procedure. The interval between each session allows healing to be uninterrupted, bone or tissue growth to occur, and work on this in the next session to guarantee the most optimal final result.",
+          text23: "This procedure is carried out as follows:",
+          text24:
+            "An incision is made in the gum, reaching the bone to insert the implant abutment. Thanks to the materials with which it is made, it allows tissues to adapt.",
+          text25:
+            "After the time recommended by our specialists for complete healing, the next step is to place the crown, which is the visible prosthesis.",
+          text26:
+            "Once the process is finished, it is very important to attend your check-up appointments.",
+          text27:
+            "Maintaining proper hygiene is essential. Implants are permanent and have a longevity of more than 10 years, so it is a long-lasting procedure. Of course, the factor that allows it to last is maintaining excellent hygiene.",
+          text28: "Implants may seem intimidating when mentioned.",
+          text29:
+            "We believe that the consequences of not addressing your oral health are more intimidating, as it can significantly affect your health and quality of life.",
+          text30:
+            "There is nothing to fear; these are very common procedures. Our dentists have all the tools and training to incredibly improve your appearance and self-esteem, as well as prevent any possible health issues.",
+          text31: "Interested in an evaluation?",
+          text32: "Call 663 324 9611.",
+          text33:
+            "Or make an appointment through this medium, select the day and time to start your dental transformation.",
         },
         stripe: {
           Reservar: "Book Appointment",
@@ -295,47 +416,170 @@ i18n.use(initReactI18next).init({
           Procesando: "Processing",
           Pagar: "Pay",
           Appointment: "en-EN",
-
-        }
-
-      
         },
+        terminos: {
+          title: "Terms of Service",
+          text1: "The page of",
+          text2: "bitescreadoresdesonrisas.com",
+          text3: "contains direct contact to our customer service staff.",
+          text4:
+            "Any reservation made on the page is direct to our address book at the front desk.",
+          text5:
+            "Appointments are confirmed by phone and must be attended by the customer in the period of 48hrs to 24hrs before the appointment.",
+          text6:
+            "Unconfirmed appointments may be considered cancelled by the customer.",
+          text7:
+            "Any situation that arises due to change or return must be notified by email to",
+          text8: "draanyimanchola@bitescreadoresdesonrisas.com",
+          text9:
+            "sending a description of the problem or reason for cancellation",
+        },
+        politicas: {
+          title: "Privacy Policy",
+          text1: "Privacy Notice",
+          text2:
+            'This privacy notice explains how Clinica BITES CREADORES DE SONRISAS ("we", "our" or "us") collects, processes, and protects information obtained through our website. It outlines the conditions under which we may process personal and non-personal information. In this context, "process" refers to collecting, storing, transferring, using, or otherwise handling information.',
+          text3: "Introduction",
+          text4:
+            "We are committed to safeguarding your privacy and confidentiality. Our website visitors have the right to expect their personal data to be handled securely and not disclosed to unintended parties.",
+          text5:
+            "We pledge to maintain the confidentiality of all information you provide to us and expect the same from you.",
+          text6:
+            "Our privacy policy complies with the EU General Data Protection Regulation (GDPR).",
+          text7:
+            "To understand your rights and our obligations under data protection laws, please refer to www.knowyourprivacyrights.org.",
+          text8:
+            "Except as detailed below, we do not share, sell, or disclose any information collected via our website to third parties.",
+          text9: "Legal Bases for Processing Your Data",
+          text10:
+            "The law requires us to specify the legal grounds on which we process different categories of personal information. If a processing basis becomes irrelevant, we will stop processing your data. If our legal basis changes, we will notify you, as required by law.",
+          text11: "1. Processing Based on Contractual Obligations",
+          text12:
+            "If you become a patient or accept our terms and conditions, a contract is formed between you and BITES CREADORES DE SONRISAS. To fulfill our obligations under this contract, we must process the information you provide, which may include personal data. We use this information to:",
+          text13: "Verify your identity for security purposes.",
+          text14: "Provide and sell our products and services.",
+          text15:
+            "Offer advice and recommendations regarding our services and website.",
+          text16:
+            "We process this information under our contractual obligations and will continue to do so until the contract is terminated by either party.",
+          text17: "2. Processing Based on Your Consent",
+          text18:
+            "In cases where no contractual relationship exists, such as when you browse our website or request information, we process your data based on your consent. We seek explicit consent where possible, such as for cookies or through our contact and referral forms.",
+          text19:
+            "You may give implicit consent, such as by emailing us with an inquiry.",
+          text20:
+            "We do not use your personal data in a way that identifies you unless you have given explicit consent.",
+          text21:
+            "If permitted, we may share your details with selected associates who provide services relevant to you.",
+          text22:
+            "You can withdraw your consent anytime by contacting info@bitescreadoresdesonrisas.com. However, this may impact your ability to use our services.",
+          text23: "3. Processing Based on Legal Obligations",
+          text24:
+            "We are required by law to process certain data to comply with legal and regulatory requirements. For instance:",
+          text25:
+            "Responding to requests from law enforcement authorities with proper authorization (e.g., court orders).",
+          text26: "Providing required disclosures under statutory obligations.",
+          text27: "How We Use Your Information",
+          text28: "Information You Provide",
+          text29: "We use the data you provide to:",
+          text30: "Send general and marketing communications.",
+          text31: "Notify you about service updates.",
+          text32:
+            "Ensure our website content is optimized for your experience.",
+          text33: "Respond to inquiries and complaints.",
+          text34:
+            "Provide third-party statistical data without personal identification.",
+          text35:
+            "Contact you via email, text messages, or phone calls once you have filled out and authorized a form on our social media pages or website.",
+          text36: "Information We Collect Automatically",
+          text37: "We use this data to:",
+          text38: "Improve our website’s usability.",
+          text39: "Enhance security and prevent fraud.",
+          text40:
+            "Measure the effectiveness of advertising and personalize content.",
+          text41: "Conduct research, analytics, and troubleshooting.",
+          text42: "Information from Third-Party Sources",
+          text43:
+            "We may combine the information you provide with data collected from other sources and use it under the conditions stated above.",
+          text44:
+            "We do not share your personal information with third parties for direct marketing without your explicit consent.",
+          text45: "Handling Complaints",
+          text46: "If you have concerns about content on our website:",
+          text47: "We will investigate and remove content if necessary.",
+          text48:
+            "We balance the right to free speech against any complaints received. ",
+          text49:
+            "If we find a complaint unjustified, we may decline further correspondence.",
+          text50: "Filing a Complaint",
+          text51:
+            "If you are dissatisfied with our privacy policy or wish to file a complaint, email us at info@bitescreadoresdesonrisas.com.",
+          text52:
+            "If disputes remain unresolved, we encourage mediation or arbitration.",
+          text53: "Communicating with Us",
+          text54:
+            "When you contact us via phone, email, or website forms, we securely store your information to provide relevant responses. We may retain communication records for quality assurance and service improvement.",
+          text55: "Data Storage:",
+          text56: "Secure retention for three months online.",
+          text57: "Potential storage in our practice management system.",
+          text58: "Automated Data Collection",
+          text59: "Cookies & Google Analytics",
+          text60:
+            "We use Google Analytics to analyze website usage. Cookies collect anonymized visitor data, which is sent to Google for statistical reporting. We do not use analytics tools to track personally identifiable information (PII).",
+          text61: "Google does not associate your IP address with other data.",
+          text62:
+            "We do not link browsing data with personal identifiers unless explicitly provided by you.",
+          text63: "Tracking & Remarketing",
+          text64:
+            "Our website records browser requests, including location, IP address, and device information.",
+          text65:
+            "This data is used in aggregate to analyze website performance.",
+          text66:
+            "If combined with other known data, this information could identify individuals.",
+          text67: "Remarketing",
+          text68:
+            "Cookies may be used for remarketing purposes to deliver relevant ads.",
+          text69: "You can manage or disable cookies through browser settings.",
+          text70: "Contact Us",
+          text71: "For any privacy-related inquiries, contact us at:",
+          text72: "Email: info@bitescreadoresdesonrisas.com",
+          text73: "Website: www.bitescreadoresdesonrisas.com.mx",
+        },
+      },
     },
     es: {
       translation: {
-        "months": {
-          "january": "Enero",
-          "february": "Febrero",
-          "march": "Marzo",
-          "april": "Abril",
-          "may": "Mayo",
-          "june": "Junio",
-          "july": "Julio",
-          "august": "Agosto",
-          "september": "Septiembre",
-          "october": "Octubre",
-          "november": "Noviembre",
-          "december": "Diciembre"
+        months: {
+          january: "Enero",
+          february: "Febrero",
+          march: "Marzo",
+          april: "Abril",
+          may: "Mayo",
+          june: "Junio",
+          july: "Julio",
+          august: "Agosto",
+          september: "Septiembre",
+          october: "Octubre",
+          november: "Noviembre",
+          december: "Diciembre",
         },
-        "weekDays": {
-          "sunday": "Domingo",
-          "monday": "Lunes",
-          "tuesday": "Martes",
-          "wednesday": "Miércoles",
-          "thursday": "Jueves",
-          "friday": "Viernes",
-          "saturday": "Sabado"
+        weekDays: {
+          sunday: "Domingo",
+          monday: "Lunes",
+          tuesday: "Martes",
+          wednesday: "Miércoles",
+          thursday: "Jueves",
+          friday: "Viernes",
+          saturday: "Sabado",
         },
-        "weekDaysShort": {
-          "sunday": "D",
-          "monday": "L",
-          "tuesday": "M",
-          "wednesday": "M",
-          "thursday": "J",
-          "friday": "V",
-          "saturday": "S"
-        }
-        ,
+        weekDaysShort: {
+          sunday: "D",
+          monday: "L",
+          tuesday: "M",
+          wednesday: "M",
+          thursday: "J",
+          friday: "V",
+          saturday: "S",
+        },
         blog: "Blog de Bites",
         bitesDescription:
           "En Bites Nos aseguramos de preparar todo lo necesario en nuestro espacio para que tu visita sea agradable.",
@@ -343,17 +587,22 @@ i18n.use(initReactI18next).init({
         contactanos: "Contáctanos ya",
         labor: "Acerca de nuestra labor en el diseño de sonrisa",
         bites: "Somos Bites Creadores de Sonrisas",
-        bienvenido: "¡Bienvenido al destino número #1 en Diseño de Sonrisas en México! ",
-        bienvenido2: "Estamos muy cerca de ti en Tijuana, Baja California y estamos listos para trasformar tu sonrisa con mucho amor y un equipo altamente calificado para crear la sonrisa hermosa y saludable que siempre soñaste y que mereces.",
-        ofrecemos: "Ofrecemos tratamientos dentales excepcionales brindándote una experiencia única. Nuestra clínica se ha convertido en un destino popular para el turismo dental gracias a su cercanía con la frontera atrayendo pacientes de todo el mundo para adquirir un diseño de sonrisa a costos increíbles.",
+        bienvenido:
+          "¡Bienvenido al destino número #1 en Diseño de Sonrisas en México! ",
+        bienvenido2:
+          "Estamos muy cerca de ti en Tijuana, Baja California y estamos listos para trasformar tu sonrisa con mucho amor y un equipo altamente calificado para crear la sonrisa hermosa y saludable que siempre soñaste y que mereces.",
+        ofrecemos:
+          "Ofrecemos tratamientos dentales excepcionales brindándote una experiencia única. Nuestra clínica se ha convertido en un destino popular para el turismo dental gracias a su cercanía con la frontera atrayendo pacientes de todo el mundo para adquirir un diseño de sonrisa a costos increíbles.",
         obtensonrisa: "Obten una sonrisa bella y saludable",
         equipodental: "Equipo dental profesional y de calidad",
         servicioexclusivo: "Servicio exclusivo para una experiencia cómoda.",
         desdecarillas: "Desde carillas hasta rehabilitación oral",
-        tratamientosavanzados: "Tratamientos avanzados y ortodoncia personalizada",
+        tratamientosavanzados:
+          "Tratamientos avanzados y ortodoncia personalizada",
         vermas: "Ver más",
         pacientessonrisa: "Pacientes con una sonrisa brillante",
-        contamos: "Contamos con servicios altamente especializados en estética dental para que obtengas la sonrisa que deseas",
+        contamos:
+          "Contamos con servicios altamente especializados en estética dental para que obtengas la sonrisa que deseas",
         esteticapersonalizada: "Estética Dental Personalizada",
         altatecnologia: "Alta tecnología de instrumentación dental",
         agendadigital: "Citas y agenda digital",
@@ -361,56 +610,73 @@ i18n.use(initReactI18next).init({
         higienicos: "Servicios higienistas",
         esteticos: "Servicios estéticos",
         limpieza: "Limpieza dental",
-        limpiezatext: "Nuestros servicios de limpieza dental eliminan placa y sarro, promoviendo encías saludables y previniendo problemas dentales es un procedimiento ideal para proteger la salud oral toda la familia.",
+        limpiezatext:
+          "Nuestros servicios de limpieza dental eliminan placa y sarro, promoviendo encías saludables y previniendo problemas dentales es un procedimiento ideal para proteger la salud oral toda la familia.",
         resinas: "Resinas",
-        resinastext: "Utilizamos resinas compuestas de alta calidad. Restaura tus dientes de manera que luzcan y se sientan increíbles. La estética y la durabilidad se unen en cada aplicación.",
+        resinastext:
+          "Utilizamos resinas compuestas de alta calidad. Restaura tus dientes de manera que luzcan y se sientan increíbles. La estética y la durabilidad se unen en cada aplicación.",
         endodoncia: "Endodoncia",
-        endodonciatext: "Nuestros expertos en endodoncia utilizan técnicas avanzadas para preservar la salud dental y restaurar la funcionalidad de tus dientes.",
+        endodonciatext:
+          "Nuestros expertos en endodoncia utilizan técnicas avanzadas para preservar la salud dental y restaurar la funcionalidad de tus dientes.",
         rehabilitacion: "Rehabilitación oral",
-        rehabilitaciontext: "Desde coronas de cerámica hasta prótesis removibles, trabajamos para devolver la salud y la belleza a tu sonrisa, que no solo te hace sentir bien, sino que también refleja tu mejor versión.",
+        rehabilitaciontext:
+          "Desde coronas de cerámica hasta prótesis removibles, trabajamos para devolver la salud y la belleza a tu sonrisa, que no solo te hace sentir bien, sino que también refleja tu mejor versión.",
         blanqueamiento: "Blanqueamiento dental",
-        blanqueamientotext: "En Bites, no solo iluminamos tus dientes, sino que elevamos tu confianza y presencia",
+        blanqueamientotext:
+          "En Bites, no solo iluminamos tus dientes, sino que elevamos tu confianza y presencia",
         carillas: "Carillas",
-        carillastext: "Personalizamos carillas de composite y de porcelana para lograr una sonrisa natural y atractiva que se adapte a tus características faciales únicas ",
+        carillastext:
+          "Personalizamos carillas de composite y de porcelana para lograr una sonrisa natural y atractiva que se adapte a tus características faciales únicas ",
         coronas: "Coronas",
-        coronastext: "Las coronas de alta calidad proporcionan resistencia y durabilidad al diente brindando un resultado estético excepcional, creando sonrisas que destacan con elegancia. ",
+        coronastext:
+          "Las coronas de alta calidad proporcionan resistencia y durabilidad al diente brindando un resultado estético excepcional, creando sonrisas que destacan con elegancia. ",
         implantesdentales: "Implantes dentales",
-        implantesdentalestext: "Con implantes luce una sonrisa completa con beneficios prácticos y estéticos que te permitan masticar, mejor opción para quienes han perdido uno o varios diente",
+        implantesdentalestext:
+          "Con implantes luce una sonrisa completa con beneficios prácticos y estéticos que te permitan masticar, mejor opción para quienes han perdido uno o varios diente",
         agenda: "¡Agenda con nosotros!",
-        seleccionaDia: "Selecciona el día y hora para empezar tu transformación dental con un diseño de sonrisa",
+        seleccionaDia:
+          "Selecciona el día y hora para empezar tu transformación dental con un diseño de sonrisa",
         crearCita: "CREAR CITA DENTAL",
         noAvailableTime: "No hay horario disponible",
         selectTime: "Selecciona una hora",
         agendar: "Agendar",
-        obten: "Obtén una sonrisa bella y saludable por medio de una atención a tu medida",
-        encontrar: "En Bites podrás encontrar todos los servicios dentales generales y estética dental de última generación en Tijuana ",
-        card1: "Las carillas dentales de composite: La solución para una sonrisa ideal. ",
-        card1text: " Las carillas de composite hacen posible combinar la estética y la funcionalidad. Ya no solo las grandes celebridades o personajes de internet las tienen, sino que se han convertido en los tratamientos de estética dental más frecuentes y populares para todos. ",
-        card2: "Descubre como obtener una sonrisa deslumbrante con blanqueamiento dental Siéntete seguro de mostrarle a todos esa gran sonrisa.  ",
-        card2text: "El blanqueamiento dental es uno de los tratamientos dentales estéticos con los resultados más visibles de forma inmediata",
-        card3: "No solo recuperes tu sonrisa; con el implante dental, elévala al siguiente nivel.  ",
-        card3text: "Si tienes uno o más dientes faltantes y te apena sonreír, y piensas: “Bueno, solo es estético, no los necesito, en este momento no he sentido molestias”. Espera, puede que estés poniendo en peligro toda tu salud oral.",
+        obten:
+          "Obtén una sonrisa bella y saludable por medio de una atención a tu medida",
+        encontrar:
+          "En Bites podrás encontrar todos los servicios dentales generales y estética dental de última generación en Tijuana ",
+        card1:
+          "Las carillas dentales de composite: La solución para una sonrisa ideal. ",
+        card1text:
+          " Las carillas de composite hacen posible combinar la estética y la funcionalidad. Ya no solo las grandes celebridades o personajes de internet las tienen, sino que se han convertido en los tratamientos de estética dental más frecuentes y populares para todos. ",
+        card2:
+          "Descubre como obtener una sonrisa deslumbrante con blanqueamiento dental Siéntete seguro de mostrarle a todos esa gran sonrisa.  ",
+        card2text:
+          "El blanqueamiento dental es uno de los tratamientos dentales estéticos con los resultados más visibles de forma inmediata",
+        card3:
+          "No solo recuperes tu sonrisa; con el implante dental, elévala al siguiente nivel.  ",
+        card3text:
+          "Si tienes uno o más dientes faltantes y te apena sonreír, y piensas: “Bueno, solo es estético, no los necesito, en este momento no he sentido molestias”. Espera, puede que estés poniendo en peligro toda tu salud oral.",
         mapmarker: "Calle Frida Kahlo 10410-404 Tijuana, Mexico, 22010",
         clock: "Lunes a Viernes 9:00 am - 6:30 pm",
         clock2: "Sábado 9:00 am - 4:00 pm",
         linksrapidos: "Links rápidos",
-        agendacita:"¡Agenda una cita ahora!",
-        "Inicio": "Inicio",
-        "Nosotros": "Nosotros",
-        "Galeria": "Galería",
-        "Contacto": "Contacto",
-        "Llamar": "Contactar por teléfono",
-        "Servicios": "Servicios",
+        agendacita: "¡Agenda una cita ahora!",
+        Inicio: "Inicio",
+        Nosotros: "Nosotros",
+        Galeria: "Galería",
+        Contacto: "Contacto",
+        Llamar: "Contactar por teléfono",
+        Servicios: "Servicios",
         "Términos de Servicio": "Términos de Servicio",
         "Política de Privacidad": "Política de Privacidad",
         "Limpieza-Dental": "Limpieza Dental",
-        "Resinas": "Resinas",
-        "Endodoncia": "Endodoncia",
+        Resinas: "Resinas",
+        Endodoncia: "Endodoncia",
         "Rehabilitacion-Oral": "Rehabilitación Oral",
-        "Blanqueamiento": "Blanqueamiento",
-        "Carillas": "Carillas",
-        "Coronas": "Coronas",
-        "Ortodoncia": "Ortodoncia",
+        Blanqueamiento: "Blanqueamiento",
+        Carillas: "Carillas",
+        Coronas: "Coronas",
+        Ortodoncia: "Ortodoncia",
         "Implantes-Dentales": "Implantes Dentales",
         servicios: "Servicios",
         gallery: {
@@ -422,171 +688,284 @@ i18n.use(initReactI18next).init({
         },
         about: {
           title: " Hola Mucho gusto",
-          subtitle: "¡Bienvenido a la mejor clínica de odontología de alta estética!",
+          subtitle:
+            "¡Bienvenido a la mejor clínica de odontología de alta estética!",
           subtitle2: "Conoce más acerca de Bites Creadores de Sonrisas",
-          platicamos: "Te platicaremos brevemente sobre nuestra misión en Bites Creadores de Sonrisas:",
-          queremos: "Queremos transformar vidas a través de sonrisas saludables y radiantes.",
-          destino: "Ser el destino por excelencia para transformar y cuidar tu salud dental.",
-          cuidamos: "No solo cuidamos de tu sonrisa, sino que también te ofrecemos un servicio exclusivo que escucha tus necesidades de inicio a fin para que tu experiencia sea cómoda y placentera.",
-          creemos:  "Creemos que una sonrisa sana puede empoderar, mejorando significativamente la imagen de uno mismo e implementar una calidad de vida más elevada.",
-          contamos: "Contamos con equipo de alta gama y personal dental profesional, aptos para todo tipo de procedimientos de una manera segura y eficaz.",
+          platicamos:
+            "Te platicaremos brevemente sobre nuestra misión en Bites Creadores de Sonrisas:",
+          queremos:
+            "Queremos transformar vidas a través de sonrisas saludables y radiantes.",
+          destino:
+            "Ser el destino por excelencia para transformar y cuidar tu salud dental.",
+          cuidamos:
+            "No solo cuidamos de tu sonrisa, sino que también te ofrecemos un servicio exclusivo que escucha tus necesidades de inicio a fin para que tu experiencia sea cómoda y placentera.",
+          creemos:
+            "Creemos que una sonrisa sana puede empoderar, mejorando significativamente la imagen de uno mismo e implementar una calidad de vida más elevada.",
+          contamos:
+            "Contamos con equipo de alta gama y personal dental profesional, aptos para todo tipo de procedimientos de una manera segura y eficaz.",
           servicios: "Nuestros servicios abarcan desde:",
-          estetica: "Estética dental, cirugía y periodoncia, endodoncias y ortodoncia.",
-          higienistas: "Servicios higienistas como eliminación de caries y colocación de resinas.",
-          ortodóncicos: "Tratamientos ortodóncicos para corregir la alineación dental.",
+          estetica:
+            "Estética dental, cirugía y periodoncia, endodoncias y ortodoncia.",
+          higienistas:
+            "Servicios higienistas como eliminación de caries y colocación de resinas.",
+          ortodóncicos:
+            "Tratamientos ortodóncicos para corregir la alineación dental.",
           oral: "Rehabilitación oral de coronas.",
           implantes: "Implantes y prótesis removibles o totales.",
-          review1: "¡La mejor atención dental que he experimentado! Profesional, cortés y súper amable, me hicieron sentir como en familia... ¡lo recomendaría a cualquiera! ¡Una experiencia tan agradable aquí!",
-          review2: "Gracias a bites por hacer mi visita de dentista la mejor, las recomiendo mil veces por su excelente trabajo y profesionalismo. ",
-          review3: "Fueron tan gentiles, y la oficina es hermosa. Más como un spa que un dentista. Incluso me pusieron una máscara para los ojos mientras trabajaban.",
-          review4: "¡No podría estar más feliz con mi nueva sonrisa! Estas damas son tan amables, gentiles y van más allá. ¡Experiencia maravillosa y muy feliz!",
-
+          review1:
+            "¡La mejor atención dental que he experimentado! Profesional, cortés y súper amable, me hicieron sentir como en familia... ¡lo recomendaría a cualquiera! ¡Una experiencia tan agradable aquí!",
+          review2:
+            "Gracias a bites por hacer mi visita de dentista la mejor, las recomiendo mil veces por su excelente trabajo y profesionalismo. ",
+          review3:
+            "Fueron tan gentiles, y la oficina es hermosa. Más como un spa que un dentista. Incluso me pusieron una máscara para los ojos mientras trabajaban.",
+          review4:
+            "¡No podría estar más feliz con mi nueva sonrisa! Estas damas son tan amables, gentiles y van más allá. ¡Experiencia maravillosa y muy feliz!",
         },
         services: {
           services: "Servicios",
           serviceText1: "Te invitamos a saber más sobre nuestros Servicios",
-          serviceText2: "En Bites Creadores de Sonrisas, nos enorgullecemos de ser una clínica de odontología de alta estética que ofrece una amplia variedad de servicios con la más alta tecnología y calidad para mejorar la apariencia y funcionalidad de tu sonrisa ",
-          serviceText3: "¡Descubre cómo Bites Creadores de Sonrisas puede hacer que tu viaje dental sea cómodo, agradable y transformador! ",
-          serviceText4: "No hay nada de qué preocuparse, este viaje dental este hecho pensado en ti, nuestro equipo estará a tus órdenes para hacer realidad tu sonrisa soñada con un tratamiento respetuoso y consciente. ",
-          DentalCleaningText1: "Nuestros servicios de limpieza dental eliminan placa y sarro, que se acumula entre tus dientes y encías, devolviéndoles su estado de salud más optimo, previniendo enfermedades orales y perdida de los dientes asegurando que cada limpieza sea un paso hacia una sonrisa que no solo brilla, sino que también refleja una salud óptima. Te recomendamos realizarte una limpieza profesional cada 6 meses",
+          serviceText2:
+            "En Bites Creadores de Sonrisas, nos enorgullecemos de ser una clínica de odontología de alta estética que ofrece una amplia variedad de servicios con la más alta tecnología y calidad para mejorar la apariencia y funcionalidad de tu sonrisa ",
+          serviceText3:
+            "¡Descubre cómo Bites Creadores de Sonrisas puede hacer que tu viaje dental sea cómodo, agradable y transformador! ",
+          serviceText4:
+            "No hay nada de qué preocuparse, este viaje dental este hecho pensado en ti, nuestro equipo estará a tus órdenes para hacer realidad tu sonrisa soñada con un tratamiento respetuoso y consciente. ",
+          DentalCleaningText1:
+            "Nuestros servicios de limpieza dental eliminan placa y sarro, que se acumula entre tus dientes y encías, devolviéndoles su estado de salud más optimo, previniendo enfermedades orales y perdida de los dientes asegurando que cada limpieza sea un paso hacia una sonrisa que no solo brilla, sino que también refleja una salud óptima. Te recomendamos realizarte una limpieza profesional cada 6 meses",
           DentalCleaningText2: "¿En qué consiste la limpieza dental?",
-          DentalCleaningText3: "Tu dentista usara raspadores manuales un instrumento especializado que remueve el sarro y placa para luego usar un raspador ultrasónico que usa la vibración para eliminar cualquier residuo o sustancia que haya quedado Este procedimiento puede variar en cuanto a duracion ya que todo dependera del estado en que se encuentren tus dientes y encias",
-          EndodonticsText1: "Nuestros expertos en endodoncia utilizan técnicas avanzadas para preservar la salud dental y restaurar la funcionalidad de tus dientes. Descubre cómo la endodoncia en Bites es más que un tratamiento, es una revitalización dental.",
+          DentalCleaningText3:
+            "Tu dentista usara raspadores manuales un instrumento especializado que remueve el sarro y placa para luego usar un raspador ultrasónico que usa la vibración para eliminar cualquier residuo o sustancia que haya quedado Este procedimiento puede variar en cuanto a duracion ya que todo dependera del estado en que se encuentren tus dientes y encias",
+          EndodonticsText1:
+            "Nuestros expertos en endodoncia utilizan técnicas avanzadas para preservar la salud dental y restaurar la funcionalidad de tus dientes. Descubre cómo la endodoncia en Bites es más que un tratamiento, es una revitalización dental.",
           EndodonticsText2: "¿En qué consiste la endodoncia?",
-          EndodonticsText3: "Consiste en anestesiar el área alrededor del diente, se cubre con una malla y un eleático la zona infectada para aislarla del resto de los dientes, luego el dentista experto, hará un hoyo en la parte superior del diente, removiendo el tejido mejor conocido como pulpa que este infectado , después de esto procederá a limpiar y desinfectar los canales, una vez finalizado el paso final será rellenar y sellar",
-          OralText1: "Nuestros especialistas logran resultados impresionantes mediante diferentes procedimientos integrales de acuerdo con lo que necesites, te tenemos cubierto para solucionar cualquier problema como puede ser caries, falta de dientes, prótesis parciales y totales, alineamiento de mordida e implantes Nos encargamos de restaurar áreas dañadas, para recuperar de forma estética la capacidad de comer, hablar y sonreír de la forma más espectacular posible. Gracias a la rehabilitación oral podemos prevenir futuros daños y mejorar la calidad de vida Para hacerte un procedimiento estético dental, nuestros expertos harán una examinación si es necesario, rehabilitar o corregir previo a lo estético, para garantizarte resultados duraderos y espectaculares.",
-          WhiteningText1: "Nuestro servicio de blanqueamiento es de los tratamientos más rápidos y no invasivos que mejora gradualmente la apariencia de tus dientes que padecen de oscurecimiento y manchas amarillas. Logrando aclarar y dar la apariencia de dientes luminosos, más sanos y con uniformidad desde la primera sesión. Anímate a realizarte este procedimiento en manos de nuestros expertos",
+          EndodonticsText3:
+            "Consiste en anestesiar el área alrededor del diente, se cubre con una malla y un eleático la zona infectada para aislarla del resto de los dientes, luego el dentista experto, hará un hoyo en la parte superior del diente, removiendo el tejido mejor conocido como pulpa que este infectado , después de esto procederá a limpiar y desinfectar los canales, una vez finalizado el paso final será rellenar y sellar",
+          OralText1:
+            "Nuestros especialistas logran resultados impresionantes mediante diferentes procedimientos integrales de acuerdo con lo que necesites, te tenemos cubierto para solucionar cualquier problema como puede ser caries, falta de dientes, prótesis parciales y totales, alineamiento de mordida e implantes Nos encargamos de restaurar áreas dañadas, para recuperar de forma estética la capacidad de comer, hablar y sonreír de la forma más espectacular posible. Gracias a la rehabilitación oral podemos prevenir futuros daños y mejorar la calidad de vida Para hacerte un procedimiento estético dental, nuestros expertos harán una examinación si es necesario, rehabilitar o corregir previo a lo estético, para garantizarte resultados duraderos y espectaculares.",
+          WhiteningText1:
+            "Nuestro servicio de blanqueamiento es de los tratamientos más rápidos y no invasivos que mejora gradualmente la apariencia de tus dientes que padecen de oscurecimiento y manchas amarillas. Logrando aclarar y dar la apariencia de dientes luminosos, más sanos y con uniformidad desde la primera sesión. Anímate a realizarte este procedimiento en manos de nuestros expertos",
           WhiteningText2: "¿En qué consiste el blanqueamiento dental?",
-          WhiteningText3: "Previo al procedimiento se realizará una limpieza una vez terminada la limpieza se aplicará un peróxido de hidrogeno o una base de peróxido de carbonato en gel en la superficie de los dientes, este compuesto deshace las manchas y el oscurecimiento, dando como resultado una sonrisa más brillant",
-          VennerText1: "En Bites somos reconocidos por nuestras carillas, somos expertos en el diseño y aplicación de carillas de composite o porcelana que, además de restaurar y modificar la estructura de tus dientes, te proporcionan un aspecto estético increíble, empoderándote a sonreír más que nunca.",
+          WhiteningText3:
+            "Previo al procedimiento se realizará una limpieza una vez terminada la limpieza se aplicará un peróxido de hidrogeno o una base de peróxido de carbonato en gel en la superficie de los dientes, este compuesto deshace las manchas y el oscurecimiento, dando como resultado una sonrisa más brillant",
+          VennerText1:
+            "En Bites somos reconocidos por nuestras carillas, somos expertos en el diseño y aplicación de carillas de composite o porcelana que, además de restaurar y modificar la estructura de tus dientes, te proporcionan un aspecto estético increíble, empoderándote a sonreír más que nunca.",
           VennerText2: "¿En qué consiste la aplicación de carillas?",
-          VennerText3: "Las carillas están hechas a las medidas de los dientes y se colocan frente a estos sirven para cubrir imperfecciones como separaciones, algún diente roto y descoloración Si estas buscando hacerte carillas de porcelana, previamente el dentista removerá un poco de tu esmalte y realizará una impresión para crear el molde perfecto para tus dientes, una vez listo el molde el dentista procederá colocar cada carilla El dentista usará una resina del color que elijas para moldear la resina sobre tus dientes hasta lograrlo, una vez hecho el paso final será endurecer los dientes, lijarlos y pulirlos.",
-          CrowText1:"Con las coronas recupera la forma, durabilidad y buena apariencia en general, Es unos de los servicios más populares en restauración si tus dientes tienen cavidades grandes, o se encuentra desgastado o solamente te gustaría mejorar su apariencia.",
-          CrowText2:"¿En qué consiste colocar una corona?",
-          CrowText3:"Se aplica una prótesis que se coloca sobre tu diente, si es necesario, el diente se tendrá que adaptar para que la prótesis se ajuste de la mejor forma, posterior a eso se hará una impresión para crear la corona. El último paso será colocarl",
-          ResinText1: "Las resinas mejoran la apariencia de las grietas y astillados de tus dientes, así como cavidades, te protegen de la hipersensibilidad al consumir alimentos fríos o calientes. Por medio de este procedimiento nuestros expertos restauran los dientes frontales y premolares dándoles un acabado estético y funcional.",
+          VennerText3:
+            "Las carillas están hechas a las medidas de los dientes y se colocan frente a estos sirven para cubrir imperfecciones como separaciones, algún diente roto y descoloración Si estas buscando hacerte carillas de porcelana, previamente el dentista removerá un poco de tu esmalte y realizará una impresión para crear el molde perfecto para tus dientes, una vez listo el molde el dentista procederá colocar cada carilla El dentista usará una resina del color que elijas para moldear la resina sobre tus dientes hasta lograrlo, una vez hecho el paso final será endurecer los dientes, lijarlos y pulirlos.",
+          CrowText1:
+            "Con las coronas recupera la forma, durabilidad y buena apariencia en general, Es unos de los servicios más populares en restauración si tus dientes tienen cavidades grandes, o se encuentra desgastado o solamente te gustaría mejorar su apariencia.",
+          CrowText2: "¿En qué consiste colocar una corona?",
+          CrowText3:
+            "Se aplica una prótesis que se coloca sobre tu diente, si es necesario, el diente se tendrá que adaptar para que la prótesis se ajuste de la mejor forma, posterior a eso se hará una impresión para crear la corona. El último paso será colocarl",
+          ResinText1:
+            "Las resinas mejoran la apariencia de las grietas y astillados de tus dientes, así como cavidades, te protegen de la hipersensibilidad al consumir alimentos fríos o calientes. Por medio de este procedimiento nuestros expertos restauran los dientes frontales y premolares dándoles un acabado estético y funcional.",
           ResinText2: " ¿En qué consiste la aplicación de resinas?",
-          ResinText3: "Nuestros expertos aplican anestesia en el área que rodea al diente afectado y removerá la caries, posterior a eso se rellena con una resina que el dentista esculpirá de acuerdo con la forma de tu diente, para que luzca lo más parecido a tu diente natural, una vez terminado se aplica una luz especial para endurecer la resina y finalmente se pule",
-          ImplantText: "Los implantes dentales restauran tu sonrisa evitando que el hueso de tu mandíbula se absorba cuando has perdido uno o varios dientes. Pueden ser de diferentes materiales los más populares son: Titanio y zirconio pueden ir en la parte superior o inferior de tu hueso maxilar Es un proceso que se realiza por etapas con tiempo de curación entre cada procedimiento ya que el primer paso es una revisión exhaustiva posterior a la colocación, una vez puesto el implante y que este se fusione con el hueso de la mandíbula se hace la colocación del pilar para finalizar con la colocación de la coron"
-
+          ResinText3:
+            "Nuestros expertos aplican anestesia en el área que rodea al diente afectado y removerá la caries, posterior a eso se rellena con una resina que el dentista esculpirá de acuerdo con la forma de tu diente, para que luzca lo más parecido a tu diente natural, una vez terminado se aplica una luz especial para endurecer la resina y finalmente se pule",
+          ImplantText:
+            "Los implantes dentales restauran tu sonrisa evitando que el hueso de tu mandíbula se absorba cuando has perdido uno o varios dientes. Pueden ser de diferentes materiales los más populares son: Titanio y zirconio pueden ir en la parte superior o inferior de tu hueso maxilar Es un proceso que se realiza por etapas con tiempo de curación entre cada procedimiento ya que el primer paso es una revisión exhaustiva posterior a la colocación, una vez puesto el implante y que este se fusione con el hueso de la mandíbula se hace la colocación del pilar para finalizar con la colocación de la coron",
         },
         contact: {
           contact: "Contacto",
           contactText1: "¿Tienes dudas sobre nuestros procedimientos?",
-          contactText2: "Estamos aquí para responder a tus preguntas y ayudarte en tu viaje hacia una sonrisa más saludable y hermosa. Ponte en contacto con nosotros para programar una consulta o conocer más sobre nuestros servicios"
+          contactText2:
+            "Estamos aquí para responder a tus preguntas y ayudarte en tu viaje hacia una sonrisa más saludable y hermosa. Ponte en contacto con nosotros para programar una consulta o conocer más sobre nuestros servicios",
         },
-        
-          blog1: {
-            "text1": "Las carillas dentales de composite: La solución para una sonrisa ideal",
-            "text2": "Una sonrisa espectacular está al alcance de todos. En Bites creadores de sonrisas somos fieles creyentes que mereces disfrutar cuando sonríes, y que esa misma sonrisa sea funcional al comer y hablar. Creemos que la estética y funcionalidad son esenciales para una calidad de vida digna.",
-            "text3": "Acompáñanos a conocer todo sobre las carillas dentales de composite.",
-            "text4": "Las carillas de composite hacen posible combinar la estética y la funcionalidad.",
-            "text5": "Ya no solo las grandes celebridades o personajes de internet las tienen, sino que se han convertido en los tratamientos de estética dental más frecuentes y populares para todos.",
-            "text6": "¿Cómo identificar si eres candidato?",
-            "text7": "Si tus dientes son naturalmente pequeños, las carillas pueden darle ese realce que necesitas.",
-            "text8": "Si tus dientes han pasado por varios tratamientos a lo largo de tu vida, pero no pudiste terminarlos o volvieron a su forma anterior, las carillas pueden darle esa forma estética y atractiva que siempre has deseado.",
-            "text9": "Si tienes algún diente roto o te falta uno, las carillas pueden devolverte esa vitalidad.",
-            "text10": "Si tus dientes tienen alguna forma irregular, espacios y tonalidades diferentes.",
-            "text11": "Te recomendamos la carilla composite, ya que no es necesario un procedimiento invasivo.",
-            "text12": "¿Son costosas las carillas?",
-            "text13": "Tranquilo, las carillas de composite son más económicas que las de porcelana. La inversión que realices depende de la cantidad de carillas que requieras. Puedes iniciar con las carillas superiores y después las inferiores. Lo importante es que te animes a dar ese paso para tu sonrisa ideal.",
-            "text14": "¿Qué hacer antes del procedimiento?",
-            "text15": "Previo a colocar las carillas, hacemos un estudio de sonrisa para conocer tu salud oral para saber cómo perfeccionarla. Tú eres la pieza clave más importante y estamos para escuchar tus necesidades dentales.",
-            "text16": "El tratamiento consiste en preparar los dientes sin generar desgaste dental para colocar pequeñas cantidades sobre los dientes de un material moldeado a base de resina acrílica mezclada con partículas de cerámica, que se moldea según el gusto y necesidad del paciente.",
-            "text17": "Una vez los dientes tengan la forma deseada el siguiente paso es endurecerlo con una luz halógena especializada, esta dureza es muy similar a la de los dientes, finalmente se pule para eliminar cualquier impureza y darle brillo.",
-            "text18": "Esto se realiza en una sola sesión, quedando un resultado de aspecto muy natural, siendo un procedimiento sin dolor.",
-            "text19": "¿Se verán raros?",
-            "text20": "Para nada, ¡No te preocupes! La doctora Anyi y su equipo de dentistas esculpen como artistas cada diente creando la forma y tamaño ideal para ti.",
-            "text21": "Comprendemos que cada persona tiene características especiales y únicas, por ello procuramos la armonía total respetando tus cualidades, buscando realzar tus atributos.",
-            "text22": "¿Hay algún límite de edad?",
-            "text23": "Muchas personas no se animan porque se consideran “muy grandes” para las carillas y lo cierto es que no hay ningún límite de edad, sobre todo si se trata de sentirse bien.",
-            "text24": "¿Cuánto dura el procedimiento?",
-            "text25": "Sabemos que tu tiempo es valioso, nuestro procedimiento de carillas puede realizarse en una cita.",
-            "text26": "Te preguntarás: ¿Cuánto tiempo durarán sobre tus dientes?",
-            "text27": "Tiene una duración de 5 a 7 años, claro, esto dependerá de los hábitos y cuidados que se le den.",
-            "text28": "Para que esa sonrisa permanezca radiante, nuestros expertos recomiendan los siguientes puntos:",
-            "text29": "Acudir a las revisiones en tiempo y forma, para darle una pulida.",
-            "text30": "Moderar el consumo de alimentos como el café y el vino tinto.",
-            "text31": "Evitar abrir plásticos, corchos, tapas o cualquier movimiento que involucre estirar o usar de palanca los dientes, para evitar dañar tanto a las carillas como a tus dientes.",
-            "text32": "Evitar fumar",
-            "text33": "Mantener un régimen de higiene puntual, cepillar diariamente, usar hilo dental y enjuague.",
-            "text34": "Se rompió mi carilla ¿Qué se puede hacer?",
-            "text35": "Es raro que suceda, pero si tu carilla llegase a despostillarse o fracturarse, esta tiene un arreglo rápido y accesible. En comparación con alguna carilla de cerámica, será una visita rápida para seguir disfrutando de tu sonrisa.",
-            "text36": "¿Quieres volver a tu sonrisa anterior?",
-            "text37": "No hay problema, al ser un tratamiento no invasivo, es reversible, ya que siempre se respeta la estructura de tu diente y esmalte.",
-            "text38": "¿Qué te parece?",
-            "text39": "No hay edad ni tiempo que se interponga entre tú y tu nueva versión, que no le teme a destacarse. Con las carillas por fin puedes tener esa sonrisa ideal y recuperar la estética, y sobre todo funcionalidad de tus dientes.",
-            "text40": "Si tienes más preguntas, no dudes en escribirnos o marcar a nuestro consultorio.",
-            "text41": "Nuestros expertos en Bites queremos apoyarte en la mejor decisión para tu sonrisa."
-          
+
+        blog1: {
+          text1:
+            "Las carillas dentales de composite: La solución para una sonrisa ideal",
+          text2:
+            "Una sonrisa espectacular está al alcance de todos. En Bites creadores de sonrisas somos fieles creyentes que mereces disfrutar cuando sonríes, y que esa misma sonrisa sea funcional al comer y hablar. Creemos que la estética y funcionalidad son esenciales para una calidad de vida digna.",
+          text3:
+            "Acompáñanos a conocer todo sobre las carillas dentales de composite.",
+          text4:
+            "Las carillas de composite hacen posible combinar la estética y la funcionalidad.",
+          text5:
+            "Ya no solo las grandes celebridades o personajes de internet las tienen, sino que se han convertido en los tratamientos de estética dental más frecuentes y populares para todos.",
+          text6: "¿Cómo identificar si eres candidato?",
+          text7:
+            "Si tus dientes son naturalmente pequeños, las carillas pueden darle ese realce que necesitas.",
+          text8:
+            "Si tus dientes han pasado por varios tratamientos a lo largo de tu vida, pero no pudiste terminarlos o volvieron a su forma anterior, las carillas pueden darle esa forma estética y atractiva que siempre has deseado.",
+          text9:
+            "Si tienes algún diente roto o te falta uno, las carillas pueden devolverte esa vitalidad.",
+          text10:
+            "Si tus dientes tienen alguna forma irregular, espacios y tonalidades diferentes.",
+          text11:
+            "Te recomendamos la carilla composite, ya que no es necesario un procedimiento invasivo.",
+          text12: "¿Son costosas las carillas?",
+          text13:
+            "Tranquilo, las carillas de composite son más económicas que las de porcelana. La inversión que realices depende de la cantidad de carillas que requieras. Puedes iniciar con las carillas superiores y después las inferiores. Lo importante es que te animes a dar ese paso para tu sonrisa ideal.",
+          text14: "¿Qué hacer antes del procedimiento?",
+          text15:
+            "Previo a colocar las carillas, hacemos un estudio de sonrisa para conocer tu salud oral para saber cómo perfeccionarla. Tú eres la pieza clave más importante y estamos para escuchar tus necesidades dentales.",
+          text16:
+            "El tratamiento consiste en preparar los dientes sin generar desgaste dental para colocar pequeñas cantidades sobre los dientes de un material moldeado a base de resina acrílica mezclada con partículas de cerámica, que se moldea según el gusto y necesidad del paciente.",
+          text17:
+            "Una vez los dientes tengan la forma deseada el siguiente paso es endurecerlo con una luz halógena especializada, esta dureza es muy similar a la de los dientes, finalmente se pule para eliminar cualquier impureza y darle brillo.",
+          text18:
+            "Esto se realiza en una sola sesión, quedando un resultado de aspecto muy natural, siendo un procedimiento sin dolor.",
+          text19: "¿Se verán raros?",
+          text20:
+            "Para nada, ¡No te preocupes! La doctora Anyi y su equipo de dentistas esculpen como artistas cada diente creando la forma y tamaño ideal para ti.",
+          text21:
+            "Comprendemos que cada persona tiene características especiales y únicas, por ello procuramos la armonía total respetando tus cualidades, buscando realzar tus atributos.",
+          text22: "¿Hay algún límite de edad?",
+          text23:
+            "Muchas personas no se animan porque se consideran “muy grandes” para las carillas y lo cierto es que no hay ningún límite de edad, sobre todo si se trata de sentirse bien.",
+          text24: "¿Cuánto dura el procedimiento?",
+          text25:
+            "Sabemos que tu tiempo es valioso, nuestro procedimiento de carillas puede realizarse en una cita.",
+          text26: "Te preguntarás: ¿Cuánto tiempo durarán sobre tus dientes?",
+          text27:
+            "Tiene una duración de 5 a 7 años, claro, esto dependerá de los hábitos y cuidados que se le den.",
+          text28:
+            "Para que esa sonrisa permanezca radiante, nuestros expertos recomiendan los siguientes puntos:",
+          text29:
+            "Acudir a las revisiones en tiempo y forma, para darle una pulida.",
+          text30:
+            "Moderar el consumo de alimentos como el café y el vino tinto.",
+          text31:
+            "Evitar abrir plásticos, corchos, tapas o cualquier movimiento que involucre estirar o usar de palanca los dientes, para evitar dañar tanto a las carillas como a tus dientes.",
+          text32: "Evitar fumar",
+          text33:
+            "Mantener un régimen de higiene puntual, cepillar diariamente, usar hilo dental y enjuague.",
+          text34: "Se rompió mi carilla ¿Qué se puede hacer?",
+          text35:
+            "Es raro que suceda, pero si tu carilla llegase a despostillarse o fracturarse, esta tiene un arreglo rápido y accesible. En comparación con alguna carilla de cerámica, será una visita rápida para seguir disfrutando de tu sonrisa.",
+          text36: "¿Quieres volver a tu sonrisa anterior?",
+          text37:
+            "No hay problema, al ser un tratamiento no invasivo, es reversible, ya que siempre se respeta la estructura de tu diente y esmalte.",
+          text38: "¿Qué te parece?",
+          text39:
+            "No hay edad ni tiempo que se interponga entre tú y tu nueva versión, que no le teme a destacarse. Con las carillas por fin puedes tener esa sonrisa ideal y recuperar la estética, y sobre todo funcionalidad de tus dientes.",
+          text40:
+            "Si tienes más preguntas, no dudes en escribirnos o marcar a nuestro consultorio.",
+          text41:
+            "Nuestros expertos en Bites queremos apoyarte en la mejor decisión para tu sonrisa.",
         },
         blog2: {
-          "text1": "Descubre cómo obtener una sonrisa deslumbrante con blanqueamiento dental. Siéntete seguro de mostrarle a todos esa gran sonrisa",
-          "text2": "El blanqueamiento dental es uno de los tratamientos dentales estéticos con los resultados más visibles de forma inmediata.",
-          "text3": "¿Hay una razón exacta por la que mis dientes estén amarillos o manchados?",
-          "text4": "No te asustes, existen muchos motivos que incluso no están en nuestro control.",
-          "text5": "Edad: Es habitual con el paso del tiempo que se oscurezcan y tomen un color más amarillento.",
-          "text6": "Hereditario: Puede ser que durante la formación del diente este haya tenido un tono diferente que con el tiempo procede a ser más visible.",
-          "text7": "Medicamentos: Algunos compuestos pueden afectar tu salud oral, afectar el esmalte o manchar. Es recomendable comentar a nuestros dentistas si actualmente te encuentras en algún tratamiento médico.",
-          "text8": "Traumatismos: Un golpe puede dañar el esmalte, la corona o del diente ocasionando que muera o pierda sus cualidades estéticas.",
-          "text9": "Alimentos y bebidas: El consumo frecuente de café, cerveza oscura, chocolate oscuro, té, vino, frutos rojos y alimentos procesados con colorantes verdes, rojo y naranja.",
-          "text10": "Hábitos: Olvidar cepillarse los dientes, utilizar hilo dental.",
-          "text11": "Fumar: Son acciones que deterioran la apariencia de tus dientes. Dichos los anteriores motivos y la falta de visitas para una limpieza dental, son factores acumulables que dan como resultado que tus dientes luzcan manchados o amarillos.",
-          "text12": "¿Puedo tener los dientes del tono más blanco en la primera sesión?",
-          "text13": "Es normal buscar cambios drásticos para vernos diferentes, pero es esencial conocer los límites de nuestros dientes para poder disfrutar más de ellos.",
-          "text14": "Las tonalidades que se pueden cambiar van a depender de tus dientes, la composición de la dentina es la que determina el color de los dientes. Esta se encuentra por debajo del esmalte que es traslúcido. Según el grosor, deja ver más o en menor medida el color de la dentina. El color amarillo e intensidad depende del grosor y la calidad de la dentina.",
-          "text15": "En Bites nos preocupamos no solo por la estética sino por la funcionalidad. En casos cuando se busca una sonrisa con tonalidades más claras y brillantes, se lleva a cabo en diferentes sesiones para lograr ese resultado sin afectar tu esmalte, ya que procuramos proteger tus dientes.",
-          "text16": "para evitar la sensibilidad y molestias. Te recomendaremos las tonalidades más adecuadas para ti para que haya resultados armoniosos y naturales.",
-          "text17": "¿Vuelven a su color anterior?",
-          "text18": "Es importante seguir nuestras recomendaciones, entre ellas es seguir una dieta libre de alimentos y bebidas que no manchen los dientes durante las 72 horas posteriores.",
-          "text19": "Para resultados más prolongados, procurar una excelente higiene oral a su vez mejorar hábitos de consumo de alimentos y bebidas que los pueden manchar. Si tu interés es seguir blanqueando tus dientes para lograr un tono en especial, es importantísimo tomar medidas para evitar un retroceso en tu tratamiento.",
-          "text20": "¿Cuál es la edad adecuada para hacerme un blanqueamiento?",
-          "text21": "Si tu salud oral es excelente, te queremos invitar a animarte, nunca es tarde.",
-          "text22": "Recomendamos una vez pasada la adolescencia. Previo a realizar cualquier tratamiento en Bites, siempre verificamos tu salud oral, revisamos que los tejidos dentales estén sanos y que tus dientes y encías estén en perfectas condiciones.",
-          "text23": "Nuestros dentistas tienen un ojo de artista que les permite tener una visión estética de tu sonrisa y la hacen realidad. Queremos que te proyectes más seguro, rejuvenecido, que tu salud oral se preserve y que disfrutes del proceso adaptado siempre a ti.",
-          "text24": "Proceso ambulatorio",
-          "text25": "Sentirte recibido con amor y ternura y despedirte con la misma ilusión.",
-          "text26": "Te permite retomar tus actividades una vez acabado el procedimiento, es inodoro por lo que no sentirás molestia previa, durante y después. Nos aseguramos de que te sientas en un espacio ameno visualmente y que te sientas relajado. Cuando sea momento de irte, te sientas feliz y satisfecho.",
-          "text27": "¿Por qué hacerte un blanqueamiento dental en Bites Creadores de Sonrisas?",
-          "text28": "Sonreír o reírse a carcajadas es un gozo de la vida que no queremos que te avergüence hacer debido al color de tus dientes. Es momento de dejar de taparte la sonrisa con la mano al momento de expresar felicidad.",
-          "text29": "Ahora que conoces un poco de este procedimiento, ten seguridad de que nuestro equipo de expertos te quiere apoyar a mejorar tu imagen y confianza para que puedas sonreír y reír sin límites ni vergüenza.",
-          "text30": "Te escuchamos, te sugerimos y te damos los resultados más estéticos y funcionales.",
-          "text31": "¿Te interesa agendar?"
+          text1:
+            "Descubre cómo obtener una sonrisa deslumbrante con blanqueamiento dental. Siéntete seguro de mostrarle a todos esa gran sonrisa",
+          text2:
+            "El blanqueamiento dental es uno de los tratamientos dentales estéticos con los resultados más visibles de forma inmediata.",
+          text3:
+            "¿Hay una razón exacta por la que mis dientes estén amarillos o manchados?",
+          text4:
+            "No te asustes, existen muchos motivos que incluso no están en nuestro control.",
+          text5:
+            "Edad: Es habitual con el paso del tiempo que se oscurezcan y tomen un color más amarillento.",
+          text6:
+            "Hereditario: Puede ser que durante la formación del diente este haya tenido un tono diferente que con el tiempo procede a ser más visible.",
+          text7:
+            "Medicamentos: Algunos compuestos pueden afectar tu salud oral, afectar el esmalte o manchar. Es recomendable comentar a nuestros dentistas si actualmente te encuentras en algún tratamiento médico.",
+          text8:
+            "Traumatismos: Un golpe puede dañar el esmalte, la corona o del diente ocasionando que muera o pierda sus cualidades estéticas.",
+          text9:
+            "Alimentos y bebidas: El consumo frecuente de café, cerveza oscura, chocolate oscuro, té, vino, frutos rojos y alimentos procesados con colorantes verdes, rojo y naranja.",
+          text10:
+            "Hábitos: Olvidar cepillarse los dientes, utilizar hilo dental.",
+          text11:
+            "Fumar: Son acciones que deterioran la apariencia de tus dientes. Dichos los anteriores motivos y la falta de visitas para una limpieza dental, son factores acumulables que dan como resultado que tus dientes luzcan manchados o amarillos.",
+          text12:
+            "¿Puedo tener los dientes del tono más blanco en la primera sesión?",
+          text13:
+            "Es normal buscar cambios drásticos para vernos diferentes, pero es esencial conocer los límites de nuestros dientes para poder disfrutar más de ellos.",
+          text14:
+            "Las tonalidades que se pueden cambiar van a depender de tus dientes, la composición de la dentina es la que determina el color de los dientes. Esta se encuentra por debajo del esmalte que es traslúcido. Según el grosor, deja ver más o en menor medida el color de la dentina. El color amarillo e intensidad depende del grosor y la calidad de la dentina.",
+          text15:
+            "En Bites nos preocupamos no solo por la estética sino por la funcionalidad. En casos cuando se busca una sonrisa con tonalidades más claras y brillantes, se lleva a cabo en diferentes sesiones para lograr ese resultado sin afectar tu esmalte, ya que procuramos proteger tus dientes.",
+          text16:
+            "para evitar la sensibilidad y molestias. Te recomendaremos las tonalidades más adecuadas para ti para que haya resultados armoniosos y naturales.",
+          text17: "¿Vuelven a su color anterior?",
+          text18:
+            "Es importante seguir nuestras recomendaciones, entre ellas es seguir una dieta libre de alimentos y bebidas que no manchen los dientes durante las 72 horas posteriores.",
+          text19:
+            "Para resultados más prolongados, procurar una excelente higiene oral a su vez mejorar hábitos de consumo de alimentos y bebidas que los pueden manchar. Si tu interés es seguir blanqueando tus dientes para lograr un tono en especial, es importantísimo tomar medidas para evitar un retroceso en tu tratamiento.",
+          text20: "¿Cuál es la edad adecuada para hacerme un blanqueamiento?",
+          text21:
+            "Si tu salud oral es excelente, te queremos invitar a animarte, nunca es tarde.",
+          text22:
+            "Recomendamos una vez pasada la adolescencia. Previo a realizar cualquier tratamiento en Bites, siempre verificamos tu salud oral, revisamos que los tejidos dentales estén sanos y que tus dientes y encías estén en perfectas condiciones.",
+          text23:
+            "Nuestros dentistas tienen un ojo de artista que les permite tener una visión estética de tu sonrisa y la hacen realidad. Queremos que te proyectes más seguro, rejuvenecido, que tu salud oral se preserve y que disfrutes del proceso adaptado siempre a ti.",
+          text24: "Proceso ambulatorio",
+          text25:
+            "Sentirte recibido con amor y ternura y despedirte con la misma ilusión.",
+          text26:
+            "Te permite retomar tus actividades una vez acabado el procedimiento, es inodoro por lo que no sentirás molestia previa, durante y después. Nos aseguramos de que te sientas en un espacio ameno visualmente y que te sientas relajado. Cuando sea momento de irte, te sientas feliz y satisfecho.",
+          text27:
+            "¿Por qué hacerte un blanqueamiento dental en Bites Creadores de Sonrisas?",
+          text28:
+            "Sonreír o reírse a carcajadas es un gozo de la vida que no queremos que te avergüence hacer debido al color de tus dientes. Es momento de dejar de taparte la sonrisa con la mano al momento de expresar felicidad.",
+          text29:
+            "Ahora que conoces un poco de este procedimiento, ten seguridad de que nuestro equipo de expertos te quiere apoyar a mejorar tu imagen y confianza para que puedas sonreír y reír sin límites ni vergüenza.",
+          text30:
+            "Te escuchamos, te sugerimos y te damos los resultados más estéticos y funcionales.",
+          text31: "¿Te interesa agendar?",
         },
         blog3: {
-          "text1": "No solo recuperes tu sonrisa; con el implante dental, elévala al siguiente nivel.",
-          "text2": "Una sonrisa completa refleja nuestra salud. No solo es importante sentirnos bien, sino que funcione a la perfección.",
-          "text3": "Si tienes uno o más dientes faltantes y te apena sonreír, y piensas: “Bueno, solo es estético, no los necesito, en este momento no he sentido molestias”.",
-          "text4": "Espera, puede que estés poniendo en peligro toda tu salud oral.",
-          "text5": "A continuación, te decimos por qué es importante atender lo antes posible este asunto.",
-          "text6": "Has llegado al lugar indicado, te apoyamos a resolver las dudas más comunes. Nuestros expertos te brindarán la solución para recuperar tu salud y para que recuperes esa seguridad y te sientas empoderado.",
-          "text7": "¿Cómo afecta la falta de dientes en nuestra vida?",
-          "text8": "La falta de dientes no solo afecta de forma estética, sino que también de forma emocional y física, ya que puede afectar nuestra habla, puede acelerar el desgaste de los dientes sanos, ya que se sobrecargan debido a la ausencia de los otros dientes, la falta de dientes hace que el proceso de masticar no se lleve a cabo de forma correcta, por tanto, puede generar problemas digestivos porque los alimentos no son triturados y absorbidos correctamente.",
-          "text9": "Se debilita el hueso, es decir, pierde densidad en la zona, o bien empiezan a surgir irregularidades en el hueso mandibular. Esto puede ocasionar hundimiento de los labios, envejecimiento facial prematuro, no solo afectando la estética sino la salud misma.",
-          "text10": "Hay diversos motivos por los cuales es posible perder dientes, y todos tienen solución.",
-          "text11": "Una de las causas es por caries, ya que la placa bacteriana se acumuló en nuestros dientes, debilitándolos, causando una infección del tejido, haciendo que se debilite o tenga que extraer.",
-          "text12": "Periodontitis, es una patología de las encías, puede ser causada de forma hereditaria o por pocos cuidados orales. Esta enfermedad bacteriana inflama y debilita los tejidos y estructura, causando que los dientes se caigan.",
-          "text13": "Endodoncias mal ejecutadas.",
-          "text14": "Bruxismo que es el apretar los dientes provocando un severo desgaste.",
-          "text15": "Accidente o golpe, que provoca alguna fractura debido al impacto, provocando desprendimiento.",
-          "text16": "El implante dental es una decisión final, resistente y estética.",
-          "text17": "Es un proceso que es bajo anestesia local, no existe sensación extraña ni ajena una vez que el procedimiento está 100% terminado.",
-          "text18": "Los implantes dentales son estructuras metálicas, generalmente de titanio, que se introducen en los huesos maxilares. Dependiendo del área o áreas en las que lo requieras, el implante se encontrará en tu encía, ya sea superior o inferior.",
-          "text19": "El implante es un tornillo que se inserta, simulando la raíz de un diente. El pilar es la pieza que conecta el implante con la corona.",
-          "text20": "La corona es la prótesis cerámica que simula a la perfección tu diente, se ve estética y funciona excelente.",
-          "text21": "Lo que pasa durante un implante.",
-          "text22": "El implante dental es una cirugía ambulatoria, realizada en etapas, para asegurar la curación entre cada procedimiento, el lapso entre cada sesión permite que la curación no se interrumpa, haya un crecimiento de hueso o tejido y se pueda trabajar sobre este en la siguiente sesión con el fin de garantizar el resultado final más óptimo.",
-          "text23": "Este procedimiento se lleva a cabo de la siguiente manera:",
-          "text24": "Se hace mediante una incisión en la encía, hasta llegar al hueso para insertar el pilar del implante. Gracias a los materiales con los cuales está elaborado, permite que los tejidos se adapten.",
-          "text25": "Pasando el tiempo recomendado por nuestros especialistas para que sane completamente, el siguiente paso es colocar la corona, que es la prótesis visible.",
-          "text26": "Una vez terminado el proceso, es importantísimo acudir a tus citas para revisión.",
-          "text27": "Mantener una correcta higiene es primordial. Los implantes son permanentes y tienen una longevidad de más de 10 años, por lo que es un procedimiento de larga duración. Claro, el factor que permite que dure, es mantener una higiene excelente.",
-          "text28": "Los implantes pueden parecer intimidantes cuando los mencionan.",
-          "text29": "Creemos que son más intimidantes las consecuencias de no atender tu salud oral, ya que puede afectar significativamente tu salud y calidad de vida.",
-          "text30": "No hay nada que temer, son procedimientos muy comunes. Nuestros dentistas cuentan con todas las herramientas y preparación para mejorar de forma increíble tu aspecto y autoestima, además de evitar cualquier posible afección a tu salud.",
-          "text31": "¿Te interesa una valoración?",
-          "text32": "Marca al 663 324 9611.",
-          "text33": "O bien realiza una cita a través de este medio, selecciona el día y hora para empezar tu transformación dental."
+          text1:
+            "No solo recuperes tu sonrisa; con el implante dental, elévala al siguiente nivel.",
+          text2:
+            "Una sonrisa completa refleja nuestra salud. No solo es importante sentirnos bien, sino que funcione a la perfección.",
+          text3:
+            "Si tienes uno o más dientes faltantes y te apena sonreír, y piensas: “Bueno, solo es estético, no los necesito, en este momento no he sentido molestias”.",
+          text4:
+            "Espera, puede que estés poniendo en peligro toda tu salud oral.",
+          text5:
+            "A continuación, te decimos por qué es importante atender lo antes posible este asunto.",
+          text6:
+            "Has llegado al lugar indicado, te apoyamos a resolver las dudas más comunes. Nuestros expertos te brindarán la solución para recuperar tu salud y para que recuperes esa seguridad y te sientas empoderado.",
+          text7: "¿Cómo afecta la falta de dientes en nuestra vida?",
+          text8:
+            "La falta de dientes no solo afecta de forma estética, sino que también de forma emocional y física, ya que puede afectar nuestra habla, puede acelerar el desgaste de los dientes sanos, ya que se sobrecargan debido a la ausencia de los otros dientes, la falta de dientes hace que el proceso de masticar no se lleve a cabo de forma correcta, por tanto, puede generar problemas digestivos porque los alimentos no son triturados y absorbidos correctamente.",
+          text9:
+            "Se debilita el hueso, es decir, pierde densidad en la zona, o bien empiezan a surgir irregularidades en el hueso mandibular. Esto puede ocasionar hundimiento de los labios, envejecimiento facial prematuro, no solo afectando la estética sino la salud misma.",
+          text10:
+            "Hay diversos motivos por los cuales es posible perder dientes, y todos tienen solución.",
+          text11:
+            "Una de las causas es por caries, ya que la placa bacteriana se acumuló en nuestros dientes, debilitándolos, causando una infección del tejido, haciendo que se debilite o tenga que extraer.",
+          text12:
+            "Periodontitis, es una patología de las encías, puede ser causada de forma hereditaria o por pocos cuidados orales. Esta enfermedad bacteriana inflama y debilita los tejidos y estructura, causando que los dientes se caigan.",
+          text13: "Endodoncias mal ejecutadas.",
+          text14:
+            "Bruxismo que es el apretar los dientes provocando un severo desgaste.",
+          text15:
+            "Accidente o golpe, que provoca alguna fractura debido al impacto, provocando desprendimiento.",
+          text16:
+            "El implante dental es una decisión final, resistente y estética.",
+          text17:
+            "Es un proceso que es bajo anestesia local, no existe sensación extraña ni ajena una vez que el procedimiento está 100% terminado.",
+          text18:
+            "Los implantes dentales son estructuras metálicas, generalmente de titanio, que se introducen en los huesos maxilares. Dependiendo del área o áreas en las que lo requieras, el implante se encontrará en tu encía, ya sea superior o inferior.",
+          text19:
+            "El implante es un tornillo que se inserta, simulando la raíz de un diente. El pilar es la pieza que conecta el implante con la corona.",
+          text20:
+            "La corona es la prótesis cerámica que simula a la perfección tu diente, se ve estética y funciona excelente.",
+          text21: "Lo que pasa durante un implante.",
+          text22:
+            "El implante dental es una cirugía ambulatoria, realizada en etapas, para asegurar la curación entre cada procedimiento, el lapso entre cada sesión permite que la curación no se interrumpa, haya un crecimiento de hueso o tejido y se pueda trabajar sobre este en la siguiente sesión con el fin de garantizar el resultado final más óptimo.",
+          text23: "Este procedimiento se lleva a cabo de la siguiente manera:",
+          text24:
+            "Se hace mediante una incisión en la encía, hasta llegar al hueso para insertar el pilar del implante. Gracias a los materiales con los cuales está elaborado, permite que los tejidos se adapten.",
+          text25:
+            "Pasando el tiempo recomendado por nuestros especialistas para que sane completamente, el siguiente paso es colocar la corona, que es la prótesis visible.",
+          text26:
+            "Una vez terminado el proceso, es importantísimo acudir a tus citas para revisión.",
+          text27:
+            "Mantener una correcta higiene es primordial. Los implantes son permanentes y tienen una longevidad de más de 10 años, por lo que es un procedimiento de larga duración. Claro, el factor que permite que dure, es mantener una higiene excelente.",
+          text28:
+            "Los implantes pueden parecer intimidantes cuando los mencionan.",
+          text29:
+            "Creemos que son más intimidantes las consecuencias de no atender tu salud oral, ya que puede afectar significativamente tu salud y calidad de vida.",
+          text30:
+            "No hay nada que temer, son procedimientos muy comunes. Nuestros dentistas cuentan con todas las herramientas y preparación para mejorar de forma increíble tu aspecto y autoestima, además de evitar cualquier posible afección a tu salud.",
+          text31: "¿Te interesa una valoración?",
+          text32: "Marca al 663 324 9611.",
+          text33:
+            "O bien realiza una cita a través de este medio, selecciona el día y hora para empezar tu transformación dental.",
         },
         stripe: {
           Reservar: "Reservar Cita",
@@ -597,9 +976,139 @@ i18n.use(initReactI18next).init({
           Procesando: "Procesando",
           Pagar: "Pagar",
           Appointment: "es-ES",
-        }
-        
-      
+        },
+        terminos: {
+          title: "Términos de Servicio",
+          text1: "La página de",
+          text2: "bitescreadoresdesonrisas.com",
+          text3:
+            "contiene el contacto directo con nuestro personal de atención al cliente.",
+          text4:
+            "Toda reservación realizada en la página es directa a nuestra agenda en la recepción.",
+          text5:
+            "Las citas son confirmadas por teléfono y deberán ser atendidas por el cliente en el periodo de 48hrs a 24hrs antes de la cita.",
+          text6:
+            "Citas no confirmadas podrán ser consideradas como canceladas por el cliente.",
+          text7:
+            "Toda situación que se presente por cambio o devolución deberán ser notificado por correo electrónico a",
+          text8: "draanyimanchola@bitescreadoresdesonrisas.com",
+          text9: "enviando descripción del problema o razón de la cancelación.",
+        },
+        politicas: {
+          title: "Política de Privacidad",
+          text1: "Aviso de Privacidad",
+          text2:
+            'Este aviso de privacidad explica cómo Clinica BITES CREADORES DE SONRISAS ("nosotros", "nuestro" o "nos") recopila, procesa y protege la información obtenida a través de nuestro sitio web. Describe las condiciones bajo las cuales podemos procesar información personal y no personal. En este contexto, "procesar" se refiere a recopilar, almacenar, transferir, usar o manejar información de cualquier otra manera.',
+          text3: "Introducción",
+          text4:
+            "Estamos comprometidos a proteger su privacidad y confidencialidad. Los visitantes de nuestro sitio web tienen derecho a esperar que sus datos personales sean manejados de manera segura y no divulgados a terceros no autorizados.",
+          text5:
+            "Nos comprometemos a mantener la confidencialidad de toda la información que nos proporcione y esperamos lo mismo de usted.",
+          text6:
+            "Nuestra política de privacidad cumple con el Reglamento General de Protección de Datos (GDPR) de la UE.",
+          text7:
+            "Para comprender sus derechos y nuestras obligaciones bajo las leyes de protección de datos, consulte www.knowyourprivacyrights.org.",
+          text8:
+            "Excepto en los casos detallados a continuación, no compartimos, vendemos ni divulgamos información recopilada a través de nuestro sitio web a terceros.",
+          text9: "Bases Legales para el Procesamiento de sus Datos",
+          text10:
+            "La ley nos exige especificar las bases legales en las que procesamos diferentes categorías de información personal. Si una base de procesamiento deja de ser relevante, dejaremos de procesar sus datos. Si nuestra base legal cambia, le notificaremos según lo exige la ley.",
+          text11: "1. Procesamiento Basado en Obligaciones Contractuales",
+          text12:
+            "Si se convierte en paciente o acepta nuestros términos y condiciones, se forma un contrato entre usted y BITES CREADORES DE SONRISAS. Para cumplir con nuestras obligaciones bajo este contrato, debemos procesar la información que nos proporcione, la cual puede incluir datos personales. Utilizamos esta información para:",
+          text13: "Verificar su identidad por razones de seguridad.",
+          text14: "Proporcionar y vender nuestros productos y servicios.",
+          text15:
+            "Ofrecer asesoramiento y recomendaciones sobre nuestros servicios y sitio web.",
+          text16:
+            "Procesamos esta información bajo nuestras obligaciones contractuales y continuaremos haciéndolo hasta que el contrato sea terminado por cualquiera de las partes.",
+          text17: "2. Procesamiento Basado en su Consentimiento",
+          text18:
+            "En los casos en los que no exista una relación contractual, como cuando navega en nuestro sitio web o solicita información, procesamos sus datos con base en su consentimiento. Buscamos consentimiento explícito siempre que sea posible, como en el caso de cookies o formularios de contacto y referencias.",
+          text19:
+            "Puede otorgar consentimiento implícito, por ejemplo, al enviarnos un correo electrónico con una consulta.",
+          text20:
+            "No utilizamos sus datos personales de una manera que lo identifique a menos que haya dado su consentimiento explícito.",
+          text21:
+            "Si está permitido, podemos compartir sus datos con socios seleccionados que brinden servicios relevantes para usted.",
+          text22:
+            "Puede retirar su consentimiento en cualquier momento contactándonos en info@bitescreadoresdesonrisas.com. Sin embargo, esto puede afectar su capacidad para utilizar nuestros servicios.",
+          text23: "3. Procesamiento Basado en Obligaciones Legales",
+          text24:
+            "Estamos obligados por ley a procesar ciertos datos para cumplir con requisitos legales y regulatorios. Por ejemplo:",
+          text25:
+            "Responder a solicitudes de autoridades judiciales con la debida autorización (ej., órdenes judiciales).",
+          text26:
+            "Proporcionar divulgaciones requeridas bajo obligaciones legales.",
+          text27: "Cómo Usamos su Información",
+          text28: "Información que Usted Proporciona",
+          text29: "Utilizamos los datos que proporciona para:",
+          text30: "Enviar comunicaciones generales y de marketing.",
+          text31: "Notificarle sobre actualizaciones de servicio.",
+          text32:
+            "Asegurar que el contenido de nuestro sitio web esté optimizado para su experiencia.",
+          text33: "Responder a consultas y quejas.",
+          text34:
+            "Proporcionar datos estadísticos a terceros sin identificación personal.",
+          text35:
+            "Contactarlo por correo electrónico, mensajes de texto o llamadas telefónicas una vez que haya llenado y autorizado un formulario en nuestras páginas de redes sociales o sitio web.",
+          text36: "Información que Recopilamos Automáticamente",
+          text37: "Usamos estos datos para:",
+          text38: "Mejorar la usabilidad de nuestro sitio web.",
+          text39: "Mejorar la seguridad y prevenir fraudes.",
+          text40:
+            "Medir la efectividad de la publicidad y personalizar el contenido.",
+          text41: "Realizar investigaciones, análisis y solución de problemas.",
+          text42: "Información de Fuentes de Terceros",
+          text43:
+            "Podemos combinar la información que proporciona con datos recopilados de otras fuentes y utilizarla bajo las condiciones establecidas anteriormente.",
+          text44:
+            "No compartimos su información personal con terceros para marketing directo sin su consentimiento explícito.",
+          text45: "Manejo de Quejas",
+          text46:
+            "Si tiene preocupaciones sobre el contenido en nuestro sitio web:",
+          text47: "Investigaremos y eliminaremos el contenido si es necesario.",
+          text48:
+            "Equilibramos el derecho a la libertad de expresión con cualquier queja recibida.",
+          text49:
+            "Si consideramos que una queja no está justificada, podemos rechazar continuar con la correspondencia.",
+          text50: "Presentación de Quejas",
+          text51:
+            "Si no está satisfecho con nuestra política de privacidad o desea presentar una queja, envíenos un correo electrónico a info@bitescreadoresdesonrisas.com.",
+          text52:
+            "Si las disputas permanecen sin resolver, alentamos la mediación o el arbitraje.",
+          text53: "Comunicación con Nosotros",
+          text54:
+            "Cuando nos contacta por teléfono, correo electrónico o formularios en el sitio web, almacenamos su información de manera segura para proporcionar respuestas relevantes. Podemos conservar registros de comunicación para garantizar la calidad del servicio y su mejora.",
+          text55: "Almacenamiento de Datos:",
+          text56: "Retención segura durante tres meses en línea.",
+          text57:
+            "Posible almacenamiento en nuestro sistema de gestión de práctica.",
+          text58: "Recopilación Automática de Datos",
+          text59: "Cookies y Google Analytics",
+          text60:
+            "Utilizamos Google Analytics para analizar el uso del sitio web. Las cookies recopilan datos anónimos de los visitantes, los cuales se envían a Google para informes estadísticos. No utilizamos herramientas de análisis para rastrear información personalmente identificable (PII).",
+          text61: "Google no asocia su dirección IP con otros datos.",
+          text62:
+            "No vinculamos datos de navegación con identificadores personales a menos que usted los proporcione explícitamente.",
+          text63: "Seguimiento y Remarketing",
+          text64:
+            "Nuestro sitio web registra solicitudes del navegador, incluida la ubicación, dirección IP e información del dispositivo.",
+          text65:
+            "Estos datos se utilizan de manera agregada para analizar el rendimiento del sitio web.",
+          text66:
+            "Si se combinan con otros datos conocidos, esta información podría identificar a individuos.",
+          text67: "Remarketing",
+          text68:
+            "Las cookies pueden utilizarse con fines de remarketing para mostrar anuncios relevantes.",
+          text69:
+            "Puede gestionar o desactivar las cookies en la configuración de su navegador.",
+          text70: "Contáctenos",
+          text71:
+            "Para cualquier consulta relacionada con la privacidad, contáctenos en:",
+          text72: "Correo electrónico: info@bitescreadoresdesonrisas.com",
+          text73: "Sitio web: www.bitescreadoresdesonrisas.com.mx",
+        },
       },
     },
   },
